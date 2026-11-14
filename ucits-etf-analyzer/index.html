@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UCITS ETF Overlap, TER &amp; Geographic Exposure Analyzer</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div class="disclaimer-banner" role="note">
+    Educational &amp; data visualization tool only; not financial, tax, or investment advice. Never enter broker credentials.
+  </div>
+
+  <main class="container">
+    <header class="hero">
+      <div>
+        <h1>UCITS ETF Overlap, TER &amp; Geographic Exposure Analyzer</h1>
+        <p>Inspect hidden constituent overlap, weighted expense ratios (TER), sector/region concentration, and 10/20-year fee drag.</p>
+      </div>
+      <span class="badge" id="data-as-of">Data as of 2026-11-14 (Illustrative Educational Sample)</span>
+    </header>
+
+    <section class="kpi-grid" aria-label="Portfolio Summary">
+      <div class="kpi-card">
+        <div class="kpi-label">Total Portfolio</div>
+        <div class="kpi-value" id="kpi-total">€0</div>
+        <div class="kpi-sub" id="kpi-etf-count">0 active ETFs</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-label">Weighted TER</div>
+        <div class="kpi-value" id="kpi-ter">0.00%</div>
+        <div class="kpi-sub" id="kpi-annual-fee">€0.00 / year</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-label">Overlapping Exposure</div>
+        <div class="kpi-value" id="kpi-overlap">0.0%</div>
+        <div class="kpi-sub" id="kpi-overlap-count">0 shared top holdings</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-label">20-Year Fee Drag</div>
+        <div class="kpi-value" id="kpi-drag-20">€0</div>
+        <div class="kpi-sub" id="kpi-drag-10">10-Year Drag: €0</div>
+      </div>
+    </section>
+
+    <section class="grid-2">
+      <div class="card">
+        <h2>1. Portfolio Allocations (EUR)</h2>
+        <div id="allocations-list"></div>
+        <div class="controls-inline">
+          <div>
+            <label class="field-label" for="gross-return">Hypothetical Gross Return (% / yr)</label>
+            <input id="gross-return" type="number" step="0.1" min="0" max="25" value="7.0" />
+          </div>
+          <div>
+            <label class="field-label" for="monthly-contrib">Monthly Contribution (EUR)</label>
+            <input id="monthly-contrib" type="number" step="50" min="0" value="500" />
+          </div>
+        </div>
+        <div class="btn-row">
+          <button type="button" id="btn-export-csv">Export Analysis CSV</button>
+          <button type="button" class="secondary" id="btn-reset">Reset Sample Portfolio</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>2. Import Custom ETF Holdings (CSV)</h2>
+        <p style="font-size:0.84rem;color:var(--muted);margin-top:0;">
+          Paste CSV or upload a <code>.csv</code> file with columns:
+          <code>etf,ter_pct,symbol,name,weight_pct,sector,region</code>
+        </p>
+        <input type="file" id="csv-file-input" accept=".csv,text/csv" style="margin-bottom:10px;" />
+        <textarea id="csv-paste-input" placeholder="etf,ter_pct,symbol,name,weight_pct,sector,region&#10;VUSA,0.07,AAPL,Apple Inc.,7.0,Information Technology,North America&#10;VUSA,0.07,MSFT,Microsoft Corp.,6.5,Information Technology,North America"></textarea>
+        <div class="btn-row">
+          <button type="button" id="btn-import-csv">Import Custom CSV</button>
+          <button type="button" class="secondary" id="btn-load-csv-example">Load CSV Example</button>
+        </div>
+        <div id="csv-status" class="status-msg" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section class="grid-2">
+      <div class="card">
+        <h2>3. Top Overlapping Holdings</h2>
+        <div style="overflow-x:auto;">
+          <table id="overlap-table">
+            <thead>
+              <tr>
+                <th>Symbol</th>
+                <th>Company</th>
+                <th>Held In</th>
+                <th class="num">Portfolio %</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>4. Pairwise ETF Overlap &amp; 10/20-Year Fee Drag</h2>
+        <div style="overflow-x:auto;margin-bottom:18px;">
+          <table id="pairwise-table">
+            <thead>
+              <tr>
+                <th>ETF Pair</th>
+                <th class="num">Shared Top Holdings %</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+        <h2 style="margin-top:8px;">Illustrative Fee Drag Projection</h2>
+        <div style="overflow-x:auto;">
+          <table id="drag-table">
+            <thead>
+              <tr>
+                <th>Horizon</th>
+                <th class="num">Gross Value</th>
+                <th class="num">Net Value</th>
+                <th class="num">Fee Drag</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="grid-2">
+      <div class="card">
+        <h2>5. Sector Concentration</h2>
+        <div id="sector-bars"></div>
+      </div>
+      <div class="card">
+        <h2>6. Geographic Exposure</h2>
+        <div id="region-bars"></div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p><strong>Disclaimer:</strong> Educational &amp; data visualization tool only; not financial, tax, or investment advice. Sample holdings are illustrative approximations for educational comparison; always verify official KIID/KID &amp; factsheets from the ETF issuer.</p>
+    </footer>
+  </main>
+
+  <script type="module" src="./app.js"></script>
+</body>
+</html>
