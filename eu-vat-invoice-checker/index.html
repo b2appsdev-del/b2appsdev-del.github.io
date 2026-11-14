@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EU VAT &amp; Reverse-Charge Invoice Generator — B2B Freelancers &amp; Agencies</title>
+  <meta name="description" content="Free 100% client-side EU VAT format validator (all 27 member states) and B2B Reverse-Charge Article 196 invoice generator with PDF print and CSV export." />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="topbar no-print">
+    <div class="topbar-inner">
+      <div class="brand">
+        <span class="brand-badge">EU VAT</span>
+        <div>
+          <h1>EU VAT &amp; Reverse-Charge Invoice Generator</h1>
+          <p class="subtitle">B2B Freelancers &amp; Agencies · 27 EU Member States · 100% Client-Side</p>
+        </div>
+      </div>
+      <div class="topbar-actions">
+        <button type="button" id="btnSample" class="btn btn-ghost">Load Sample</button>
+        <button type="button" id="btnReset" class="btn btn-ghost">Reset</button>
+        <button type="button" id="btnCsv" class="btn btn-secondary">Export CSV</button>
+        <button type="button" id="btnPrint" class="btn btn-primary">Print / Save PDF</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="layout">
+    <!-- Left Column: Editor Controls -->
+    <section class="editor-panel no-print" aria-label="Invoice Editor">
+      <div class="card">
+        <h2>1. Invoice Metadata</h2>
+        <div class="grid-3">
+          <label>
+            Invoice #
+            <input type="text" id="invoiceNumber" placeholder="INV-2026-001" />
+          </label>
+          <label>
+            Issue Date
+            <input type="date" id="issueDate" />
+          </label>
+          <label>
+            Due Date
+            <input type="date" id="dueDate" />
+          </label>
+        </div>
+        <div class="grid-2">
+          <label>
+            Currency
+            <select id="currency">
+              <option value="EUR">EUR (€)</option>
+              <option value="USD">USD ($)</option>
+              <option value="GBP">GBP (£)</option>
+            </select>
+          </label>
+          <label>
+            Custom Domestic VAT % <span class="muted">(optional)</span>
+            <input type="number" id="customRate" min="0" max="100" step="0.1" placeholder="Auto standard rate" />
+          </label>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>2. Supplier (Your Business)</h2>
+        <div class="grid-2">
+          <label>
+            Business / Freelancer Name
+            <input type="text" id="supplierName" placeholder="Studio Alpha OÜ" />
+          </label>
+          <label>
+            Country
+            <select id="supplierCountry"></select>
+          </label>
+        </div>
+        <label>
+          Supplier VAT ID
+          <div class="input-with-badge">
+            <input type="text" id="supplierVat" placeholder="EE123456789" />
+            <span id="supplierVatBadge" class="badge badge-neutral">Optional</span>
+          </div>
+          <small id="supplierVatHint" class="field-hint"></small>
+        </label>
+        <label>
+          Address &amp; Contact
+          <textarea id="supplierAddress" rows="2" placeholder="Street 12, 10111 Tallinn&#10;billing@studioalpha.eu"></textarea>
+        </label>
+      </div>
+
+      <div class="card">
+        <h2>3. Client (B2B Customer)</h2>
+        <div class="grid-2">
+          <label>
+            Client Company Name
+            <input type="text" id="clientName" placeholder="Berlin Tech GmbH" />
+          </label>
+          <label>
+            Country
+            <select id="clientCountry"></select>
+          </label>
+        </div>
+        <label>
+          Client VAT ID
+          <div class="input-with-badge">
+            <input type="text" id="clientVat" placeholder="DE123456789" />
+            <span id="clientVatBadge" class="badge badge-neutral">Checking…</span>
+          </div>
+          <small id="clientVatHint" class="field-hint"></small>
+        </label>
+        <label>
+          Client Address
+          <textarea id="clientAddress" rows="2" placeholder="Torstraße 1, 10119 Berlin, Germany"></textarea>
+        </label>
+      </div>
+
+      <div class="card">
+        <div class="card-header-row">
+          <h2>4. Line Items</h2>
+          <button type="button" id="btnAddItem" class="btn btn-small btn-secondary">+ Add Item</button>
+        </div>
+        <div id="itemsContainer" class="items-list"></div>
+      </div>
+
+      <div class="card">
+        <h2>5. Payment Details &amp; Notes</h2>
+        <label>
+          IBAN / Payment Instructions
+          <textarea id="paymentNotes" rows="2" placeholder="IBAN: EE123456789012345678 · BIC: HABAEE2X · Payment due within 30 days."></textarea>
+        </label>
+      </div>
+
+      <!-- Non-intrusive Pro Upsell -->
+      <aside class="upsell-card">
+        <div class="upsell-content">
+          <span class="upsell-tag">PRO WORKFLOW</span>
+          <h3>Track Invoices, Runway &amp; Quarterly VAT in One Place</h3>
+          <p>Upgrade your freelance finance stack with our <strong>Cashflow OS</strong> — automated cashflow forecasting, tax reserve tracking, and client retainer dashboards.</p>
+        </div>
+        <a
+          href="https://devbloom12.gumroad.com/l/nlahdt"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn btn-upsell"
+        >
+          Get Cashflow OS ($14) →
+        </a>
+      </aside>
+    </section>
+
+    <!-- Right Column: Live Printable Invoice Preview -->
+    <section class="preview-panel" aria-label="Invoice Preview">
+      <div id="vatStatusBanner" class="vat-banner no-print"></div>
+
+      <article id="invoiceSheet" class="invoice-sheet">
+        <header class="inv-header">
+          <div>
+            <div class="inv-title">INVOICE</div>
+            <div class="inv-meta-line"><strong>Invoice #:</strong> <span id="prevNumber"></span></div>
+            <div class="inv-meta-line"><strong>Issue Date:</strong> <span id="prevIssueDate"></span></div>
+            <div class="inv-meta-line"><strong>Due Date:</strong> <span id="prevDueDate"></span></div>
+          </div>
+          <div class="inv-tax-pill" id="prevTaxPill"></div>
+        </header>
+
+        <section class="inv-parties">
+          <div>
+            <div class="inv-label">From (Supplier)</div>
+            <div class="inv-party-name" id="prevSupplierName"></div>
+            <div class="inv-party-text" id="prevSupplierAddress"></div>
+            <div class="inv-party-vat">VAT ID: <span id="prevSupplierVat"></span></div>
+          </div>
+          <div>
+            <div class="inv-label">Bill To (Client)</div>
+            <div class="inv-party-name" id="prevClientName"></div>
+            <div class="inv-party-text" id="prevClientAddress"></div>
+            <div class="inv-party-vat">VAT ID: <span id="prevClientVat"></span></div>
+          </div>
+        </section>
+
+        <table class="inv-table">
+          <thead>
+            <tr>
+              <th>Description</th>
+              <th class="num">Qty</th>
+              <th class="num">Unit Price</th>
+              <th class="num">Amount</th>
+            </tr>
+          </thead>
+          <tbody id="prevItemsBody"></tbody>
+        </table>
+
+        <section class="inv-totals">
+          <div class="inv-totals-box">
+            <div class="inv-total-row">
+              <span>Subtotal</span>
+              <span id="prevSubtotal"></span>
+            </div>
+            <div class="inv-total-row">
+              <span id="prevVatLabel">VAT</span>
+              <span id="prevVatAmount"></span>
+            </div>
+            <div class="inv-total-row inv-grand-total">
+              <span>Total</span>
+              <span id="prevTotal"></span>
+            </div>
+          </div>
+        </section>
+
+        <section class="inv-legal-box">
+          <strong>VAT / Tax Treatment Note:</strong>
+          <p id="prevLegalNote"></p>
+        </section>
+
+        <section class="inv-payment-box" id="prevPaymentSection">
+          <strong>Payment Instructions:</strong>
+          <p id="prevPaymentNotes"></p>
+        </section>
+
+        <footer class="inv-footer">
+          Generated with EU VAT &amp; Reverse-Charge Invoice Generator · Educational &amp; planning tool only; not financial, tax, or legal advice.
+        </footer>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer no-print">
+    <p>
+      <strong>Disclaimer:</strong> Educational &amp; planning tool only; not financial, tax, or legal advice. Always verify your client's live VAT registration on the official
+      <a href="https://ec.europa.eu/taxation_customs/vies/" target="_blank" rel="noopener noreferrer">EU VIES Portal</a>
+      before issuing zero-rated reverse-charge invoices.
+    </p>
+  </footer>
+
+  <script type="module" src="./app.js"></script>
+</body>
+</html>
