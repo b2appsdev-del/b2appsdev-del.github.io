@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://b2appsdev-del.github.io/sitemap.xml
