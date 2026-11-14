@@ -1,0 +1,8 @@
+# UCITS ETF Custom Holdings Import Template
+# Educational & data visualization tool only; not financial, tax, or investment advice.
+etf,ter_pct,symbol,name,weight_pct,sector,region
+VUAA,0.07,AAPL,Apple Inc.,7.0,Information Technology,North America
+VUAA,0.07,MSFT,Microsoft Corp.,6.5,Information Technology,North America
+VUAA,0.07,NVDA,NVIDIA Corp.,6.2,Information Technology,North America
+VUAA,0.07,AMZN,Amazon.com Inc.,3.8,Consumer Discretionary,North America
+VUAA,0.07,__RESIDUAL_VUAA__,Other S&P 500 Equities,76.5,Diversified / Other,North America
