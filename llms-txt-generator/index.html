@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LLMs.txt &amp; AI Bot Policy Generator — Free GEO &amp; AI Crawler Tool | B2 Apps</title>
+  <meta name="description" content="Generate standard /llms.txt, /llms-full.txt, and AI crawler robots.txt rules (GPTBot, OAI-SearchBot, ClaudeBot, PerplexityBot, Google-Extended, CCBot) with a live GEO Readiness Score." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand">
+        <span class="brand-badge">AI / GEO</span>
+        <div>
+          <h1>LLMs.txt &amp; AI Bot Policy Generator</h1>
+          <p>Standard /llms.txt, /llms-full.txt &amp; AI Crawler robots.txt rules + live GEO Readiness Score (0–100)</p>
+        </div>
+      </div>
+      <div class="topbar-ctas">
+        <a class="upsell-pill" href="https://devbloom12.gumroad.com/l/mpgkuo" target="_blank" rel="noopener noreferrer">
+          SEO &amp; JSON-LD n8n Pack ($19) &rarr;
+        </a>
+        <a class="upsell-pill upsell-pill-secondary" href="https://apify.com/b2apps/public-jsonld-schema-validator" target="_blank" rel="noopener noreferrer">
+          Apify JSON-LD Validator &rarr;
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="disclaimer-banner" id="disclaimer-box" role="note">
+      <strong>Disclaimer:</strong> Educational &amp; technical SEO/GEO template generator only; not legal advice. Verify crawler policies, terms of service, and intellectual property requirements for your jurisdiction.
+    </div>
+
+    <div class="preset-bar" aria-label="Quick Presets">
+      <span class="preset-label">Load Template Preset:</span>
+      <button type="button" class="btn preset-btn active" data-preset="saas">B2B SaaS &amp; Docs</button>
+      <button type="button" class="btn preset-btn" data-preset="api">Developer API &amp; MCP</button>
+      <button type="button" class="btn preset-btn" data-preset="ecommerce">Shopify / E-Commerce Store</button>
+    </div>
+
+    <div class="layout">
+      <section class="card" aria-label="Configuration">
+        <h2>
+          <span>1. Site &amp; Manifest Configuration</span>
+        </h2>
+
+        <div class="form-grid">
+          <div class="row-2">
+            <label class="field">
+              Product / Site Name
+              <input type="text" id="siteName" value="CloudPulse EU" />
+            </label>
+            <label class="field">
+              Site Category
+              <select id="siteType">
+                <option value="saas" selected>SaaS &amp; Documentation</option>
+                <option value="api">API &amp; Developer Platform</option>
+                <option value="ecommerce">E-Commerce / Shopify Store</option>
+              </select>
+            </label>
+          </div>
+
+          <div class="row-2">
+            <label class="field">
+              Canonical Base URL
+              <input type="url" id="baseUrl" value="https://docs.cloudpulse.eu" />
+            </label>
+            <label class="field">
+              Technical / Support Email
+              <input type="email" id="contactEmail" value="support@cloudpulse.eu" />
+            </label>
+          </div>
+
+          <label class="field">
+            Concise Tagline (Blockquote in /llms.txt)
+            <input type="text" id="tagline" value="Privacy-first B2B SaaS observability, API telemetry, and EU compliance automation platform." />
+          </label>
+
+          <label class="field">
+            Executive Technical Overview (LLM Grounding Context)
+            <textarea id="coreOverview" rows="3">CloudPulse EU provides real-time OpenTelemetry ingestion, EU-sovereign log storage, and automated SLA alerting for engineering teams. All endpoints use Bearer token authentication and return deterministic JSON schemas.</textarea>
+          </label>
+
+          <label class="field">
+            Documentation &amp; Core Guides (One per line: <code>Title | /path | Description</code>)
+            <textarea id="docsLinks" rows="3">Quickstart Guide | /docs/quickstart | 5-minute setup for Node.js, Python, and Go SDKs
+Architecture & EU Data Residency | /docs/architecture | Frankfurt region isolation, encryption at rest, and GDPR data flow
+Webhook Events Reference | /docs/webhooks | HMAC-SHA256 signature verification and retry backoff policies</textarea>
+          </label>
+
+          <label class="field">
+            API Specs / Product Feeds (One per line: <code>Title | /path | Description</code>)
+            <textarea id="apiLinks" rows="2">REST API v2 OpenAPI Spec | /api/openapi.json | Complete OpenAPI 3.1 schema for metrics, traces, and alerts
+Authentication & Rate Limits | /api/auth | API key scopes, 1,200 req/min burst quotas, and pagination headers</textarea>
+          </label>
+
+          <label class="field">
+            Optional / Pricing Links (One per line: <code>Title | /path | Description</code>)
+            <textarea id="optionalLinks" rows="2">Pricing & Enterprise SLA | /pricing | Transparent EUR tiers, free developer quota, and 99.95% uptime SLA
+Changelog & Deprecations | /changelog | Monthly release notes and API migration timelines</textarea>
+          </label>
+
+          <div class="row-2">
+            <label class="field">
+              Disallowed Private Paths (Comma-separated)
+              <input type="text" id="disallowPaths" value="/app/, /admin/, /api/internal/" />
+            </label>
+            <label class="field">
+              XML Sitemap URL
+              <input type="url" id="sitemapUrl" value="https://docs.cloudpulse.eu/sitemap.xml" />
+            </label>
+          </div>
+
+          <div class="divider"></div>
+
+          <h2>
+            <span>2. AI Crawler Policy (robots.txt)</span>
+          </h2>
+
+          <label class="field">
+            AI Bot Policy Strategy
+            <select id="botMode">
+              <option value="search-only" selected>Allow AI Search &amp; Citations + Block Training (Recommended GEO)</option>
+              <option value="allow-all">Allow All AI Bots (Search + Model Training)</option>
+              <option value="block-all">Strict Block All AI Bots (Disallow All)</option>
+              <option value="custom">Custom Per-Bot Policy</option>
+            </select>
+          </label>
+
+          <div class="bot-grid" id="bot-grid" aria-label="Per-Bot Crawler Rules"></div>
+
+          <div class="row-2">
+            <label class="field">
+              Crawl-Delay (Seconds, 0 = None)
+              <input type="number" id="crawlDelay" min="0" max="60" value="0" />
+            </label>
+            <label class="checkbox-row" style="margin-top: 20px;">
+              <span>Include AI Citation &amp; Attribution Section</span>
+              <input type="checkbox" id="includeCitationRule" checked />
+            </label>
+          </div>
+        </div>
+      </section>
+
+      <div class="main-col">
+        <section class="card geo-card" aria-label="GEO Readiness Score">
+          <div class="geo-header">
+            <div>
+              <h2>GEO (Generative Engine Optimization) Readiness</h2>
+              <p class="geo-sub">Measures how accurately ChatGPT Search, Perplexity, and Claude can discover and cite your docs.</p>
+            </div>
+            <div class="score-badge" id="geo-score-badge">
+              <span class="score-num" id="geo-score-value">100</span>
+              <span class="score-max">/ 100</span>
+            </div>
+          </div>
+          <div class="progress-track" aria-hidden="true">
+            <div class="progress-fill" id="geo-progress-fill" style="width: 100%;"></div>
+          </div>
+          <div class="geo-grade-row">
+            <span class="status-chip" id="geo-grade-label">Excellent (AI Citation Ready)</span>
+            <span class="bot-summary" id="bot-summary-label">2 Allowed &bull; 4 Blocked</span>
+          </div>
+          <ul class="geo-checklist" id="geo-checklist"></ul>
+        </section>
+
+        <section class="card" aria-label="Generated Files & Interactive Preview">
+          <div class="tabs" role="tablist">
+            <button type="button" class="tab-btn active" data-tab="llms-txt">/llms.txt</button>
+            <button type="button" class="tab-btn" data-tab="llms-full">/llms-full.txt</button>
+            <button type="button" class="tab-btn" data-tab="robots-txt">robots.txt (AI Bots)</button>
+            <button type="button" class="tab-btn" data-tab="rendered-preview">Rendered Preview</button>
+          </div>
+
+          <div class="toolbar">
+            <button type="button" id="copy-btn" class="btn btn-primary">Copy Active File</button>
+            <button type="button" id="download-llms-btn" class="btn">Download llms.txt</button>
+            <button type="button" id="download-full-btn" class="btn">Download llms-full.txt</button>
+            <button type="button" id="download-robots-btn" class="btn">Download robots.txt</button>
+          </div>
+
+          <div id="output-panel"></div>
+        </section>
+
+        <section class="card funnel-card" aria-label="Automated SEO & JSON-LD Tooling">
+          <div class="funnel-inner">
+            <div>
+              <h3>Automate Full-Site JSON-LD &amp; Technical SEO Audits</h3>
+              <p>Pair your <code>/llms.txt</code> manifest with validated Schema.org structured data across every URL using our automated Apify Actor and self-hostable n8n workflows.</p>
+            </div>
+            <div class="funnel-actions">
+              <a class="btn btn-primary" href="https://devbloom12.gumroad.com/l/mpgkuo" target="_blank" rel="noopener noreferrer">
+                Get Apify SEO &amp; JSON-LD n8n Pack ($19) &rarr;
+              </a>
+              <a class="btn" href="https://apify.com/b2apps/public-jsonld-schema-validator" target="_blank" rel="noopener noreferrer">
+                Run Free Apify JSON-LD Validator &rarr;
+              </a>
+              <a class="btn" href="https://b2appsdev-del.github.io/directory/" target="_blank" rel="noopener noreferrer">
+                Explore EU B2B &amp; Dev Directory &rarr;
+              </a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <span>100% client-side — your URLs, API paths, and crawler rules never leave your browser.</span>
+      <span>Built by <a href="https://b2appsdev-del.github.io/" target="_blank" rel="noopener noreferrer">B2 Apps</a> &bull; Educational &amp; technical SEO/GEO template generator only; not legal advice.</span>
+    </footer>
+  </main>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
