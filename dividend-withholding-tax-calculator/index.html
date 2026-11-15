@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EU/US Dividend &amp; Withholding Tax (WHT) Drag Calculator</title>
+  <meta name="description" content="Compare 30% US WHT vs 15% W-8BEN vs Irish UCITS Distributing (15% internal WHT) vs Irish UCITS Accumulating (0% EU distribution drag) with multi-year DRIP compounding & CSV export." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand">
+        <span class="brand-badge">WHT DRAG</span>
+        <div>
+          <h1>EU/US Dividend &amp; Withholding Tax (WHT) Drag Calculator</h1>
+          <p>Compare US ETF (30% vs 15% W-8BEN) against Irish UCITS Distributing &amp; Accumulating ETFs</p>
+        </div>
+      </div>
+      <a class="upsell-pill" href="https://devbloom12.gumroad.com/l/kukkk" target="_blank" rel="noopener noreferrer">
+        UCITS Excel Companion ($9) &rarr;
+      </a>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="disclaimer-banner" id="disclaimer-box"></div>
+
+    <div class="layout">
+      <section class="card" aria-label="Calculator Inputs">
+        <h2>Portfolio &amp; Tax Inputs</h2>
+        <div class="form-grid">
+          <div class="row-2">
+            <label class="field">
+              Currency
+              <select id="currency">
+                <option value="€" selected>EUR (€)</option>
+                <option value="$">USD ($)</option>
+                <option value="£">GBP (£)</option>
+              </select>
+            </label>
+            <label class="field">
+              Horizon (Years)
+              <input type="number" id="years" min="1" max="50" value="20" />
+            </label>
+          </div>
+
+          <div class="row-2">
+            <label class="field">
+              Initial Investment
+              <input type="number" id="initialInvestment" min="0" step="500" value="25000" />
+            </label>
+            <label class="field">
+              Annual Contribution
+              <input type="number" id="annualContribution" min="0" step="100" value="3000" />
+            </label>
+          </div>
+
+          <div class="row-2">
+            <label class="field">
+              Gross Dividend Yield (%)
+              <input type="number" id="grossYieldPct" min="0" max="30" step="0.1" value="2.5" />
+            </label>
+            <label class="field">
+              Price Growth (% p.a.)
+              <input type="number" id="priceGrowthPct" min="-50" max="50" step="0.1" value="6.0" />
+            </label>
+          </div>
+
+          <div class="row-2">
+            <label class="field">
+              US ETF TER (%)
+              <input type="number" id="usTerPct" min="0" max="5" step="0.01" value="0.03" />
+            </label>
+            <label class="field">
+              Irish UCITS TER (%)
+              <input type="number" id="ucitsTerPct" min="0" max="5" step="0.01" value="0.07" />
+            </label>
+          </div>
+
+          <label class="field">
+            Local Investor Dividend Tax Rate (%)
+            <input type="number" id="localDivTaxPct" min="0" max="60" step="0.5" value="15.0" />
+          </label>
+
+          <label class="checkbox-row">
+            <span>Credit 15% US W-8BEN WHT against local dividend tax</span>
+            <input type="checkbox" id="creditW8ben" checked />
+          </label>
+        </div>
+      </section>
+
+      <div class="main-col">
+        <section class="card" aria-label="Comparison Summary">
+          <h2>Net Yield &amp; Final Value Comparison</h2>
+          <div class="summary-grid" id="summary-cards"></div>
+        </section>
+
+        <section class="card" aria-label="DRIP Compounding Chart">
+          <h2>Multi-Year DRIP Compounding Curve</h2>
+          <div class="chart-wrap" id="chart-container"></div>
+          <div class="chart-legend" id="chart-legend"></div>
+        </section>
+
+        <section class="card" aria-label="Year-by-Year Breakdown">
+          <h2>
+            <span>Year-by-Year Portfolio Value &amp; Tax Drag</span>
+            <button type="button" id="export-csv-btn" class="btn">Export CSV</button>
+          </h2>
+          <div class="table-wrap" id="table-container"></div>
+        </section>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <span>100% client-side calculation — no portfolio data leaves your browser.</span>
+      <span>Built by B2 Apps (Plutus) &bull; Zero-dependency static web app</span>
+    </footer>
+  </main>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
