@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GDPR Cookie Banner &amp; Privacy Policy Generator — Free EU/SaaS/Shopify Tool</title>
+  <meta name="description" content="Generate a zero-dependency GDPR cookie consent banner snippet and tailored Privacy Policy (HTML & Markdown) for EU websites, SaaS apps, and Shopify stores." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand">
+        <span class="brand-badge">EU GDPR</span>
+        <div>
+          <h1>GDPR Cookie Banner &amp; Privacy Policy Generator</h1>
+          <p>Zero-dependency HTML/JS/CSS snippet + tailored Privacy Policy for EU websites, SaaS &amp; Shopify</p>
+        </div>
+      </div>
+      <a class="upsell-pill" href="https://devbloom12.gumroad.com/l/nlahdt" target="_blank" rel="noopener noreferrer">
+        EU Founder Cashflow OS &rarr;
+      </a>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="disclaimer-banner" id="disclaimer-box">
+      <strong>Educational &amp; Template Tool Only:</strong> Not legal advice. Always have a qualified EU/EEA privacy professional review your final consent setup and privacy policy before publishing.
+    </div>
+
+    <div class="layout">
+      <section class="card" aria-label="Configuration">
+        <h2>Configuration</h2>
+        <div class="form-grid">
+          <label class="field">
+            Company / Store Name
+            <input type="text" id="companyName" value="Acme Digital GmbH" />
+          </label>
+
+          <div class="row-2">
+            <label class="field">
+              Domain
+              <input type="text" id="domain" value="acme-digital.eu" />
+            </label>
+            <label class="field">
+              Privacy Email
+              <input type="email" id="contactEmail" value="privacy@acme-digital.eu" />
+            </label>
+          </div>
+
+          <div class="row-2">
+            <label class="field">
+              Site Type
+              <select id="siteType">
+                <option value="website">Website / Blog</option>
+                <option value="saas" selected>SaaS Web App</option>
+                <option value="shopify">Shopify Store</option>
+              </select>
+            </label>
+            <label class="field">
+              Jurisdiction / Country
+              <input type="text" id="country" value="Germany (EU)" />
+            </label>
+          </div>
+
+          <div class="row-2">
+            <label class="field">
+              Banner Theme
+              <select id="theme">
+                <option value="dark" selected>Dark</option>
+                <option value="light">Light</option>
+                <option value="minimal">Minimal</option>
+              </select>
+            </label>
+            <label class="field">
+              Banner Position
+              <select id="position">
+                <option value="bottom" selected>Bottom Bar</option>
+                <option value="top">Top Bar</option>
+                <option value="floating-right">Floating Bottom-Right</option>
+              </select>
+            </label>
+          </div>
+
+          <div class="row-2">
+            <label class="field">
+              Accent Color
+              <input type="color" id="accentColor" value="#2563eb" />
+            </label>
+            <label class="field">
+              Data Retention (Months)
+              <input type="number" id="retentionMonths" min="1" max="120" value="24" />
+            </label>
+          </div>
+
+          <div class="row-2">
+            <label class="field">
+              Privacy Policy URL
+              <input type="text" id="privacyPolicyUrl" value="/privacy-policy.html" />
+            </label>
+            <label class="field">
+              Effective Date
+              <input type="date" id="effectiveDate" value="2026-11-15" />
+            </label>
+          </div>
+
+          <div class="toggle-box">
+            <label class="checkbox-row">
+              <span><strong>Analytics Cookies</strong></span>
+              <input type="checkbox" id="analytics" checked />
+            </label>
+            <label class="field">
+              Analytics Provider
+              <select id="analyticsProvider">
+                <option value="ga4" selected>Google Analytics 4</option>
+                <option value="plausible">Plausible (EU)</option>
+                <option value="matomo">Matomo</option>
+              </select>
+            </label>
+          </div>
+
+          <div class="toggle-box">
+            <label class="checkbox-row">
+              <span><strong>Marketing / Ad Pixels</strong></span>
+              <input type="checkbox" id="marketing" />
+            </label>
+            <label class="field">
+              Marketing Provider(s)
+              <input type="text" id="marketingProvider" value="Meta Pixel & Google Ads" />
+            </label>
+          </div>
+        </div>
+      </section>
+
+      <div class="main-col">
+        <section class="card" aria-label="Live Cookie Banner Preview">
+          <h2>
+            <span>Live Interactive Banner Preview</span>
+            <button type="button" id="reset-preview-btn" class="btn">Reset Preview</button>
+          </h2>
+          <div class="preview-stage">
+            <div class="preview-meta">
+              <span>Click buttons inside the banner to test consent behavior:</span>
+              <span class="status-chip" id="preview-status">Awaiting choice</span>
+            </div>
+            <div id="preview-container"></div>
+          </div>
+        </section>
+
+        <section class="card" aria-label="Generated Output">
+          <div class="tabs" role="tablist">
+            <button type="button" class="tab-btn active" data-tab="snippet">Cookie Banner Snippet</button>
+            <button type="button" class="tab-btn" data-tab="policy-preview">Policy Preview</button>
+            <button type="button" class="tab-btn" data-tab="policy-html">privacy-policy.html</button>
+            <button type="button" class="tab-btn" data-tab="policy-md">privacy-policy.md</button>
+          </div>
+
+          <div class="toolbar">
+            <button type="button" id="copy-btn" class="btn btn-primary">Copy Active Output</button>
+            <button type="button" id="download-html-btn" class="btn">Download privacy-policy.html</button>
+            <button type="button" id="download-md-btn" class="btn">Download privacy-policy.md</button>
+          </div>
+
+          <div id="output-panel"></div>
+        </section>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <span>100% client-side — your company details never leave your browser.</span>
+      <span>Built by B2 Apps &bull; Zero-dependency static web app</span>
+    </footer>
+  </main>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
