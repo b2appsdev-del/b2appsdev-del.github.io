@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EU B2B, Dev &amp; Privacy-First Tools Directory | B2 Apps</title>
+  <meta name="description" content="Curated directory of privacy-first EU VAT, UCITS ETF, developer security, SEO, and Shopify automation tools for freelancers and teams." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://b2appsdev-del.github.io/directory/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="EU B2B, Dev &amp; Privacy-First Tools Directory | B2 Apps" />
+  <meta property="og:description" content="Curated directory of privacy-first EU VAT, UCITS ETF, developer security, SEO, and Shopify automation tools for freelancers and teams." />
+  <meta property="og:url" content="https://b2appsdev-del.github.io/directory/" />
+
+  <link rel="stylesheet" href="./styles.css" />
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "name": "EU B2B, Dev & Privacy-First Tools Directory",
+      "description": "Curated directory of privacy-first EU VAT, UCITS ETF, developer security, SEO, and Shopify automation tools for freelancers and teams.",
+      "url": "https://b2appsdev-del.github.io/directory/",
+      "publisher": {
+        "@type": "Organization",
+        "name": "B2 Apps",
+        "url": "https://b2appsdev-del.github.io/"
+      }
+    }
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="./index.html">
+        <span class="brand-mark">B2</span>
+        <span>B2 Apps Directory</span>
+      </a>
+      <nav class="header-nav" aria-label="Primary Navigation">
+        <a href="#directory-grid">Browse Tools</a>
+        <a href="https://b2appsdev-del.github.io/" target="_blank" rel="noopener noreferrer">Free Web Tools</a>
+        <a href="https://apify.com/b2apps/public-sitemap-seo-auditor" target="_blank" rel="noopener noreferrer">Apify SEO Auditor</a>
+        <a href="#submit-tool">Suggest a Tool</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <span class="hero-eyebrow">Curated EU B2B &amp; Developer Index</span>
+      <h1>EU Freelancer, Ecommerce &amp; Developer Privacy-First Tools</h1>
+      <p class="hero-subtitle">
+        A fast, zero-tracker directory of client-side calculators, EU VAT &amp; UCITS ETF utilities,
+        Apify SEO automation, Gumroad Pro workflow packs, and official European reference tools.
+      </p>
+      <div class="hero-stats">
+        <span><strong id="stat-total">23</strong> Curated Tools</span>
+        <span><strong>4</strong> Core Categories</span>
+        <span><strong>100%</strong> Client-Side Search &amp; Filter</span>
+      </div>
+    </section>
+
+    <section class="controls-panel" aria-label="Filter and search tools">
+      <div class="search-row">
+        <label for="search-input" class="sr-only">Search tools</label>
+        <input
+          id="search-input"
+          class="search-input"
+          type="search"
+          placeholder="Search by tool, tag, EU VAT, UCITS, Shopify, n8n, SEO..."
+          autocomplete="off"
+        />
+        <label for="tier-select" class="sr-only">Filter by pricing tier</label>
+        <select id="tier-select" class="tier-select" aria-label="Pricing tier filter">
+          <option value="all">All Tiers</option>
+          <option value="free">Free Tools &amp; Actors</option>
+          <option value="pro">Gumroad Pro Packs</option>
+          <option value="reference">EU &amp; OSS References</option>
+        </select>
+      </div>
+      <div id="category-pills" class="filter-pills" role="group" aria-label="Category filters"></div>
+    </section>
+
+    <section id="directory-grid" aria-label="Directory listings">
+      <div id="tools-grid" class="tools-grid"></div>
+      <div id="empty-state" class="empty-state" hidden>
+        No matching tools found. Try clearing your search query or switching category filters.
+      </div>
+    </section>
+
+    <section id="submit-tool" class="submit-banner">
+      <div>
+        <h2>Want your privacy-first EU B2B or dev tool listed?</h2>
+        <p>Submit an open-source utility, EU compliance resource, or developer tool for editorial review.</p>
+      </div>
+      <a class="cta-btn" href="mailto:b2apps.dev@gmail.com?subject=Directory%20Listing%20Submission%20-%20EU%20B2B%20Tools">
+        Submit Listing &rarr;
+      </a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="disclaimer-box" role="note">
+        <strong>Disclaimer:</strong> Educational &amp; directory resource only; not financial, tax, or legal advice.
+        Verify VAT rules, tax obligations, and investment decisions with a qualified professional.
+      </div>
+      <div class="footer-meta">
+        <span>Maintained by <a href="https://b2appsdev-del.github.io/" target="_blank" rel="noopener noreferrer">B2 Apps</a></span>
+        <span><a href="./sitemap.xml">XML Sitemap</a> &middot; <a href="./robots.txt">robots.txt</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="./app.js"></script>
+</body>
+</html>
