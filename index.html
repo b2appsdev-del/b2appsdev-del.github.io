@@ -4,51 +4,144 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>B2 Apps — Free B2B &amp; EU Investor Tools</title>
-  <meta name="description" content="Free client-side B2B and EU retail investor tools by B2 Apps: EU VAT & Reverse-Charge Invoice Generator and UCITS ETF Overlap & TER Analyzer.">
+  <meta name="description" content="Free client-side B2B and EU retail investor tools by B2 Apps: EU VAT Invoicing, UCITS ETF Overlap, GDPR Cookie Policy Generator, Dividend Tax Drag Calculator, and Curated EU Dev Directory.">
   <link rel="canonical" href="https://b2appsdev-del.github.io/" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "B2 Apps — Free B2B & EU Investor Tools",
+    "url": "https://b2appsdev-del.github.io/",
+    "description": "Free client-side B2B and EU retail investor tools by B2 Apps.",
+    "hasPart": [
+      {
+        "@type": "WebApplication",
+        "name": "EU VAT & Reverse-Charge Invoice Generator",
+        "url": "https://b2appsdev-del.github.io/eu-vat-invoice-checker/",
+        "applicationCategory": "BusinessApplication"
+      },
+      {
+        "@type": "WebApplication",
+        "name": "UCITS ETF Overlap & TER Analyzer",
+        "url": "https://b2appsdev-del.github.io/ucits-etf-analyzer/",
+        "applicationCategory": "FinanceApplication"
+      },
+      {
+        "@type": "WebApplication",
+        "name": "GDPR Cookie Banner & Privacy Policy Generator",
+        "url": "https://b2appsdev-del.github.io/gdpr-cookie-privacy-generator/",
+        "applicationCategory": "BusinessApplication"
+      },
+      {
+        "@type": "WebApplication",
+        "name": "EU/US Dividend & Withholding Tax (WHT) Drag Calculator",
+        "url": "https://b2appsdev-del.github.io/dividend-withholding-tax-calculator/",
+        "applicationCategory": "FinanceApplication"
+      },
+      {
+        "@type": "CollectionPage",
+        "name": "EU B2B & Dev Tools Directory",
+        "url": "https://b2appsdev-del.github.io/directory/"
+      }
+    ]
+  }
+  <\/script>
   <style>
     body{font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:#0f172a;color:#e2e8f0;margin:0;padding:40px 20px;line-height:1.6}
-    .wrap{max-width:860px;margin:0 auto}
-    h1{margin:0 0 8px;font-size:2rem;color:#fff}
-    .sub{color:#94a3b8;margin-bottom:28px}
+    .wrap{max-width:960px;margin:0 auto}
+    h1{margin:0 0 8px;font-size:2.2rem;color:#fff}
+    .sub{color:#94a3b8;margin-bottom:28px;font-size:1.05rem}
     .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
-    .card{background:#1e293b;border:1px solid #334155;border-radius:12px;padding:22px}
+    .card{background:#1e293b;border:1px solid #334155;border-radius:12px;padding:22px;display:flex;flex-direction:column;justify-content:space-between}
     .card h2{margin:0 0 8px;font-size:1.2rem;color:#38bdf8}
-    .card p{margin:0 0 16px;color:#cbd5e1;font-size:.95rem}
-    a.btn{display:inline-block;background:#0284c7;color:#fff;text-decoration:none;padding:9px 14px;border-radius:8px;font-weight:600;font-size:.9rem}
+    .card p{margin:0 0 16px;color:#cbd5e1;font-size:.95rem;flex-grow:1}
+    a.btn{display:inline-block;background:#0284c7;color:#fff;text-decoration:none;padding:9px 14px;border-radius:8px;font-weight:600;font-size:.9rem;text-align:center}
     a.btn:hover{background:#0369a1}
-    .disc{margin-top:32px;padding:14px;background:#1e293b;border-left:3px solid #f59e0b;border-radius:6px;font-size:.85rem;color:#cbd5e1}
+    a.btn-secondary{background:#334155;color:#e2e8f0}
+    a.btn-secondary:hover{background:#475569}
+    .badge{display:inline-block;padding:2px 8px;border-radius:999px;font-size:0.75rem;font-weight:700;margin-bottom:8px;background:rgba(56,189,248,0.15);color:#38bdf8;border:1px solid rgba(56,189,248,0.3)}
+    .disc{margin-top:36px;padding:16px;background:#1e293b;border-left:3px solid #f59e0b;border-radius:6px;font-size:.85rem;color:#cbd5e1}
+    footer{margin-top:40px;padding-top:20px;border-top:1px solid #334155;color:#64748b;font-size:.85rem;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
   </style>
 </head>
 <body>
   <div class="wrap">
-    <h1>B2 Apps — Free Web Tools</h1>
-    <p class="sub">Privacy-first, 100% client-side tools for EU freelancers, agencies, and retail ETF investors.</p>
+    <h1>B2 Apps — Free Web Tools &amp; Utilities</h1>
+    <p class="sub">Privacy-first, 100% client-side tools for EU freelancers, bootstrappers, digital agencies, and retail ETF investors.</p>
+    
     <div class="grid">
       <div class="card">
-        <h2>EU VAT &amp; Reverse-Charge Invoice Generator</h2>
-        <p>Instant EU B2B/B2C VAT calculation across 27 member states, Article 196 Reverse Charge notes, live VAT format check, PDF print, and CSV export.</p>
-        <a class="btn" href="./eu-vat-invoice-checker/">Open Invoice Generator →</a>
+        <div>
+          <span class="badge">B2B TAX</span>
+          <h2>EU VAT &amp; Reverse-Charge Invoice Generator</h2>
+          <p>Instant EU B2B/B2C VAT calculation across 27 member states, Article 196 Reverse Charge notes, live VIES VAT format check, PDF print, and CSV export.</p>
+        </div>
+        <a class="btn" href="./eu-vat-invoice-checker/">Open Invoice Generator &rarr;</a>
       </div>
+
       <div class="card">
-        <h2>UCITS ETF Overlap &amp; TER Analyzer</h2>
-        <p>Analyze weighted TER, pairwise ETF overlap, top shared holdings, geographic/sector exposure, and 10/20-year fee drag with custom CSV import.</p>
-        <a class="btn" href="./ucits-etf-analyzer/">Open ETF Analyzer →</a>
+        <div>
+          <span class="badge">FINANCE</span>
+          <h2>UCITS ETF Overlap &amp; TER Analyzer</h2>
+          <p>Analyze weighted TER, pairwise ETF overlap, top shared holdings, geographic/sector exposure, and 10/20-year fee drag with custom CSV import.</p>
+        </div>
+        <a class="btn" href="./ucits-etf-analyzer/">Open ETF Analyzer &rarr;</a>
       </div>
+
       <div class="card">
-        <h2>Public Sitemap &amp; SEO Meta Auditor (Apify)</h2>
-        <p>Automated technical SEO crawler on Apify Store: checks HTTP status, canonicals, meta descriptions, title length, H1s, and robots.txt.</p>
-        <a class="btn" href="https://apify.com/b2apps/public-sitemap-seo-auditor" target="_blank" rel="noopener">Run on Apify Store →</a>
+        <div>
+          <span class="badge">LEGAL &amp; PRIVACY</span>
+          <h2>GDPR Cookie Banner &amp; Privacy Policy Generator</h2>
+          <p>Generate zero-dependency, vanilla JS GDPR cookie consent banners and compliant privacy policies for SaaS, e-commerce, and client sites with export.</p>
+        </div>
+        <a class="btn" href="./gdpr-cookie-privacy-generator/">Open GDPR Generator &rarr;</a>
       </div>
+
       <div class="card">
-        <h2>B2 Apps Pro Kits &amp; Automation Packs</h2>
-        <p>Upgrade with downloadable Excel/CSV calculators, n8n/Make AI workflow packs, and developer utilities on Gumroad.</p>
-        <a class="btn" href="https://devbloom12.gumroad.com/" target="_blank" rel="noopener">Explore Pro Suite →</a>
+        <div>
+          <span class="badge">FINANCE &amp; TAX</span>
+          <h2>EU/US Dividend &amp; Withholding Tax (WHT) Drag Calculator</h2>
+          <p>Compare US ETF 30% statutory WHT vs 15% W-8BEN against Irish UCITS Distributing &amp; Accumulating ETFs with multi-year DRIP compounding &amp; CSV export.</p>
+        </div>
+        <a class="btn" href="./dividend-withholding-tax-calculator/">Open WHT Drag Calculator &rarr;</a>
+      </div>
+
+      <div class="card">
+        <div>
+          <span class="badge">CURATED DIRECTORY</span>
+          <h2>EU B2B &amp; Dev Tools Directory</h2>
+          <p>Curated showcase of 23+ GDPR-compliant, privacy-first EU dev tools, invoicing solutions, hosting, and compliance infrastructure with live search &amp; category filters.</p>
+        </div>
+        <a class="btn" href="./directory/">Explore Directory &rarr;</a>
+      </div>
+
+      <div class="card">
+        <div>
+          <span class="badge">APIFY ACTOR</span>
+          <h2>Public JSON-LD &amp; Schema Validator</h2>
+          <p>Automated serverless JSON-LD schema auditor checking Schema.org compliance, Google Rich Results validity, and Open Graph tags across entire sitemaps.</p>
+        </div>
+        <a class="btn btn-secondary" href="https://apify.com/b2apps/public-jsonld-schema-validator" target="_blank" rel="noopener noreferrer">View on Apify &rarr;</a>
+      </div>
+
+      <div class="card">
+        <div>
+          <span class="badge">APIFY ACTOR</span>
+          <h2>Public Sitemap &amp; SEO Meta Auditor</h2>
+          <p>Extract, crawl, and validate public sitemaps with deep SEO checks: canonical tags, indexability, H1s, OpenGraph tags, and HTTP status codes.</p>
+        </div>
+        <a class="btn btn-secondary" href="https://apify.com/b2apps/public-sitemap-seo-auditor" target="_blank" rel="noopener noreferrer">View on Apify &rarr;</a>
       </div>
     </div>
+
     <div class="disc">
-      <strong>Disclaimer:</strong> All tools are educational and planning utilities only; they do not constitute financial, tax, investment, or legal advice. Support: <a href="mailto:b2apps.dev@gmail.com" style="color:#38bdf8">b2apps.dev@gmail.com</a>
+      <strong>Privacy &amp; Client-Side Execution:</strong> All web applications run 100% locally inside your web browser. No portfolio, invoice, or client data is ever transmitted to or stored on our servers.
     </div>
+
+    <footer>
+      <span>&copy; 2026 B2 Apps. All tools are open &amp; free.</span>
+      <span>Hosted on GitHub Pages &bull; <a href="https://github.com/b2appsdev-del/b2appsdev-del.github.io" style="color:#94a3b8">GitHub Repo</a></span>
+    </footer>
   </div>
 </body>
 </html>
