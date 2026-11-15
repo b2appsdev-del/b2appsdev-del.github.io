@@ -1,17 +1,28 @@
 # B2 Apps — Privacy-First EU B2B, SEO & Investor Tools
-> Zero-backend, browser-local utilities, MCP servers, Apify Actors, Framer plugins, VS Code extensions, and Excel/n8n packs for European founders, developers, and retail investors.
+> Zero-backend, browser-local utilities, MCP servers, Apify Actors, and Gumroad PWYW / Pro packs for European founders, developers, and retail investors.
 
 ## Core Web Tools (100% Client-Side)
-- [EU VAT & Reverse-Charge Invoice Checker](https://b2appsdev-del.github.io/eu-vat-invoice-checker/): Validate EU VAT IDs and reverse-charge rules.
-- [GDPR Cookie Banner & Privacy Policy Generator](https://b2appsdev-del.github.io/gdpr-cookie-privacy-generator/): Generate GDPR/ePrivacy banners and policies.
+- [EU VAT & Reverse-Charge Invoice Checker](https://b2appsdev-del.github.io/eu-vat-invoice-checker/): Validate EU VAT IDs, VIES status, and cross-border B2B invoicing rules.
+- [GDPR Cookie Banner & Privacy Policy Generator](https://b2appsdev-del.github.io/gdpr-cookie-privacy-generator/): Generate GDPR/ePrivacy compliant cookie banners, policies, and consent records.
 - [LLMs.txt & AI Bot Policy Generator](https://b2appsdev-del.github.io/llms-txt-generator/): Generate /llms.txt, /llms-full.txt, and AI crawler robots.txt.
-- [UCITS ETF Overlap & TER Analyzer](https://b2appsdev-del.github.io/ucits-etf-analyzer/): Compare UCITS ETF holdings overlap and weighted TER.
-- [EU/US Dividend & Withholding Tax (WHT) Drag Calculator](https://b2appsdev-del.github.io/dividend-withholding-tax-calculator/): Model W-8BEN and UCITS dividend drag.
-- [EU B2B & Developer Tools Directory](https://b2appsdev-del.github.io/directory/): 37 curated privacy-first tools and Pro packs.
+- [UCITS ETF Overlap & TER Analyzer](https://b2appsdev-del.github.io/ucits-etf-analyzer/): Compare UCITS ETF holdings overlap, factor concentration, and weighted TER.
+- [EU/US Dividend & Withholding Tax (WHT) Drag Calculator](https://b2appsdev-del.github.io/dividend-withholding-tax-calculator/): Model W-8BEN and UCITS dividend withholding tax drag across European jurisdictions.
+- [EU B2B & Developer Tools Directory](https://b2appsdev-del.github.io/directory/): Curated directory of 37+ privacy-first tools, open-source kits, and Pro packs.
 
-## Model Context Protocol (MCP) Servers & Apify Actors
-- [EU VAT & VIES Audit MCP Server](https://github.com/b2appsdev-del/eu-vat-vies-mcp)
-- [JSON-LD & SEO Audit MCP Server](https://github.com/b2appsdev-del/jsonld-seo-audit-mcp)
-- [Public Sitemap & SEO Meta Auditor Actor](https://apify.com/b2apps/public-sitemap-seo-auditor)
-- [Public JSON-LD & Schema.org Validator Actor](https://apify.com/b2apps/public-jsonld-schema-validator)
-- [Public LLMs.txt & AI Search Readiness Auditor Actor](https://apify.com/b2apps/public-llms-txt-auditor)
+## Model Context Protocol (MCP) Servers
+- [EU VAT & VIES Audit MCP Server](https://github.com/b2appsdev-del/eu-vat-vies-mcp): Autonomous MCP tool for VIES validation, VAT calculation, and cross-border EU B2B rules.
+- [JSON-LD & SEO Audit MCP Server](https://github.com/b2appsdev-del/jsonld-seo-audit-mcp): Autonomous MCP server for validating Schema.org markup, Rich Results readiness, and SEO audits.
+- [GDPR & RoPA Audit MCP Server](https://github.com/b2appsdev-del/gdpr-ropa-audit-mcp): Autonomous MCP server for auditing GDPR compliance, cookie consent, and Article 30 Records of Processing Activities.
+
+## Apify Actors
+- [Public Sitemap & SEO Meta Auditor Actor](https://apify.com/b2apps/public-sitemap-seo-auditor): Deep crawler for XML sitemaps, canonicals, status codes, and meta tags.
+- [Public JSON-LD & Schema.org Validator Actor](https://apify.com/b2apps/public-jsonld-schema-validator): Automated crawler validating Structured Data across full domains.
+- [Public LLMs.txt & AI Search Readiness Auditor Actor](https://apify.com/b2apps/public-llms-txt-auditor): Audit website discoverability for AI search engines and crawler policies.
+
+## Commercial & Pro Packs ($0+ PWYW / Pro)
+- [EU VAT / B2B SaaS Invoicing Compliance Pack ($0+ PWYW / Pro)](https://devbloom12.gumroad.com/l/fgeokd): Invoicing templates, reverse-charge checklists, VIES edge cases, and automated audit workflows.
+- [GDPR & ePrivacy RoPA Compliance Kit ($0+ PWYW / Pro)](https://devbloom12.gumroad.com/l/fynlyw): Article 30 RoPA templates, cookie audit log sheets, DPA checklists, and consent workflows.
+- [UCITS ETF Portfolio & Tax Drag Master Toolkit ($0+ PWYW / Pro)](https://devbloom12.gumroad.com/l/umkclc): Portfolio rebalancing sheets, dividend withholding tax drag matrix, and factor overlap models.
+
+## Educational Disclaimer
+Educational and informational purposes only. None of the tools, MCP servers, actors, templates, or packs constitute legal, tax, or financial investment advice. Consult qualified local legal counsel and certified tax advisors in your relevant jurisdiction before relying on outputs for formal statutory compliance.
