@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>B2 Apps — Free B2B & EU Investor Tools</title>
-  <meta name="description" content="Free client-side B2B and EU retail investor tools by B2 Apps: EU VAT Invoicing, UCITS ETF Overlap, GDPR Cookie Policy Generator, Dividend Tax Drag Calculator, and Curated EU Dev Directory.">
+  <title>B2 Apps — Free B2B, EU Investor Tools & MCP Servers</title>
+  <meta name="description" content="Free client-side B2B and EU retail investor tools, MCP servers, Apify actors, and Gumroad kits: EU VAT Invoicing, UCITS ETF Overlap, GDPR Cookie Policy Generator, Dividend Tax Drag Calculator, and llms.txt.">
   <link rel="canonical" href="https://b2appsdev-del.github.io/">
   <script type="application/ld+json">
   {
@@ -12,7 +12,7 @@
     "@type": "CollectionPage",
     "name": "B2 Apps — Free B2B & EU Investor Tools",
     "url": "https://b2appsdev-del.github.io/",
-    "description": "Free client-side B2B and EU retail investor tools by B2 Apps.",
+    "description": "Free client-side B2B and EU retail investor tools, MCP servers, and automation kits by B2 Apps.",
     "hasPart": [
       {
         "@type": "WebApplication",
@@ -39,6 +39,12 @@
         "applicationCategory": "FinanceApplication"
       },
       {
+        "@type": "WebApplication",
+        "name": "llms.txt Generator & Validator",
+        "url": "https://b2appsdev-del.github.io/llms-txt-generator/",
+        "applicationCategory": "DeveloperApplication"
+      },
+      {
         "@type": "CollectionPage",
         "name": "EU B2B & Dev Tools Directory",
         "url": "https://b2appsdev-del.github.io/directory/"
@@ -48,32 +54,42 @@
   </script>
   <style>
     body{font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:#0f172a;color:#e2e8f0;margin:0;padding:40px 20px;line-height:1.6}
-    .wrap{max-width:960px;margin:0 auto}
+    .wrap{max-width:1080px;margin:0 auto}
     h1{margin:0 0 8px;font-size:2.2rem;color:#fff}
     .sub{color:#94a3b8;margin-bottom:28px;font-size:1.05rem}
-    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
+    .section-title{font-size:1.35rem;font-weight:700;color:#f8fafc;margin:36px 0 16px;border-bottom:1px solid #334155;padding-bottom:8px;display:flex;align-items:center;gap:10px}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(310px,1fr));gap:20px}
     .card{background:#1e293b;border:1px solid #334155;border-radius:12px;padding:22px;display:flex;flex-direction:column;justify-content:space-between}
-    .card h2{margin:0 0 8px;font-size:1.2rem;color:#38bdf8}
-    .card p{margin:0 0 16px;color:#cbd5e1;font-size:.95rem;flex-grow:1}
-    a.btn{display:inline-block;background:#0284c7;color:#fff;text-decoration:none;padding:9px 14px;border-radius:8px;font-weight:600;font-size:.9rem;text-align:center}
+    .card h2, .card h3{margin:0 0 8px;font-size:1.18rem;color:#38bdf8}
+    .card p{margin:0 0 16px;color:#cbd5e1;font-size:.92rem;flex-grow:1}
+    a.btn{display:inline-block;background:#0284c7;color:#fff;text-decoration:none;padding:9px 14px;border-radius:8px;font-weight:600;font-size:.88rem;text-align:center}
     a.btn:hover{background:#0369a1}
     a.btn-secondary{background:#334155;color:#e2e8f0}
     a.btn-secondary:hover{background:#475569}
-    .badge{display:inline-block;background:#38bdf822;color:#38bdf8;padding:3px 8px;border-radius:6px;font-size:.75rem;font-weight:600;margin-bottom:8px;width:fit-content}
-    footer{margin-top:40px;color:#64748b;font-size:.85rem;border-top:1px solid #334155;padding-top:20px;text-align:center}
+    a.btn-gumroad{background:#f43f5e;color:#fff}
+    a.btn-gumroad:hover{background:#e11d48}
+    .badge{display:inline-block;padding:3px 8px;border-radius:6px;font-size:.72rem;font-weight:600;margin-bottom:8px;width:fit-content}
+    .badge-app{background:#38bdf822;color:#38bdf8}
+    .badge-kit{background:#f43f5e22;color:#fb7185}
+    .badge-mcp{background:#a855f722;color:#c084fc}
+    .badge-apify{background:#10b98122;color:#34d399}
+    footer{margin-top:48px;color:#64748b;font-size:.85rem;border-top:1px solid #334155;padding-top:24px;text-align:center}
     footer a{color:#38bdf8;text-decoration:none}
+    .disclaimer-banner{background:#1e293b;border:1px dashed #475569;border-radius:8px;padding:12px 16px;color:#94a3b8;font-size:.82rem;margin-top:32px;text-align:center}
   </style>
 </head>
 <body>
   <div class="wrap">
     <h1>B2 Apps</h1>
-    <p class="sub">Free, privacy-friendly, client-side tools and Apify actors for European cross-border SaaS, investors &amp; webmasters.</p>
+    <p class="sub">Free, privacy-friendly, client-side tools, MCP servers, and automation kits for European cross-border SaaS, investors &amp; webmasters.</p>
 
+    <!-- 1. Free Web Applications -->
+    <h2 class="section-title">Free Client-Side Tools</h2>
     <div class="grid">
       <div class="card">
         <div>
-          <span class="badge">Web App</span>
-          <h2>EU VAT &amp; Reverse-Charge Invoice Generator</h2>
+          <span class="badge badge-app">Free Web App</span>
+          <h3>EU VAT &amp; Reverse-Charge Invoice Generator</h3>
           <p>Instant client-side EU B2B cross-border reverse-charge compliant invoicing. Validates VIES formats and generates clean printable/PDF invoices.</p>
         </div>
         <a class="btn" href="./eu-vat-invoice-checker/">Open VAT Generator &rarr;</a>
@@ -81,8 +97,8 @@
 
       <div class="card">
         <div>
-          <span class="badge">Web App</span>
-          <h2>UCITS ETF Overlap &amp; TER Analyzer</h2>
+          <span class="badge badge-app">Free Web App</span>
+          <h3>UCITS ETF Overlap &amp; TER Analyzer</h3>
           <p>Analyze holding overlap and weighted expense ratios across European UCITS ETFs. 100% private in-browser analysis.</p>
         </div>
         <a class="btn" href="./ucits-etf-analyzer/">Open ETF Analyzer &rarr;</a>
@@ -90,8 +106,8 @@
 
       <div class="card">
         <div>
-          <span class="badge">Web App</span>
-          <h2>GDPR Cookie Banner &amp; Policy Generator</h2>
+          <span class="badge badge-app">Free Web App</span>
+          <h3>GDPR Cookie Banner &amp; Policy Generator</h3>
           <p>Generate a zero-dependency, GDPR &amp; ePrivacy compliant cookie consent banner snippet and tailored privacy policy in seconds.</p>
         </div>
         <a class="btn" href="./gdpr-cookie-privacy-generator/">Open GDPR Generator &rarr;</a>
@@ -99,8 +115,8 @@
 
       <div class="card">
         <div>
-          <span class="badge">Web App</span>
-          <h2>Dividend &amp; Withholding Tax (WHT) Calculator</h2>
+          <span class="badge badge-app">Free Web App</span>
+          <h3>Dividend &amp; Withholding Tax (WHT) Calculator</h3>
           <p>Compare Ireland UCITS vs US-domiciled vs synthetic dividend leakage with compound DRIP drag projections for EU investors.</p>
         </div>
         <a class="btn" href="./dividend-withholding-tax-calculator/">Open WHT Calculator &rarr;</a>
@@ -108,17 +124,92 @@
 
       <div class="card">
         <div>
-          <span class="badge">Directory</span>
-          <h2>EU B2B &amp; Dev Tools Directory</h2>
-          <p>Curated list of 23+ essential EU-compliant dev tools, VAT APIs, analytics, payment gateways, and cloud providers.</p>
+          <span class="badge badge-app">Free Web App</span>
+          <h3>llms.txt Generator &amp; Validator</h3>
+          <p>Generate, format, and validate /llms.txt and /llms-full.txt files to optimize web documentation for LLMs and AI crawlers.</p>
         </div>
-        <a class="btn" href="./directory/">Browse Directory &rarr;</a>
+        <a class="btn" href="./llms-txt-generator/">Open llms.txt Generator &rarr;</a>
       </div>
 
       <div class="card">
         <div>
-          <span class="badge">Apify Actor</span>
-          <h2>Public Sitemap &amp; SEO Meta Auditor</h2>
+          <span class="badge badge-app">Free Directory</span>
+          <h3>EU B2B &amp; Dev Tools Directory</h3>
+          <p>Curated list of 23+ essential EU-compliant dev tools, VAT APIs, analytics, payment gateways, and cloud providers.</p>
+        </div>
+        <a class="btn" href="./directory/">Browse Directory &rarr;</a>
+      </div>
+    </div>
+
+    <!-- 2. Gumroad $0+ PWYW Lead Magnets & Pro Packs -->
+    <h2 class="section-title">Gumroad $0+ PWYW Packs &amp; Toolkits</h2>
+    <div class="grid">
+      <div class="card">
+        <div>
+          <span class="badge badge-kit">$0+ PWYW / $19 Pro</span>
+          <h3>EU VAT &amp; Cross-Border Invoicing Toolkit</h3>
+          <p>Complete B2B reverse-charge compliance kit: Excel/Notion templates, 27 EU member rate tables, VIES audit log, and multi-currency calculator.</p>
+        </div>
+        <a class="btn btn-gumroad" href="https://devbloom12.gumroad.com/l/umkclc" target="_blank" rel="noopener">Get Toolkit on Gumroad &rarr;</a>
+      </div>
+
+      <div class="card">
+        <div>
+          <span class="badge badge-kit">$0+ PWYW / $29 Pro</span>
+          <h3>UCITS ETF Portfolio &amp; Tax Drag Template</h3>
+          <p>Comprehensive portfolio rebalancer, 15% vs 30% US dividend withholding tax leakage model, and multi-currency cost tracker.</p>
+        </div>
+        <a class="btn btn-gumroad" href="https://devbloom12.gumroad.com/l/fynlyw" target="_blank" rel="noopener">Get Template on Gumroad &rarr;</a>
+      </div>
+
+      <div class="card">
+        <div>
+          <span class="badge badge-kit">$0+ PWYW / $29 Pro</span>
+          <h3>GDPR Cookie &amp; ROPA Compliance Kit</h3>
+          <p>Article 30 Record of Processing Activities (ROPA) spreadsheet, Data Protection Impact Assessment (DPIA) template, and multi-language banners.</p>
+        </div>
+        <a class="btn btn-gumroad" href="https://devbloom12.gumroad.com/l/fgeokd" target="_blank" rel="noopener">Get Kit on Gumroad &rarr;</a>
+      </div>
+    </div>
+
+    <!-- 3. Model Context Protocol (MCP) Servers -->
+    <h2 class="section-title">Model Context Protocol (MCP) Servers</h2>
+    <div class="grid">
+      <div class="card">
+        <div>
+          <span class="badge badge-mcp">Open Source MCP</span>
+          <h3>EU VAT VIES Validation MCP Server</h3>
+          <p>Standard Model Context Protocol server for Claude &amp; Cursor to validate EU VAT numbers via official EC VIES and verify reverse-charge eligibility.</p>
+        </div>
+        <a class="btn btn-secondary" href="https://github.com/b2appsdev-del/eu-vat-vies-mcp" target="_blank" rel="noopener">View on GitHub &rarr;</a>
+      </div>
+
+      <div class="card">
+        <div>
+          <span class="badge badge-mcp">Open Source MCP</span>
+          <h3>JSON-LD SEO Schema Audit MCP Server</h3>
+          <p>MCP server enabling AI assistants to extract, validate, and audit schema.org JSON-LD structured data and Google Rich Results compliance.</p>
+        </div>
+        <a class="btn btn-secondary" href="https://github.com/b2appsdev-del/jsonld-seo-audit-mcp" target="_blank" rel="noopener">View on GitHub &rarr;</a>
+      </div>
+
+      <div class="card">
+        <div>
+          <span class="badge badge-mcp">Open Source MCP</span>
+          <h3>GDPR ROPA Compliance Audit MCP Server</h3>
+          <p>MCP server providing Article 30 ROPA verification, lawful basis checking, and DPIA trigger evaluation directly inside AI coding workflows.</p>
+        </div>
+        <a class="btn btn-secondary" href="https://github.com/b2appsdev-del/gdpr-ropa-audit-mcp" target="_blank" rel="noopener">View on GitHub &rarr;</a>
+      </div>
+    </div>
+
+    <!-- 4. Apify Serverless Actors -->
+    <h2 class="section-title">Apify Serverless Actors</h2>
+    <div class="grid">
+      <div class="card">
+        <div>
+          <span class="badge badge-apify">Apify Actor</span>
+          <h3>Public Sitemap &amp; SEO Meta Auditor</h3>
           <p>Serverless high-speed crawler that validates sitemap XML, discovers broken links, checks HTTP status codes, canonical tags, and OpenGraph metadata.</p>
         </div>
         <a class="btn btn-secondary" href="https://apify.com/b2apps/public-sitemap-seo-auditor" target="_blank" rel="noopener">Run on Apify &rarr;</a>
@@ -126,16 +217,20 @@
 
       <div class="card">
         <div>
-          <span class="badge">Apify Actor</span>
-          <h2>Public JSON-LD &amp; Schema.org Validator</h2>
+          <span class="badge badge-apify">Apify Actor</span>
+          <h3>Public JSON-LD &amp; Schema.org Validator</h3>
           <p>Crawls public URLs and validates embedded schema.org JSON-LD structured data against Google Rich Result &amp; Schema.org specifications.</p>
         </div>
         <a class="btn btn-secondary" href="https://apify.com/b2apps/public-jsonld-schema-validator" target="_blank" rel="noopener">Run on Apify &rarr;</a>
       </div>
     </div>
 
+    <div class="disclaimer-banner">
+      Educational and informational tools only; not tax, legal, financial, or regulatory compliance advice. Always verify with certified professionals.
+    </div>
+
     <footer>
-      &copy; 2026 B2 Apps &middot; <a href="https://github.com/b2appsdev-del">GitHub</a> &middot; Built for builders &amp; investors.
+      &copy; 2026 B2 Apps &middot; <a href="https://github.com/b2appsdev-del">GitHub Organization</a> &middot; <a href="/sitemap.xml">Sitemap</a> &middot; <a href="/llms.txt">llms.txt</a> &middot; Built for builders &amp; investors.
     </footer>
   </div>
 </body>
