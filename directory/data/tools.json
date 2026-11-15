@@ -18,7 +18,13 @@
       "featured": true,
       "privacyFirst": true,
       "description": "Client-side EU VAT & reverse-charge invoice generator with member-state rate presets, VAT ID format checks, and zero data leaving your browser.",
-      "tags": ["eu vat", "reverse charge", "invoice", "freelancer", "privacy-first"],
+      "tags": [
+        "eu vat",
+        "reverse charge",
+        "invoice",
+        "freelancer",
+        "privacy-first"
+      ],
       "url": "https://b2appsdev-del.github.io/eu-vat-invoice-checker/"
     },
     {
@@ -31,7 +37,14 @@
       "featured": true,
       "privacyFirst": true,
       "description": "Analyze UCITS ETF portfolio overlap, weighted Total Expense Ratio (TER), and regional/sector weights locally in your browser.",
-      "tags": ["ucits", "etf", "ter", "overlap", "eu investing", "privacy-first"],
+      "tags": [
+        "ucits",
+        "etf",
+        "ter",
+        "overlap",
+        "eu investing",
+        "privacy-first"
+      ],
       "url": "https://b2appsdev-del.github.io/ucits-etf-analyzer/"
     },
     {
@@ -44,7 +57,12 @@
       "featured": true,
       "privacyFirst": true,
       "description": "Central hub for B2 Apps zero-tracking web calculators, EU compliance helpers, and developer utilities built for freelancers and lean teams.",
-      "tags": ["b2 apps", "web tools", "privacy-first", "calculators"],
+      "tags": [
+        "b2 apps",
+        "web tools",
+        "privacy-first",
+        "calculators"
+      ],
       "url": "https://b2appsdev-del.github.io/"
     },
     {
@@ -57,7 +75,14 @@
       "featured": true,
       "privacyFirst": true,
       "description": "Automated Apify Actor that crawls XML sitemaps and audits title length, meta descriptions, canonicals, H1 count, and HTTP status codes.",
-      "tags": ["apify", "seo", "sitemap", "canonical", "audit", "automation"],
+      "tags": [
+        "apify",
+        "seo",
+        "sitemap",
+        "canonical",
+        "audit",
+        "automation"
+      ],
       "url": "https://apify.com/b2apps/public-sitemap-seo-auditor"
     },
     {
@@ -70,7 +95,14 @@
       "featured": true,
       "privacyFirst": true,
       "description": "4 production-ready n8n & Make blueprints to sync Stripe and Gumroad payouts, fees, and tax reserves into Notion and Google Sheets.",
-      "tags": ["n8n", "make", "stripe", "gumroad", "notion", "finance ops"],
+      "tags": [
+        "n8n",
+        "make",
+        "stripe",
+        "gumroad",
+        "notion",
+        "finance ops"
+      ],
       "url": "https://devbloom12.gumroad.com/l/fgeokd"
     },
     {
@@ -83,7 +115,13 @@
       "featured": true,
       "privacyFirst": true,
       "description": "3 self-hostable n8n workflows for Shopify order alerts, low-stock monitoring, and automated customer fulfillment tagging.",
-      "tags": ["shopify", "n8n", "automation", "ecommerce", "webhooks"],
+      "tags": [
+        "shopify",
+        "n8n",
+        "automation",
+        "ecommerce",
+        "webhooks"
+      ],
       "url": "https://devbloom12.gumroad.com/l/bioroy"
     },
     {
@@ -96,7 +134,13 @@
       "featured": true,
       "privacyFirst": true,
       "description": "Complete Excel/Sheets operating system for EU freelancers and solo agencies to model day rates, VAT/income tax reserves, and runway.",
-      "tags": ["freelancer", "cashflow", "tax reserve", "rate calculator", "excel"],
+      "tags": [
+        "freelancer",
+        "cashflow",
+        "tax reserve",
+        "rate calculator",
+        "excel"
+      ],
       "url": "https://devbloom12.gumroad.com/l/nlahdt"
     },
     {
@@ -109,7 +153,14 @@
       "featured": true,
       "privacyFirst": true,
       "description": "Model true unit economics including COGS, payment gateway fees, shipping, VAT, and break-even ROAS before scaling ad spend.",
-      "tags": ["shopify", "profit", "margin", "roas", "ecommerce", "calculator"],
+      "tags": [
+        "shopify",
+        "profit",
+        "margin",
+        "roas",
+        "ecommerce",
+        "calculator"
+      ],
       "url": "https://devbloom12.gumroad.com/l/dyjrry"
     },
     {
@@ -122,7 +173,14 @@
       "featured": true,
       "privacyFirst": true,
       "description": "Prevent API key and .env leaks across teams with ready-to-drop pre-commit hooks, GitHub Actions workflows, and secret policy templates.",
-      "tags": ["envguard", "secrets", "security", "github actions", "pre-commit", "devsecops"],
+      "tags": [
+        "envguard",
+        "secrets",
+        "security",
+        "github actions",
+        "pre-commit",
+        "devsecops"
+      ],
       "url": "https://devbloom12.gumroad.com/l/bjsxn"
     },
     {
@@ -135,7 +193,14 @@
       "featured": true,
       "privacyFirst": true,
       "description": "Offline Excel workbook and CSV templates to project long-term TER fee drag, dividend withholding impact, and portfolio rebalancing.",
-      "tags": ["ucits", "etf", "excel", "fee drag", "ter", "investing"],
+      "tags": [
+        "ucits",
+        "etf",
+        "excel",
+        "fee drag",
+        "ter",
+        "investing"
+      ],
       "url": "https://devbloom12.gumroad.com/l/kukkk"
     },
     {
@@ -148,8 +213,230 @@
       "featured": true,
       "privacyFirst": true,
       "description": "Step-by-step printable pre-flight audit covering EU legal pages, checkout taxes, speed, SEO metadata, and analytics before launch.",
-      "tags": ["shopify", "checklist", "launch", "audit", "pdf", "ecommerce"],
+      "tags": [
+        "shopify",
+        "checklist",
+        "launch",
+        "audit",
+        "pdf",
+        "ecommerce"
+      ],
       "url": "https://devbloom12.gumroad.com/l/umkclc"
+    },
+    {
+      "id": "framer-schemaflow-seo",
+      "name": "SchemaFlow SEO — Framer Marketplace Plugin",
+      "category": "Dev Security & SEO",
+      "pricing": "Free",
+      "tier": "free",
+      "badge": "Framer Plugin",
+      "featured": true,
+      "privacyFirst": true,
+      "description": "Generate, validate, and inject clean JSON-LD Schema.org structured data directly inside Framer projects for richer search snippets.",
+      "tags": [
+        "framer",
+        "schema.org",
+        "json-ld",
+        "seo",
+        "structured data"
+      ],
+      "url": "https://www.framer.com/marketplace/plugins/schemaflow-seo/"
+    },
+    {
+      "id": "apify-public-jsonld-schema-validator",
+      "name": "Public JSON-LD & Schema.org Validator (Apify Actor)",
+      "category": "Dev Security & SEO",
+      "pricing": "Free Tier",
+      "tier": "free",
+      "badge": "Apify Store",
+      "featured": true,
+      "privacyFirst": true,
+      "description": "Automated Apify Actor that extracts and validates JSON-LD & Schema.org structured data across public URLs and sitemaps.",
+      "tags": [
+        "apify",
+        "json-ld",
+        "schema.org",
+        "seo",
+        "validator",
+        "automation"
+      ],
+      "url": "https://apify.com/b2apps/public-jsonld-schema-validator"
+    },
+    {
+      "id": "b2-gdpr-cookie-privacy-generator",
+      "name": "GDPR Cookie Banner & Privacy Policy Generator",
+      "category": "Dev Security & SEO",
+      "pricing": "Free",
+      "tier": "free",
+      "badge": "B2 Apps Free Tool",
+      "featured": true,
+      "privacyFirst": true,
+      "description": "Client-side GDPR cookie consent banner and privacy policy generator for websites and SaaS apps. Educational template only; not legal advice.",
+      "tags": [
+        "gdpr",
+        "cookie banner",
+        "privacy policy",
+        "eu compliance",
+        "privacy-first"
+      ],
+      "url": "https://b2appsdev-del.github.io/gdpr-cookie-privacy-generator/"
+    },
+    {
+      "id": "b2-dividend-withholding-tax-calculator",
+      "name": "EU/US Dividend & Withholding Tax (WHT) Drag Calculator",
+      "category": "ETF & Investing",
+      "pricing": "Free",
+      "tier": "free",
+      "badge": "B2 Apps Free Tool",
+      "featured": true,
+      "privacyFirst": true,
+      "description": "Model treaty vs. statutory EU/US dividend withholding tax drag on ETFs and stocks locally in your browser. Educational tool only; not tax or investment advice.",
+      "tags": [
+        "dividend",
+        "withholding tax",
+        "wht",
+        "etf",
+        "eu investing",
+        "privacy-first"
+      ],
+      "url": "https://b2appsdev-del.github.io/dividend-withholding-tax-calculator/"
+    },
+    {
+      "id": "vscode-b2-apps-publisher",
+      "name": "B2 Apps VS Code Extensions (EnvGuard & JSON-LD Linter)",
+      "category": "Dev Security & SEO",
+      "pricing": "Free",
+      "tier": "free",
+      "badge": "VS Code Marketplace",
+      "featured": true,
+      "privacyFirst": true,
+      "description": "Official VS Code Marketplace publisher for EnvGuard (.env secret leak prevention) and JSON-LD & Schema.org Linter.",
+      "tags": [
+        "vscode",
+        "envguard",
+        "json-ld",
+        "schema.org",
+        "linter",
+        "security"
+      ],
+      "url": "https://marketplace.visualstudio.com/publishers/b2-apps"
+    },
+    {
+      "id": "gumroad-gdpr-ai-act-audit-kit",
+      "name": "EU GDPR & EU AI Act Compliance Audit Kit",
+      "category": "Dev Security & SEO",
+      "pricing": "$9",
+      "tier": "pro",
+      "badge": "Gumroad Pro",
+      "featured": true,
+      "privacyFirst": true,
+      "description": "Practical checklists, risk-tier worksheets, and vendor audit templates for EU GDPR and EU AI Act readiness. Educational resource only; not legal advice.",
+      "tags": [
+        "gdpr",
+        "eu ai act",
+        "compliance",
+        "audit",
+        "checklist"
+      ],
+      "url": "https://devbloom12.gumroad.com/l/fxcnyb"
+    },
+    {
+      "id": "gumroad-agency-retainer-sow-kit",
+      "name": "Agency Retainer & Scope-of-Work Proposal Kit",
+      "category": "Ecommerce & Automation",
+      "pricing": "$11",
+      "tier": "pro",
+      "badge": "Gumroad Pro",
+      "featured": true,
+      "privacyFirst": true,
+      "description": "Ready-to-customize agency retainer agreements, Scope-of-Work (SOW) templates, and change-request clauses to prevent scope creep. Not legal advice.",
+      "tags": [
+        "agency",
+        "retainer",
+        "sow",
+        "proposal",
+        "freelancer"
+      ],
+      "url": "https://devbloom12.gumroad.com/l/pafyvd"
+    },
+    {
+      "id": "gumroad-saas-mrr-runway-model",
+      "name": "SaaS MRR, Churn & Cash Runway Financial Model",
+      "category": "EU VAT & Tax",
+      "pricing": "$17",
+      "tier": "pro",
+      "badge": "Gumroad Pro",
+      "featured": true,
+      "privacyFirst": true,
+      "description": "Spreadsheet model for SaaS founders to forecast MRR, net dollar retention, churn, CAC payback, and cash runway. Educational planning tool only; not financial advice.",
+      "tags": [
+        "saas",
+        "mrr",
+        "churn",
+        "runway",
+        "financial model",
+        "excel"
+      ],
+      "url": "https://devbloom12.gumroad.com/l/saawqu"
+    },
+    {
+      "id": "gumroad-multicurrency-vat-tracker",
+      "name": "Multi-Currency Freelancer & EU VAT Profit Tracker",
+      "category": "EU VAT & Tax",
+      "pricing": "$14",
+      "tier": "pro",
+      "badge": "Gumroad Pro",
+      "featured": true,
+      "privacyFirst": true,
+      "description": "Track multi-currency client invoices, FX conversion, deductible expenses, and EU VAT obligations in one offline workbook. Educational tool only; not tax advice.",
+      "tags": [
+        "eu vat",
+        "multi-currency",
+        "freelancer",
+        "profit tracker",
+        "excel"
+      ],
+      "url": "https://devbloom12.gumroad.com/l/fynlyw"
+    },
+    {
+      "id": "gumroad-apify-seo-jsonld-n8n",
+      "name": "Apify SEO & JSON-LD Lead Enrichment n8n Pack",
+      "category": "Ecommerce & Automation",
+      "pricing": "$19",
+      "tier": "pro",
+      "badge": "Gumroad Pro",
+      "featured": true,
+      "privacyFirst": true,
+      "description": "Self-hostable n8n workflows connecting Apify SEO and JSON-LD Actors to enrich B2B leads and automate technical audit reports.",
+      "tags": [
+        "n8n",
+        "apify",
+        "seo",
+        "json-ld",
+        "lead enrichment",
+        "automation"
+      ],
+      "url": "https://devbloom12.gumroad.com/l/mpgkuo"
+    },
+    {
+      "id": "gumroad-creator-kpi-n8n",
+      "name": "Creator Gumroad & YouTube KPI Analytics n8n Pack",
+      "category": "Ecommerce & Automation",
+      "pricing": "$15",
+      "tier": "pro",
+      "badge": "Gumroad Pro",
+      "featured": true,
+      "privacyFirst": true,
+      "description": "Automated n8n workflows to sync Gumroad sales, YouTube channel KPIs, and conversion metrics into Notion or Google Sheets.",
+      "tags": [
+        "n8n",
+        "gumroad",
+        "youtube",
+        "analytics",
+        "kpi",
+        "automation"
+      ],
+      "url": "https://devbloom12.gumroad.com/l/fvdkbo"
     },
     {
       "id": "eu-vies-vat-validation",
@@ -161,7 +448,13 @@
       "featured": false,
       "privacyFirst": true,
       "description": "Official European Commission service to verify EU VAT registration numbers for cross-border B2B reverse-charge invoicing.",
-      "tags": ["vies", "eu vat", "official", "b2b", "compliance"],
+      "tags": [
+        "vies",
+        "eu vat",
+        "official",
+        "b2b",
+        "compliance"
+      ],
       "url": "https://ec.europa.eu/taxation_customs/vies/"
     },
     {
@@ -174,7 +467,13 @@
       "featured": false,
       "privacyFirst": true,
       "description": "Official EU Commission lookup for current standard, reduced, and super-reduced VAT rates across all 27 member states.",
-      "tags": ["tedb", "vat rates", "oss", "european commission", "tax"],
+      "tags": [
+        "tedb",
+        "vat rates",
+        "oss",
+        "european commission",
+        "tax"
+      ],
       "url": "https://ec.europa.eu/taxation_customs/tedb/"
     },
     {
@@ -187,7 +486,13 @@
       "featured": false,
       "privacyFirst": false,
       "description": "Low-fee EUR SEPA and multi-currency receiving accounts widely used by EU freelancers, agencies, and remote contractors.",
-      "tags": ["iban", "sepa", "fx", "freelancer", "invoicing"],
+      "tags": [
+        "iban",
+        "sepa",
+        "fx",
+        "freelancer",
+        "invoicing"
+      ],
       "url": "https://wise.com/business"
     },
     {
@@ -200,7 +505,13 @@
       "featured": false,
       "privacyFirst": false,
       "description": "Comprehensive European ETF database with ISIN lookup, TER comparison, fund domicile, replication method, and distribution policy.",
-      "tags": ["ucits", "isin", "etf screener", "europe", "ter"],
+      "tags": [
+        "ucits",
+        "isin",
+        "etf screener",
+        "europe",
+        "ter"
+      ],
       "url": "https://www.justetf.com/"
     },
     {
@@ -213,7 +524,12 @@
       "featured": false,
       "privacyFirst": false,
       "description": "Independent ETF screening, tracking difference metrics, and fund flow analytics for European and global index investors.",
-      "tags": ["etf", "tracking difference", "analytics", "investing"],
+      "tags": [
+        "etf",
+        "tracking difference",
+        "analytics",
+        "investing"
+      ],
       "url": "https://www.trackinsight.com/"
     },
     {
@@ -226,7 +542,13 @@
       "featured": false,
       "privacyFirst": true,
       "description": "Official daily European Central Bank FX reference rates used for EUR-denominated portfolio valuation and cross-border accounting.",
-      "tags": ["ecb", "fx", "eur", "reference rates", "official"],
+      "tags": [
+        "ecb",
+        "fx",
+        "eur",
+        "reference rates",
+        "official"
+      ],
       "url": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html"
     },
     {
@@ -239,7 +561,13 @@
       "featured": false,
       "privacyFirst": true,
       "description": "Security header scanner for HTTPS, Content Security Policy (CSP), HSTS, and cookie flags on developer websites and web apps.",
-      "tags": ["security", "csp", "hsts", "headers", "web"],
+      "tags": [
+        "security",
+        "csp",
+        "hsts",
+        "headers",
+        "web"
+      ],
       "url": "https://developer.mozilla.org/en-US/observatory"
     },
     {
@@ -252,7 +580,12 @@
       "featured": false,
       "privacyFirst": true,
       "description": "Official LCP, INP, CLS, and Lighthouse technical SEO diagnostics for static sites, SaaS landing pages, and ecommerce storefronts.",
-      "tags": ["core web vitals", "lighthouse", "seo", "performance"],
+      "tags": [
+        "core web vitals",
+        "lighthouse",
+        "seo",
+        "performance"
+      ],
       "url": "https://pagespeed.web.dev/"
     },
     {
@@ -265,7 +598,13 @@
       "featured": false,
       "privacyFirst": true,
       "description": "Fast SAST CLI for detecting hardcoded API keys, tokens, and credentials in Git commit history and CI/CD pipelines.",
-      "tags": ["gitleaks", "secrets", "git", "open source", "security"],
+      "tags": [
+        "gitleaks",
+        "secrets",
+        "git",
+        "open source",
+        "security"
+      ],
       "url": "https://github.com/gitleaks/gitleaks"
     },
     {
@@ -278,7 +617,13 @@
       "featured": false,
       "privacyFirst": true,
       "description": "Fair-code node-based automation platform that runs on your own EU server with native Shopify, Stripe, Notion, and webhook integrations.",
-      "tags": ["n8n", "self-hosted", "automation", "webhooks", "gdpr"],
+      "tags": [
+        "n8n",
+        "self-hosted",
+        "automation",
+        "webhooks",
+        "gdpr"
+      ],
       "url": "https://n8n.io/"
     },
     {
@@ -291,7 +636,13 @@
       "featured": false,
       "privacyFirst": true,
       "description": "Official API, Liquid, Checkout UI, and App Bridge documentation for building compliant Shopify stores and merchant apps.",
-      "tags": ["shopify", "api", "liquid", "ecommerce", "docs"],
+      "tags": [
+        "shopify",
+        "api",
+        "liquid",
+        "ecommerce",
+        "docs"
+      ],
       "url": "https://shopify.dev/"
     },
     {
@@ -304,7 +655,13 @@
       "featured": false,
       "privacyFirst": true,
       "description": "Lightweight, cookieless, GDPR-compliant web analytics hosted in the EU without intrusive cookie consent banners.",
-      "tags": ["analytics", "gdpr", "cookieless", "eu", "privacy-first"],
+      "tags": [
+        "analytics",
+        "gdpr",
+        "cookieless",
+        "eu",
+        "privacy-first"
+      ],
       "url": "https://plausible.io/"
     }
   ]
