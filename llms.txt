@@ -1,0 +1,17 @@
+# B2 Apps — Privacy-First EU B2B, SEO & Investor Tools
+> Zero-backend, browser-local utilities, MCP servers, Apify Actors, Framer plugins, VS Code extensions, and Excel/n8n packs for European founders, developers, and retail investors.
+
+## Core Web Tools (100% Client-Side)
+- [EU VAT & Reverse-Charge Invoice Checker](https://b2appsdev-del.github.io/eu-vat-invoice-checker/): Validate EU VAT IDs and reverse-charge rules.
+- [GDPR Cookie Banner & Privacy Policy Generator](https://b2appsdev-del.github.io/gdpr-cookie-privacy-generator/): Generate GDPR/ePrivacy banners and policies.
+- [LLMs.txt & AI Bot Policy Generator](https://b2appsdev-del.github.io/llms-txt-generator/): Generate /llms.txt, /llms-full.txt, and AI crawler robots.txt.
+- [UCITS ETF Overlap & TER Analyzer](https://b2appsdev-del.github.io/ucits-etf-analyzer/): Compare UCITS ETF holdings overlap and weighted TER.
+- [EU/US Dividend & Withholding Tax (WHT) Drag Calculator](https://b2appsdev-del.github.io/dividend-withholding-tax-calculator/): Model W-8BEN and UCITS dividend drag.
+- [EU B2B & Developer Tools Directory](https://b2appsdev-del.github.io/directory/): 37 curated privacy-first tools and Pro packs.
+
+## Model Context Protocol (MCP) Servers & Apify Actors
+- [EU VAT & VIES Audit MCP Server](https://github.com/b2appsdev-del/eu-vat-vies-mcp)
+- [JSON-LD & SEO Audit MCP Server](https://github.com/b2appsdev-del/jsonld-seo-audit-mcp)
+- [Public Sitemap & SEO Meta Auditor Actor](https://apify.com/b2apps/public-sitemap-seo-auditor)
+- [Public JSON-LD & Schema.org Validator Actor](https://apify.com/b2apps/public-jsonld-schema-validator)
+- [Public LLMs.txt & AI Search Readiness Auditor Actor](https://apify.com/b2apps/public-llms-txt-auditor)
