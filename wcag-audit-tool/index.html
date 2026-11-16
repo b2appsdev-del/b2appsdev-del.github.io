@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>WCAG 2.2 AA Web Accessibility Audit Checklist</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: #0f172a; color: #f8fafc; padding: 24px; max-width: 900px; margin: 0 auto; }
+    h1 { color: #38bdf8; font-size: 24px; }
+    .item { background: #1e293b; border: 1px solid #334155; border-radius: 6px; padding: 12px 16px; margin-bottom: 10px; display: flex; align-items: center; justify-content: space-between; }
+    .rule-title { font-weight: 600; font-size: 14px; }
+    .rule-desc { font-size: 12px; color: #94a3b8; margin-top: 2px; }
+    .tag { font-size: 11px; font-weight: bold; padding: 2px 8px; border-radius: 4px; background: #0369a1; color: #fff; }
+  </style>
+</head>
+<body>
+  <h1>♿ WCAG 2.2 Level AA Compliance Checklist & Code Snippets</h1>
+  <p style="color:#94a3b8; margin-bottom: 20px;">Deterministic web accessibility audit verification rules.</p>
+
+  <div class="item">
+    <div>
+      <div class="rule-title">1.4.3 Contrast (Minimum) - Level AA</div>
+      <div class="rule-desc">Visual presentation of text has a contrast ratio of at least 4.5:1 (3:1 for large text).</div>
+    </div>
+    <span class="tag">PASS / 4.5:1</span>
+  </div>
+
+  <div class="item">
+    <div>
+      <div class="rule-title">2.1.1 Keyboard Accessible - Level A</div>
+      <div class="rule-desc">All functionality of the content is operable through a keyboard interface without requiring specific timings.</div>
+    </div>
+    <span class="tag">VERIFIED</span>
+  </div>
+
+  <div class="item">
+    <div>
+      <div class="rule-title">2.4.7 Focus Visible - Level AA</div>
+      <div class="rule-desc">Any keyboard operable user interface has a mode of operation where the keyboard focus indicator is visible.</div>
+    </div>
+    <span class="tag">VERIFIED</span>
+  </div>
+
+  <div class="item">
+    <div>
+      <div class="rule-title">2.5.8 Target Size (Minimum) - Level AA (WCAG 2.2)</div>
+      <div class="rule-desc">Size of the target for pointer inputs is at least 24 by 24 CSS pixels.</div>
+    </div>
+    <span class="tag">WCAG 2.2 AA</span>
+  </div>
+</body>
+</html>

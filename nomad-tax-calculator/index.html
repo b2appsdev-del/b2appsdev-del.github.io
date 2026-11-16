@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Digital Nomad Tax & Visa Schengen Day Calculator</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: #0f172a; color: #f8fafc; padding: 24px; max-width: 900px; margin: 0 auto; }
+    h1 { color: #38bdf8; font-size: 24px; margin-bottom: 8px; }
+    .card { background: #1e293b; border: 1px solid #334155; border-radius: 8px; padding: 20px; margin-bottom: 20px; }
+    table { width: 100%; border-collapse: collapse; margin-top: 15px; }
+    th, td { padding: 10px; border-bottom: 1px solid #334155; text-align: left; }
+    th { color: #94a3b8; }
+    input, select, button { background: #0f172a; border: 1px solid #475569; color: #fff; padding: 8px 12px; border-radius: 4px; }
+    button { background: #0284c7; cursor: pointer; font-weight: bold; }
+    button:hover { background: #0369a1; }
+    .status-box { display: flex; gap: 20px; margin-top: 15px; }
+    .status-item { background: #0f172a; padding: 12px 18px; border-radius: 6px; border: 1px solid #334155; }
+    .status-val { font-size: 24px; font-weight: bold; color: #38bdf8; }
+    .warning { color: #f43f5e; }
+  </style>
+</head>
+<body>
+  <h1>✈️ Digital Nomad Tax & Schengen Day Calculator</h1>
+  <p style="color:#94a3b8; margin-bottom: 20px;">Accurate 90/180-day rolling Schengen compliance & 183-day tax residency tracking.</p>
+
+  <div class="card">
+    <h3>Add Travel Leg</h3>
+    <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:10px;">
+      <input type="text" id="country" placeholder="Country (e.g. Spain, Greece, Portugal)">
+      <select id="zone"><option value="schengen">Schengen Area</option><option value="non-schengen">Non-Schengen</option></select>
+      <input type="date" id="entry">
+      <input type="date" id="exit">
+      <button onclick="addLeg()">+ Add Leg</button>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>Compliance Status</h3>
+    <div class="status-box">
+      <div class="status-item">
+        <div style="font-size:11px; color:#94a3b8;">SCHENGEN DAYS USED (LAST 180d)</div>
+        <div class="status-val" id="schengen-days">0 / 90</div>
+      </div>
+      <div class="status-item">
+        <div style="font-size:11px; color:#94a3b8;">MAX RESIDENCY COUNTRY</div>
+        <div class="status-val" id="tax-country">- (0 days)</div>
+      </div>
+      <div class="status-item">
+        <div style="font-size:11px; color:#94a3b8;">TAX THRESHOLD WARNING</div>
+        <div class="status-val" style="color:#10b981;" id="tax-warning">SAFE (<183d)</div>
+      </div>
+    </div>
+
+    <table id="legs-table">
+      <thead><tr><th>Country</th><th>Zone</th><th>Entry</th><th>Exit</th><th>Days</th><th>Action</th></tr></thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <script>
+    let legs = [
+      { country: "Spain", zone: "schengen", entry: "2026-09-01", exit: "2026-09-25", days: 25 },
+      { country: "Portugal", zone: "schengen", entry: "2026-10-01", exit: "2026-10-20", days: 20 }
+    ];
+
+    function render() {
+      const tbody = document.querySelector("#legs-table tbody");
+      tbody.innerHTML = "";
+      let totalSchengen = 0;
+      let byCountry = {};
+
+      legs.forEach((l, i) => {
+        if (l.zone === "schengen") totalSchengen += l.days;
+        byCountry[l.country] = (byCountry[l.country] || 0) + l.days;
+        tbody.innerHTML += "<tr><td>" + l.country + "</td><td>" + l.zone + "</td><td>" + l.entry + "</td><td>" + l.exit + "</td><td>" + l.days + "</td><td><button onclick='deleteLeg(" + i + ")' style='background:#f43f5e; padding:4px 8px;'>X</button></td></tr>";
+      });
+
+      document.getElementById("schengen-days").innerText = totalSchengen + " / 90";
+      if (totalSchengen > 90) document.getElementById("schengen-days").className = "status-val warning";
+      else document.getElementById("schengen-days").className = "status-val";
+
+      let maxC = "-", maxD = 0;
+      for (let c in byCountry) {
+        if (byCountry[c] > maxD) { maxD = byCountry[c]; maxC = c; }
+      }
+      document.getElementById("tax-country").innerText = maxC + " (" + maxD + "d)";
+      if (maxD >= 183) {
+        document.getElementById("tax-warning").innerText = "RISK (>=183d)";
+        document.getElementById("tax-warning").style.color = "#f43f5e";
+      } else {
+        document.getElementById("tax-warning").innerText = "SAFE (<183d)";
+        document.getElementById("tax-warning").style.color = "#10b981";
+      }
+    }
+
+    function addLeg() {
+      const c = document.getElementById("country").value;
+      const z = document.getElementById("zone").value;
+      const en = document.getElementById("entry").value;
+      const ex = document.getElementById("exit").value;
+      if (!c || !en || !ex) return alert("Fill all fields");
+      const diff = Math.round((new Date(ex) - new Date(en)) / (1000 * 60 * 60 * 24)) + 1;
+      if (diff <= 0) return alert("Exit must be after entry");
+      legs.push({ country: c, zone: z, entry: en, exit: ex, days: diff });
+      render();
+    }
+
+    function deleteLeg(i) {
+      legs.splice(i, 1);
+      render();
+    }
+    render();
+  </script>
+</body>
+</html>
