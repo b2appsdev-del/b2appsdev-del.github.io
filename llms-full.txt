@@ -24,3 +24,24 @@
 - [SchemaFlow SEO — Framer Plugin](https://www.framer.com/marketplace/plugins/schemaflow-seo/)
 
 Disclaimer: Educational & technical planning tools only; not financial, tax, or legal advice.
+
+## Start here - free samples
+- https://b2appsdev-del.github.io/start/ - One mobile page with six no-signup samples and six self-service kits.
+
+## EU261 claim documents
+- https://b2appsdev-del.github.io/eu261-claim-documents/ - Free delay checklist and self-service claim document pack.
+
+## Metals dealer comparison
+- https://b2appsdev-del.github.io/metals-dealer-comparison/ - Compare dealer quotes on one effective-cost basis.
+
+## WCAG 2.2 AA audit
+- https://b2appsdev-del.github.io/wcag-22-audit/ - Audit checklist and remediation template toolkit.
+
+## Whop listing launch kit
+- https://b2appsdev-del.github.io/whop-listing-checklist/ - Self-service listing and launch checklist.
+
+## Checkout QA
+- https://b2appsdev-del.github.io/checkout-qa/ - No-spend payment flow walkthrough and issue log.
+
+## Agent tool-call security eval
+- https://b2appsdev-del.github.io/agent-toolcall-security-eval/ - Tool-call safety evaluation benchmark kit.
