@@ -24,5 +24,12 @@
 - [GDPR & ePrivacy RoPA Compliance Kit ($0+ PWYW / Pro)](https://devbloom12.gumroad.com/l/fynlyw): Article 30 RoPA templates, cookie audit log sheets, DPA checklists, and consent workflows.
 - [UCITS ETF Portfolio & Tax Drag Master Toolkit ($0+ PWYW / Pro)](https://devbloom12.gumroad.com/l/umkclc): Portfolio rebalancing sheets, dividend withholding tax drag matrix, and factor overlap models.
 
+## Self-Service Kits (free sample -> one-time pack)
+- [EU261 Claim Documents](https://b2appsdev-del.github.io/eu261-claim-documents/): Self-service delay/cancellation paperwork templates. Free checklist sample. No success fee, not legal advice.
+- [Metals Dealer Comparison Sheet](https://b2appsdev-del.github.io/metals-dealer-comparison/): Compare saved dealer quotes, premiums and buyback spreads offline. Blank sample. No live prices, no recommendation.
+- [WCAG 2.2 AA Audit Toolkit](https://b2appsdev-del.github.io/wcag-22-audit/): Checklist, report template and remediation tracker for accessibility audits. Free quick-audit sample. Not a certification.
+- [Whop Listing & Launch Kit](https://b2appsdev-del.github.io/whop-listing-checklist/): Listing copy builder and 20-point launch checklist, including a no-spend checkout walkthrough. Free sample checklist.
+- [Checkout QA Kit](https://b2appsdev-del.github.io/checkout-qa/): No-spend checkout review plan covering price, promo, mobile and delivery promises. Free sample plan. Not a payment tool.
+
 ## Educational Disclaimer
 Educational and informational purposes only. None of the tools, MCP servers, actors, templates, or packs constitute legal, tax, or financial investment advice. Consult qualified local legal counsel and certified tax advisors in your relevant jurisdiction before relying on outputs for formal statutory compliance.
