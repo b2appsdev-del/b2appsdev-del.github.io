@@ -30,6 +30,7 @@
 - [WCAG 2.2 AA Audit Toolkit](https://b2appsdev-del.github.io/wcag-22-audit/): Checklist, report template and remediation tracker for accessibility audits. Free quick-audit sample. Not a certification.
 - [Whop Listing & Launch Kit](https://b2appsdev-del.github.io/whop-listing-checklist/): Listing copy builder and 20-point launch checklist, including a no-spend checkout walkthrough. Free sample checklist.
 - [Checkout QA Kit](https://b2appsdev-del.github.io/checkout-qa/): No-spend checkout review plan covering price, promo, mobile and delivery promises. Free sample plan. Not a payment tool.
+- [AI Agent Tool-Call Security Eval](https://b2appsdev-del.github.io/agent-toolcall-security-eval/): Prompt-injection test vectors and a results template for tool-calling agents. Free sample. Not a security audit or certification.
 
 ## Educational Disclaimer
 Educational and informational purposes only. None of the tools, MCP servers, actors, templates, or packs constitute legal, tax, or financial investment advice. Consult qualified local legal counsel and certified tax advisors in your relevant jurisdiction before relying on outputs for formal statutory compliance.

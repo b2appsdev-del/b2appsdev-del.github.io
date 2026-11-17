@@ -6,7 +6,7 @@ from pathlib import Path
 
 root = Path(__file__).resolve().parents[1]
 slugs = ['eu261-claim-documents', 'metals-dealer-comparison', 'wcag-22-audit',
-         'whop-listing-checklist', 'checkout-qa']
+         'whop-listing-checklist', 'checkout-qa', 'agent-toolcall-security-eval']
 for s in slugs:
     d = root / s
     html_text = (d / 'index.html').read_text(encoding='utf-8')
