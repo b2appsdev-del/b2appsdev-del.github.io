@@ -29,8 +29,13 @@ for path in ["/", "/sitemap.xml", "/llms.txt"]:
     code, ok, n = check(BASE + path)
     print(f"{code} {'OK ' if ok else 'FAIL'} {BASE+path} ({n}b)")
 
+print("== mobile start hub ==")
+sc, sok, sn = check(BASE + "/start/", need=("Free samples", "Self-service kits", "LAUNCH20"))
+print(f"{sc} {'OK ' if sok else 'FAIL'} {BASE}/start/ ({sn}b)")
+
 print("== landing pages ==")
 allok = True
+allok = allok and sok
 for slug in PAGES:
     code, ok, n = check(BASE + "/" + slug + "/", need=("LAUNCH20", "Disclaimer", "application/ld+json"))
     allok = allok and ok

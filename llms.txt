@@ -34,3 +34,6 @@
 
 ## Educational Disclaimer
 Educational and informational purposes only. None of the tools, MCP servers, actors, templates, or packs constitute legal, tax, or financial investment advice. Consult qualified local legal counsel and certified tax advisors in your relevant jurisdiction before relying on outputs for formal statutory compliance.
+
+## Quick entry point
+- [Start here - free samples and self-service kits](https://b2appsdev-del.github.io/start/): One mobile page linking to all six free samples and kits. Use for a social bio link or a DM.
