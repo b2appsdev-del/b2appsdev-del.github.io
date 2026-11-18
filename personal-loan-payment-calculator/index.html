@@ -1,0 +1,58 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Free Personal Loan Payment Calculator</title><meta name="description" content="Free no-signup personal loan payment calculator: estimate monthly payment, total repaid and total interest. Nothing uploaded."><meta name="robots" content="index,follow">
+<meta property="og:type" content="website"><meta property="og:title" content="Free Personal Loan Payment Calculator"><meta property="og:description" content="Free no-signup personal loan payment calculator: estimate monthly payment, total repaid and total interest. Nothing uploaded.">
+<link rel="canonical" href="https://b2appsdev-del.github.io/personal-loan-payment-calculator/"><script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebApplication", "name": "Free Personal Loan Payment Calculator", "description": "Free no-signup personal loan payment calculator: estimate monthly payment, total repaid and total interest. Nothing uploaded.", "applicationCategory": "FinanceApplication", "operatingSystem": "Any modern web browser", "url": "https://b2appsdev-del.github.io/personal-loan-payment-calculator/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Does this check my eligibility?", "acceptedAnswer": {"@type": "Answer", "text": "No. It only does arithmetic on the numbers you enter and does not contact any lender."}}, {"@type": "Question", "name": "What does APR include?", "acceptedAnswer": {"@type": "Answer", "text": "APR may include certain fees, but it varies by lender. Check the lender disclosure for the exact definition."}}, {"@type": "Question", "name": "Are there fees?", "acceptedAnswer": {"@type": "Answer", "text": "Some loans have origination or early-repayment fees. This tool does not model them."}}]}]}</script><style>
+:root{--bg:#0a0e14;--surf:#111925;--line:#223044;--txt:#e8eef5;--mut:#9fb0c4;--acc:#38bdf8;--ok:#3ddc97;--warn:#fbbf24}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(700px 400px at 10% -10%,rgba(56,189,248,.10),transparent 60%),var(--bg);color:var(--txt);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif}
+.wrap{max-width:840px;margin:0 auto;padding:44px 18px 72px}h1{font-size:clamp(1.8rem,5vw,2.5rem);line-height:1.14;letter-spacing:-.03em;margin:0 0 14px}
+h2{font-size:1.2rem;margin:34px 0 10px}.lead{font-size:1.08rem;color:#c8d6e6;max-width:64ch}
+.kicker{color:var(--acc);text-transform:uppercase;letter-spacing:.13em;font-size:.72rem;font-weight:700}
+.card{border:1px solid var(--line);background:var(--surf);border-radius:12px;padding:18px 20px;margin:16px 0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:12px}
+label{display:block;font-weight:650;margin:6px 0 4px;font-size:.88rem}
+input[type=number]{width:100%;padding:10px 11px;border-radius:9px;border:1px solid var(--line);background:#0b121c;color:var(--txt);font:inherit}
+.btn{display:inline-flex;align-items:center;justify-content:center;background:var(--acc);color:#04121c;text-decoration:none;font-weight:750;border:0;border-radius:10px;padding:12px 20px;margin:14px 8px 0 0;cursor:pointer;font:inherit;font-size:1rem}
+.result{margin-top:16px;border:1px solid var(--line);border-left:3px solid var(--ok);border-radius:10px;padding:16px 18px;background:#0b121c}
+.result .big{font-size:2.1rem;font-weight:800;color:var(--ok);letter-spacing:-.02em}
+.metric{display:flex;justify-content:space-between;border-bottom:1px solid var(--line);padding:7px 0;font-size:.92rem}
+.metric span:last-child{font-weight:700}
+.disclosure{border:1px solid rgba(251,191,36,.45);background:rgba(251,191,36,.07);border-radius:10px;padding:14px 16px;margin:16px 0;font-size:.9rem;color:#f4e2b8}
+.fine,.disclaimer{color:var(--mut);font-size:.82rem}.disclaimer{margin-top:32px;border-top:1px solid var(--line);padding-top:16px}
+a{color:var(--acc)}.back{display:inline-block;margin-bottom:18px;color:var(--mut);font-size:.82rem;text-decoration:none}
+.free{display:inline-block;background:rgba(61,220,151,.12);border:1px solid rgba(61,220,151,.4);color:var(--ok);border-radius:999px;padding:5px 11px;font-size:.78rem;font-weight:700}
+</style></head><body><div class="wrap">
+<a class="back" href="https://b2appsdev-del.github.io/start/">&larr; All free B2 Apps tools</a><div class="kicker">Personal finance</div>
+<h1>Personal Loan Payment Calculator</h1><p class="lead">Estimate a fixed-rate personal loan payment from amount, APR and term. Runs entirely in your browser.</p><p><span class="free">FREE - NO SIGNUP - NOTHING UPLOADED</span></p>
+<h2>1. Calculate</h2><div class="card"><form id="calc-form"><div class="grid"><div><label for="f0">Loan amount ($)</label><input id="f0" type="number" value="15000" min="0" step="500"></div>
+<div><label for="f1">APR (%)</label><input id="f1" type="number" value="12.99" min="0" max="40" step="0.01"></div>
+<div><label for="f2">Loan term (months)</label><input id="f2" type="number" value="36" min="1" max="84" step="1"></div></div>
+<button class="btn" type="submit">Calculate</button></form>
+<div id="calc-result" class="result">Enter your own figures and press the button. Nothing leaves your device.</div></div>
+<h2>2. How this is calculated</h2><div class="card"><p>The monthly payment uses the standard fixed-rate amortization formula. Origination fees, late fees and variable rates are not included. An estimate is not an offer of credit.</p></div>
+<h2>3. If you want a second opinion</h2>
+<div class="disclosure"><strong>Affiliate disclosure.</strong> The links below may become affiliate or lead-referral links. If you use them and a provider pays us a commission, we may earn money <strong>at no extra cost to you</strong>. We are not a lender, adviser or service provider. This is information, not a recommendation — compare terms yourself.</div>
+<div class="card"><p><a class="btn" href="https://www.bankrate.com/loans/personal-loans/" target="_blank" rel="sponsored nofollow">Compare current personal loan rates (informational link)</a></p>
+<p><a class="btn alt" href="https://www.consumerfinance.gov/consumer-tools/loans/" target="_blank" rel="sponsored nofollow">Official loan guides (CFPB) (informational link)</a></p></div>
+<h2>Questions</h2><div class="card"><p><strong>Does this check my eligibility?</strong> No. It only does arithmetic on the numbers you enter and does not contact any lender.</p>
+<p><strong>What does APR include?</strong> APR may include certain fees, but it varies by lender. Check the lender disclosure for the exact definition.</p>
+<p><strong>Are there fees?</strong> Some loans have origination or early-repayment fees. This tool does not model them.</p></div>
+<div class="disclaimer"><strong>Disclaimer.</strong> Educational and informational purposes only. Not financial, investment, tax or legal advice. This tool is a simplified estimate and does not establish eligibility, affordability or any outcome. Rules and third-party policies change; you are solely responsible for verifying all figures with a qualified professional and official sources. Affiliate relationships are disclosed above. No income or performance claim is made.</div>
+</div><script>
+(function(){
+  var f=function(i){return parseFloat(document.getElementById('f'+i).value)||0;};
+  function money(v){return '$'+Math.round(v).toLocaleString('en-US');}
+  function pct(v){return (Math.round(v*100)/100)+'%';}
+  function num(v){return (Math.round(v*100)/100).toLocaleString('en-US');}
+  function months(v){return v<0?'Not paying down at this payment':(Math.round(v)+' months');}
+  var fmt=money;
+  var form=document.getElementById('calc-form');
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    var v=(function(){var p=Math.max(0,f(0));var r=f(1)/100/12;var n=Math.max(1,f(2));return r>0?p*r/(1-Math.pow(1+r,-n)):p/n;})();
+    var out=fmt(v);
+    var extra='<div class="metric"><span>Total repaid</span><span>' + money((function(){var p=Math.max(0,f(0));var r=f(1)/100/12;var n=Math.max(1,f(2));var pay=r>0?p*r/(1-Math.pow(1+r,-n)):p/n;return pay*n;})()) + '</span></div>' +'<div class="metric"><span>Total interest</span><span>' + money((function(){var p=Math.max(0,f(0));var r=f(1)/100/12;var n=Math.max(1,f(2));var pay=r>0?p*r/(1-Math.pow(1+r,-n)):p/n;return Math.max(0,pay*n-p);})()) + '</span></div>';
+    document.getElementById('calc-result').innerHTML='<div class="big">'+out+'</div>'+extra+
+      '<p class="fine" style="margin-top:12px">Estimate only. Verify every figure with a qualified professional and current official sources before relying on it.</p>';
+  });
+})();
+</script></body></html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Free Debt-to-Income Ratio Calculator for Mortgage</title><meta name="description" content="Free no-signup debt-to-income (DTI) calculator for mortgage applicants. Estimate front-end and back-end DTI from income and debts. Nothing uploaded."><meta name="robots" content="index,follow">
+<meta property="og:type" content="website"><meta property="og:title" content="Free Debt-to-Income Ratio Calculator for Mortgage"><meta property="og:description" content="Free no-signup debt-to-income (DTI) calculator for mortgage applicants. Estimate front-end and back-end DTI from income and debts. Nothing uploaded.">
+<link rel="canonical" href="https://b2appsdev-del.github.io/debt-to-income-ratio-calculator-mortgage/"><script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebApplication", "name": "Free Debt-to-Income Ratio Calculator for Mortgage", "description": "Free no-signup debt-to-income (DTI) calculator for mortgage applicants. Estimate front-end and back-end DTI from income and debts. Nothing uploaded.", "applicationCategory": "FinanceApplication", "operatingSystem": "Any modern web browser", "url": "https://b2appsdev-del.github.io/debt-to-income-ratio-calculator-mortgage/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What DTI do lenders allow?", "acceptedAnswer": {"@type": "Answer", "text": "Limits vary by loan program and lender. Check current official program guidelines."}}, {"@type": "Question", "name": "What counts as monthly debt?", "acceptedAnswer": {"@type": "Answer", "text": "Typically minimum payments on loans and credit cards, but lender definitions vary."}}, {"@type": "Question", "name": "Is this a credit check?", "acceptedAnswer": {"@type": "Answer", "text": "No. Nothing is sent anywhere and no lender is contacted."}}]}]}</script><style>
+:root{--bg:#0a0e14;--surf:#111925;--line:#223044;--txt:#e8eef5;--mut:#9fb0c4;--acc:#38bdf8;--ok:#3ddc97;--warn:#fbbf24}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(700px 400px at 10% -10%,rgba(56,189,248,.10),transparent 60%),var(--bg);color:var(--txt);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif}
+.wrap{max-width:840px;margin:0 auto;padding:44px 18px 72px}h1{font-size:clamp(1.8rem,5vw,2.5rem);line-height:1.14;letter-spacing:-.03em;margin:0 0 14px}
+h2{font-size:1.2rem;margin:34px 0 10px}.lead{font-size:1.08rem;color:#c8d6e6;max-width:64ch}
+.kicker{color:var(--acc);text-transform:uppercase;letter-spacing:.13em;font-size:.72rem;font-weight:700}
+.card{border:1px solid var(--line);background:var(--surf);border-radius:12px;padding:18px 20px;margin:16px 0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:12px}
+label{display:block;font-weight:650;margin:6px 0 4px;font-size:.88rem}
+input[type=number]{width:100%;padding:10px 11px;border-radius:9px;border:1px solid var(--line);background:#0b121c;color:var(--txt);font:inherit}
+.btn{display:inline-flex;align-items:center;justify-content:center;background:var(--acc);color:#04121c;text-decoration:none;font-weight:750;border:0;border-radius:10px;padding:12px 20px;margin:14px 8px 0 0;cursor:pointer;font:inherit;font-size:1rem}
+.result{margin-top:16px;border:1px solid var(--line);border-left:3px solid var(--ok);border-radius:10px;padding:16px 18px;background:#0b121c}
+.result .big{font-size:2.1rem;font-weight:800;color:var(--ok);letter-spacing:-.02em}
+.metric{display:flex;justify-content:space-between;border-bottom:1px solid var(--line);padding:7px 0;font-size:.92rem}
+.metric span:last-child{font-weight:700}
+.disclosure{border:1px solid rgba(251,191,36,.45);background:rgba(251,191,36,.07);border-radius:10px;padding:14px 16px;margin:16px 0;font-size:.9rem;color:#f4e2b8}
+.fine,.disclaimer{color:var(--mut);font-size:.82rem}.disclaimer{margin-top:32px;border-top:1px solid var(--line);padding-top:16px}
+a{color:var(--acc)}.back{display:inline-block;margin-bottom:18px;color:var(--mut);font-size:.82rem;text-decoration:none}
+.free{display:inline-block;background:rgba(61,220,151,.12);border:1px solid rgba(61,220,151,.4);color:var(--ok);border-radius:999px;padding:5px 11px;font-size:.78rem;font-weight:700}
+</style></head><body><div class="wrap">
+<a class="back" href="https://b2appsdev-del.github.io/start/">&larr; All free B2 Apps tools</a><div class="kicker">Home buying</div>
+<h1>Debt-to-Income Ratio Calculator for Mortgage</h1><p class="lead">Estimate the debt-to-income ratio a lender may look at, using your income, proposed housing payment and other monthly debts.</p><p><span class="free">FREE - NO SIGNUP - NOTHING UPLOADED</span></p>
+<h2>1. Calculate</h2><div class="card"><form id="calc-form"><div class="grid"><div><label for="f0">Annual gross income ($)</label><input id="f0" type="number" value="90000" min="0" step="1000"></div>
+<div><label for="f1">Proposed monthly housing payment ($)</label><input id="f1" type="number" value="1800" min="0" step="50"></div>
+<div><label for="f2">Other monthly debt payments ($)</label><input id="f2" type="number" value="500" min="0" step="50"></div></div>
+<button class="btn" type="submit">Calculate</button></form>
+<div id="calc-result" class="result">Enter your own figures and press the button. Nothing leaves your device.</div></div>
+<h2>2. How this is calculated</h2><div class="card"><p>Back-end DTI is total monthly debt payments divided by gross monthly income. Front-end DTI uses only the housing payment. Lenders calculate income and debts using their own rules, which may differ from the figures you enter here.</p></div>
+<h2>3. If you want a second opinion</h2>
+<div class="disclosure"><strong>Affiliate disclosure.</strong> The links below may become affiliate or lead-referral links. If you use them and a provider pays us a commission, we may earn money <strong>at no extra cost to you</strong>. We are not a lender, adviser or service provider. This is information, not a recommendation — compare terms yourself.</div>
+<div class="card"><p><a class="btn" href="https://www.consumerfinance.gov/owning-a-home/" target="_blank" rel="sponsored nofollow">Official home-buying guides (CFPB) (informational link)</a></p>
+<p><a class="btn alt" href="https://www.bankrate.com/mortgages/" target="_blank" rel="sponsored nofollow">Compare current mortgage rates (informational link)</a></p></div>
+<h2>Questions</h2><div class="card"><p><strong>What DTI do lenders allow?</strong> Limits vary by loan program and lender. Check current official program guidelines.</p>
+<p><strong>What counts as monthly debt?</strong> Typically minimum payments on loans and credit cards, but lender definitions vary.</p>
+<p><strong>Is this a credit check?</strong> No. Nothing is sent anywhere and no lender is contacted.</p></div>
+<div class="disclaimer"><strong>Disclaimer.</strong> Educational and informational purposes only. Not financial, investment, tax or legal advice. This tool is a simplified estimate and does not establish eligibility, affordability or any outcome. Rules and third-party policies change; you are solely responsible for verifying all figures with a qualified professional and official sources. Affiliate relationships are disclosed above. No income or performance claim is made.</div>
+</div><script>
+(function(){
+  var f=function(i){return parseFloat(document.getElementById('f'+i).value)||0;};
+  function money(v){return '$'+Math.round(v).toLocaleString('en-US');}
+  function pct(v){return (Math.round(v*100)/100)+'%';}
+  function num(v){return (Math.round(v*100)/100).toLocaleString('en-US');}
+  function months(v){return v<0?'Not paying down at this payment':(Math.round(v)+' months');}
+  var fmt=pct;
+  var form=document.getElementById('calc-form');
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    var v=((f(0)/12)>0 ? ((f(1)+f(2))/(f(0)/12)*100) : 0);
+    var out=fmt(v);
+    var extra='<div class="metric"><span>Gross monthly income</span><span>' + money(f(0)/12) + '</span></div>' +'<div class="metric"><span>Total monthly debt</span><span>' + money(f(1)+f(2)) + '</span></div>';
+    document.getElementById('calc-result').innerHTML='<div class="big">'+out+'</div>'+extra+
+      '<p class="fine" style="margin-top:12px">Estimate only. Verify every figure with a qualified professional and current official sources before relying on it.</p>';
+  });
+})();
+</script></body></html>

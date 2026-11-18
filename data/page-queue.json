@@ -1,0 +1,777 @@
+[
+  {
+    "slug": "cash-on-cash-return-rental-property",
+    "title": "Free Cash-on-Cash Return Calculator for Rental Property",
+    "kicker": "Real estate investing",
+    "headline": "Cash-on-Cash Return Calculator for Rental Property",
+    "desc": "Free, no-signup cash-on-cash return calculator for rental property investors. Estimate annual cash flow and return on cash invested. Nothing is uploaded.",
+    "lead": "Estimate the cash-on-cash return on a rental property from your own numbers. No account, no upload, no email.",
+    "inputs": [
+      {
+        "label": "Annual rental income ($)",
+        "default": 24000,
+        "attrs": {
+          "min": "0",
+          "step": "100"
+        }
+      },
+      {
+        "label": "Annual operating expenses ($)",
+        "default": 6000,
+        "attrs": {
+          "min": "0",
+          "step": "100"
+        }
+      },
+      {
+        "label": "Down payment ($)",
+        "default": 40000,
+        "attrs": {
+          "min": "0",
+          "step": "1000"
+        }
+      },
+      {
+        "label": "Closing + rehab costs ($)",
+        "default": 10000,
+        "attrs": {
+          "min": "0",
+          "step": "1000"
+        }
+      },
+      {
+        "label": "Monthly mortgage payment ($)",
+        "default": 900,
+        "attrs": {
+          "min": "0",
+          "step": "10"
+        }
+      }
+    ],
+    "expr": "((f(2)+f(3))>0 ? ((f(0)-f(1)-f(4)*12)/(f(2)+f(3))*100) : 0)",
+    "format": "pct",
+    "metrics": [
+      {
+        "label": "Annual cash flow",
+        "code": "money(f(0)-f(1)-f(4)*12)"
+      },
+      {
+        "label": "Total cash invested",
+        "code": "money(f(2)+f(3))"
+      }
+    ],
+    "method": "Cash-on-cash return divides annual before-tax cash flow (rental income minus operating expenses and mortgage payments) by the total cash you put into the deal (down payment plus closing and rehab costs). It is a simple snapshot and does not account for appreciation, taxes, or the time value of money.",
+    "faq": [
+      [
+        "What is a good cash-on-cash return?",
+        "There is no universal benchmark. Compare against your own required return and the risk of the specific property; different markets and strategies vary widely."
+      ],
+      [
+        "Does this include taxes?",
+        "No. This is a before-tax estimate. Your actual result depends on your tax situation and local rules."
+      ],
+      [
+        "Is this financial advice?",
+        "No. It is a simplified educational estimate. Verify every figure with a qualified professional and current official sources."
+      ]
+    ],
+    "partners": [
+      {
+        "url": "https://www.bankrate.com/real-estate/",
+        "label": "Compare current mortgage and refinance rates"
+      },
+      {
+        "url": "https://www.realtor.com/research/data/",
+        "label": "Check local market rent data"
+      }
+    ]
+  },
+  {
+    "slug": "mortgage-affordability-calculator-by-income",
+    "title": "Free Mortgage Affordability Calculator by Income",
+    "kicker": "Home buying",
+    "headline": "Mortgage Affordability Calculator by Income",
+    "desc": "Free no-signup mortgage affordability calculator: see an estimated loan amount from your income, debt-to-income ratio and current interest rate. Nothing uploaded.",
+    "lead": "See roughly how much home loan your income may support at a given debt-to-income ratio and rate. All math happens in your browser; nothing is sent anywhere.",
+    "inputs": [
+      {
+        "label": "Annual gross household income ($)",
+        "default": 90000,
+        "attrs": {
+          "min": "0",
+          "step": "1000"
+        }
+      },
+      {
+        "label": "Allowed DTI (% of gross monthly)",
+        "default": 36,
+        "attrs": {
+          "min": "0",
+          "max": "60",
+          "step": "1"
+        }
+      },
+      {
+        "label": "Other monthly debt payments ($)",
+        "default": 400,
+        "attrs": {
+          "min": "0",
+          "step": "50"
+        }
+      },
+      {
+        "label": "Mortgage interest rate (%)",
+        "default": 6.5,
+        "attrs": {
+          "min": "0",
+          "max": "25",
+          "step": "0.01"
+        }
+      },
+      {
+        "label": "Loan term (years)",
+        "default": 30,
+        "attrs": {
+          "min": "1",
+          "max": "40",
+          "step": "1"
+        }
+      }
+    ],
+    "expr": "(function(){var p=Math.max(0,f(0)/12*f(1)/100-f(2));var r=f(3)/100/12;var n=f(4)*12;return r>0?p*(1-Math.pow(1+r,-n))/r:p*n;})()",
+    "format": "money",
+    "metrics": [
+      {
+        "label": "Max monthly housing payment",
+        "code": "money(Math.max(0,f(0)/12*f(1)/100-f(2)))"
+      },
+      {
+        "label": "Loan term",
+        "code": "num(f(4)*12)+' months'"
+      }
+    ],
+    "method": "The estimate multiplies gross monthly income by your chosen debt-to-income percentage, subtracts other monthly debt payments, then converts the remaining housing payment into a loan amount using the standard fixed-rate amortization formula. It is a rough illustration, not an approval or an offer of credit.",
+    "faq": [
+      [
+        "Is this a mortgage approval?",
+        "No. It is a rough arithmetic illustration. Lenders use their own underwriting, credit, income verification and property rules."
+      ],
+      [
+        "What DTI should I use?",
+        "Different lenders and loan programs use different limits. Check current official program guidelines rather than assuming a number."
+      ],
+      [
+        "Does this include taxes and insurance?",
+        "No. Property tax, homeowners insurance, HOA dues and mortgage insurance can materially change what you can afford."
+      ]
+    ],
+    "partners": [
+      {
+        "url": "https://www.bankrate.com/mortgages/",
+        "label": "Compare current mortgage rates and lenders"
+      },
+      {
+        "url": "https://www.consumerfinance.gov/owning-a-home/",
+        "label": "Official home-buying guides (CFPB)"
+      }
+    ]
+  },
+  {
+    "slug": "auto-loan-payment-calculator-with-trade-in",
+    "title": "Free Auto Loan Payment Calculator With Trade-In",
+    "kicker": "Auto financing",
+    "headline": "Auto Loan Payment Calculator With Trade-In",
+    "desc": "Free no-signup auto loan payment calculator with trade-in and down payment. Estimate monthly payment and total interest. Nothing is uploaded.",
+    "lead": "Estimate a monthly car payment from price, down payment, trade-in value, APR and term. Runs entirely on your device.",
+    "inputs": [
+      {
+        "label": "Vehicle price ($)",
+        "default": 30000,
+        "attrs": {
+          "min": "0",
+          "step": "500"
+        }
+      },
+      {
+        "label": "Down payment ($)",
+        "default": 4000,
+        "attrs": {
+          "min": "0",
+          "step": "500"
+        }
+      },
+      {
+        "label": "Trade-in value ($)",
+        "default": 5000,
+        "attrs": {
+          "min": "0",
+          "step": "500"
+        }
+      },
+      {
+        "label": "APR (%)",
+        "default": 6.9,
+        "attrs": {
+          "min": "0",
+          "max": "30",
+          "step": "0.01"
+        }
+      },
+      {
+        "label": "Loan term (months)",
+        "default": 60,
+        "attrs": {
+          "min": "1",
+          "max": "96",
+          "step": "1"
+        }
+      }
+    ],
+    "expr": "(function(){var p=Math.max(0,f(0)-f(1)-f(2));var r=f(3)/100/12;var n=Math.max(1,f(4));return r>0?p*r/(1-Math.pow(1+r,-n)):p/n;})()",
+    "format": "money",
+    "metrics": [
+      {
+        "label": "Amount financed",
+        "code": "money(Math.max(0,f(0)-f(1)-f(2)))"
+      },
+      {
+        "label": "Total interest (est.)",
+        "code": "money((function(){var p=Math.max(0,f(0)-f(1)-f(2));var r=f(3)/100/12;var n=Math.max(1,f(4));var pay=r>0?p*r/(1-Math.pow(1+r,-n)):p/n;return Math.max(0,pay*n-p);})())"
+      }
+    ],
+    "method": "The amount financed is vehicle price minus down payment and trade-in value. The monthly payment uses the standard amortization formula at the entered APR and term. Taxes, fees, add-ons and dealer incentives are not included.",
+    "faq": [
+      [
+        "Does this include sales tax and fees?",
+        "No. Add your local sales tax, title, registration and dealer fees to see the out-the-door cost."
+      ],
+      [
+        "Will this affect my credit?",
+        "No. This calculator runs locally and does not contact any lender or pull your credit."
+      ],
+      [
+        "Is a longer term always cheaper?",
+        "Not necessarily. A longer term lowers the monthly payment but can increase total interest."
+      ]
+    ],
+    "partners": [
+      {
+        "url": "https://www.bankrate.com/auto/auto-loans/",
+        "label": "Compare current auto loan rates"
+      },
+      {
+        "url": "https://www.kbb.com/whats-my-car-worth/",
+        "label": "Check a used-car trade-in value guide"
+      }
+    ]
+  },
+  {
+    "slug": "credit-card-payoff-calculator",
+    "title": "Free Credit Card Payoff Calculator",
+    "kicker": "Debt planning",
+    "headline": "Credit Card Payoff Calculator",
+    "desc": "Free no-signup credit card payoff calculator: estimate months to pay off a balance and how a monthly payment changes the timeline. Nothing uploaded.",
+    "lead": "See roughly how long a fixed monthly payment takes to clear a credit card balance at a given APR. Runs entirely in your browser.",
+    "inputs": [
+      {
+        "label": "Current balance ($)",
+        "default": 5000,
+        "attrs": {
+          "min": "0",
+          "step": "100"
+        }
+      },
+      {
+        "label": "APR (%)",
+        "default": 22.9,
+        "attrs": {
+          "min": "0",
+          "max": "40",
+          "step": "0.01"
+        }
+      },
+      {
+        "label": "Monthly payment ($)",
+        "default": 200,
+        "attrs": {
+          "min": "0",
+          "step": "10"
+        }
+      }
+    ],
+    "expr": "(function(){var b=f(0),r=f(1)/100/12,p=f(2),m=0;if(p<=b*r)return -1;while(b>0&&m<1200){b=b*(1+r)-p;m++;}return m;})()",
+    "format": "months",
+    "metrics": [
+      {
+        "label": "Starting balance",
+        "code": "money(f(0))"
+      },
+      {
+        "label": "Monthly payment",
+        "code": "money(f(2))"
+      }
+    ],
+    "method": "Each month interest is added at one-twelfth of the APR, then your fixed payment is applied. If the payment does not cover the monthly interest, the balance will not fall. New purchases, fees and rate changes are not modeled.",
+    "faq": [
+      [
+        "What if my payment is too small?",
+        "If the payment does not exceed the interest added each month, the balance does not decrease and the result will say so."
+      ],
+      [
+        "Does this assume a fixed rate?",
+        "Yes. Promotional or variable rates can change the result substantially."
+      ],
+      [
+        "Is snowball or avalanche better?",
+        "It depends on your balances and rates. This tool models a single account only and is not advice."
+      ]
+    ],
+    "partners": [
+      {
+        "url": "https://www.nerdwallet.com/credit-cards/",
+        "label": "Compare credit card offers (informational)"
+      },
+      {
+        "url": "https://www.consumerfinance.gov/consumer-tools/credit-cards/",
+        "label": "Official credit card guides (CFPB)"
+      }
+    ]
+  },
+  {
+    "slug": "self-employment-tax-calculator-1099",
+    "title": "Free Self-Employment Tax Calculator for 1099 Income",
+    "kicker": "Freelance & taxes",
+    "headline": "Self-Employment Tax Calculator for 1099 Income",
+    "desc": "Free no-signup self-employment tax calculator for 1099 and freelance income. Estimate Social Security and Medicare tax. Nothing uploaded.",
+    "lead": "Estimate US self-employment (SECA) tax on net freelance or 1099 income. You control every input; nothing leaves your device.",
+    "inputs": [
+      {
+        "label": "Net self-employment income ($)",
+        "default": 60000,
+        "attrs": {
+          "min": "0",
+          "step": "500"
+        }
+      },
+      {
+        "label": "Other W-2 wages ($)",
+        "default": 0,
+        "attrs": {
+          "min": "0",
+          "step": "500"
+        }
+      },
+      {
+        "label": "Social Security wage base ($)",
+        "default": 176100,
+        "attrs": {
+          "min": "0",
+          "step": "100"
+        }
+      }
+    ],
+    "expr": "(f(0)>0 ? (Math.min(f(0)*0.9235,Math.max(0,f(2)-f(1)))*0.124 + f(0)*0.9235*0.029) : 0)",
+    "format": "money",
+    "metrics": [
+      {
+        "label": "Net earnings subject to SE tax (92.35%)",
+        "code": "money(f(0)*0.9235)"
+      },
+      {
+        "label": "Effective rate on net income",
+        "code": "pct(f(0)>0 ? (Math.min(f(0)*0.9235,Math.max(0,f(2)-f(1)))*0.124 + f(0)*0.9235*0.029)/f(0)*100 : 0)"
+      }
+    ],
+    "method": "Self-employment tax is estimated as 12.4% Social Security on net earnings up to the annual wage base (reduced by other W-2 wages) plus 2.9% Medicare on all net earnings. Net earnings are 92.35% of net profit. The wage base changes each year, so confirm the current figure with the IRS.",
+    "faq": [
+      [
+        "Is this my total tax bill?",
+        "No. This covers self-employment tax only. Federal and state income tax are separate and are not included."
+      ],
+      [
+        "What is the 92.35% figure?",
+        "It is the standard factor used to convert net profit to net earnings subject to self-employment tax."
+      ],
+      [
+        "Can I deduct half of this?",
+        "There is a standard deduction for half of self-employment tax on US returns. Confirm current rules with a tax professional or the IRS."
+      ]
+    ],
+    "partners": [
+      {
+        "url": "https://www.irs.gov/businesses/small-businesses-self-employed/self-employed-individuals-tax-center",
+        "label": "Official IRS self-employed tax center"
+      },
+      {
+        "url": "https://www.irs.gov/forms-pubs/about-schedule-se-form-1040",
+        "label": "IRS Schedule SE instructions"
+      }
+    ]
+  },
+  {
+    "slug": "hourly-to-annual-salary-overtime-calculator",
+    "title": "Free Hourly to Annual Salary Calculator With Overtime",
+    "kicker": "Pay & income",
+    "headline": "Hourly to Annual Salary Calculator With Overtime",
+    "desc": "Free no-signup hourly to annual salary calculator including overtime hours. Convert an hourly wage to yearly pay. Nothing uploaded.",
+    "lead": "Convert an hourly rate into estimated annual pay, including overtime hours at time-and-a-half. All math runs locally.",
+    "inputs": [
+      {
+        "label": "Hourly rate ($)",
+        "default": 25,
+        "attrs": {
+          "min": "0",
+          "step": "0.01"
+        }
+      },
+      {
+        "label": "Regular hours per week",
+        "default": 40,
+        "attrs": {
+          "min": "0",
+          "max": "80",
+          "step": "1"
+        }
+      },
+      {
+        "label": "Overtime hours per week",
+        "default": 5,
+        "attrs": {
+          "min": "0",
+          "max": "60",
+          "step": "1"
+        }
+      },
+      {
+        "label": "Weeks worked per year",
+        "default": 52,
+        "attrs": {
+          "min": "1",
+          "max": "52",
+          "step": "1"
+        }
+      }
+    ],
+    "expr": "f(0)*f(1)*f(3)+f(0)*1.5*f(2)*f(3)",
+    "format": "money",
+    "metrics": [
+      {
+        "label": "Regular pay",
+        "code": "money(f(0)*f(1)*f(3))"
+      },
+      {
+        "label": "Overtime premium (extra 0.5x)",
+        "code": "money(f(0)*0.5*f(2)*f(3))"
+      }
+    ],
+    "method": "Annual pay equals hourly rate times regular weekly hours times weeks worked, plus overtime hours paid at 1.5 times the hourly rate. This is gross pay before taxes and deductions, and assumes overtime rules apply to the entered hours.",
+    "faq": [
+      [
+        "Is this take-home pay?",
+        "No. This is gross pay before tax, insurance and other deductions."
+      ],
+      [
+        "Does everyone get time-and-a-half?",
+        "Overtime eligibility depends on local law and your role. Check your jurisdiction and employer policy."
+      ],
+      [
+        "What about unpaid weeks?",
+        "Set the weeks-worked field to reflect unpaid time off."
+      ]
+    ],
+    "partners": [
+      {
+        "url": "https://www.dol.gov/agencies/whd/overtime",
+        "label": "Official US overtime rules (DOL)"
+      }
+    ]
+  },
+  {
+    "slug": "freelance-day-rate-calculator",
+    "title": "Free Freelance Day Rate Calculator",
+    "kicker": "Freelance & pricing",
+    "headline": "Freelance Day Rate Calculator",
+    "desc": "Free no-signup freelance day rate calculator: turn a target annual income and billable days into a day rate. Nothing uploaded.",
+    "lead": "Work backwards from a target income to a day rate using the number of days you can actually bill, plus an expense buffer.",
+    "inputs": [
+      {
+        "label": "Target annual take-home income ($)",
+        "default": 80000,
+        "attrs": {
+          "min": "0",
+          "step": "1000"
+        }
+      },
+      {
+        "label": "Billable days per year",
+        "default": 120,
+        "attrs": {
+          "min": "1",
+          "max": "365",
+          "step": "1"
+        }
+      },
+      {
+        "label": "Business expense buffer (%)",
+        "default": 25,
+        "attrs": {
+          "min": "0",
+          "max": "200",
+          "step": "1"
+        }
+      }
+    ],
+    "expr": "(f(1)>0 ? (f(0)*(1+f(2)/100)/f(1)) : 0)",
+    "format": "money",
+    "metrics": [
+      {
+        "label": "Income plus expense buffer",
+        "code": "money(f(0)*(1+f(2)/100))"
+      },
+      {
+        "label": "Billable days",
+        "code": "num(f(1))"
+      }
+    ],
+    "method": "The target income is increased by your expense buffer and divided by realistic billable days per year. It does not include tax, and it assumes you can actually bill the entered number of days.",
+    "faq": [
+      [
+        "What is a realistic billable-days number?",
+        "It varies by role. Count only days you can genuinely invoice after weekends, holidays, admin and time off."
+      ],
+      [
+        "Does this include tax?",
+        "No. Set a higher target income or buffer if you need to cover tax."
+      ],
+      [
+        "Should I charge by day or by project?",
+        "A day rate is one pricing method. Compare with project or value-based pricing for your market."
+      ]
+    ],
+    "partners": [
+      {
+        "url": "https://www.irs.gov/businesses/small-businesses-self-employed/self-employed-individuals-tax-center",
+        "label": "Official IRS self-employed tax information"
+      }
+    ]
+  },
+  {
+    "slug": "rental-yield-calculator-gross-and-net",
+    "title": "Free Rental Yield Calculator — Gross and Net",
+    "kicker": "Real estate investing",
+    "headline": "Rental Yield Calculator — Gross and Net",
+    "desc": "Free no-signup rental yield calculator for gross and net yield on a buy-to-let property. Estimate return from rent and costs. Nothing uploaded.",
+    "lead": "Estimate gross and net rental yield from purchase price, monthly rent and annual costs. All figures stay on your device.",
+    "inputs": [
+      {
+        "label": "Purchase price ($)",
+        "default": 300000,
+        "attrs": {
+          "min": "0",
+          "step": "1000"
+        }
+      },
+      {
+        "label": "Monthly rent ($)",
+        "default": 2200,
+        "attrs": {
+          "min": "0",
+          "step": "50"
+        }
+      },
+      {
+        "label": "Annual operating expenses ($)",
+        "default": 6000,
+        "attrs": {
+          "min": "0",
+          "step": "100"
+        }
+      },
+      {
+        "label": "Closing costs ($)",
+        "default": 9000,
+        "attrs": {
+          "min": "0",
+          "step": "500"
+        }
+      }
+    ],
+    "expr": "((f(0)+f(3))>0 ? ((f(1)*12-f(2))/(f(0)+f(3))*100) : 0)",
+    "format": "pct",
+    "metrics": [
+      {
+        "label": "Gross yield",
+        "code": "pct(f(0)>0 ? f(1)*12/f(0)*100 : 0)"
+      },
+      {
+        "label": "Annual net rent",
+        "code": "money(f(1)*12-f(2))"
+      }
+    ],
+    "method": "Gross yield is annual rent divided by purchase price. Net yield divides annual rent minus operating expenses by the total cash cost (purchase price plus closing costs). Vacancy, financing and tax are not included.",
+    "faq": [
+      [
+        "Which yield should I compare?",
+        "Net yield is usually more informative because it includes costs. Compare like with like across properties."
+      ],
+      [
+        "Does this include mortgage costs?",
+        "No. This is a property-level yield before financing and tax."
+      ],
+      [
+        "Is a higher yield always better?",
+        "Not necessarily. Higher yields can reflect higher risk, lower growth or higher maintenance."
+      ]
+    ],
+    "partners": [
+      {
+        "url": "https://www.realtor.com/research/data/",
+        "label": "Check local market rent data"
+      }
+    ]
+  },
+  {
+    "slug": "personal-loan-payment-calculator",
+    "title": "Free Personal Loan Payment Calculator",
+    "kicker": "Personal finance",
+    "headline": "Personal Loan Payment Calculator",
+    "desc": "Free no-signup personal loan payment calculator: estimate monthly payment, total repaid and total interest. Nothing uploaded.",
+    "lead": "Estimate a fixed-rate personal loan payment from amount, APR and term. Runs entirely in your browser.",
+    "inputs": [
+      {
+        "label": "Loan amount ($)",
+        "default": 15000,
+        "attrs": {
+          "min": "0",
+          "step": "500"
+        }
+      },
+      {
+        "label": "APR (%)",
+        "default": 12.99,
+        "attrs": {
+          "min": "0",
+          "max": "40",
+          "step": "0.01"
+        }
+      },
+      {
+        "label": "Loan term (months)",
+        "default": 36,
+        "attrs": {
+          "min": "1",
+          "max": "84",
+          "step": "1"
+        }
+      }
+    ],
+    "expr": "(function(){var p=Math.max(0,f(0));var r=f(1)/100/12;var n=Math.max(1,f(2));return r>0?p*r/(1-Math.pow(1+r,-n)):p/n;})()",
+    "format": "money",
+    "metrics": [
+      {
+        "label": "Total repaid",
+        "code": "money((function(){var p=Math.max(0,f(0));var r=f(1)/100/12;var n=Math.max(1,f(2));var pay=r>0?p*r/(1-Math.pow(1+r,-n)):p/n;return pay*n;})())"
+      },
+      {
+        "label": "Total interest",
+        "code": "money((function(){var p=Math.max(0,f(0));var r=f(1)/100/12;var n=Math.max(1,f(2));var pay=r>0?p*r/(1-Math.pow(1+r,-n)):p/n;return Math.max(0,pay*n-p);})())"
+      }
+    ],
+    "method": "The monthly payment uses the standard fixed-rate amortization formula. Origination fees, late fees and variable rates are not included. An estimate is not an offer of credit.",
+    "faq": [
+      [
+        "Does this check my eligibility?",
+        "No. It only does arithmetic on the numbers you enter and does not contact any lender."
+      ],
+      [
+        "What does APR include?",
+        "APR may include certain fees, but it varies by lender. Check the lender disclosure for the exact definition."
+      ],
+      [
+        "Are there fees?",
+        "Some loans have origination or early-repayment fees. This tool does not model them."
+      ]
+    ],
+    "partners": [
+      {
+        "url": "https://www.bankrate.com/loans/personal-loans/",
+        "label": "Compare current personal loan rates"
+      },
+      {
+        "url": "https://www.consumerfinance.gov/consumer-tools/loans/",
+        "label": "Official loan guides (CFPB)"
+      }
+    ]
+  },
+  {
+    "slug": "debt-to-income-ratio-calculator-mortgage",
+    "title": "Free Debt-to-Income Ratio Calculator for Mortgage",
+    "kicker": "Home buying",
+    "headline": "Debt-to-Income Ratio Calculator for Mortgage",
+    "desc": "Free no-signup debt-to-income (DTI) calculator for mortgage applicants. Estimate front-end and back-end DTI from income and debts. Nothing uploaded.",
+    "lead": "Estimate the debt-to-income ratio a lender may look at, using your income, proposed housing payment and other monthly debts.",
+    "inputs": [
+      {
+        "label": "Annual gross income ($)",
+        "default": 90000,
+        "attrs": {
+          "min": "0",
+          "step": "1000"
+        }
+      },
+      {
+        "label": "Proposed monthly housing payment ($)",
+        "default": 1800,
+        "attrs": {
+          "min": "0",
+          "step": "50"
+        }
+      },
+      {
+        "label": "Other monthly debt payments ($)",
+        "default": 500,
+        "attrs": {
+          "min": "0",
+          "step": "50"
+        }
+      }
+    ],
+    "expr": "((f(0)/12)>0 ? ((f(1)+f(2))/(f(0)/12)*100) : 0)",
+    "format": "pct",
+    "metrics": [
+      {
+        "label": "Gross monthly income",
+        "code": "money(f(0)/12)"
+      },
+      {
+        "label": "Total monthly debt",
+        "code": "money(f(1)+f(2))"
+      }
+    ],
+    "method": "Back-end DTI is total monthly debt payments divided by gross monthly income. Front-end DTI uses only the housing payment. Lenders calculate income and debts using their own rules, which may differ from the figures you enter here.",
+    "faq": [
+      [
+        "What DTI do lenders allow?",
+        "Limits vary by loan program and lender. Check current official program guidelines."
+      ],
+      [
+        "What counts as monthly debt?",
+        "Typically minimum payments on loans and credit cards, but lender definitions vary."
+      ],
+      [
+        "Is this a credit check?",
+        "No. Nothing is sent anywhere and no lender is contacted."
+      ]
+    ],
+    "partners": [
+      {
+        "url": "https://www.consumerfinance.gov/owning-a-home/",
+        "label": "Official home-buying guides (CFPB)"
+      },
+      {
+        "url": "https://www.bankrate.com/mortgages/",
+        "label": "Compare current mortgage rates"
+      }
+    ]
+  }
+]

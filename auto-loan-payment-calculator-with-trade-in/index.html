@@ -1,0 +1,60 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Free Auto Loan Payment Calculator With Trade-In</title><meta name="description" content="Free no-signup auto loan payment calculator with trade-in and down payment. Estimate monthly payment and total interest. Nothing is uploaded."><meta name="robots" content="index,follow">
+<meta property="og:type" content="website"><meta property="og:title" content="Free Auto Loan Payment Calculator With Trade-In"><meta property="og:description" content="Free no-signup auto loan payment calculator with trade-in and down payment. Estimate monthly payment and total interest. Nothing is uploaded.">
+<link rel="canonical" href="https://b2appsdev-del.github.io/auto-loan-payment-calculator-with-trade-in/"><script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebApplication", "name": "Free Auto Loan Payment Calculator With Trade-In", "description": "Free no-signup auto loan payment calculator with trade-in and down payment. Estimate monthly payment and total interest. Nothing is uploaded.", "applicationCategory": "FinanceApplication", "operatingSystem": "Any modern web browser", "url": "https://b2appsdev-del.github.io/auto-loan-payment-calculator-with-trade-in/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Does this include sales tax and fees?", "acceptedAnswer": {"@type": "Answer", "text": "No. Add your local sales tax, title, registration and dealer fees to see the out-the-door cost."}}, {"@type": "Question", "name": "Will this affect my credit?", "acceptedAnswer": {"@type": "Answer", "text": "No. This calculator runs locally and does not contact any lender or pull your credit."}}, {"@type": "Question", "name": "Is a longer term always cheaper?", "acceptedAnswer": {"@type": "Answer", "text": "Not necessarily. A longer term lowers the monthly payment but can increase total interest."}}]}]}</script><style>
+:root{--bg:#0a0e14;--surf:#111925;--line:#223044;--txt:#e8eef5;--mut:#9fb0c4;--acc:#38bdf8;--ok:#3ddc97;--warn:#fbbf24}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(700px 400px at 10% -10%,rgba(56,189,248,.10),transparent 60%),var(--bg);color:var(--txt);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif}
+.wrap{max-width:840px;margin:0 auto;padding:44px 18px 72px}h1{font-size:clamp(1.8rem,5vw,2.5rem);line-height:1.14;letter-spacing:-.03em;margin:0 0 14px}
+h2{font-size:1.2rem;margin:34px 0 10px}.lead{font-size:1.08rem;color:#c8d6e6;max-width:64ch}
+.kicker{color:var(--acc);text-transform:uppercase;letter-spacing:.13em;font-size:.72rem;font-weight:700}
+.card{border:1px solid var(--line);background:var(--surf);border-radius:12px;padding:18px 20px;margin:16px 0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:12px}
+label{display:block;font-weight:650;margin:6px 0 4px;font-size:.88rem}
+input[type=number]{width:100%;padding:10px 11px;border-radius:9px;border:1px solid var(--line);background:#0b121c;color:var(--txt);font:inherit}
+.btn{display:inline-flex;align-items:center;justify-content:center;background:var(--acc);color:#04121c;text-decoration:none;font-weight:750;border:0;border-radius:10px;padding:12px 20px;margin:14px 8px 0 0;cursor:pointer;font:inherit;font-size:1rem}
+.result{margin-top:16px;border:1px solid var(--line);border-left:3px solid var(--ok);border-radius:10px;padding:16px 18px;background:#0b121c}
+.result .big{font-size:2.1rem;font-weight:800;color:var(--ok);letter-spacing:-.02em}
+.metric{display:flex;justify-content:space-between;border-bottom:1px solid var(--line);padding:7px 0;font-size:.92rem}
+.metric span:last-child{font-weight:700}
+.disclosure{border:1px solid rgba(251,191,36,.45);background:rgba(251,191,36,.07);border-radius:10px;padding:14px 16px;margin:16px 0;font-size:.9rem;color:#f4e2b8}
+.fine,.disclaimer{color:var(--mut);font-size:.82rem}.disclaimer{margin-top:32px;border-top:1px solid var(--line);padding-top:16px}
+a{color:var(--acc)}.back{display:inline-block;margin-bottom:18px;color:var(--mut);font-size:.82rem;text-decoration:none}
+.free{display:inline-block;background:rgba(61,220,151,.12);border:1px solid rgba(61,220,151,.4);color:var(--ok);border-radius:999px;padding:5px 11px;font-size:.78rem;font-weight:700}
+</style></head><body><div class="wrap">
+<a class="back" href="https://b2appsdev-del.github.io/start/">&larr; All free B2 Apps tools</a><div class="kicker">Auto financing</div>
+<h1>Auto Loan Payment Calculator With Trade-In</h1><p class="lead">Estimate a monthly car payment from price, down payment, trade-in value, APR and term. Runs entirely on your device.</p><p><span class="free">FREE - NO SIGNUP - NOTHING UPLOADED</span></p>
+<h2>1. Calculate</h2><div class="card"><form id="calc-form"><div class="grid"><div><label for="f0">Vehicle price ($)</label><input id="f0" type="number" value="30000" min="0" step="500"></div>
+<div><label for="f1">Down payment ($)</label><input id="f1" type="number" value="4000" min="0" step="500"></div>
+<div><label for="f2">Trade-in value ($)</label><input id="f2" type="number" value="5000" min="0" step="500"></div>
+<div><label for="f3">APR (%)</label><input id="f3" type="number" value="6.9" min="0" max="30" step="0.01"></div>
+<div><label for="f4">Loan term (months)</label><input id="f4" type="number" value="60" min="1" max="96" step="1"></div></div>
+<button class="btn" type="submit">Calculate</button></form>
+<div id="calc-result" class="result">Enter your own figures and press the button. Nothing leaves your device.</div></div>
+<h2>2. How this is calculated</h2><div class="card"><p>The amount financed is vehicle price minus down payment and trade-in value. The monthly payment uses the standard amortization formula at the entered APR and term. Taxes, fees, add-ons and dealer incentives are not included.</p></div>
+<h2>3. If you want a second opinion</h2>
+<div class="disclosure"><strong>Affiliate disclosure.</strong> The links below may become affiliate or lead-referral links. If you use them and a provider pays us a commission, we may earn money <strong>at no extra cost to you</strong>. We are not a lender, adviser or service provider. This is information, not a recommendation — compare terms yourself.</div>
+<div class="card"><p><a class="btn" href="https://www.bankrate.com/auto/auto-loans/" target="_blank" rel="sponsored nofollow">Compare current auto loan rates (informational link)</a></p>
+<p><a class="btn alt" href="https://www.kbb.com/whats-my-car-worth/" target="_blank" rel="sponsored nofollow">Check a used-car trade-in value guide (informational link)</a></p></div>
+<h2>Questions</h2><div class="card"><p><strong>Does this include sales tax and fees?</strong> No. Add your local sales tax, title, registration and dealer fees to see the out-the-door cost.</p>
+<p><strong>Will this affect my credit?</strong> No. This calculator runs locally and does not contact any lender or pull your credit.</p>
+<p><strong>Is a longer term always cheaper?</strong> Not necessarily. A longer term lowers the monthly payment but can increase total interest.</p></div>
+<div class="disclaimer"><strong>Disclaimer.</strong> Educational and informational purposes only. Not financial, investment, tax or legal advice. This tool is a simplified estimate and does not establish eligibility, affordability or any outcome. Rules and third-party policies change; you are solely responsible for verifying all figures with a qualified professional and official sources. Affiliate relationships are disclosed above. No income or performance claim is made.</div>
+</div><script>
+(function(){
+  var f=function(i){return parseFloat(document.getElementById('f'+i).value)||0;};
+  function money(v){return '$'+Math.round(v).toLocaleString('en-US');}
+  function pct(v){return (Math.round(v*100)/100)+'%';}
+  function num(v){return (Math.round(v*100)/100).toLocaleString('en-US');}
+  function months(v){return v<0?'Not paying down at this payment':(Math.round(v)+' months');}
+  var fmt=money;
+  var form=document.getElementById('calc-form');
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    var v=(function(){var p=Math.max(0,f(0)-f(1)-f(2));var r=f(3)/100/12;var n=Math.max(1,f(4));return r>0?p*r/(1-Math.pow(1+r,-n)):p/n;})();
+    var out=fmt(v);
+    var extra='<div class="metric"><span>Amount financed</span><span>' + money(Math.max(0,f(0)-f(1)-f(2))) + '</span></div>' +'<div class="metric"><span>Total interest (est.)</span><span>' + money((function(){var p=Math.max(0,f(0)-f(1)-f(2));var r=f(3)/100/12;var n=Math.max(1,f(4));var pay=r>0?p*r/(1-Math.pow(1+r,-n)):p/n;return Math.max(0,pay*n-p);})()) + '</span></div>';
+    document.getElementById('calc-result').innerHTML='<div class="big">'+out+'</div>'+extra+
+      '<p class="fine" style="margin-top:12px">Estimate only. Verify every figure with a qualified professional and current official sources before relying on it.</p>';
+  });
+})();
+</script></body></html>
