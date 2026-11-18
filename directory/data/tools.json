@@ -18,7 +18,13 @@
       "featured": true,
       "privacyFirst": true,
       "description": "Client-side EU VAT & reverse-charge invoice generator with member-state rate presets, VAT ID format checks, and zero data leaving your browser.",
-      "tags": ["eu vat", "reverse charge", "invoice", "freelancer", "privacy-first"],
+      "tags": [
+        "eu vat",
+        "reverse charge",
+        "invoice",
+        "freelancer",
+        "privacy-first"
+      ],
       "url": "https://b2appsdev-del.github.io/eu-vat-invoice-checker/"
     },
     {
@@ -31,7 +37,14 @@
       "featured": true,
       "privacyFirst": true,
       "description": "Analyze UCITS ETF portfolio overlap, weighted Total Expense Ratio (TER), and regional/sector weights locally in your browser.",
-      "tags": ["ucits", "etf", "ter", "overlap", "eu investing", "privacy-first"],
+      "tags": [
+        "ucits",
+        "etf",
+        "ter",
+        "overlap",
+        "eu investing",
+        "privacy-first"
+      ],
       "url": "https://b2appsdev-del.github.io/ucits-etf-analyzer/"
     },
     {
@@ -44,7 +57,12 @@
       "featured": true,
       "privacyFirst": true,
       "description": "Central hub for B2 Apps zero-tracking web calculators, EU compliance helpers, and developer utilities built for freelancers and lean teams.",
-      "tags": ["b2 apps", "web tools", "privacy-first", "calculators"],
+      "tags": [
+        "b2 apps",
+        "web tools",
+        "privacy-first",
+        "calculators"
+      ],
       "url": "https://b2appsdev-del.github.io/"
     },
     {
@@ -57,7 +75,14 @@
       "featured": true,
       "privacyFirst": true,
       "description": "Automated Apify Actor that crawls XML sitemaps and audits title length, meta descriptions, canonicals, H1 count, and HTTP status codes.",
-      "tags": ["apify", "seo", "sitemap", "canonical", "audit", "automation"],
+      "tags": [
+        "apify",
+        "seo",
+        "sitemap",
+        "canonical",
+        "audit",
+        "automation"
+      ],
       "url": "https://apify.com/b2apps/public-sitemap-seo-auditor"
     },
     {
@@ -70,7 +95,14 @@
       "featured": true,
       "privacyFirst": true,
       "description": "4 production-ready n8n & Make blueprints to sync Stripe and Gumroad payouts, fees, and tax reserves into Notion and Google Sheets.",
-      "tags": ["n8n", "make", "stripe", "gumroad", "notion", "finance ops"],
+      "tags": [
+        "n8n",
+        "make",
+        "stripe",
+        "gumroad",
+        "notion",
+        "finance ops"
+      ],
       "url": "https://devbloom12.gumroad.com/l/fgeokd"
     },
     {
@@ -83,7 +115,13 @@
       "featured": true,
       "privacyFirst": true,
       "description": "3 self-hostable n8n workflows for Shopify order alerts, low-stock monitoring, and automated customer fulfillment tagging.",
-      "tags": ["shopify", "n8n", "automation", "ecommerce", "webhooks"],
+      "tags": [
+        "shopify",
+        "n8n",
+        "automation",
+        "ecommerce",
+        "webhooks"
+      ],
       "url": "https://devbloom12.gumroad.com/l/bioroy"
     },
     {
@@ -96,7 +134,13 @@
       "featured": true,
       "privacyFirst": true,
       "description": "Complete Excel/Sheets operating system for EU freelancers and solo agencies to model day rates, VAT/income tax reserves, and runway.",
-      "tags": ["freelancer", "cashflow", "tax reserve", "rate calculator", "excel"],
+      "tags": [
+        "freelancer",
+        "cashflow",
+        "tax reserve",
+        "rate calculator",
+        "excel"
+      ],
       "url": "https://devbloom12.gumroad.com/l/nlahdt"
     },
     {
@@ -109,7 +153,14 @@
       "featured": true,
       "privacyFirst": true,
       "description": "Model true unit economics including COGS, payment gateway fees, shipping, VAT, and break-even ROAS before scaling ad spend.",
-      "tags": ["shopify", "profit", "margin", "roas", "ecommerce", "calculator"],
+      "tags": [
+        "shopify",
+        "profit",
+        "margin",
+        "roas",
+        "ecommerce",
+        "calculator"
+      ],
       "url": "https://devbloom12.gumroad.com/l/dyjrry"
     },
     {
@@ -122,7 +173,14 @@
       "featured": true,
       "privacyFirst": true,
       "description": "Prevent API key and .env leaks across teams with ready-to-drop pre-commit hooks, GitHub Actions workflows, and secret policy templates.",
-      "tags": ["envguard", "secrets", "security", "github actions", "pre-commit", "devsecops"],
+      "tags": [
+        "envguard",
+        "secrets",
+        "security",
+        "github actions",
+        "pre-commit",
+        "devsecops"
+      ],
       "url": "https://devbloom12.gumroad.com/l/bjsxn"
     },
     {
@@ -135,7 +193,14 @@
       "featured": true,
       "privacyFirst": true,
       "description": "Offline Excel workbook and CSV templates to project long-term TER fee drag, dividend withholding impact, and portfolio rebalancing.",
-      "tags": ["ucits", "etf", "excel", "fee drag", "ter", "investing"],
+      "tags": [
+        "ucits",
+        "etf",
+        "excel",
+        "fee drag",
+        "ter",
+        "investing"
+      ],
       "url": "https://devbloom12.gumroad.com/l/kukkk"
     },
     {
@@ -148,7 +213,14 @@
       "featured": true,
       "privacyFirst": true,
       "description": "Step-by-step printable pre-flight audit covering EU legal pages, checkout taxes, speed, SEO metadata, and analytics before launch.",
-      "tags": ["shopify", "checklist", "launch", "audit", "pdf", "ecommerce"],
+      "tags": [
+        "shopify",
+        "checklist",
+        "launch",
+        "audit",
+        "pdf",
+        "ecommerce"
+      ],
       "url": "https://devbloom12.gumroad.com/l/umkclc"
     },
     {
@@ -161,7 +233,13 @@
       "featured": true,
       "privacyFirst": true,
       "description": "Generate, validate, and inject clean JSON-LD Schema.org structured data directly inside Framer projects for richer search snippets.",
-      "tags": ["framer", "schema.org", "json-ld", "seo", "structured data"],
+      "tags": [
+        "framer",
+        "schema.org",
+        "json-ld",
+        "seo",
+        "structured data"
+      ],
       "url": "https://www.framer.com/marketplace/plugins/schemaflow-seo/"
     },
     {
@@ -174,7 +252,14 @@
       "featured": true,
       "privacyFirst": true,
       "description": "Automated Apify Actor that extracts and validates JSON-LD & Schema.org structured data across public URLs and sitemaps.",
-      "tags": ["apify", "json-ld", "schema.org", "seo", "validator", "automation"],
+      "tags": [
+        "apify",
+        "json-ld",
+        "schema.org",
+        "seo",
+        "validator",
+        "automation"
+      ],
       "url": "https://apify.com/b2apps/public-jsonld-schema-validator"
     },
     {
@@ -187,7 +272,13 @@
       "featured": true,
       "privacyFirst": true,
       "description": "Client-side GDPR cookie consent banner and privacy policy generator for websites and SaaS apps. Educational template only; not legal advice.",
-      "tags": ["gdpr", "cookie banner", "privacy policy", "eu compliance", "privacy-first"],
+      "tags": [
+        "gdpr",
+        "cookie banner",
+        "privacy policy",
+        "eu compliance",
+        "privacy-first"
+      ],
       "url": "https://b2appsdev-del.github.io/gdpr-cookie-privacy-generator/"
     },
     {
@@ -200,7 +291,14 @@
       "featured": true,
       "privacyFirst": true,
       "description": "Model treaty vs. statutory EU/US dividend withholding tax drag on ETFs and stocks locally in your browser. Educational tool only; not tax or investment advice.",
-      "tags": ["dividend", "withholding tax", "wht", "etf", "eu investing", "privacy-first"],
+      "tags": [
+        "dividend",
+        "withholding tax",
+        "wht",
+        "etf",
+        "eu investing",
+        "privacy-first"
+      ],
       "url": "https://b2appsdev-del.github.io/dividend-withholding-tax-calculator/"
     },
     {
@@ -213,7 +311,14 @@
       "featured": true,
       "privacyFirst": true,
       "description": "Official VS Code Marketplace publisher for EnvGuard (.env secret leak prevention) and JSON-LD & Schema.org Linter.",
-      "tags": ["vscode", "envguard", "json-ld", "schema.org", "linter", "security"],
+      "tags": [
+        "vscode",
+        "envguard",
+        "json-ld",
+        "schema.org",
+        "linter",
+        "security"
+      ],
       "url": "https://marketplace.visualstudio.com/publishers/b2-apps"
     },
     {
@@ -226,7 +331,13 @@
       "featured": true,
       "privacyFirst": true,
       "description": "Practical checklists, risk-tier worksheets, and vendor audit templates for EU GDPR and EU AI Act readiness. Educational resource only; not legal advice.",
-      "tags": ["gdpr", "eu ai act", "compliance", "audit", "checklist"],
+      "tags": [
+        "gdpr",
+        "eu ai act",
+        "compliance",
+        "audit",
+        "checklist"
+      ],
       "url": "https://devbloom12.gumroad.com/l/fxcnyb"
     },
     {
@@ -239,7 +350,13 @@
       "featured": true,
       "privacyFirst": true,
       "description": "Ready-to-customize agency retainer agreements, Scope-of-Work (SOW) templates, and change-request clauses to prevent scope creep. Not legal advice.",
-      "tags": ["agency", "retainer", "sow", "proposal", "freelancer"],
+      "tags": [
+        "agency",
+        "retainer",
+        "sow",
+        "proposal",
+        "freelancer"
+      ],
       "url": "https://devbloom12.gumroad.com/l/pafyvd"
     },
     {
@@ -252,7 +369,14 @@
       "featured": true,
       "privacyFirst": true,
       "description": "Spreadsheet model for SaaS founders to forecast MRR, net dollar retention, churn, CAC payback, and cash runway. Educational planning tool only; not financial advice.",
-      "tags": ["saas", "mrr", "churn", "runway", "financial model", "excel"],
+      "tags": [
+        "saas",
+        "mrr",
+        "churn",
+        "runway",
+        "financial model",
+        "excel"
+      ],
       "url": "https://devbloom12.gumroad.com/l/saawqu"
     },
     {
@@ -265,7 +389,13 @@
       "featured": true,
       "privacyFirst": true,
       "description": "Track multi-currency client invoices, FX conversion, deductible expenses, and EU VAT obligations in one offline workbook. Educational tool only; not tax advice.",
-      "tags": ["eu vat", "multi-currency", "freelancer", "profit tracker", "excel"],
+      "tags": [
+        "eu vat",
+        "multi-currency",
+        "freelancer",
+        "profit tracker",
+        "excel"
+      ],
       "url": "https://devbloom12.gumroad.com/l/fynlyw"
     },
     {
@@ -278,7 +408,14 @@
       "featured": true,
       "privacyFirst": true,
       "description": "Self-hostable n8n workflows connecting Apify SEO and JSON-LD Actors to enrich B2B leads and automate technical audit reports.",
-      "tags": ["n8n", "apify", "seo", "json-ld", "lead enrichment", "automation"],
+      "tags": [
+        "n8n",
+        "apify",
+        "seo",
+        "json-ld",
+        "lead enrichment",
+        "automation"
+      ],
       "url": "https://devbloom12.gumroad.com/l/mpgkuo"
     },
     {
@@ -291,7 +428,14 @@
       "featured": true,
       "privacyFirst": true,
       "description": "Automated n8n workflows to sync Gumroad sales, YouTube channel KPIs, and conversion metrics into Notion or Google Sheets.",
-      "tags": ["n8n", "gumroad", "youtube", "analytics", "kpi", "automation"],
+      "tags": [
+        "n8n",
+        "gumroad",
+        "youtube",
+        "analytics",
+        "kpi",
+        "automation"
+      ],
       "url": "https://devbloom12.gumroad.com/l/fvdkbo"
     },
     {
@@ -304,7 +448,14 @@
       "featured": true,
       "privacyFirst": true,
       "description": "Deterministic Model Context Protocol (MCP) server for EU VAT ID validation, live EC VIES checks, and cross-border B2B reverse-charge calculation.",
-      "tags": ["mcp", "eu vat", "vies", "reverse charge", "claude", "cursor"],
+      "tags": [
+        "mcp",
+        "eu vat",
+        "vies",
+        "reverse charge",
+        "claude",
+        "cursor"
+      ],
       "url": "https://github.com/b2appsdev-del/eu-vat-vies-mcp"
     },
     {
@@ -317,7 +468,14 @@
       "featured": true,
       "privacyFirst": true,
       "description": "Model Context Protocol (MCP) server that audits Schema.org JSON-LD structured data, OpenGraph tags, canonicals, and technical SEO inside AI IDEs.",
-      "tags": ["mcp", "json-ld", "schema.org", "seo", "audit", "claude"],
+      "tags": [
+        "mcp",
+        "json-ld",
+        "schema.org",
+        "seo",
+        "audit",
+        "claude"
+      ],
       "url": "https://github.com/b2appsdev-del/jsonld-seo-audit-mcp"
     },
     {
@@ -330,7 +488,14 @@
       "featured": true,
       "privacyFirst": true,
       "description": "Client-side /llms.txt, /llms-full.txt, and AI crawler robots.txt generator (GPTBot, OAI-SearchBot, ClaudeBot, PerplexityBot) with a live GEO Readiness Score.",
-      "tags": ["llms.txt", "geo", "robots.txt", "gptbot", "ai seo", "privacy-first"],
+      "tags": [
+        "llms.txt",
+        "geo",
+        "robots.txt",
+        "gptbot",
+        "ai seo",
+        "privacy-first"
+      ],
       "url": "https://b2appsdev-del.github.io/llms-txt-generator/"
     },
     {
@@ -343,7 +508,13 @@
       "featured": false,
       "privacyFirst": true,
       "description": "Official European Commission service to verify EU VAT registration numbers for cross-border B2B reverse-charge invoicing.",
-      "tags": ["vies", "eu vat", "official", "b2b", "compliance"],
+      "tags": [
+        "vies",
+        "eu vat",
+        "official",
+        "b2b",
+        "compliance"
+      ],
       "url": "https://ec.europa.eu/taxation_customs/vies/"
     },
     {
@@ -356,7 +527,13 @@
       "featured": false,
       "privacyFirst": true,
       "description": "Official EU Commission lookup for current standard, reduced, and super-reduced VAT rates across all 27 member states.",
-      "tags": ["tedb", "vat rates", "oss", "european commission", "tax"],
+      "tags": [
+        "tedb",
+        "vat rates",
+        "oss",
+        "european commission",
+        "tax"
+      ],
       "url": "https://ec.europa.eu/taxation_customs/tedb/"
     },
     {
@@ -369,7 +546,13 @@
       "featured": false,
       "privacyFirst": false,
       "description": "Low-fee EUR SEPA and multi-currency receiving accounts widely used by EU freelancers, agencies, and remote contractors.",
-      "tags": ["iban", "sepa", "fx", "freelancer", "invoicing"],
+      "tags": [
+        "iban",
+        "sepa",
+        "fx",
+        "freelancer",
+        "invoicing"
+      ],
       "url": "https://wise.com/business"
     },
     {
@@ -382,7 +565,13 @@
       "featured": false,
       "privacyFirst": false,
       "description": "Comprehensive European ETF database with ISIN lookup, TER comparison, fund domicile, replication method, and distribution policy.",
-      "tags": ["ucits", "isin", "etf screener", "europe", "ter"],
+      "tags": [
+        "ucits",
+        "isin",
+        "etf screener",
+        "europe",
+        "ter"
+      ],
       "url": "https://www.justetf.com/"
     },
     {
@@ -395,7 +584,12 @@
       "featured": false,
       "privacyFirst": false,
       "description": "Independent ETF screening, tracking difference metrics, and fund flow analytics for European and global index investors.",
-      "tags": ["etf", "tracking difference", "analytics", "investing"],
+      "tags": [
+        "etf",
+        "tracking difference",
+        "analytics",
+        "investing"
+      ],
       "url": "https://www.trackinsight.com/"
     },
     {
@@ -408,7 +602,13 @@
       "featured": false,
       "privacyFirst": true,
       "description": "Official daily European Central Bank FX reference rates used for EUR-denominated portfolio valuation and cross-border accounting.",
-      "tags": ["ecb", "fx", "eur", "reference rates", "official"],
+      "tags": [
+        "ecb",
+        "fx",
+        "eur",
+        "reference rates",
+        "official"
+      ],
       "url": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html"
     },
     {
@@ -421,7 +621,13 @@
       "featured": false,
       "privacyFirst": true,
       "description": "Security header scanner for HTTPS, Content Security Policy (CSP), HSTS, and cookie flags on developer websites and web apps.",
-      "tags": ["security", "csp", "hsts", "headers", "web"],
+      "tags": [
+        "security",
+        "csp",
+        "hsts",
+        "headers",
+        "web"
+      ],
       "url": "https://developer.mozilla.org/en-US/observatory"
     },
     {
@@ -434,7 +640,12 @@
       "featured": false,
       "privacyFirst": true,
       "description": "Official LCP, INP, CLS, and Lighthouse technical SEO diagnostics for static sites, SaaS landing pages, and ecommerce storefronts.",
-      "tags": ["core web vitals", "lighthouse", "seo", "performance"],
+      "tags": [
+        "core web vitals",
+        "lighthouse",
+        "seo",
+        "performance"
+      ],
       "url": "https://pagespeed.web.dev/"
     },
     {
@@ -447,7 +658,13 @@
       "featured": false,
       "privacyFirst": true,
       "description": "Fast SAST CLI for detecting hardcoded API keys, tokens, and credentials in Git commit history and CI/CD pipelines.",
-      "tags": ["gitleaks", "secrets", "git", "open source", "security"],
+      "tags": [
+        "gitleaks",
+        "secrets",
+        "git",
+        "open source",
+        "security"
+      ],
       "url": "https://github.com/gitleaks/gitleaks"
     },
     {
@@ -460,7 +677,13 @@
       "featured": false,
       "privacyFirst": true,
       "description": "Fair-code node-based automation platform that runs on your own EU server with native Shopify, Stripe, Notion, and webhook integrations.",
-      "tags": ["n8n", "self-hosted", "automation", "webhooks", "gdpr"],
+      "tags": [
+        "n8n",
+        "self-hosted",
+        "automation",
+        "webhooks",
+        "gdpr"
+      ],
       "url": "https://n8n.io/"
     },
     {
@@ -473,7 +696,13 @@
       "featured": false,
       "privacyFirst": true,
       "description": "Official API, Liquid, Checkout UI, and App Bridge documentation for building compliant Shopify stores and merchant apps.",
-      "tags": ["shopify", "api", "liquid", "ecommerce", "docs"],
+      "tags": [
+        "shopify",
+        "api",
+        "liquid",
+        "ecommerce",
+        "docs"
+      ],
       "url": "https://shopify.dev/"
     },
     {
@@ -486,8 +715,523 @@
       "featured": false,
       "privacyFirst": true,
       "description": "Lightweight, cookieless, GDPR-compliant web analytics hosted in the EU without intrusive cookie consent banners.",
-      "tags": ["analytics", "gdpr", "cookieless", "eu", "privacy-first"],
+      "tags": [
+        "analytics",
+        "gdpr",
+        "cookieless",
+        "eu",
+        "privacy-first"
+      ],
       "url": "https://plausible.io/"
+    },
+    {
+      "id": "b2-metals-premium-calculator",
+      "name": "Metals Premium Calculator — offline tool for your own numbers",
+      "category": "ETF & Investing",
+      "pricing": "$9",
+      "tier": "pro",
+      "badge": "Offline Tool",
+      "featured": false,
+      "privacyFirst": true,
+      "description": "Compare gold, silver, platinum and palladium dealer premiums, melt value, buyback spread and break-even spot. All data stays in your browser; no account or upload. Educational only - not investment, tax or legal advice.",
+      "tags": [
+        "offline",
+        "no-signup",
+        "calculator",
+        "metals",
+        "premium"
+      ],
+      "url": "https://devbloom12.gumroad.com/l/metals-premium-calculator"
+    },
+    {
+      "id": "b2-metals-unit-converter",
+      "name": "Metals Unit Converter — troy oz, grams, kg, dwt, tola and purity",
+      "category": "ETF & Investing",
+      "pricing": "$9",
+      "tier": "pro",
+      "badge": "Offline Tool",
+      "featured": false,
+      "privacyFirst": true,
+      "description": "Convert precious-metal weights between troy ounces, grams, kilograms, pennyweight, tola, grains and more, with purity and spot value. All data stays in your browser; no account or upload. Educational only - not investment, tax or legal advice.",
+      "tags": [
+        "offline",
+        "no-signup",
+        "calculator",
+        "metals",
+        "unit",
+        "converter"
+      ],
+      "url": "https://devbloom12.gumroad.com/l/metals-unit-converter"
+    },
+    {
+      "id": "b2-earnings-season-planner",
+      "name": "Earnings Season Planner — expected move, sizing and checklist",
+      "category": "ETF & Investing",
+      "pricing": "$12",
+      "tier": "pro",
+      "badge": "Offline Tool",
+      "featured": false,
+      "privacyFirst": true,
+      "description": "Plan earnings dates with your own expected move, position size, dollar risk, portfolio impact and a pre-event checklist. All data stays in your browser; no account or upload. Educational only - not investment, tax or legal advice.",
+      "tags": [
+        "offline",
+        "no-signup",
+        "calculator",
+        "earnings",
+        "season",
+        "planner"
+      ],
+      "url": "https://devbloom12.gumroad.com/l/earnings-season-planner"
+    },
+    {
+      "id": "b2-etf-expense-analyzer",
+      "name": "ETF Expense Analyzer — what a fee gap costs over time",
+      "category": "ETF & Investing",
+      "pricing": "$12",
+      "tier": "pro",
+      "badge": "Offline Tool",
+      "featured": false,
+      "privacyFirst": true,
+      "description": "Compare two ETF expense ratios on the same hypothetical return. See ending values, fee drag, net return and cumulative fees year by year. All data stays in your browser; no account or upload. Educational only - not investment, tax or legal advice.",
+      "tags": [
+        "offline",
+        "no-signup",
+        "calculator",
+        "expense",
+        "analyzer"
+      ],
+      "url": "https://devbloom12.gumroad.com/l/etf-expense-analyzer"
+    },
+    {
+      "id": "b2-metals-dca-planner",
+      "name": "Metals DCA Planner — average cost and P/L for periodic purchases",
+      "category": "ETF & Investing",
+      "pricing": "$12",
+      "tier": "pro",
+      "badge": "Offline Tool",
+      "featured": false,
+      "privacyFirst": true,
+      "description": "Record metal purchases at different prices and see units, average cost, current value, P/L and a what-if table. Offline, local-only. All data stays in your browser; no account or upload. Educational only - not investment, tax or legal advice.",
+      "tags": [
+        "offline",
+        "no-signup",
+        "calculator",
+        "metals",
+        "planner"
+      ],
+      "url": "https://devbloom12.gumroad.com/l/metals-dca-planner"
+    },
+    {
+      "id": "b2-metals-dealer-comparison",
+      "name": "Metals Dealer Comparison Sheet — premium, effective cost and buyback",
+      "category": "ETF & Investing",
+      "pricing": "$12",
+      "tier": "pro",
+      "badge": "Offline Tool",
+      "featured": false,
+      "privacyFirst": true,
+      "description": "Compare gold and silver dealer quotes on melt value, premium, shipping, effective cost per ounce and buyback spread. Offline sheet. All data stays in your browser; no account or upload. Educational only - not investment, tax or legal advice.",
+      "tags": [
+        "offline",
+        "no-signup",
+        "calculator",
+        "metals",
+        "dealer",
+        "comparison"
+      ],
+      "url": "https://devbloom12.gumroad.com/l/metals-dealer-comparison"
+    },
+    {
+      "id": "b2-stock-buyback-tracker",
+      "name": "Stock Buyback Tracker — shares retired and the EPS effect",
+      "category": "ETF & Investing",
+      "pricing": "$12",
+      "tier": "pro",
+      "badge": "Offline Tool",
+      "featured": false,
+      "privacyFirst": true,
+      "description": "Enter net income, shares, buyback amount and price. See shares retired, EPS before and after, buyback yield and size scenarios. All data stays in your browser; no account or upload. Educational only - not investment, tax or legal advice.",
+      "tags": [
+        "offline",
+        "no-signup",
+        "calculator",
+        "stock",
+        "buyback",
+        "tracker"
+      ],
+      "url": "https://devbloom12.gumroad.com/l/stock-buyback-tracker"
+    },
+    {
+      "id": "b2-stock-split-adjuster",
+      "name": "Stock Split Adjuster — comparable prices across splits and reverse splits",
+      "category": "ETF & Investing",
+      "pricing": "$12",
+      "tier": "pro",
+      "badge": "Offline Tool",
+      "featured": false,
+      "privacyFirst": true,
+      "description": "Turn raw historical prices into a split-adjusted series. Enter prices and split ratios; see adjusted prices, factor and raw vs adjusted return. Offline. All data stays in your browser; no account or upload. Educational only - not investment, tax or legal advice.",
+      "tags": [
+        "offline",
+        "no-signup",
+        "calculator",
+        "stock",
+        "split",
+        "adjuster"
+      ],
+      "url": "https://devbloom12.gumroad.com/l/stock-split-adjuster"
+    },
+    {
+      "id": "b2-commodity-correlation-matrix",
+      "name": "Commodity Correlation Matrix — pairwise return relationships from your own prices",
+      "category": "ETF & Investing",
+      "pricing": "$19",
+      "tier": "pro",
+      "badge": "Offline Tool",
+      "featured": false,
+      "privacyFirst": true,
+      "description": "Paste price series and get a colour-coded correlation matrix plus volatility per asset. Date-aligned, pairwise, offline and transparent. All data stays in your browser; no account or upload. Educational only - not investment, tax or legal advice.",
+      "tags": [
+        "offline",
+        "no-signup",
+        "calculator",
+        "commodity",
+        "correlation",
+        "matrix"
+      ],
+      "url": "https://devbloom12.gumroad.com/l/commodity-correlation-matrix"
+    },
+    {
+      "id": "b2-crack-spread-calculator",
+      "name": "Crack Spread Calculator — refining margin per barrel and per contract",
+      "category": "ETF & Investing",
+      "pricing": "$19",
+      "tier": "pro",
+      "badge": "Offline Tool",
+      "featured": false,
+      "privacyFirst": true,
+      "description": "Build a 3-2-1 or custom-yield refining margin from your own prices. Revenue, gross and net margin per bbl, per contract and break-even. Offline. All data stays in your browser; no account or upload. Educational only - not investment, tax or legal advice.",
+      "tags": [
+        "offline",
+        "no-signup",
+        "calculator",
+        "crack",
+        "spread"
+      ],
+      "url": "https://devbloom12.gumroad.com/l/crack-spread-calculator"
+    },
+    {
+      "id": "b2-dividend-income-tracker",
+      "name": "Dividend Income Tracker — payments, withholding and net income",
+      "category": "ETF & Investing",
+      "pricing": "$19",
+      "tier": "pro",
+      "badge": "Offline Tool",
+      "featured": false,
+      "privacyFirst": true,
+      "description": "Log dividend payments with shares, per-share amount and withholding, then see net income, top tickers and a monthly chart. Offline. All data stays in your browser; no account or upload. Educational only - not investment, tax or legal advice.",
+      "tags": [
+        "offline",
+        "no-signup",
+        "calculator",
+        "dividend",
+        "income",
+        "tracker"
+      ],
+      "url": "https://payhip.com/b/1ilq4"
+    },
+    {
+      "id": "b2-etf-core-satellite-planner",
+      "name": "ETF Core-Satellite Planner — allocation, drift and rebalance amounts",
+      "category": "ETF & Investing",
+      "pricing": "$19",
+      "tier": "pro",
+      "badge": "Offline Tool",
+      "featured": false,
+      "privacyFirst": true,
+      "description": "Set core and satellite targets, see current weights, drift and the dollar amount to buy or sell. Offline ETF rebalance planner. All data stays in your browser; no account or upload. Educational only - not investment, tax or legal advice.",
+      "tags": [
+        "offline",
+        "no-signup",
+        "calculator",
+        "core",
+        "satellite",
+        "planner"
+      ],
+      "url": "https://payhip.com/b/ipG1w"
+    },
+    {
+      "id": "b2-etf-overlap-analyzer",
+      "name": "ETF Overlap Analyzer — shared holdings and shared weight",
+      "category": "ETF & Investing",
+      "pricing": "$19",
+      "tier": "pro",
+      "badge": "Offline Tool",
+      "featured": false,
+      "privacyFirst": true,
+      "description": "Paste two ETF holdings lists and see shared weight, common tickers, union, Jaccard and a common-holdings table. Offline. All data stays in your browser; no account or upload. Educational only - not investment, tax or legal advice.",
+      "tags": [
+        "offline",
+        "no-signup",
+        "calculator",
+        "overlap",
+        "analyzer"
+      ],
+      "url": "https://payhip.com/b/1V6U8"
+    },
+    {
+      "id": "b2-futures-curve-lab",
+      "name": "Futures Curve Lab — contango, backwardation and roll yield",
+      "category": "ETF & Investing",
+      "pricing": "$19",
+      "tier": "pro",
+      "badge": "Offline Tool",
+      "featured": false,
+      "privacyFirst": true,
+      "description": "Build a futures curve from your own prices and see contango, backwardation, front-to-back spread and annualised roll yield. Offline. All data stays in your browser; no account or upload. Educational only - not investment, tax or legal advice.",
+      "tags": [
+        "offline",
+        "no-signup",
+        "calculator",
+        "futures",
+        "curve"
+      ],
+      "url": "https://payhip.com/b/ubSil"
+    },
+    {
+      "id": "b2-gold-portfolio-hedge-calculator",
+      "name": "Gold Portfolio Hedge Calculator — notional, ounces and contracts",
+      "category": "ETF & Investing",
+      "pricing": "$19",
+      "tier": "pro",
+      "badge": "Offline Tool",
+      "featured": false,
+      "privacyFirst": true,
+      "description": "Turn a portfolio exposure and chosen hedge ratio into gold notional, ounces and futures contracts. Offline arithmetic tool. All data stays in your browser; no account or upload. Educational only - not investment, tax or legal advice.",
+      "tags": [
+        "offline",
+        "no-signup",
+        "calculator",
+        "gold",
+        "portfolio",
+        "hedge"
+      ],
+      "url": "https://payhip.com/b/B89A2"
+    },
+    {
+      "id": "b2-gold-silver-ratio-lab",
+      "name": "Gold/Silver Ratio Lab — offline ratio history and statistics",
+      "category": "ETF & Investing",
+      "pricing": "$19",
+      "tier": "pro",
+      "badge": "Offline Tool",
+      "featured": false,
+      "privacyFirst": true,
+      "description": "Compute the gold/silver ratio, import your price history, and see mean, z-score, percentile and bands. Offline, no feed. All data stays in your browser; no account or upload. Educational only - not investment, tax or legal advice.",
+      "tags": [
+        "offline",
+        "no-signup",
+        "calculator",
+        "gold",
+        "silver",
+        "ratio"
+      ],
+      "url": "https://payhip.com/b/347E9"
+    },
+    {
+      "id": "b2-macro-event-journal",
+      "name": "Macro Event Journal — offline tool for your own numbers",
+      "category": "ETF & Investing",
+      "pricing": "$19",
+      "tier": "pro",
+      "badge": "Offline Tool",
+      "featured": false,
+      "privacyFirst": true,
+      "description": "Log CPI, FOMC, NFP and OPEC events with expectation, actual, surprise, reactions and plan-followed stats. All data stays in your browser; no account or upload. Educational only - not investment, tax or legal advice.",
+      "tags": [
+        "offline",
+        "no-signup",
+        "calculator",
+        "macro",
+        "event",
+        "journal"
+      ],
+      "url": "https://payhip.com/b/eFZLV"
+    },
+    {
+      "id": "b2-margin-call-estimator",
+      "name": "Margin Call Estimator — equity, maintenance and the call price",
+      "category": "ETF & Investing",
+      "pricing": "$19",
+      "tier": "pro",
+      "badge": "Offline Tool",
+      "featured": false,
+      "privacyFirst": true,
+      "description": "Enter shares, price, loan and maintenance margin. See equity, requirement, excess, leverage and the price where a margin call starts. All data stays in your browser; no account or upload. Educational only - not investment, tax or legal advice.",
+      "tags": [
+        "offline",
+        "no-signup",
+        "calculator",
+        "margin",
+        "call",
+        "estimator"
+      ],
+      "url": "https://payhip.com/b/fnwOA"
+    },
+    {
+      "id": "b2-multi-asset-trade-journal",
+      "name": "Multi-Asset Trade Journal — offline tool for your own numbers",
+      "category": "ETF & Investing",
+      "pricing": "$19",
+      "tier": "pro",
+      "badge": "Offline Tool",
+      "featured": false,
+      "privacyFirst": true,
+      "description": "Log trades across stocks, metals and oil; track R multiples, expectancy, profit factor and an equity curve. All data stays in your browser; no account or upload. Educational only - not investment, tax or legal advice.",
+      "tags": [
+        "offline",
+        "no-signup",
+        "calculator",
+        "multi",
+        "asset",
+        "trade"
+      ],
+      "url": "https://payhip.com/b/W2pbC"
+    },
+    {
+      "id": "b2-oil-seasonality-tracker",
+      "name": "Oil Seasonality Tracker — monthly returns and seasonal statistics",
+      "category": "ETF & Investing",
+      "pricing": "$19",
+      "tier": "pro",
+      "badge": "Offline Tool",
+      "featured": false,
+      "privacyFirst": true,
+      "description": "Turn your own monthly oil returns into calendar-month averages, medians, dispersion, positive rates and a heatmap. Offline. All data stays in your browser; no account or upload. Educational only - not investment, tax or legal advice.",
+      "tags": [
+        "offline",
+        "no-signup",
+        "calculator",
+        "seasonality",
+        "tracker"
+      ],
+      "url": "https://payhip.com/b/l26GJ"
+    },
+    {
+      "id": "b2-oil-storage-economics",
+      "name": "Oil Storage Economics — carry, fair futures and break-even in one screen",
+      "category": "ETF & Investing",
+      "pricing": "$19",
+      "tier": "pro",
+      "badge": "Offline Tool",
+      "featured": false,
+      "privacyFirst": true,
+      "description": "Enter spot, futures, months, financing, tankage and insurance. See total carry, fair futures, net carry and annualised carry. Offline. All data stays in your browser; no account or upload. Educational only - not investment, tax or legal advice.",
+      "tags": [
+        "offline",
+        "no-signup",
+        "calculator",
+        "storage",
+        "economics"
+      ],
+      "url": "https://payhip.com/b/Mo41L"
+    },
+    {
+      "id": "b2-portfolio-drawdown-monitor",
+      "name": "Portfolio Drawdown Monitor — peak, max drawdown and time underwater",
+      "category": "ETF & Investing",
+      "pricing": "$19",
+      "tier": "pro",
+      "badge": "Offline Tool",
+      "featured": false,
+      "privacyFirst": true,
+      "description": "Enter your own portfolio values and see peak, current and maximum drawdown, recovery state, time underwater and a clean chart. Offline. All data stays in your browser; no account or upload. Educational only - not investment, tax or legal advice.",
+      "tags": [
+        "offline",
+        "no-signup",
+        "calculator",
+        "portfolio",
+        "drawdown",
+        "monitor"
+      ],
+      "url": "https://payhip.com/b/Ih2br"
+    },
+    {
+      "id": "b2-position-size-calculator",
+      "name": "Position Size Calculator — offline tool for your own numbers",
+      "category": "ETF & Investing",
+      "pricing": "$19",
+      "tier": "pro",
+      "badge": "Offline Tool",
+      "featured": false,
+      "privacyFirst": true,
+      "description": "Size stock and ETF positions by your own risk %, with R:R, max loss and CSV export. Offline, no signup. All data stays in your browser; no account or upload. Educational only - not investment, tax or legal advice.",
+      "tags": [
+        "offline",
+        "no-signup",
+        "calculator",
+        "position",
+        "size"
+      ],
+      "url": "https://payhip.com/b/sm279"
+    },
+    {
+      "id": "b2-commodity-tax-lot-tracker",
+      "name": "Commodity Tax Lot Tracker — FIFO realized P/L worksheet",
+      "category": "ETF & Investing",
+      "pricing": "$24",
+      "tier": "pro",
+      "badge": "Offline Tool",
+      "featured": false,
+      "privacyFirst": true,
+      "description": "Match commodity purchases and sales with FIFO, calculate realized P/L, holding days and open lots. Offline worksheet, not tax advice. All data stays in your browser; no account or upload. Educational only - not investment, tax or legal advice.",
+      "tags": [
+        "offline",
+        "no-signup",
+        "calculator",
+        "commodity",
+        "tracker"
+      ],
+      "url": "https://payhip.com/b/8UMW4"
+    },
+    {
+      "id": "b2-oil-inventory-dashboard",
+      "name": "Oil Inventory Dashboard — offline tool for your own numbers",
+      "category": "ETF & Investing",
+      "pricing": "$24",
+      "tier": "pro",
+      "badge": "Offline Tool",
+      "featured": false,
+      "privacyFirst": true,
+      "description": "Turn your own weekly inventory CSV into WoW changes, days of supply, 4-week averages and a trend chart. All data stays in your browser; no account or upload. Educational only - not investment, tax or legal advice.",
+      "tags": [
+        "offline",
+        "no-signup",
+        "calculator",
+        "inventory",
+        "dashboard"
+      ],
+      "url": "https://payhip.com/b/53IRm"
+    },
+    {
+      "id": "b2-commodity-portfolio-tracker",
+      "name": "Commodity Portfolio Tracker — offline tool for your own numbers",
+      "category": "ETF & Investing",
+      "pricing": "$29",
+      "tier": "pro",
+      "badge": "Offline Tool",
+      "featured": false,
+      "privacyFirst": true,
+      "description": "Track stocks, gold, silver, oil and cash in one offline view with allocation, P/L and rebalancing hints. All data stays in your browser; no account or upload. Educational only - not investment, tax or legal advice.",
+      "tags": [
+        "offline",
+        "no-signup",
+        "calculator",
+        "commodity",
+        "portfolio",
+        "tracker"
+      ],
+      "url": "https://payhip.com/b/nfLxa"
     }
   ]
 }
