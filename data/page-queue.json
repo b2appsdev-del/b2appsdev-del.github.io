@@ -773,5 +773,799 @@
         "label": "Compare current mortgage rates"
       }
     ]
+  },
+  {
+    "slug": "cap-rate-calculator-with-expenses",
+    "title": "Free Cap Rate Calculator With Operating Expenses",
+    "kicker": "Real estate investing",
+    "headline": "Cap Rate Calculator With Operating Expenses",
+    "desc": "Free no-signup cap rate calculator that includes operating expenses and closing costs. Estimate a property-level capitalization rate from your own numbers. Nothing uploaded.",
+    "lead": "Estimate cap rate from annual rent, operating expenses, purchase price and closing costs. All figures stay on your device.",
+    "inputs": [
+      {
+        "label": "Annual rental income ($)",
+        "default": 24000,
+        "attrs": {
+          "min": "0",
+          "step": "100"
+        }
+      },
+      {
+        "label": "Annual operating expenses ($)",
+        "default": 6000,
+        "attrs": {
+          "min": "0",
+          "step": "100"
+        }
+      },
+      {
+        "label": "Purchase price ($)",
+        "default": 250000,
+        "attrs": {
+          "min": "0",
+          "step": "1000"
+        }
+      },
+      {
+        "label": "Closing costs ($)",
+        "default": 8000,
+        "attrs": {
+          "min": "0",
+          "step": "500"
+        }
+      }
+    ],
+    "expr": "((f(2)+f(3))>0 ? ((f(0)-f(1))/(f(2)+f(3))*100) : 0)",
+    "format": "pct",
+    "metrics": [
+      {
+        "label": "Net operating income",
+        "code": "money(f(0)-f(1))"
+      },
+      {
+        "label": "Cost basis used",
+        "code": "money(f(2)+f(3))"
+      }
+    ],
+    "method": "Cap rate here is net operating income (annual rental income minus operating expenses) divided by cost basis (purchase price plus closing costs). Financing, taxes, vacancy and capital expenditures are not included, so this is only a property-level snapshot.",
+    "faq": [
+      [
+        "Does cap rate include mortgage payments?",
+        "No. Cap rate is a property-level measure before financing. Debt service is looked at separately, for example with DSCR."
+      ],
+      [
+        "Should closing costs be included?",
+        "Including them gives a cash-inclusive cap rate. Some investors use only purchase price; compare like with like."
+      ],
+      [
+        "Is this investment advice?",
+        "No. It is arithmetic on the numbers you enter. Verify all inputs and assumptions with qualified professionals."
+      ]
+    ],
+    "partners": [
+      {
+        "url": "https://www.realtor.com/research/data/",
+        "label": "Check local market rent data"
+      }
+    ]
+  },
+  {
+    "slug": "rental-property-cash-flow-calculator-monthly",
+    "title": "Free Monthly Rental Property Cash Flow Calculator",
+    "kicker": "Real estate investing",
+    "headline": "Monthly Rental Property Cash Flow Calculator",
+    "desc": "Free no-signup monthly rental property cash flow calculator with vacancy and maintenance reserve. Estimate cash flow from your own figures. Nothing uploaded.",
+    "lead": "Estimate monthly rental cash flow after vacancy, operating costs, mortgage and a maintenance reserve. Nothing leaves your device.",
+    "inputs": [
+      {
+        "label": "Monthly rent ($)",
+        "default": 2200,
+        "attrs": {
+          "min": "0",
+          "step": "50"
+        }
+      },
+      {
+        "label": "Monthly operating expenses ($)",
+        "default": 450,
+        "attrs": {
+          "min": "0",
+          "step": "25"
+        }
+      },
+      {
+        "label": "Monthly mortgage payment ($)",
+        "default": 1050,
+        "attrs": {
+          "min": "0",
+          "step": "25"
+        }
+      },
+      {
+        "label": "Vacancy allowance (%)",
+        "default": 5,
+        "attrs": {
+          "min": "0",
+          "max": "50",
+          "step": "1"
+        }
+      },
+      {
+        "label": "Maintenance reserve ($/month)",
+        "default": 150,
+        "attrs": {
+          "min": "0",
+          "step": "25"
+        }
+      }
+    ],
+    "expr": "f(0)*(1-f(3)/100)-f(1)-f(2)-f(4)",
+    "format": "money",
+    "metrics": [
+      {
+        "label": "Effective monthly rent",
+        "code": "money(f(0)*(1-f(3)/100))"
+      },
+      {
+        "label": "Total monthly outgo",
+        "code": "money(f(1)+f(2)+f(4))"
+      }
+    ],
+    "method": "Effective rent is monthly rent reduced by your vacancy allowance. Monthly cash flow is effective rent minus operating expenses, mortgage payment and maintenance reserve. Taxes, management fees and one-off repairs are not modeled unless you include them in your expense input.",
+    "faq": [
+      [
+        "What should I include in operating expenses?",
+        "Typical examples are property tax, insurance, utilities paid by the owner, HOA dues and management. Use figures that match your own situation."
+      ],
+      [
+        "Is this take-home cash?",
+        "No. This is a simplified before-tax estimate. Your tax result depends on depreciation, deductions and local rules."
+      ],
+      [
+        "Is this financial advice?",
+        "No. It is arithmetic on your inputs. Verify assumptions with a qualified professional."
+      ]
+    ],
+    "partners": [
+      {
+        "url": "https://www.realtor.com/research/data/",
+        "label": "Check local market rent data"
+      },
+      {
+        "url": "https://www.bankrate.com/real-estate/",
+        "label": "Compare current mortgage and refinance rates"
+      }
+    ]
+  },
+  {
+    "slug": "refinance-cash-out-calculator",
+    "title": "Free Cash-Out Refinance Calculator",
+    "kicker": "Refinancing",
+    "headline": "Cash-Out Refinance Calculator",
+    "desc": "Free no-signup cash-out refinance calculator. Estimate the maximum new loan at a chosen LTV and the cash you could receive after paying off the old loan and costs. Nothing uploaded.",
+    "lead": "See a rough cash-out refinance estimate from property value, current balance, target LTV and closing costs. Runs entirely in your browser.",
+    "inputs": [
+      {
+        "label": "Current property value ($)",
+        "default": 400000,
+        "attrs": {
+          "min": "0",
+          "step": "1000"
+        }
+      },
+      {
+        "label": "Current loan balance ($)",
+        "default": 220000,
+        "attrs": {
+          "min": "0",
+          "step": "1000"
+        }
+      },
+      {
+        "label": "Target new LTV (%)",
+        "default": 75,
+        "attrs": {
+          "min": "0",
+          "max": "100",
+          "step": "1"
+        }
+      },
+      {
+        "label": "New interest rate (%)",
+        "default": 6.5,
+        "attrs": {
+          "min": "0",
+          "max": "25",
+          "step": "0.01"
+        }
+      },
+      {
+        "label": "New loan term (years)",
+        "default": 30,
+        "attrs": {
+          "min": "1",
+          "max": "40",
+          "step": "1"
+        }
+      },
+      {
+        "label": "Refinance closing costs ($)",
+        "default": 6000,
+        "attrs": {
+          "min": "0",
+          "step": "500"
+        }
+      }
+    ],
+    "expr": "Math.max(0, f(0)*f(2)/100 - f(1) - f(5))",
+    "format": "money",
+    "metrics": [
+      {
+        "label": "Maximum new loan at target LTV",
+        "code": "money(f(0)*f(2)/100)"
+      },
+      {
+        "label": "Cash before closing costs",
+        "code": "money(Math.max(0,f(0)*f(2)/100-f(1)))"
+      }
+    ],
+    "method": "The new loan limit is property value multiplied by your target loan-to-value percentage. Estimated cash out is that limit minus the current loan balance and refinance closing costs. Lender limits, appraisal results, credit, taxes and fees can change the real figure substantially.",
+    "faq": [
+      [
+        "Is this an approval?",
+        "No. It is arithmetic on your inputs. Lenders use their own underwriting and property rules."
+      ],
+      [
+        "Does this include taxes or cash needed at closing?",
+        "No. Add any escrow, prepayment penalty or cash-to-close requirements yourself."
+      ],
+      [
+        "Is refinancing always worthwhile?",
+        "Not necessarily. Compare the full cost of the new loan with your current loan and your goals."
+      ]
+    ],
+    "partners": [
+      {
+        "url": "https://www.bankrate.com/mortgages/refinance/",
+        "label": "Compare current refinance rates"
+      },
+      {
+        "url": "https://www.consumerfinance.gov/owning-a-home/",
+        "label": "Official home-buying guides (CFPB)"
+      }
+    ]
+  },
+  {
+    "slug": "mortgage-payment-calculator-with-taxes-insurance-hoa",
+    "title": "Free Mortgage Payment Calculator With Taxes, Insurance and HOA",
+    "kicker": "Home buying",
+    "headline": "Mortgage Payment Calculator With Taxes, Insurance and HOA",
+    "desc": "Free no-signup mortgage payment calculator including property tax, homeowners insurance and HOA dues. Estimate a full monthly housing payment. Nothing uploaded.",
+    "lead": "Estimate principal, interest, property tax, insurance and HOA in one monthly housing figure. Runs locally in your browser.",
+    "inputs": [
+      {
+        "label": "Home price ($)",
+        "default": 350000,
+        "attrs": {
+          "min": "0",
+          "step": "1000"
+        }
+      },
+      {
+        "label": "Down payment (%)",
+        "default": 20,
+        "attrs": {
+          "min": "0",
+          "max": "100",
+          "step": "1"
+        }
+      },
+      {
+        "label": "Interest rate (%)",
+        "default": 6.5,
+        "attrs": {
+          "min": "0",
+          "max": "25",
+          "step": "0.01"
+        }
+      },
+      {
+        "label": "Loan term (years)",
+        "default": 30,
+        "attrs": {
+          "min": "1",
+          "max": "40",
+          "step": "1"
+        }
+      },
+      {
+        "label": "Annual property tax ($)",
+        "default": 4200,
+        "attrs": {
+          "min": "0",
+          "step": "100"
+        }
+      },
+      {
+        "label": "Annual homeowners insurance ($)",
+        "default": 1500,
+        "attrs": {
+          "min": "0",
+          "step": "100"
+        }
+      },
+      {
+        "label": "Monthly HOA dues ($)",
+        "default": 0,
+        "attrs": {
+          "min": "0",
+          "step": "25"
+        }
+      }
+    ],
+    "expr": "(function(){var p=Math.max(0,f(0)*(1-f(1)/100));var r=f(2)/100/12;var n=Math.max(1,f(3)*12);var pi=r>0?p*r/(1-Math.pow(1+r,-n)):p/n;return pi+f(4)/12+f(5)/12+f(6);})()",
+    "format": "money",
+    "metrics": [
+      {
+        "label": "Principal and interest",
+        "code": "money((function(){var p=Math.max(0,f(0)*(1-f(1)/100));var r=f(2)/100/12;var n=Math.max(1,f(3)*12);return r>0?p*r/(1-Math.pow(1+r,-n)):p/n;})())"
+      },
+      {
+        "label": "Tax, insurance and HOA",
+        "code": "money(f(4)/12+f(5)/12+f(6))"
+      }
+    ],
+    "method": "Principal and interest use the standard fixed-rate amortization formula on the loan amount after your down payment. Annual property tax and insurance are divided by twelve and added to monthly HOA dues. Mortgage insurance, PMI and closing costs are not included.",
+    "faq": [
+      [
+        "Does this include PMI?",
+        "No. If your down payment is below lender thresholds, private mortgage insurance may apply and is not modeled here."
+      ],
+      [
+        "Are taxes and insurance exact?",
+        "No. Use your own best estimates. Lenders may escrow and recalculate these amounts."
+      ],
+      [
+        "Is this a loan offer?",
+        "No. It is an estimate only, not an approval or offer of credit."
+      ]
+    ],
+    "partners": [
+      {
+        "url": "https://www.bankrate.com/mortgages/",
+        "label": "Compare current mortgage rates"
+      },
+      {
+        "url": "https://www.consumerfinance.gov/owning-a-home/",
+        "label": "Official home-buying guides (CFPB)"
+      }
+    ]
+  },
+  {
+    "slug": "car-affordability-calculator-by-monthly-budget",
+    "title": "Free Car Affordability Calculator by Monthly Budget",
+    "kicker": "Auto financing",
+    "headline": "Car Affordability Calculator by Monthly Budget",
+    "desc": "Free no-signup car affordability calculator based on a monthly payment budget, APR, term, down payment and trade-in. Estimate a price range. Nothing uploaded.",
+    "lead": "Work backwards from the monthly car payment you can afford to an estimated vehicle price. Runs entirely on your device.",
+    "inputs": [
+      {
+        "label": "Monthly car payment budget ($)",
+        "default": 450,
+        "attrs": {
+          "min": "0",
+          "step": "25"
+        }
+      },
+      {
+        "label": "APR (%)",
+        "default": 7.5,
+        "attrs": {
+          "min": "0",
+          "max": "30",
+          "step": "0.01"
+        }
+      },
+      {
+        "label": "Loan term (months)",
+        "default": 60,
+        "attrs": {
+          "min": "1",
+          "max": "96",
+          "step": "1"
+        }
+      },
+      {
+        "label": "Down payment ($)",
+        "default": 3000,
+        "attrs": {
+          "min": "0",
+          "step": "500"
+        }
+      },
+      {
+        "label": "Trade-in value ($)",
+        "default": 2000,
+        "attrs": {
+          "min": "0",
+          "step": "500"
+        }
+      }
+    ],
+    "expr": "(function(){var r=f(1)/100/12;var n=Math.max(1,f(2));var p=r>0?f(0)*(1-Math.pow(1+r,-n))/r:f(0)*n;return p+f(3)+f(4);})()",
+    "format": "money",
+    "metrics": [
+      {
+        "label": "Estimated max loan amount",
+        "code": "money((function(){var r=f(1)/100/12;var n=Math.max(1,f(2));return r>0?f(0)*(1-Math.pow(1+r,-n))/r:f(0)*n;})())"
+      },
+      {
+        "label": "Down payment plus trade-in",
+        "code": "money(f(3)+f(4))"
+      }
+    ],
+    "method": "The affordable loan amount is calculated by reversing the standard amortization formula for your monthly budget, APR and term. Down payment and trade-in value are then added. Taxes, fees, add-ons and insurance are not included.",
+    "faq": [
+      [
+        "Is this the out-the-door price?",
+        "No. Add sales tax, title, registration and dealer fees to see the full cost."
+      ],
+      [
+        "Does this check my credit?",
+        "No. Nothing is sent anywhere and no lender is contacted."
+      ],
+      [
+        "Does a longer term make a car more affordable?",
+        "It lowers the monthly payment but can increase total interest substantially."
+      ]
+    ],
+    "partners": [
+      {
+        "url": "https://www.bankrate.com/auto/auto-loans/",
+        "label": "Compare current auto loan rates"
+      },
+      {
+        "url": "https://www.kbb.com/whats-my-car-worth/",
+        "label": "Check a used-car trade-in value guide"
+      }
+    ]
+  },
+  {
+    "slug": "quarterly-estimated-tax-calculator-1099",
+    "title": "Free Quarterly Estimated Tax Calculator for 1099 Income",
+    "kicker": "Freelance & taxes",
+    "headline": "Quarterly Estimated Tax Calculator for 1099 Income",
+    "desc": "Free no-signup quarterly estimated tax calculator for 1099 and freelance income. Rough US estimate of self-employment plus income tax. Nothing uploaded.",
+    "lead": "Roughly estimate a quarterly US estimated-tax payment from net 1099 profit, wages, tax rates and payments already made. Control every input.",
+    "inputs": [
+      {
+        "label": "Expected annual net 1099 profit ($)",
+        "default": 60000,
+        "attrs": {
+          "min": "0",
+          "step": "1000"
+        }
+      },
+      {
+        "label": "Expected W-2 wages ($)",
+        "default": 0,
+        "attrs": {
+          "min": "0",
+          "step": "1000"
+        }
+      },
+      {
+        "label": "Federal marginal rate (%)",
+        "default": 22,
+        "attrs": {
+          "min": "0",
+          "max": "50",
+          "step": "1"
+        }
+      },
+      {
+        "label": "State rate estimate (%)",
+        "default": 5,
+        "attrs": {
+          "min": "0",
+          "max": "20",
+          "step": "1"
+        }
+      },
+      {
+        "label": "Tax already paid this year ($)",
+        "default": 0,
+        "attrs": {
+          "min": "0",
+          "step": "500"
+        }
+      },
+      {
+        "label": "Social Security wage base ($)",
+        "default": 176100,
+        "attrs": {
+          "min": "0",
+          "step": "100"
+        }
+      }
+    ],
+    "expr": "(function(){var se=f(0)>0?(Math.min(f(0)*0.9235,Math.max(0,f(5)-f(1)))*0.124+f(0)*0.9235*0.029):0;var inc=f(0)*(f(2)+f(3))/100;return Math.max(0,(se+inc-f(4))/4);})()",
+    "format": "money",
+    "metrics": [
+      {
+        "label": "Estimated annual self-employment tax",
+        "code": "money(f(0)>0?(Math.min(f(0)*0.9235,Math.max(0,f(5)-f(1)))*0.124+f(0)*0.9235*0.029):0)"
+      },
+      {
+        "label": "Estimated annual income tax (rough)",
+        "code": "money(f(0)*(f(2)+f(3))/100)"
+      }
+    ],
+    "method": "This rough estimate combines self-employment tax (12.4% Social Security up to the entered wage base, reduced by W-2 wages, plus 2.9% Medicare on 92.35% of net profit) with a simple flat-rate income-tax estimate, subtracts tax already paid, then divides by four. It ignores deductions, credits, QBI, brackets, withholding, state-specific rules and safe-harbor calculations.",
+    "faq": [
+      [
+        "Is this my actual required payment?",
+        "No. It is a rough illustration only. Use the official IRS estimator or a qualified tax professional for real filing decisions."
+      ],
+      [
+        "Does it include deductions and credits?",
+        "No. Standard/itemized deductions, QBI, retirement contributions and credits are not modeled."
+      ],
+      [
+        "What if my income varies?",
+        "Quarterly calculations often depend on annualized income. Check current official rules."
+      ]
+    ],
+    "partners": [
+      {
+        "url": "https://www.irs.gov/businesses/small-businesses-self-employed/estimated-taxes",
+        "label": "Official IRS estimated tax guidance"
+      },
+      {
+        "url": "https://www.irs.gov/forms-pubs/about-form-1040-es",
+        "label": "IRS Form 1040-ES information"
+      }
+    ]
+  },
+  {
+    "slug": "compound-interest-calculator-monthly-contributions",
+    "title": "Free Compound Interest Calculator With Monthly Contributions",
+    "kicker": "Savings & investing",
+    "headline": "Compound Interest Calculator With Monthly Contributions",
+    "desc": "Free no-signup compound interest calculator with monthly contributions. Estimate future value from an initial amount, monthly addition, rate and time. Nothing uploaded.",
+    "lead": "Estimate future value with monthly compounding and regular monthly contributions. All math runs in your browser.",
+    "inputs": [
+      {
+        "label": "Starting amount ($)",
+        "default": 5000,
+        "attrs": {
+          "min": "0",
+          "step": "500"
+        }
+      },
+      {
+        "label": "Monthly contribution ($)",
+        "default": 300,
+        "attrs": {
+          "min": "0",
+          "step": "50"
+        }
+      },
+      {
+        "label": "Annual interest rate (%)",
+        "default": 7,
+        "attrs": {
+          "min": "-20",
+          "max": "30",
+          "step": "0.1"
+        }
+      },
+      {
+        "label": "Years",
+        "default": 20,
+        "attrs": {
+          "min": "1",
+          "max": "60",
+          "step": "1"
+        }
+      }
+    ],
+    "expr": "(function(){var r=f(2)/100/12,n=Math.max(0,Math.round(f(3)*12)),v=f(0);for(var i=0;i<n;i++){v=v*(1+r)+f(1);}return v;})()",
+    "format": "money",
+    "metrics": [
+      {
+        "label": "Total contributions",
+        "code": "money(f(0)+f(1)*Math.max(0,Math.round(f(3)*12)))"
+      },
+      {
+        "label": "Estimated interest earned",
+        "code": "money((function(){var r=f(2)/100/12,n=Math.max(0,Math.round(f(3)*12)),v=f(0);for(var i=0;i<n;i++){v=v*(1+r)+f(1);}return v-f(0)-f(1)*n;})())"
+      }
+    ],
+    "method": "The starting balance compounds monthly. Each monthly contribution is added at the end of the month and then compounds in later months. The result is before tax, fees and inflation, and assumes the entered rate stays constant.",
+    "faq": [
+      [
+        "Are returns guaranteed?",
+        "No. A fixed rate is an assumption, not a promise. Actual returns vary and can be negative."
+      ],
+      [
+        "Does this include fees or tax?",
+        "No. Subtract your own fees and consider taxes separately."
+      ],
+      [
+        "When are contributions added?",
+        "This model adds them at the end of each month."
+      ]
+    ],
+    "partners": [
+      {
+        "url": "https://www.investor.gov/introduction-investing/investing-basics/compound-interest",
+        "label": "Official SEC compound interest guide"
+      }
+    ]
+  },
+  {
+    "slug": "emergency-fund-calculator-by-monthly-expenses",
+    "title": "Free Emergency Fund Calculator by Monthly Expenses",
+    "kicker": "Savings & planning",
+    "headline": "Emergency Fund Calculator by Monthly Expenses",
+    "desc": "Free no-signup emergency fund calculator. See a target fund from essential monthly expenses and the monthly saving needed to reach it. Nothing uploaded.",
+    "lead": "Set an emergency-fund target from essential monthly expenses and see roughly what you would need to set aside each month. Runs locally.",
+    "inputs": [
+      {
+        "label": "Essential monthly expenses ($)",
+        "default": 2500,
+        "attrs": {
+          "min": "0",
+          "step": "50"
+        }
+      },
+      {
+        "label": "Months of expenses to cover",
+        "default": 6,
+        "attrs": {
+          "min": "1",
+          "max": "24",
+          "step": "1"
+        }
+      },
+      {
+        "label": "Current emergency savings ($)",
+        "default": 3000,
+        "attrs": {
+          "min": "0",
+          "step": "100"
+        }
+      },
+      {
+        "label": "Months you want to save over",
+        "default": 12,
+        "attrs": {
+          "min": "1",
+          "max": "60",
+          "step": "1"
+        }
+      }
+    ],
+    "expr": "Math.max(0,(f(0)*f(1)-f(2))/Math.max(1,f(3)))",
+    "format": "money",
+    "metrics": [
+      {
+        "label": "Emergency fund target",
+        "code": "money(f(0)*f(1))"
+      },
+      {
+        "label": "Current shortfall",
+        "code": "money(Math.max(0,f(0)*f(1)-f(2)))"
+      }
+    ],
+    "method": "The target is essential monthly expenses multiplied by the number of months you want to cover. The monthly saving figure is the remaining gap divided by your chosen number of months. It assumes no interest and no changes in expenses or income.",
+    "faq": [
+      [
+        "How many months should I target?",
+        "It depends on your job stability, dependents and other resources. Six months is a common illustration, not a rule."
+      ],
+      [
+        "Should I count all expenses?",
+        "Use essential expenses you would still need if income stopped, not discretionary spending."
+      ],
+      [
+        "Is this financial advice?",
+        "No. It is simple arithmetic on your inputs. Consider your own circumstances and get professional advice where needed."
+      ]
+    ],
+    "partners": [
+      {
+        "url": "https://www.consumerfinance.gov/consumer-tools/",
+        "label": "Official consumer finance guides (CFPB)"
+      }
+    ]
+  },
+  {
+    "slug": "freelance-hourly-rate-calculator-with-expenses",
+    "title": "Free Freelance Hourly Rate Calculator With Expenses and Tax Buffer",
+    "kicker": "Freelance & pricing",
+    "headline": "Freelance Hourly Rate Calculator With Expenses and Tax Buffer",
+    "desc": "Free no-signup freelance hourly rate calculator with expense and tax buffers. Turn a target income and realistic billable hours into an hourly rate. Nothing uploaded.",
+    "lead": "Work backwards from a target annual income to an hourly rate using realistic billable hours plus expense and tax buffers. Runs locally.",
+    "inputs": [
+      {
+        "label": "Target annual take-home income ($)",
+        "default": 70000,
+        "attrs": {
+          "min": "0",
+          "step": "1000"
+        }
+      },
+      {
+        "label": "Billable hours per week",
+        "default": 25,
+        "attrs": {
+          "min": "1",
+          "max": "80",
+          "step": "1"
+        }
+      },
+      {
+        "label": "Weeks worked per year",
+        "default": 46,
+        "attrs": {
+          "min": "1",
+          "max": "52",
+          "step": "1"
+        }
+      },
+      {
+        "label": "Business expense buffer (%)",
+        "default": 20,
+        "attrs": {
+          "min": "0",
+          "max": "200",
+          "step": "1"
+        }
+      },
+      {
+        "label": "Tax buffer (%)",
+        "default": 25,
+        "attrs": {
+          "min": "0",
+          "max": "70",
+          "step": "1"
+        }
+      }
+    ],
+    "expr": "(f(0)*(1+(f(3)+f(4))/100))/Math.max(1,f(1)*f(2))",
+    "format": "money",
+    "metrics": [
+      {
+        "label": "Annual target plus buffers",
+        "code": "money(f(0)*(1+(f(3)+f(4))/100))"
+      },
+      {
+        "label": "Total billable hours",
+        "code": "num(Math.max(1,f(1)*f(2)))"
+      }
+    ],
+    "method": "The target take-home income is increased by your expense and tax buffers, then divided by realistic annual billable hours. The buffers are simple percentages you choose, not a tax calculation. Market demand and the value of your work also affect what clients will pay.",
+    "faq": [
+      [
+        "Are the buffers tax advice?",
+        "No. They are placeholders you set yourself. Confirm your real tax position with a qualified professional."
+      ],
+      [
+        "How many billable hours are realistic?",
+        "Count only hours you can genuinely invoice after admin, marketing, holidays and time off."
+      ],
+      [
+        "Does this guarantee clients will pay the rate?",
+        "No. It is a pricing input, not a promise about demand or income."
+      ]
+    ],
+    "partners": [
+      {
+        "url": "https://www.irs.gov/businesses/small-businesses-self-employed/self-employed-individuals-tax-center",
+        "label": "Official IRS self-employed tax information"
+      }
+    ]
   }
 ]

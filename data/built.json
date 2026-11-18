@@ -1,12 +1,21 @@
 [
   "auto-loan-payment-calculator-with-trade-in",
+  "cap-rate-calculator-with-expenses",
+  "car-affordability-calculator-by-monthly-budget",
   "cash-on-cash-return-rental-property",
+  "compound-interest-calculator-monthly-contributions",
   "credit-card-payoff-calculator",
   "debt-to-income-ratio-calculator-mortgage",
+  "emergency-fund-calculator-by-monthly-expenses",
   "freelance-day-rate-calculator",
+  "freelance-hourly-rate-calculator-with-expenses",
   "hourly-to-annual-salary-overtime-calculator",
   "mortgage-affordability-calculator-by-income",
+  "mortgage-payment-calculator-with-taxes-insurance-hoa",
   "personal-loan-payment-calculator",
+  "quarterly-estimated-tax-calculator-1099",
+  "refinance-cash-out-calculator",
+  "rental-property-cash-flow-calculator-monthly",
   "rental-yield-calculator-gross-and-net",
   "self-employment-tax-calculator-1099"
 ]
