@@ -1,305 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>B2 Apps — Free B2B, EU Investor Tools & MCP Servers</title>
-  <meta name="description" content="Free client-side B2B and EU retail investor tools, MCP servers, Apify actors, and Gumroad kits: EU VAT Invoicing, UCITS ETF Overlap, GDPR Cookie Policy Generator, Dividend Tax Drag Calculator, and llms.txt.">
-  <link rel="canonical" href="https://b2appsdev-del.github.io/">
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "CollectionPage",
-    "name": "B2 Apps — Free B2B & EU Investor Tools",
-    "url": "https://b2appsdev-del.github.io/",
-    "description": "Free client-side B2B and EU retail investor tools, MCP servers, and automation kits by B2 Apps.",
-    "hasPart": [
-      {
-        "@type": "WebApplication",
-        "name": "EU VAT & Reverse-Charge Invoice Generator",
-        "url": "https://b2appsdev-del.github.io/eu-vat-invoice-checker/",
-        "applicationCategory": "BusinessApplication"
-      },
-      {
-        "@type": "WebApplication",
-        "name": "UCITS ETF Overlap & TER Analyzer",
-        "url": "https://b2appsdev-del.github.io/ucits-etf-analyzer/",
-        "applicationCategory": "FinanceApplication"
-      },
-      {
-        "@type": "WebApplication",
-        "name": "GDPR Cookie Banner & Privacy Policy Generator",
-        "url": "https://b2appsdev-del.github.io/gdpr-cookie-privacy-generator/",
-        "applicationCategory": "BusinessApplication"
-      },
-      {
-        "@type": "WebApplication",
-        "name": "EU/US Dividend & Withholding Tax (WHT) Drag Calculator",
-        "url": "https://b2appsdev-del.github.io/dividend-withholding-tax-calculator/",
-        "applicationCategory": "FinanceApplication"
-      },
-      {
-        "@type": "WebApplication",
-        "name": "llms.txt Generator & Validator",
-        "url": "https://b2appsdev-del.github.io/llms-txt-generator/",
-        "applicationCategory": "DeveloperApplication"
-      },
-      {
-        "@type": "CollectionPage",
-        "name": "EU B2B & Dev Tools Directory",
-        "url": "https://b2appsdev-del.github.io/directory/"
-      }
-    ]
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>B2 Apps — Digital Tools, Templates &amp; Developer Starter Kits</title>
+<meta name="description" content="Instant-download developer starter kits, Web3 &amp; DeFi templates, finance calculators, and creator toolkits with Card &amp; Crypto checkout.">
+<style>
+  :root {
+    --bg: #070b14;
+    --surface: #0f172a;
+    --surface-2: #162033;
+    --border: rgba(148,163,184,0.16);
+    --text: #e2e8f0;
+    --muted: #94a3b8;
+    --accent: #38bdf8;
+    --green: #10b981;
+    --purple: #a78bfa;
   }
-  </script>
-  <style>
-    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:#0f172a;color:#e2e8f0;margin:0;padding:40px 20px;line-height:1.6}
-    .wrap{max-width:1080px;margin:0 auto}
-    h1{margin:0 0 8px;font-size:2.2rem;color:#fff}
-    .sub{color:#94a3b8;margin-bottom:28px;font-size:1.05rem}
-    .section-title{font-size:1.35rem;font-weight:700;color:#f8fafc;margin:36px 0 16px;border-bottom:1px solid #334155;padding-bottom:8px;display:flex;align-items:center;gap:10px}
-    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(310px,1fr));gap:20px}
-    .card{background:#1e293b;border:1px solid #334155;border-radius:12px;padding:22px;display:flex;flex-direction:column;justify-content:space-between}
-    .card h2, .card h3{margin:0 0 8px;font-size:1.18rem;color:#38bdf8}
-    .card p{margin:0 0 16px;color:#cbd5e1;font-size:.92rem;flex-grow:1}
-    a.btn{display:inline-block;background:#0284c7;color:#fff;text-decoration:none;padding:9px 14px;border-radius:8px;font-weight:600;font-size:.88rem;text-align:center}
-    a.btn:hover{background:#0369a1}
-    a.btn-secondary{background:#334155;color:#e2e8f0}
-    a.btn-secondary:hover{background:#475569}
-    a.btn-gumroad{background:#f43f5e;color:#fff}
-    a.btn-gumroad:hover{background:#e11d48}
-    .badge{display:inline-block;padding:3px 8px;border-radius:6px;font-size:.72rem;font-weight:600;margin-bottom:8px;width:fit-content}
-    .badge-app{background:#38bdf822;color:#38bdf8}
-    .badge-kit{background:#f43f5e22;color:#fb7185}
-    .badge-mcp{background:#a855f722;color:#c084fc}
-    .badge-apify{background:#10b98122;color:#34d399}
-    footer{margin-top:48px;color:#64748b;font-size:.85rem;border-top:1px solid #334155;padding-top:24px;text-align:center}
-    footer a{color:#38bdf8;text-decoration:none}
-    .disclaimer-banner{background:#1e293b;border:1px dashed #475569;border-radius:8px;padding:12px 16px;color:#94a3b8;font-size:.82rem;margin-top:32px;text-align:center}
-  </style>
-  <!-- social sharing -->
-  <meta property="og:type" content="website">
-  <meta property="og:site_name" content="B2 Apps">
-  <meta property="og:title" content="B2 Apps — Free B2B, EU Investor Tools &amp; MCP Servers">
-  <meta property="og:description" content="Free client-side B2B and EU retail investor tools, MCP servers, Apify actors, and Gumroad kits: EU VAT Invoicing, UCITS ETF Overlap, GDPR Cookie Policy Generator, Dividend Tax Drag Calculator, and llm">
-  <meta property="og:url" content="https://b2appsdev-del.github.io/">
-  <meta property="og:image" content="https://b2appsdev-del.github.io/og.png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="B2 Apps — Free B2B, EU Investor Tools &amp; MCP Servers">
-  <meta name="twitter:description" content="Free client-side B2B and EU retail investor tools, MCP servers, Apify actors, and Gumroad kits: EU VAT Invoicing, UCITS ETF Overlap, GDPR Cookie Policy Generator, Dividend Tax Drag Calculator, and llm">
-  <meta name="twitter:image" content="https://b2appsdev-del.github.io/og.png">
-  <meta name="msvalidate.01" content="ADD_BING_KEY_HERE">
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, sans-serif;
+    background: radial-gradient(circle at 20% 0%, rgba(56,189,248,0.10), transparent 45%),
+                radial-gradient(circle at 85% 10%, rgba(167,139,250,0.09), transparent 40%),
+                var(--bg);
+    color: var(--text);
+    line-height: 1.55;
+    min-height: 100vh;
+  }
+  a { color: inherit; text-decoration: none; }
+  .wrap { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+  header {
+    position: sticky; top: 0; z-index: 20;
+    background: rgba(7,11,20,0.86); backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border);
+  }
+  .nav { display: flex; align-items: center; justify-content: space-between; height: 64px; gap: 16px; }
+  .brand { font-weight: 800; font-size: 18px; letter-spacing: -0.02em; display: flex; align-items: center; gap: 10px; }
+  .brand-dot { width: 10px; height: 10px; border-radius: 50%; background: var(--green); box-shadow: 0 0 12px var(--green); }
+  .nav-links { display: flex; gap: 18px; font-size: 14px; color: var(--muted); }
+  .nav-links a:hover { color: #fff; }
+  .hero { padding: 56px 0 36px; text-align: center; }
+  .pill-top {
+    display: inline-block; padding: 5px 14px; border-radius: 999px; font-size: 12px; font-weight: 600;
+    background: rgba(56,189,248,0.12); color: var(--accent); border: 1px solid rgba(56,189,248,0.28);
+    margin-bottom: 16px;
+  }
+  h1 { font-size: clamp(28px, 4.5vw, 46px); font-weight: 800; letter-spacing: -0.03em; line-height: 1.15; margin-bottom: 14px; color: #fff; }
+  .sub { max-width: 680px; margin: 0 auto 26px; color: var(--muted); font-size: 16px; }
+  .trust { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin-bottom: 28px; font-size: 13px; color: #cbd5e1; }
+  .trust span { background: var(--surface); border: 1px solid var(--border); padding: 6px 14px; border-radius: 999px; }
+  .controls {
+    display: flex; flex-wrap: wrap; gap: 12px; align-items: center; justify-content: space-between;
+    background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 14px; margin-bottom: 22px;
+  }
+  .search {
+    flex: 1 1 260px; background: var(--bg); border: 1px solid var(--border); color: #fff;
+    padding: 10px 14px; border-radius: 10px; font-size: 14px; outline: none;
+  }
+  .search:focus { border-color: var(--accent); }
+  .filters { display: flex; flex-wrap: wrap; gap: 8px; }
+  .btn-filter {
+    background: transparent; border: 1px solid var(--border); color: var(--muted);
+    padding: 7px 13px; border-radius: 999px; font-size: 12px; font-weight: 600; cursor: pointer; transition: .15s;
+  }
+  .btn-filter:hover { border-color: var(--accent); color: #fff; }
+  .btn-filter.active { background: var(--accent); border-color: var(--accent); color: #04101d; }
+  .meta-bar { display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px; font-size: 13px; color: var(--muted); }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(290px, 1fr)); gap: 16px; margin-bottom: 48px; }
+  .card {
+    background: linear-gradient(180deg, var(--surface), var(--surface-2));
+    border: 1px solid var(--border); border-radius: 16px; padding: 18px;
+    display: flex; flex-direction: column; justify-content: space-between; gap: 14px;
+    transition: transform .15s, border-color .15s;
+  }
+  .card:hover { transform: translateY(-2px); border-color: rgba(56,189,248,0.45); }
+  .card-top { display: flex; justify-content: space-between; align-items: center; gap: 8px; }
+  .cat-tag { font-size: 11px; font-weight: 700; color: var(--purple); background: rgba(167,139,250,0.12); padding: 3px 9px; border-radius: 999px; }
+  .price { font-size: 18px; font-weight: 800; color: #fff; }
+  .title { font-size: 16px; font-weight: 700; color: #f8fafc; line-height: 1.3; }
+  .badges { display: flex; flex-wrap: wrap; gap: 6px; font-size: 11px; }
+  .badge-plat { background: rgba(255,255,255,0.07); color: #cbd5e1; padding: 3px 8px; border-radius: 6px; }
+  .badge-crypto { background: rgba(16,185,129,0.14); color: #34d399; padding: 3px 8px; border-radius: 6px; font-weight: 600; }
+  .buy-btn {
+    display: block; text-align: center; padding: 10px 14px; border-radius: 10px; font-weight: 700; font-size: 14px;
+    background: linear-gradient(90deg, #0ea5e9, #38bdf8); color: #04101d; transition: opacity .15s;
+  }
+  .buy-btn:hover { opacity: .9; }
+  .section-h { font-size: 20px; font-weight: 800; margin: 10px 0 14px; color: #fff; }
+  .tools-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 12px; margin-bottom: 48px; }
+  .tool-card {
+    background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 14px;
+    display: flex; flex-direction: column; gap: 6px; transition: border-color .15s;
+  }
+  .tool-card:hover { border-color: var(--green); }
+  .tool-card strong { font-size: 14px; color: #fff; }
+  .tool-card span { font-size: 12px; color: var(--muted); }
+  footer {
+    border-top: 1px solid var(--border); padding: 28px 0 42px; color: var(--muted); font-size: 12px;
+  }
+  .disclaimer {
+    background: rgba(245,158,11,0.08); border: 1px solid rgba(245,158,11,0.25); color: #fde68a;
+    padding: 12px 16px; border-radius: 10px; margin-bottom: 16px; font-size: 12px;
+  }
+</style>
 </head>
 <body>
-<p style="margin:1rem 0;text-align:center"><a href="/start/" style="display:inline-block;padding:.6rem 1rem;background:#1d4ed8;color:#fff;border-radius:8px;text-decoration:none;font-weight:600">Start here - free samples (one link)</a></p>
-  <div class="wrap">
-    <h1>B2 Apps</h1>
-    <p class="sub">Free, privacy-friendly, client-side tools, MCP servers, and automation kits for European cross-border SaaS, investors &amp; webmasters.</p>
-
-    <!-- 1. Free Web Applications -->
-    <h2 class="section-title">Free Client-Side Tools</h2>
-    <div class="grid">
-      <div class="card">
-        <div>
-          <span class="badge badge-app">Free Web App</span>
-          <h3>EU VAT &amp; Reverse-Charge Invoice Generator</h3>
-          <p>Instant client-side EU B2B cross-border reverse-charge compliant invoicing. Validates VIES formats and generates clean printable/PDF invoices.</p>
-        </div>
-        <a class="btn" href="./eu-vat-invoice-checker/">Open VAT Generator &rarr;</a>
-      </div>
-
-      <div class="card">
-        <div>
-          <span class="badge badge-app">Free Web App</span>
-          <h3>UCITS ETF Overlap &amp; TER Analyzer</h3>
-          <p>Analyze holding overlap and weighted expense ratios across European UCITS ETFs. 100% private in-browser analysis.</p>
-        </div>
-        <a class="btn" href="./ucits-etf-analyzer/">Open ETF Analyzer &rarr;</a>
-      </div>
-
-      <div class="card">
-        <div>
-          <span class="badge badge-app">Free Web App</span>
-          <h3>GDPR Cookie Banner &amp; Policy Generator</h3>
-          <p>Generate a zero-dependency, GDPR &amp; ePrivacy compliant cookie consent banner snippet and tailored privacy policy in seconds.</p>
-        </div>
-        <a class="btn" href="./gdpr-cookie-privacy-generator/">Open GDPR Generator &rarr;</a>
-      </div>
-
-      <div class="card">
-        <div>
-          <span class="badge badge-app">Free Web App</span>
-          <h3>Dividend &amp; Withholding Tax (WHT) Calculator</h3>
-          <p>Compare Ireland UCITS vs US-domiciled vs synthetic dividend leakage with compound DRIP drag projections for EU investors.</p>
-        </div>
-        <a class="btn" href="./dividend-withholding-tax-calculator/">Open WHT Calculator &rarr;</a>
-      </div>
-
-      <div class="card">
-        <div>
-          <span class="badge badge-app">Free Web App</span>
-          <h3>llms.txt Generator &amp; Validator</h3>
-          <p>Generate, format, and validate /llms.txt and /llms-full.txt files to optimize web documentation for LLMs and AI crawlers.</p>
-        </div>
-        <a class="btn" href="./llms-txt-generator/">Open llms.txt Generator &rarr;</a>
-      </div>
-
-      <div class="card">
-        <div>
-          <span class="badge badge-app">Free Directory</span>
-          <h3>EU B2B &amp; Dev Tools Directory</h3>
-          <p>Curated list of 23+ essential EU-compliant dev tools, VAT APIs, analytics, payment gateways, and cloud providers.</p>
-        </div>
-        <a class="btn" href="./directory/">Browse Directory &rarr;</a>
-      </div>
-    </div>
-
-    <!-- 2. Gumroad $0+ PWYW Lead Magnets & Pro Packs -->
-    <h2 class="section-title">Gumroad $0+ PWYW Packs &amp; Toolkits</h2>
-    <div class="grid">
-      <div class="card">
-        <div>
-          <span class="badge badge-kit">$0+ PWYW / $19 Pro</span>
-          <h3>EU VAT &amp; Cross-Border Invoicing Toolkit</h3>
-          <p>Complete B2B reverse-charge compliance kit: Excel/Notion templates, 27 EU member rate tables, VIES audit log, and multi-currency calculator.</p>
-        </div>
-        <a class="btn btn-gumroad" href="https://devbloom12.gumroad.com/l/umkclc" target="_blank" rel="noopener">Get Toolkit on Gumroad &rarr;</a>
-      </div>
-
-      <div class="card">
-        <div>
-          <span class="badge badge-kit">$0+ PWYW / $29 Pro</span>
-          <h3>UCITS ETF Portfolio &amp; Tax Drag Template</h3>
-          <p>Comprehensive portfolio rebalancer, 15% vs 30% US dividend withholding tax leakage model, and multi-currency cost tracker.</p>
-        </div>
-        <a class="btn btn-gumroad" href="https://devbloom12.gumroad.com/l/fynlyw" target="_blank" rel="noopener">Get Template on Gumroad &rarr;</a>
-      </div>
-
-      <div class="card">
-        <div>
-          <span class="badge badge-kit">$0+ PWYW / $29 Pro</span>
-          <h3>GDPR Cookie &amp; ROPA Compliance Kit</h3>
-          <p>Article 30 Record of Processing Activities (ROPA) spreadsheet, Data Protection Impact Assessment (DPIA) template, and multi-language banners.</p>
-        </div>
-        <a class="btn btn-gumroad" href="https://devbloom12.gumroad.com/l/fgeokd" target="_blank" rel="noopener">Get Kit on Gumroad &rarr;</a>
-      </div>
-    </div>
-
-    <!-- 2b. Self-service kits: free sample -> one-time pack -->
-    <h2 class="section-title">Self-Service Kits &amp; Templates</h2>
-    <div class="grid">
-      <div class="card">
-        <div>
-          <span class="badge badge-app">Free sample</span>
-          <h3>EU261 Claim Documents</h3>
-          <p>Self-service delay and cancellation paperwork templates. Free checklist sample; no claims-company success fee.</p>
-        </div>
-        <a class="btn" href="./eu261-claim-documents/">Read more &rarr;</a>
-      </div>
-      <div class="card">
-        <div>
-          <span class="badge badge-app">Free sample</span>
-          <h3>Metals Dealer Comparison Sheet</h3>
-          <p>Compare saved dealer quotes, premiums and buyback spreads offline. Blank sample, no live feed.</p>
-        </div>
-        <a class="btn" href="./metals-dealer-comparison/">Read more &rarr;</a>
-      </div>
-      <div class="card">
-        <div>
-          <span class="badge badge-app">Free sample</span>
-          <h3>WCAG 2.2 AA Audit Toolkit</h3>
-          <p>Checklist, report template and remediation tracker for accessibility audits. Free quick-audit sample.</p>
-        </div>
-        <a class="btn" href="./wcag-22-audit/">Read more &rarr;</a>
-      </div>
-      <div class="card">
-        <div>
-          <span class="badge badge-app">Free sample</span>
-          <h3>Whop Listing &amp; Launch Kit</h3>
-          <p>Listing copy builder and 20-point launch checklist, including a no-spend checkout walkthrough.</p>
-        </div>
-        <a class="btn" href="./whop-listing-checklist/">Read more &rarr;</a>
-      </div>
-      <div class="card">
-        <div>
-          <span class="badge badge-app">Free sample</span>
-          <h3>Checkout QA Kit</h3>
-          <p>A no-spend checkout review plan: price, promo, mobile and delivery promises. Free sample plan.</p>
-        </div>
-        <a class="btn" href="./checkout-qa/">Read more &rarr;</a>
-      </div>
-      <div class="card">
-        <div>
-          <span class="badge badge-app">Free sample</span>
-          <h3>AI Agent Tool-Call Security Eval</h3>
-          <p>Prompt-injection test vectors and a results template for tool-calling agents. Free sample.</p>
-        </div>
-        <a class="btn" href="./agent-toolcall-security-eval/">Read more &rarr;</a>
-      </div>
-    </div>
-
-    <!-- 3. Model Context Protocol (MCP) Servers -->
-    <h2 class="section-title">Model Context Protocol (MCP) Servers</h2>
-    <div class="grid">
-      <div class="card">
-        <div>
-          <span class="badge badge-mcp">Open Source MCP</span>
-          <h3>EU VAT VIES Validation MCP Server</h3>
-          <p>Standard Model Context Protocol server for Claude &amp; Cursor to validate EU VAT numbers via official EC VIES and verify reverse-charge eligibility.</p>
-        </div>
-        <a class="btn btn-secondary" href="https://github.com/b2appsdev-del/eu-vat-vies-mcp" target="_blank" rel="noopener">View on GitHub &rarr;</a>
-      </div>
-
-      <div class="card">
-        <div>
-          <span class="badge badge-mcp">Open Source MCP</span>
-          <h3>JSON-LD SEO Schema Audit MCP Server</h3>
-          <p>MCP server enabling AI assistants to extract, validate, and audit schema.org JSON-LD structured data and Google Rich Results compliance.</p>
-        </div>
-        <a class="btn btn-secondary" href="https://github.com/b2appsdev-del/jsonld-seo-audit-mcp" target="_blank" rel="noopener">View on GitHub &rarr;</a>
-      </div>
-
-      <div class="card">
-        <div>
-          <span class="badge badge-mcp">Open Source MCP</span>
-          <h3>GDPR ROPA Compliance Audit MCP Server</h3>
-          <p>MCP server providing Article 30 ROPA verification, lawful basis checking, and DPIA trigger evaluation directly inside AI coding workflows.</p>
-        </div>
-        <a class="btn btn-secondary" href="https://github.com/b2appsdev-del/gdpr-ropa-audit-mcp" target="_blank" rel="noopener">View on GitHub &rarr;</a>
-      </div>
-    </div>
-
-    <!-- 4. Apify Serverless Actors -->
-    <h2 class="section-title">Apify Serverless Actors</h2>
-    <div class="grid">
-      <div class="card">
-        <div>
-          <span class="badge badge-apify">Apify Actor</span>
-          <h3>Public Sitemap &amp; SEO Meta Auditor</h3>
-          <p>Serverless high-speed crawler that validates sitemap XML, discovers broken links, checks HTTP status codes, canonical tags, and OpenGraph metadata.</p>
-        </div>
-        <a class="btn btn-secondary" href="https://apify.com/b2apps/public-sitemap-seo-auditor" target="_blank" rel="noopener">Run on Apify &rarr;</a>
-      </div>
-
-      <div class="card">
-        <div>
-          <span class="badge badge-apify">Apify Actor</span>
-          <h3>Public JSON-LD &amp; Schema.org Validator</h3>
-          <p>Crawls public URLs and validates embedded schema.org JSON-LD structured data against Google Rich Result &amp; Schema.org specifications.</p>
-        </div>
-        <a class="btn btn-secondary" href="https://apify.com/b2apps/public-jsonld-schema-validator" target="_blank" rel="noopener">Run on Apify &rarr;</a>
-      </div>
-    </div>
-
-    <div class="disclaimer-banner">
-      Educational and informational tools only; not tax, legal, financial, or regulatory compliance advice. Always verify with certified professionals.
-    </div>
-
-    <footer>
-      &copy; 2026 B2 Apps &middot; <a href="https://github.com/b2appsdev-del">GitHub Organization</a> &middot; <a href="/sitemap.xml">Sitemap</a> &middot; <a href="/llms.txt">llms.txt</a> &middot; <a href="mailto:b2apps.dev@gmail.com">Contact</a> &middot; Built for builders &amp; investors.
-    </footer>
+<header>
+  <div class="wrap nav">
+    <a href="#" class="brand"><span class="brand-dot"></span> B2 Apps Store</a>
+    <nav class="nav-links">
+      <a href="#catalog">Store (60)</a>
+      <a href="#free-tools">Free Tools</a>
+      <a href="/directory/">Directory</a>
+      <a href="mailto:b2apps.dev@gmail.com">Support</a>
+    </nav>
   </div>
+</header>
+
+<main class="wrap">
+  <section class="hero">
+    <span class="pill-top">60 Instant-Download Products Live • Updated 2026-11-19</span>
+    <h1>Self-Contained Digital Kits, Calculators &amp; Developer Templates</h1>
+    <p class="sub">Zero subscriptions, zero lock-in. Download clean HTML/JS tools, Web3 &amp; Solana boilerplates, finance &amp; tax spreadsheets, and creator playbooks with instant Card or Crypto checkout.</p>
+    <div class="trust">
+      <span>⚡ Instant ZIP Download</span>
+      <span>🪙 Card &amp; Crypto Checkout (39 on Whop)</span>
+      <span>💳 19 on Gumroad</span>
+      <span>🔓 100% Offline &amp; Self-Contained</span>
+    </div>
+  </section>
+
+  <section id="catalog">
+    <div class="controls">
+      <input id="q" class="search" type="search" placeholder="Search tools, templates, Solana, DeFi, tax, Notion, prompts...">
+      <div class="filters" id="cat-filters">
+        <button class="btn-filter active" data-cat="All">All</button>
+        <button class="btn-filter" data-cat="Crypto & Web3">Crypto &amp; Web3</button>
+        <button class="btn-filter" data-cat="Finance & Tax">Finance &amp; Tax</button>
+        <button class="btn-filter" data-cat="DevTools & AI">DevTools &amp; AI</button>
+        <button class="btn-filter" data-cat="Creator & Productivity">Creator &amp; Productivity</button>
+        <button class="btn-filter" data-cat="CRYPTO_PAY">🪙 Crypto Checkout</button>
+      </div>
+    </div>
+    <div class="meta-bar">
+      <span id="count-label">Showing 60 products</span>
+      <span>Merchant-of-Record checkout via Whop, Gumroad, Polar.sh &amp; itch.io</span>
+    </div>
+    <div class="grid" id="grid"></div>
+  </section>
+
+  <section id="free-tools">
+    <h2 class="section-h">Free Online Interactive Tools</h2>
+    <div class="tools-grid">
+      <a class="tool-card" href="/dividend-withholding-tax-calculator/"><strong>Dividend WHT Calculator</strong><span>EU/US withholding tax estimator</span></a>
+      <a class="tool-card" href="/ucits-etf-analyzer/"><strong>UCITS ETF Analyzer</strong><span>TER &amp; portfolio overlap planner</span></a>
+      <a class="tool-card" href="/eu-vat-invoice-checker/"><strong>EU VAT Invoice Checker</strong><span>Reverse-charge &amp; VAT helper</span></a>
+      <a class="tool-card" href="/nomad-tax-calculator/"><strong>Nomad Schengen Tracker</strong><span>90/180-day stay calculator</span></a>
+      <a class="tool-card" href="/wcag-audit-tool/"><strong>WCAG 2.2 Audit Tool</strong><span>Accessibility contrast &amp; checklist</span></a>
+      <a class="tool-card" href="/adhd-focus-os/"><strong>ADHD Focus OS</strong><span>Low-friction daily focus timer</span></a>
+      <a class="tool-card" href="/directory/"><strong>Full Tools Directory</strong><span>Browse all B2 Apps utilities</span></a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="disclaimer">
+      <strong>Disclaimer:</strong> All financial, tax, crypto, pricing, and compliance tools, spreadsheets, and templates on B2 Apps are provided for educational and planning purposes only and do not constitute financial, investment, tax, or legal advice. Always audit smart-contract boilerplates before mainnet deployment.
+    </div>
+    <div>© 2026 B2 Apps · Support: <a href="mailto:b2apps.dev@gmail.com" style="color:var(--accent)">b2apps.dev@gmail.com</a> · All digital deliveries handled securely via Whop, Gumroad, Polar.sh, and itch.io.</div>
+  </div>
+</footer>
+
+<script>
+const PRODUCTS = [{"name": "Web3 Multi-Chain RPC Health Monitor", "platform": "Whop", "price": "$19", "crypto": true, "category": "Crypto & Web3", "url": "https://whop.com/b2appsdev-del-github-io/web3-multi-chain-rpc-health-latency-monitor"}, {"name": "Whop Listing & Launch Kit", "platform": "Whop", "price": "$29", "crypto": true, "category": "Creator & Productivity", "url": "https://whop.com/b2appsdev-del-github-io/whop-listing-launch-kit"}, {"name": "Checkout QA & Payment Flow Testing Kit", "platform": "Whop", "price": "$19", "crypto": true, "category": "DevTools & AI", "url": "https://whop.com/b2appsdev-del-github-io/checkout-qa-payment-flow-testing-kit"}, {"name": "AI Agent Tool-Call Security & Eval Kit", "platform": "Whop", "price": "$39", "crypto": true, "category": "DevTools & AI", "url": "https://whop.com/b2appsdev-del-github-io/ai-agent-tool-call-security-eval-benchmark-kit"}, {"name": "Discord & Telegram Community Launch Kit", "platform": "Whop", "price": "$29", "crypto": true, "category": "Creator & Productivity", "url": "https://whop.com/b2appsdev-del-github-io/discord-telegram-community-launch-kit"}, {"name": "Crypto Payment Terms & Refund Policy Pack", "platform": "Whop", "price": "$24", "crypto": true, "category": "Crypto & Web3", "url": "https://whop.com/b2appsdev-del-github-io/crypto-payment-terms-refund-policy-pack"}, {"name": "Freelance Cashflow & Crypto Income Tracker", "platform": "Whop", "price": "$19", "crypto": true, "category": "Crypto & Web3", "url": "https://whop.com/b2appsdev-del-github-io/freelance-cashflow-crypto-income-tracker"}, {"name": "B2B Cold Email & Client Acquisition Swipe Kit", "platform": "Whop", "price": "$19", "crypto": true, "category": "Creator & Productivity", "url": "https://whop.com/b2appsdev-del-github-io/b2b-cold-email-client-acquisition-swipe-kit"}, {"name": "Testimonial & Social Proof Collection Kit", "platform": "Whop", "price": "$19", "crypto": true, "category": "Creator & Productivity", "url": "https://whop.com/b2appsdev-del-github-io/testimonial-social-proof-collection-kit"}, {"name": "Crypto Invoice Reconciliation & Accounting Kit", "platform": "Whop", "price": "$29", "crypto": true, "category": "Crypto & Web3", "url": "https://whop.com/b2appsdev-del-github-io/crypto-invoice-reconciliation-accounting-kit"}, {"name": "Community Moderation & Auto-Mod Pack", "platform": "Whop", "price": "$19", "crypto": true, "category": "Creator & Productivity", "url": "https://whop.com/b2appsdev-del-github-io/community-moderation-auto-mod-pack"}, {"name": "Prompt-to-Spec Engineering Playbook & Kit", "platform": "Whop", "price": "$19", "crypto": true, "category": "DevTools & AI", "url": "https://whop.com/b2appsdev-del-github-io/prompt-to-spec-engineering-playbook-kit"}, {"name": "MicroPlugins JS Production Bundle", "platform": "Whop", "price": "$29", "crypto": true, "category": "DevTools & AI", "url": "https://whop.com/b2appsdev-del-github-io/microplugins-js-production-bundle"}, {"name": "LaunchKit SaaS Landing & UI Template Pack", "platform": "Whop", "price": "$39", "crypto": true, "category": "DevTools & AI", "url": "https://whop.com/b2appsdev-del-github-io/launchkit-saas-landing-ui-template-pack"}, {"name": "Digital Creator Revenue Playbook", "platform": "Whop", "price": "$19", "crypto": true, "category": "Creator & Productivity", "url": "https://whop.com/b2appsdev-del-github-io/digital-creator-revenue-playbook"}, {"name": "Digital Nomad Tax & Visa Schengen Day Calculator", "platform": "Whop", "price": "$24", "crypto": true, "category": "Finance & Tax", "url": "https://whop.com/b2appsdev-del-github-io/digital-nomad-tax-visa-schengen-day-calculator"}, {"name": "Interactive Pub Quiz & Multi-Round Trivia Master Kit", "platform": "Whop", "price": "$24", "crypto": true, "category": "Creator & Productivity", "url": "https://whop.com/b2appsdev-del-github-io/interactive-pub-quiz-multi-round-trivia-master-kit"}, {"name": "Modular Streamer OBS Overlay & Alert Browser Pack", "platform": "Whop", "price": "$29", "crypto": true, "category": "Creator & Productivity", "url": "https://whop.com/b2appsdev-del-github-io/modular-streamer-obs-overlay-alert-browser-pack"}, {"name": "Dating Profile Audit & High-Conversion Bio Swipe Playbook", "platform": "Whop", "price": "$19", "crypto": true, "category": "Creator & Productivity", "url": "https://whop.com/b2appsdev-del-github-io/dating-profile-audit-high-conversion-bio-swipe-playbook"}, {"name": "Home Maintenance, Warranty & Inventory Tracker", "platform": "Whop", "price": "$19", "crypto": true, "category": "Creator & Productivity", "url": "https://whop.com/b2appsdev-del-github-io/home-maintenance-warranty-inventory-tracker"}, {"name": "WCAG 2.2 AA Web Accessibility Audit & Remediation Toolkit", "platform": "Whop", "price": "$39", "crypto": true, "category": "DevTools & AI", "url": "https://whop.com/b2appsdev-del-github-io/wcag-2-2-aa-web-accessibility-audit-remediation-toolkit"}, {"name": "ADHD & Neurodivergent Low-Friction Daily Focus System", "platform": "Whop", "price": "$24", "crypto": true, "category": "Creator & Productivity", "url": "https://whop.com/b2appsdev-del-github-io/adhd-neurodivergent-low-friction-daily-focus-system"}, {"name": "On-Chain Crypto Revenue Dashboard Template", "platform": "Whop", "price": "$29", "crypto": true, "category": "Crypto & Web3", "url": "https://whop.com/b2appsdev-del-github-io/on-chain-crypto-revenue-dashboard-template"}, {"name": "Flight Delay & Cancellation EU261 Claim Kit", "platform": "Whop", "price": "$29", "crypto": true, "category": "Creator & Productivity", "url": "https://whop.com/b2appsdev-del-github-io/flight-delay-cancellation-eu261-compensation-claim-kit"}, {"name": "Single & Double Elimination Bracket Generator", "platform": "Itch.io + Whop", "price": "$34", "crypto": true, "category": "Creator & Productivity", "url": "https://whop.com/b2appsdev-del-github-io/single-double-elimination-tournament-bracket-generator"}, {"name": "Crypto Revenue Dashboard Kit", "platform": "Whop", "price": "$7", "crypto": true, "category": "Crypto & Web3", "url": "https://whop.com/b2appsdev-del-github-io/crypto-revenue-dashboard-kit/"}, {"name": "Crypto Store Course", "platform": "Whop", "price": "$7", "crypto": true, "category": "Crypto & Web3", "url": "https://whop.com/b2appsdev-del-github-io/crypto-store-course/"}, {"name": "Crypto Legal Kit", "platform": "Whop", "price": "$7", "crypto": true, "category": "Crypto & Web3", "url": "https://whop.com/b2appsdev-del-github-io/crypto-legal-kit/"}, {"name": "Solana Smart Contract Boilerplate Kit", "platform": "Whop", "price": "$7", "crypto": true, "category": "Crypto & Web3", "url": "https://whop.com/b2appsdev-del-github-io/solana-smart-contract-boilerplate-kit/"}, {"name": "Crypto Tax Calculator Spreadsheet", "platform": "Whop", "price": "$9", "crypto": true, "category": "Crypto & Web3", "url": "https://whop.com/b2appsdev-del-github-io/crypto-tax-calculator-spreadsheet/"}, {"name": "Token-Gated Discord Bot Pack", "platform": "Whop", "price": "$7", "crypto": true, "category": "Crypto & Web3", "url": "https://whop.com/b2appsdev-del-github-io/token-gated-discord-bot-pack/"}, {"name": "DAO Treasury Dashboard Template", "platform": "Whop", "price": "$7", "crypto": true, "category": "Crypto & Web3", "url": "https://whop.com/b2appsdev-del-github-io/dao-treasury-dashboard-template/"}, {"name": "DeFi Yield Tracker Dashboard Template", "platform": "Whop", "price": "$7", "crypto": true, "category": "Crypto & Web3", "url": "https://whop.com/b2appsdev-del-github-io/defi-yield-tracker-dashboard-template/"}, {"name": "Solana Token-Sale Boilerplate Contract", "platform": "Whop", "price": "$9", "crypto": true, "category": "Crypto & Web3", "url": "https://whop.com/b2appsdev-del-github-io/solana-token-sale-boilerplate-contract/"}, {"name": "Solana NFT Smart Contract Boilerplate", "platform": "Whop", "price": "$7", "crypto": true, "category": "Crypto & Web3", "url": "https://whop.com/b2appsdev-del-github-io/solana-nft-smart-contract-boilerplate/"}, {"name": "Crypto Payroll Calculator v2.0", "platform": "Whop", "price": "$7", "crypto": true, "category": "Crypto & Web3", "url": "https://whop.com/b2appsdev-del-github-io/crypto-payroll-calculator-v2-0/"}, {"name": "DeFi Yield Farming Dashboard Starter Kit (React)", "platform": "Whop", "price": "$7", "crypto": true, "category": "Crypto & Web3", "url": "https://whop.com/b2appsdev-del-github-io/defi-yield-farming-dashboard-starter-kit-react/"}, {"name": "Crypto-Friendly UI Kit for DeFi Dashboards", "platform": "Whop", "price": "$7", "crypto": true, "category": "Crypto & Web3", "url": "https://whop.com/b2appsdev-del-github-io/crypto-friendly-ui-kit-for-defi-dashboards/"}, {"name": "AI Prompt Library for NFT Artists", "platform": "Whop", "price": "$7", "crypto": true, "category": "Crypto & Web3", "url": "https://whop.com/b2appsdev-del-github-io/ai-prompt-library-for-nft-artists/"}, {"name": "Metals Premium Calculator", "platform": "Gumroad", "price": "$9", "crypto": false, "category": "Finance & Tax", "url": "https://devbloom12.gumroad.com/l/metals-premium-calculator"}, {"name": "Metals Unit Converter", "platform": "Gumroad", "price": "$9", "crypto": false, "category": "Finance & Tax", "url": "https://devbloom12.gumroad.com/l/metals-unit-converter"}, {"name": "Earnings Season Planner", "platform": "Gumroad", "price": "$12", "crypto": false, "category": "Finance & Tax", "url": "https://devbloom12.gumroad.com/l/earnings-season-planner"}, {"name": "ETF Expense Analyzer", "platform": "Gumroad", "price": "$12", "crypto": false, "category": "Finance & Tax", "url": "https://devbloom12.gumroad.com/l/etf-expense-analyzer"}, {"name": "Metals DCA Planner", "platform": "Gumroad", "price": "$12", "crypto": false, "category": "Crypto & Web3", "url": "https://devbloom12.gumroad.com/l/metals-dca-planner"}, {"name": "Metals Dealer Comparison Sheet", "platform": "Gumroad", "price": "$12", "crypto": false, "category": "Finance & Tax", "url": "https://devbloom12.gumroad.com/l/metals-dealer-comparison"}, {"name": "Stock Buyback Tracker", "platform": "Gumroad", "price": "$12", "crypto": false, "category": "Finance & Tax", "url": "https://devbloom12.gumroad.com/l/stock-buyback-tracker"}, {"name": "Stock Split Adjuster", "platform": "Gumroad", "price": "$12", "crypto": false, "category": "Finance & Tax", "url": "https://devbloom12.gumroad.com/l/stock-split-adjuster"}, {"name": "Commodity Correlation Matrix", "platform": "Gumroad", "price": "$19", "crypto": false, "category": "Finance & Tax", "url": "https://devbloom12.gumroad.com/l/commodity-correlation-matrix"}, {"name": "Crack Spread Calculator", "platform": "Gumroad", "price": "$19", "crypto": false, "category": "Finance & Tax", "url": "https://devbloom12.gumroad.com/l/crack-spread-calculator"}, {"name": "All-In-One Bundle", "platform": "Gumroad", "price": "$9", "crypto": false, "category": "Creator & Productivity", "url": "https://devbloom12.gumroad.com/l/ziafea"}, {"name": "Sponsorship CRM Kit", "platform": "Gumroad", "price": "$7", "crypto": false, "category": "Creator & Productivity", "url": "https://devbloom12.gumroad.com/l/zedeqw"}, {"name": "Metamask Wallet UI Kit for DApps", "platform": "Gumroad", "price": "$7", "crypto": false, "category": "Crypto & Web3", "url": "https://devbloom12.gumroad.com/l/mxzuuh"}, {"name": "Offline Profit Tracker", "platform": "Gumroad", "price": "$7", "crypto": false, "category": "Finance & Tax", "url": "https://devbloom12.gumroad.com/l/ekyroq"}, {"name": "Crypto Seller Starter Pack", "platform": "Gumroad", "price": "$9", "crypto": false, "category": "Crypto & Web3", "url": "https://devbloom12.gumroad.com/l/bmwegl"}, {"name": "DCA Calculator Kit", "platform": "Gumroad", "price": "$7", "crypto": false, "category": "Crypto & Web3", "url": "https://devbloom12.gumroad.com/l/wgcqqt"}, {"name": "Crypto Payroll Template Pack", "platform": "Gumroad", "price": "$9", "crypto": false, "category": "Crypto & Web3", "url": "https://devbloom12.gumroad.com/l/pimar"}, {"name": "NFT Membership Gate Kit", "platform": "Gumroad", "price": "$9", "crypto": false, "category": "Crypto & Web3", "url": "https://devbloom12.gumroad.com/l/bdlfon"}, {"name": "Telegram Signal Template Pack", "platform": "Gumroad", "price": "$7", "crypto": false, "category": "Creator & Productivity", "url": "https://devbloom12.gumroad.com/l/oyygs"}, {"name": "Developer Prompt Pack (100 prompts)", "platform": "Polar.sh", "price": "$14", "crypto": false, "category": "DevTools & AI", "url": "https://buy.polar.sh/polar_cl_kVjCpOgrUIYG7MU11V2R84DNIDxoXmK8ClBt809hMpX"}, {"name": "NFT Metadata Generator for Game Assets", "platform": "Itch.io", "price": "$0 / $5 Donate", "crypto": false, "category": "Crypto & Web3", "url": "https://b2appsdev-del.itch.io/nft-metadata-generator-for-game-assets"}];
+let activeCat = "All";
+const grid = document.getElementById("grid");
+const qEl = document.getElementById("q");
+const countEl = document.getElementById("count-label");
+
+function esc(s) { return String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])); }
+
+function render() {
+  const term = (qEl.value || "").trim().toLowerCase();
+  const list = PRODUCTS.filter(p => {
+    if (activeCat === "CRYPTO_PAY" && !p.crypto) return false;
+    else if (activeCat !== "All" && activeCat !== "CRYPTO_PAY" && p.category !== activeCat) return false;
+    if (term && !(p.name.toLowerCase().includes(term) || p.platform.toLowerCase().includes(term) || p.category.toLowerCase().includes(term))) return false;
+    return true;
+  });
+  countEl.textContent = `Showing ${list.length} of ${PRODUCTS.length} live products`;
+  grid.innerHTML = list.map(p => `
+    <article class="card">
+      <div>
+        <div class="card-top">
+          <span class="cat-tag">${esc(p.category)}</span>
+          <span class="price">${esc(p.price)}</span>
+        </div>
+        <h3 class="title" style="margin:10px 0 10px;">${esc(p.name)}</h3>
+        <div class="badges">
+          <span class="badge-plat">${esc(p.platform)}</span>
+          ${p.crypto ? '<span class="badge-crypto">🪙 Crypto + Card</span>' : '<span class="badge-plat">💳 Card</span>'}
+        </div>
+      </div>
+      <a class="buy-btn" href="${esc(p.url)}" target="_blank" rel="noopener">Buy Now →</a>
+    </article>
+  `).join("");
+}
+
+document.querySelectorAll("#cat-filters .btn-filter").forEach(btn => {
+  btn.addEventListener("click", () => {
+    document.querySelectorAll("#cat-filters .btn-filter").forEach(b => b.classList.remove("active"));
+    btn.classList.add("active");
+    activeCat = btn.dataset.cat;
+    render();
+  });
+});
+qEl.addEventListener("input", render);
+render();
+</script>
 </body>
 </html>
