@@ -1,39 +1,80 @@
-# B2 Apps — Privacy-First EU B2B, SEO & Investor Tools
-> Zero-backend, browser-local utilities, MCP servers, Apify Actors, and Gumroad PWYW / Pro packs for European founders, developers, and retail investors.
+# B2 Apps — Digital Tools, Templates & Developer Starter Kits
+> Official storefront: https://b2appsdev-del.github.io/ | Support: b2apps.dev@gmail.com | Updated: 2026-11-19
 
-## Core Web Tools (100% Client-Side)
-- [EU VAT & Reverse-Charge Invoice Checker](https://b2appsdev-del.github.io/eu-vat-invoice-checker/): Validate EU VAT IDs, VIES status, and cross-border B2B invoicing rules.
-- [GDPR Cookie Banner & Privacy Policy Generator](https://b2appsdev-del.github.io/gdpr-cookie-privacy-generator/): Generate GDPR/ePrivacy compliant cookie banners, policies, and consent records.
-- [LLMs.txt & AI Bot Policy Generator](https://b2appsdev-del.github.io/llms-txt-generator/): Generate /llms.txt, /llms-full.txt, and AI crawler robots.txt.
-- [UCITS ETF Overlap & TER Analyzer](https://b2appsdev-del.github.io/ucits-etf-analyzer/): Compare UCITS ETF holdings overlap, factor concentration, and weighted TER.
-- [EU/US Dividend & Withholding Tax (WHT) Drag Calculator](https://b2appsdev-del.github.io/dividend-withholding-tax-calculator/): Model W-8BEN and UCITS dividend withholding tax drag across European jurisdictions.
-- [EU B2B & Developer Tools Directory](https://b2appsdev-del.github.io/directory/): Curated directory of 37+ privacy-first tools, open-source kits, and Pro packs.
+## Free Online Interactive Tools
+- [Dividend WHT Calculator](https://b2appsdev-del.github.io/dividend-withholding-tax-calculator/): EU/US withholding tax & net yield estimator
+- [UCITS ETF Analyzer](https://b2appsdev-del.github.io/ucits-etf-analyzer/): TER fee impact & portfolio overlap planner
+- [EU VAT Invoice Checker](https://b2appsdev-del.github.io/eu-vat-invoice-checker/): Reverse-charge & cross-border VAT helper
+- [Nomad Schengen Tracker](https://b2appsdev-del.github.io/nomad-tax-calculator/): Rolling 90/180-day stay & visa calculator
+- [WCAG 2.2 Audit Tool](https://b2appsdev-del.github.io/wcag-audit-tool/): Accessibility contrast & remediation checklist
+- [ADHD Focus OS](https://b2appsdev-del.github.io/adhd-focus-os/): Low-friction offline daily focus workspace
+- [Full Tools Directory](https://b2appsdev-del.github.io/directory/): Browse all B2 Apps utilities & hubs
 
-## Model Context Protocol (MCP) Servers
-- [EU VAT & VIES Audit MCP Server](https://github.com/b2appsdev-del/eu-vat-vies-mcp): Autonomous MCP tool for VIES validation, VAT calculation, and cross-border EU B2B rules.
-- [JSON-LD & SEO Audit MCP Server](https://github.com/b2appsdev-del/jsonld-seo-audit-mcp): Autonomous MCP server for validating Schema.org markup, Rich Results readiness, and SEO audits.
-- [GDPR & RoPA Audit MCP Server](https://github.com/b2appsdev-del/gdpr-ropa-audit-mcp): Autonomous MCP server for auditing GDPR compliance, cookie consent, and Article 30 Records of Processing Activities.
+## Educational Guides
+- [EU & US Dividend Withholding Tax Guide (2026): How Retail Investors Estimate Net Yield](https://b2appsdev-del.github.io/blog/eu-dividend-withholding-tax-guide-2026.html): Practical educational guide to understanding dividend withholding tax rates across EU and US equities, double-tax treaties, and how to model net yield.
+- [Solana Smart Contract Starter Checklist: Project Structure, Testing & Pre-Audit Steps](https://b2appsdev-del.github.io/blog/solana-smart-contract-starter-checklist.html): A practical engineering checklist for structuring Solana token-sale and NFT smart contracts, running local tests, and preparing for security audits.
+- [WCAG 2.2 AA Accessibility Audit Checklist for Modern Web Apps & SaaS](https://b2appsdev-del.github.io/blog/wcag-2-2-aa-accessibility-audit-checklist.html): Step-by-step contrast, keyboard navigation, ARIA, and focus-ring checks to make your web app WCAG 2.2 AA compliant.
 
-## Apify Actors
-- [Public Sitemap & SEO Meta Auditor Actor](https://apify.com/b2apps/public-sitemap-seo-auditor): Deep crawler for XML sitemaps, canonicals, status codes, and meta tags.
-- [Public JSON-LD & Schema.org Validator Actor](https://apify.com/b2apps/public-jsonld-schema-validator): Automated crawler validating Structured Data across full domains.
-- [Public LLMs.txt & AI Search Readiness Auditor Actor](https://apify.com/b2apps/public-llms-txt-auditor): Audit website discoverability for AI search engines and crawler policies.
+## Live Instant-Download Products (60 Total)
+- [Web3 Multi-Chain RPC Health Monitor](https://whop.com/b2appsdev-del-github-io/web3-multi-chain-rpc-health-latency-monitor) — $19 (Whop, Card + Crypto) [Crypto & Web3]
+- [Whop Listing & Launch Kit](https://whop.com/b2appsdev-del-github-io/whop-listing-launch-kit) — $29 (Whop, Card + Crypto) [Creator & Productivity]
+- [Checkout QA & Payment Flow Testing Kit](https://whop.com/b2appsdev-del-github-io/checkout-qa-payment-flow-testing-kit) — $19 (Whop, Card + Crypto) [DevTools & AI]
+- [AI Agent Tool-Call Security & Eval Kit](https://whop.com/b2appsdev-del-github-io/ai-agent-tool-call-security-eval-benchmark-kit) — $39 (Whop, Card + Crypto) [DevTools & AI]
+- [Discord & Telegram Community Launch Kit](https://whop.com/b2appsdev-del-github-io/discord-telegram-community-launch-kit) — $29 (Whop, Card + Crypto) [Creator & Productivity]
+- [Crypto Payment Terms & Refund Policy Pack](https://whop.com/b2appsdev-del-github-io/crypto-payment-terms-refund-policy-pack) — $24 (Whop, Card + Crypto) [Crypto & Web3]
+- [Freelance Cashflow & Crypto Income Tracker](https://whop.com/b2appsdev-del-github-io/freelance-cashflow-crypto-income-tracker) — $19 (Whop, Card + Crypto) [Crypto & Web3]
+- [B2B Cold Email & Client Acquisition Swipe Kit](https://whop.com/b2appsdev-del-github-io/b2b-cold-email-client-acquisition-swipe-kit) — $19 (Whop, Card + Crypto) [Creator & Productivity]
+- [Testimonial & Social Proof Collection Kit](https://whop.com/b2appsdev-del-github-io/testimonial-social-proof-collection-kit) — $19 (Whop, Card + Crypto) [Creator & Productivity]
+- [Crypto Invoice Reconciliation & Accounting Kit](https://whop.com/b2appsdev-del-github-io/crypto-invoice-reconciliation-accounting-kit) — $29 (Whop, Card + Crypto) [Crypto & Web3]
+- [Community Moderation & Auto-Mod Pack](https://whop.com/b2appsdev-del-github-io/community-moderation-auto-mod-pack) — $19 (Whop, Card + Crypto) [Creator & Productivity]
+- [Prompt-to-Spec Engineering Playbook & Kit](https://whop.com/b2appsdev-del-github-io/prompt-to-spec-engineering-playbook-kit) — $19 (Whop, Card + Crypto) [DevTools & AI]
+- [MicroPlugins JS Production Bundle](https://whop.com/b2appsdev-del-github-io/microplugins-js-production-bundle) — $29 (Whop, Card + Crypto) [DevTools & AI]
+- [LaunchKit SaaS Landing & UI Template Pack](https://whop.com/b2appsdev-del-github-io/launchkit-saas-landing-ui-template-pack) — $39 (Whop, Card + Crypto) [DevTools & AI]
+- [Digital Creator Revenue Playbook](https://whop.com/b2appsdev-del-github-io/digital-creator-revenue-playbook) — $19 (Whop, Card + Crypto) [Creator & Productivity]
+- [Digital Nomad Tax & Visa Schengen Day Calculator](https://whop.com/b2appsdev-del-github-io/digital-nomad-tax-visa-schengen-day-calculator) — $24 (Whop, Card + Crypto) [Finance & Tax]
+- [Interactive Pub Quiz & Multi-Round Trivia Master Kit](https://whop.com/b2appsdev-del-github-io/interactive-pub-quiz-multi-round-trivia-master-kit) — $24 (Whop, Card + Crypto) [Creator & Productivity]
+- [Modular Streamer OBS Overlay & Alert Browser Pack](https://whop.com/b2appsdev-del-github-io/modular-streamer-obs-overlay-alert-browser-pack) — $29 (Whop, Card + Crypto) [Creator & Productivity]
+- [Dating Profile Audit & High-Conversion Bio Swipe Playbook](https://whop.com/b2appsdev-del-github-io/dating-profile-audit-high-conversion-bio-swipe-playbook) — $19 (Whop, Card + Crypto) [Creator & Productivity]
+- [Home Maintenance, Warranty & Inventory Tracker](https://whop.com/b2appsdev-del-github-io/home-maintenance-warranty-inventory-tracker) — $19 (Whop, Card + Crypto) [Creator & Productivity]
+- [WCAG 2.2 AA Web Accessibility Audit & Remediation Toolkit](https://whop.com/b2appsdev-del-github-io/wcag-2-2-aa-web-accessibility-audit-remediation-toolkit) — $39 (Whop, Card + Crypto) [DevTools & AI]
+- [ADHD & Neurodivergent Low-Friction Daily Focus System](https://whop.com/b2appsdev-del-github-io/adhd-neurodivergent-low-friction-daily-focus-system) — $24 (Whop, Card + Crypto) [Creator & Productivity]
+- [On-Chain Crypto Revenue Dashboard Template](https://whop.com/b2appsdev-del-github-io/on-chain-crypto-revenue-dashboard-template) — $29 (Whop, Card + Crypto) [Crypto & Web3]
+- [Flight Delay & Cancellation EU261 Claim Kit](https://whop.com/b2appsdev-del-github-io/flight-delay-cancellation-eu261-compensation-claim-kit) — $29 (Whop, Card + Crypto) [Creator & Productivity]
+- [Single & Double Elimination Bracket Generator](https://whop.com/b2appsdev-del-github-io/single-double-elimination-tournament-bracket-generator) — $34 (Itch.io + Whop, Card + Crypto) [Creator & Productivity]
+- [Crypto Revenue Dashboard Kit](https://whop.com/b2appsdev-del-github-io/crypto-revenue-dashboard-kit/) — $7 (Whop, Card + Crypto) [Crypto & Web3]
+- [Crypto Store Course](https://whop.com/b2appsdev-del-github-io/crypto-store-course/) — $7 (Whop, Card + Crypto) [Crypto & Web3]
+- [Crypto Legal Kit](https://whop.com/b2appsdev-del-github-io/crypto-legal-kit/) — $7 (Whop, Card + Crypto) [Crypto & Web3]
+- [Solana Smart Contract Boilerplate Kit](https://whop.com/b2appsdev-del-github-io/solana-smart-contract-boilerplate-kit/) — $7 (Whop, Card + Crypto) [Crypto & Web3]
+- [Crypto Tax Calculator Spreadsheet](https://whop.com/b2appsdev-del-github-io/crypto-tax-calculator-spreadsheet/) — $9 (Whop, Card + Crypto) [Crypto & Web3]
+- [Token-Gated Discord Bot Pack](https://whop.com/b2appsdev-del-github-io/token-gated-discord-bot-pack/) — $7 (Whop, Card + Crypto) [Crypto & Web3]
+- [DAO Treasury Dashboard Template](https://whop.com/b2appsdev-del-github-io/dao-treasury-dashboard-template/) — $7 (Whop, Card + Crypto) [Crypto & Web3]
+- [DeFi Yield Tracker Dashboard Template](https://whop.com/b2appsdev-del-github-io/defi-yield-tracker-dashboard-template/) — $7 (Whop, Card + Crypto) [Crypto & Web3]
+- [Solana Token-Sale Boilerplate Contract](https://whop.com/b2appsdev-del-github-io/solana-token-sale-boilerplate-contract/) — $9 (Whop, Card + Crypto) [Crypto & Web3]
+- [Solana NFT Smart Contract Boilerplate](https://whop.com/b2appsdev-del-github-io/solana-nft-smart-contract-boilerplate/) — $7 (Whop, Card + Crypto) [Crypto & Web3]
+- [Crypto Payroll Calculator v2.0](https://whop.com/b2appsdev-del-github-io/crypto-payroll-calculator-v2-0/) — $7 (Whop, Card + Crypto) [Crypto & Web3]
+- [DeFi Yield Farming Dashboard Starter Kit (React)](https://whop.com/b2appsdev-del-github-io/defi-yield-farming-dashboard-starter-kit-react/) — $7 (Whop, Card + Crypto) [Crypto & Web3]
+- [Crypto-Friendly UI Kit for DeFi Dashboards](https://whop.com/b2appsdev-del-github-io/crypto-friendly-ui-kit-for-defi-dashboards/) — $7 (Whop, Card + Crypto) [Crypto & Web3]
+- [AI Prompt Library for NFT Artists](https://whop.com/b2appsdev-del-github-io/ai-prompt-library-for-nft-artists/) — $7 (Whop, Card + Crypto) [Crypto & Web3]
+- [Metals Premium Calculator](https://devbloom12.gumroad.com/l/metals-premium-calculator) — $9 (Gumroad, Card) [Finance & Tax]
+- [Metals Unit Converter](https://devbloom12.gumroad.com/l/metals-unit-converter) — $9 (Gumroad, Card) [Finance & Tax]
+- [Earnings Season Planner](https://devbloom12.gumroad.com/l/earnings-season-planner) — $12 (Gumroad, Card) [Finance & Tax]
+- [ETF Expense Analyzer](https://devbloom12.gumroad.com/l/etf-expense-analyzer) — $12 (Gumroad, Card) [Finance & Tax]
+- [Metals DCA Planner](https://devbloom12.gumroad.com/l/metals-dca-planner) — $12 (Gumroad, Card) [Crypto & Web3]
+- [Metals Dealer Comparison Sheet](https://devbloom12.gumroad.com/l/metals-dealer-comparison) — $12 (Gumroad, Card) [Finance & Tax]
+- [Stock Buyback Tracker](https://devbloom12.gumroad.com/l/stock-buyback-tracker) — $12 (Gumroad, Card) [Finance & Tax]
+- [Stock Split Adjuster](https://devbloom12.gumroad.com/l/stock-split-adjuster) — $12 (Gumroad, Card) [Finance & Tax]
+- [Commodity Correlation Matrix](https://devbloom12.gumroad.com/l/commodity-correlation-matrix) — $19 (Gumroad, Card) [Finance & Tax]
+- [Crack Spread Calculator](https://devbloom12.gumroad.com/l/crack-spread-calculator) — $19 (Gumroad, Card) [Finance & Tax]
+- [All-In-One Bundle](https://devbloom12.gumroad.com/l/ziafea) — $9 (Gumroad, Card) [Creator & Productivity]
+- [Sponsorship CRM Kit](https://devbloom12.gumroad.com/l/zedeqw) — $7 (Gumroad, Card) [Creator & Productivity]
+- [Metamask Wallet UI Kit for DApps](https://devbloom12.gumroad.com/l/mxzuuh) — $7 (Gumroad, Card) [Crypto & Web3]
+- [Offline Profit Tracker](https://devbloom12.gumroad.com/l/ekyroq) — $7 (Gumroad, Card) [Finance & Tax]
+- [Crypto Seller Starter Pack](https://devbloom12.gumroad.com/l/bmwegl) — $9 (Gumroad, Card) [Crypto & Web3]
+- [DCA Calculator Kit](https://devbloom12.gumroad.com/l/wgcqqt) — $7 (Gumroad, Card) [Crypto & Web3]
+- [Crypto Payroll Template Pack](https://devbloom12.gumroad.com/l/pimar) — $9 (Gumroad, Card) [Crypto & Web3]
+- [NFT Membership Gate Kit](https://devbloom12.gumroad.com/l/bdlfon) — $9 (Gumroad, Card) [Crypto & Web3]
+- [Telegram Signal Template Pack](https://devbloom12.gumroad.com/l/oyygs) — $7 (Gumroad, Card) [Creator & Productivity]
+- [Developer Prompt Pack (100 prompts)](https://buy.polar.sh/polar_cl_kVjCpOgrUIYG7MU11V2R84DNIDxoXmK8ClBt809hMpX) — $14 (Polar.sh, Card) [DevTools & AI]
+- [NFT Metadata Generator for Game Assets](https://b2appsdev-del.itch.io/nft-metadata-generator-for-game-assets) — $0 / $5 Donate (Itch.io, Card) [Crypto & Web3]
 
-## Commercial & Pro Packs ($0+ PWYW / Pro)
-- [EU VAT / B2B SaaS Invoicing Compliance Pack ($0+ PWYW / Pro)](https://devbloom12.gumroad.com/l/fgeokd): Invoicing templates, reverse-charge checklists, VIES edge cases, and automated audit workflows.
-- [GDPR & ePrivacy RoPA Compliance Kit ($0+ PWYW / Pro)](https://devbloom12.gumroad.com/l/fynlyw): Article 30 RoPA templates, cookie audit log sheets, DPA checklists, and consent workflows.
-- [UCITS ETF Portfolio & Tax Drag Master Toolkit ($0+ PWYW / Pro)](https://devbloom12.gumroad.com/l/umkclc): Portfolio rebalancing sheets, dividend withholding tax drag matrix, and factor overlap models.
-
-## Self-Service Kits (free sample -> one-time pack)
-- [EU261 Claim Documents](https://b2appsdev-del.github.io/eu261-claim-documents/): Self-service delay/cancellation paperwork templates. Free checklist sample. No success fee, not legal advice.
-- [Metals Dealer Comparison Sheet](https://b2appsdev-del.github.io/metals-dealer-comparison/): Compare saved dealer quotes, premiums and buyback spreads offline. Blank sample. No live prices, no recommendation.
-- [WCAG 2.2 AA Audit Toolkit](https://b2appsdev-del.github.io/wcag-22-audit/): Checklist, report template and remediation tracker for accessibility audits. Free quick-audit sample. Not a certification.
-- [Whop Listing & Launch Kit](https://b2appsdev-del.github.io/whop-listing-checklist/): Listing copy builder and 20-point launch checklist, including a no-spend checkout walkthrough. Free sample checklist.
-- [Checkout QA Kit](https://b2appsdev-del.github.io/checkout-qa/): No-spend checkout review plan covering price, promo, mobile and delivery promises. Free sample plan. Not a payment tool.
-- [AI Agent Tool-Call Security Eval](https://b2appsdev-del.github.io/agent-toolcall-security-eval/): Prompt-injection test vectors and a results template for tool-calling agents. Free sample. Not a security audit or certification.
-
-## Educational Disclaimer
-Educational and informational purposes only. None of the tools, MCP servers, actors, templates, or packs constitute legal, tax, or financial investment advice. Consult qualified local legal counsel and certified tax advisors in your relevant jurisdiction before relying on outputs for formal statutory compliance.
-
-## Quick entry point
-- [Start here - free samples and self-service kits](https://b2appsdev-del.github.io/start/): One mobile page linking to all six free samples and kits. Use for a social bio link or a DM.
+> Disclaimer: Educational and planning tools only; not financial, investment, tax, or legal advice.
