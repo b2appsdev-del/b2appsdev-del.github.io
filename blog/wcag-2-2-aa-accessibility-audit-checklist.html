@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WCAG 2.2 AA Accessibility Audit Checklist for Modern Web Apps &amp; SaaS | B2 Apps Guides</title>
+<meta name="description" content="Step-by-step contrast, keyboard navigation, ARIA, and focus-ring checks to make your web app WCAG 2.2 AA compliant.">
+<meta name="keywords" content="WCAG 2.2 AA checklist, web accessibility audit tool, contrast checker, SaaS accessibility">
+<link rel="canonical" href="https://b2appsdev-del.github.io/blog/wcag-2-2-aa-accessibility-audit-checklist.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="WCAG 2.2 AA Accessibility Audit Checklist for Modern Web Apps &amp; SaaS">
+<meta property="og:description" content="Step-by-step contrast, keyboard navigation, ARIA, and focus-ring checks to make your web app WCAG 2.2 AA compliant.">
+<meta property="og:url" content="https://b2appsdev-del.github.io/blog/wcag-2-2-aa-accessibility-audit-checklist.html">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "WCAG 2.2 AA Accessibility Audit Checklist for Modern Web Apps & SaaS", "description": "Step-by-step contrast, keyboard navigation, ARIA, and focus-ring checks to make your web app WCAG 2.2 AA compliant.", "datePublished": "2026-11-19", "dateModified": "2026-11-19", "author": {"@type": "Organization", "name": "B2 Apps"}, "publisher": {"@type": "Organization", "name": "B2 Apps", "url": "https://b2appsdev-del.github.io"}, "mainEntityOfPage": "https://b2appsdev-del.github.io/blog/wcag-2-2-aa-accessibility-audit-checklist.html"}</script>
+<style>
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Inter,sans-serif;background:#070b14;color:#e2e8f0;line-height:1.7;margin:0;padding:0}
+  .wrap{max-width:780px;margin:0 auto;padding:28px 20px 64px}
+  a{color:#38bdf8;text-decoration:none} a:hover{text-decoration:underline}
+  .top{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid rgba(148,163,184,.18);padding-bottom:14px;margin-bottom:28px;font-size:14px}
+  h1{font-size:clamp(24px,4vw,34px);line-height:1.2;color:#fff;margin:0 0 12px}
+  h2{font-size:20px;color:#fff;margin:28px 0 10px} h3{font-size:16px;color:#cbd5e1;margin:20px 0 8px}
+  p{color:#cbd5e1;margin:0 0 14px} ul{padding-left:20px;margin:0 0 16px} li{color:#cbd5e1;margin-bottom:6px}
+  .meta{font-size:13px;color:#94a3b8;margin-bottom:24px}
+  .cta{margin:32px 0;padding:18px;border-radius:14px;background:#0f172a;border:1px solid rgba(56,189,248,.35);display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap}
+  .cta-btn{background:linear-gradient(90deg,#0ea5e9,#38bdf8);color:#04101d;font-weight:700;padding:10px 18px;border-radius:10px;text-decoration:none}
+  .disc{margin-top:32px;padding:12px 14px;border-radius:10px;background:rgba(245,158,11,.08);border:1px solid rgba(245,158,11,.25);color:#fde68a;font-size:12px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top"><a href="/">← B2 Apps Store</a><a href="/blog/">All Guides</a></div>
+  <h1>WCAG 2.2 AA Accessibility Audit Checklist for Modern Web Apps &amp; SaaS</h1>
+  <div class="meta">Published 2026-11-19 · B2 Apps Technical Guides</div>
+  <h2>Key Takeaways</h2>
+<ul>
+<li><strong>WCAG 2.2 AA</strong> adds nine new success criteria to 2.1, focusing on cognitive load, mobile interactions, and authentication.</li>
+<li><strong>SaaS accessibility</strong> requires testing dynamic states (modals, toasts, virtualized lists), not just static pages.</li>
+<li>Automated tools catch ~30% of issues; manual keyboard and screen reader testing is non-negotiable for AA conformance.</li>
+<li><strong>Contrast ratios</strong> (4.5:1 text, 3:1 UI components) must be verified in all themes—light, dark, and high-contrast modes.</li>
+<li>Document remediation in a <strong>living audit report</strong> tied to your issue tracker to prove ongoing compliance.</li>
+</ul>
+<p>---</p>
+<h2>Why WCAG 2.2 AA Matters for Modern Web Apps</h2>
+<p>WCAG 2.2 (released October 2023) is the current benchmark for legal compliance (ADA, EAA, AODA) and procurement requirements (VPAT/ACR). For <strong>SaaS accessibility</strong>, the stakes are higher: single-page applications (SPAs), real-time collaboration, and complex dashboards introduce failure modes that static marketing sites never encounter.</p>
+<p>The 2.2 update introduces nine new Success Criteria (SC). Six apply at Level AA. If your product targets enterprise or government buyers, a <strong>WCAG 2.2 AA checklist</strong> is now a sales enablement artifact, not just a compliance exercise.</p>
+<p>---</p>
+<h2>The Six New AA Criteria You Must Test</h2>
+<p>| Criterion | Short Name | What It Breaks in SaaS |</p>
+<p>| :--- | :--- | :--- |</p>
+<p>| <strong>2.4.11</strong> | Focus Not Obscured (Minimum) | Sticky headers, chat widgets, or cookie banners hiding keyboard focus. |</p>
+<p>| <strong>2.4.12</strong> | Focus Not Obscured (Enhanced) | Same as above, but *no* part of the focus indicator may be hidden. |</p>
+<p>| <strong>2.5.7</strong> | Dragging Movements | Kanban boards, slider inputs, map pinching—must offer a single-pointer alternative. |</p>
+<p>| <strong>2.5.8</strong> | Target Size (Minimum) | 24×24 px CSS hit area for icons, avatar menus, dense toolbar actions. |</p>
+<p>| <strong>3.2.6</strong> | Consistent Help | Help link/chat icon must appear in the same relative order on every page/view. |</p>
+<p>| <strong>3.3.8</strong> | Accessible Authentication (Minimum) | No cognitive function tests (puzzles, recall) for login/MFA unless an alternative exists. |</p>
+<p>&gt; <strong>Note:</strong> 2.4.13 (Focus Appearance) is Level AAA in 2.2 but widely adopted as a de-facto AA standard. Treat it as required.</p>
+<p>---</p>
+<h2>5-Step Practical Audit Checklist</h2>
+<h3>1. Automated Baseline Scan</h3>
+<p>Run a <strong>web accessibility audit tool</strong> (axe-core, WAVE, or Lighthouse) against every unique route *and* major component state (open modal, error toast, loading skeleton).</p>
+<ul>
+<li><strong>Action:</strong> Export JSON results; deduplicate by component, not URL.</li>
+<li><strong>Gap:</strong> Automation misses focus order, drag alternatives, and authentication flows.</li>
+</ul>
+<h3>2. Keyboard-Only Navigation Sweep</h3>
+<p>Disable the mouse. Tab through every interactive element in this sequence:</p>
+<p>1.  <strong>Global:</strong> Skip link → Header → Main → Footer.</p>
+<p>2.  <strong>App Shell:</strong> Sidebar navigation, user menu, notification bell.</p>
+<p>3.  <strong>Data Dense:</strong> Virtualized tables (ensure focus moves *into* rows), pagination, inline edit.</p>
+<p>4.  <strong>Modals/Drawers:</strong> Focus trap, restore focus on close, `Esc` dismiss.</p>
+<ul>
+<li><strong>Verify:</strong> <strong>Focus Not Obscured</strong> (SC 2.4.11/12) against sticky headers (`position: sticky`) and fixed footers.</li>
+</ul>
+<h3>3. Visual &amp; Contrast Validation</h3>
+<p>Use a <strong>contrast checker</strong> (e.g., Colour Contrast Analyser, Figma plugin, or browser DevTools) on *computed* styles.</p>
+<ul>
+<li><strong>Text:</strong> 4.5:1 (normal), 3:1 (large ≥18.5px bold / 24px regular).</li>
+<li><strong>UI Components &amp; Graphics:</strong> 3:1 against adjacent colors (borders, icons, chart segments).</li>
+<li><strong>States:</strong> Hover, focus, active, disabled, error, *and* forced-colors/high-contrast mode.</li>
+<li><strong>Themes:</strong> Run the matrix for Light, Dark, and System-preference modes.</li>
+</ul>
+<h3>4. Cognitive &amp; Interaction Barriers</h3>
+<ul>
+<li><strong>Dragging (2.5.7):</strong> For every drag-and-drop UI, provide arrow-key reorder, &quot;Move to…&quot; menu, or input field alternative.</li>
+<li><strong>Target Size (2.5.8):</strong> Measure hit areas in DevTools (`offsetWidth/Height`). Pad small icons with transparent `::before` pseudo-elements if visual design cannot change.</li>
+<li><strong>Authentication (3.3.8):</strong> Audit login, MFA, password reset, and account recovery. Allow password managers, WebAuthn/passkeys, magic links, or SMS/email codes *without* memorization or transcription puzzles.</li>
+</ul>
+<h3>5. Screen Reader &amp; Live Region Testing</h3>
+<p>Test with NVDA (Windows) + Chrome *and* VoiceOver (macOS) + Safari.</p>
+<ul>
+<li><strong>Announcements:</strong> Toast notifications, form validation errors, loading state changes (`aria-live=&quot;polite&quot;` vs `&quot;assertive&quot;`).</li>
+<li><strong>Virtualized Lists:</strong> Ensure `aria-setsize`/`aria-posinset` update on scroll.</li>
+<li><strong>Landmarks:</strong> Unique `aria-label` on each `&lt;nav&gt;`, `&lt;aside&gt;`, `&lt;section role=&quot;region&quot;&gt;`.</li>
+<li><strong>Consistent Help (3.2.6):</strong> Verify help/chat link position is identical in DOM order across Dashboard, Settings, and Help Center views</li>
+</ul>
+  <div class="cta">
+    <div><strong>Try the matching utility:</strong><br><span style="color:#94a3b8;font-size:13px">Free WCAG 2.2 Audit Tool &amp; self-contained digital kits</span></div>
+    <a class="cta-btn" href="/wcag-audit-tool/">Open Free WCAG 2.2 Audit Tool →</a>
+  </div>
+  <div class="disc"><strong>Disclaimer:</strong> Educational and planning information only; not financial, investment, tax, or legal advice.</div>
+</div>
+</body>
+</html>

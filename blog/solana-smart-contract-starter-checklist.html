@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Solana Smart Contract Starter Checklist: Project Structure, Testing &amp; Pre-Audit Steps | B2 Apps Guides</title>
+<meta name="description" content="A practical engineering checklist for structuring Solana token-sale and NFT smart contracts, running local tests, and preparing for security audits.">
+<meta name="keywords" content="Solana smart contract boilerplate, Solana token sale checklist, Web3 developer starter kit">
+<link rel="canonical" href="https://b2appsdev-del.github.io/blog/solana-smart-contract-starter-checklist.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Solana Smart Contract Starter Checklist: Project Structure, Testing &amp; Pre-Audit Steps">
+<meta property="og:description" content="A practical engineering checklist for structuring Solana token-sale and NFT smart contracts, running local tests, and preparing for security audits.">
+<meta property="og:url" content="https://b2appsdev-del.github.io/blog/solana-smart-contract-starter-checklist.html">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Solana Smart Contract Starter Checklist: Project Structure, Testing & Pre-Audit Steps", "description": "A practical engineering checklist for structuring Solana token-sale and NFT smart contracts, running local tests, and preparing for security audits.", "datePublished": "2026-11-19", "dateModified": "2026-11-19", "author": {"@type": "Organization", "name": "B2 Apps"}, "publisher": {"@type": "Organization", "name": "B2 Apps", "url": "https://b2appsdev-del.github.io"}, "mainEntityOfPage": "https://b2appsdev-del.github.io/blog/solana-smart-contract-starter-checklist.html"}</script>
+<style>
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Inter,sans-serif;background:#070b14;color:#e2e8f0;line-height:1.7;margin:0;padding:0}
+  .wrap{max-width:780px;margin:0 auto;padding:28px 20px 64px}
+  a{color:#38bdf8;text-decoration:none} a:hover{text-decoration:underline}
+  .top{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid rgba(148,163,184,.18);padding-bottom:14px;margin-bottom:28px;font-size:14px}
+  h1{font-size:clamp(24px,4vw,34px);line-height:1.2;color:#fff;margin:0 0 12px}
+  h2{font-size:20px;color:#fff;margin:28px 0 10px} h3{font-size:16px;color:#cbd5e1;margin:20px 0 8px}
+  p{color:#cbd5e1;margin:0 0 14px} ul{padding-left:20px;margin:0 0 16px} li{color:#cbd5e1;margin-bottom:6px}
+  .meta{font-size:13px;color:#94a3b8;margin-bottom:24px}
+  .cta{margin:32px 0;padding:18px;border-radius:14px;background:#0f172a;border:1px solid rgba(56,189,248,.35);display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap}
+  .cta-btn{background:linear-gradient(90deg,#0ea5e9,#38bdf8);color:#04101d;font-weight:700;padding:10px 18px;border-radius:10px;text-decoration:none}
+  .disc{margin-top:32px;padding:12px 14px;border-radius:10px;background:rgba(245,158,11,.08);border:1px solid rgba(245,158,11,.25);color:#fde68a;font-size:12px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top"><a href="/">← B2 Apps Store</a><a href="/blog/">All Guides</a></div>
+  <h1>Solana Smart Contract Starter Checklist: Project Structure, Testing &amp; Pre-Audit Steps</h1>
+  <div class="meta">Published 2026-11-19 · B2 Apps Technical Guides</div>
+  <h2>Key Takeaways</h2>
+<ul>
+<li><strong>Structure first:</strong> Use Anchor’s standardized workspace layout to separate programs, tests, and client SDKs for maintainability.</li>
+<li><strong>Test locally, then devnet:</strong> Validate logic with `solana-test-validator` and Bankrun before spending SOL on devnet fees.</li>
+<li><strong>Pre-audit hygiene:</strong> Run static analysis (cargo-audit, clippy) and formal verification tools (Prusti, Kani) *before* engaging external auditors.</li>
+<li><strong>Token sale readiness:</strong> Lock mint authority, verify metadata standards (Token-2022), and simulate vesting schedules in integration tests.</li>
+<li><strong>Automate CI/CD:</strong> Enforce formatting, linting, and test coverage gates on every pull request to prevent drift.</li>
+</ul>
+<p>---</p>
+<h2>1. Initialize a Clean Workspace with Anchor</h2>
+<p>A reproducible <strong>Solana smart contract boilerplate</strong> starts with Anchor v0.29+. Run `anchor init &lt;project-name&gt;` to generate the canonical structure:</p>
+<p>```text</p>
+<p>/programs/&lt;project-name&gt;/src/lib.rs   // On-chain logic</p>
+<p>/tests/&lt;project-name&gt;.ts              // TypeScript integration tests</p>
+<p>/app/                                 // Optional: React/Next.js client SDK</p>
+<p>/Anchor.toml                          // Cluster config &amp; program IDs</p>
+<p>/migrations/                          // Deploy scripts (optional)</p>
+<p>```</p>
+<p><strong>Why it matters:</strong> This layout separates consensus-critical code from off-chain tooling, making it easier for auditors to scope the review. Keep `lib.rs` lean—delegate instruction handlers to modules under `src/instructions/` and state definitions to `src/state/`.</p>
+<p>---</p>
+<h2>2. Enforce Code Quality Gates Locally</h2>
+<p>Before pushing to CI, run the Rust toolchain’s built-in checks and Solana-specific linters:</p>
+<p>```bash</p>
+<p>cargo fmt --all -- --check</p>
+<p>cargo clippy --workspace -- -D warnings</p>
+<p>cargo audit</p>
+<p>cargo test-sbf -- --nocapture</p>
+<p>```</p>
+<p>Add a `.pre-commit-config.yaml` or GitHub Actions workflow to block merges that fail these steps. This satisfies the baseline hygiene expected in any <strong>Web3 developer starter kit</strong> and reduces audit finding noise.</p>
+<p>---</p>
+<h2>3. Layer Testing: Unit → Integration → Fuzzing</h2>
+<p>| Layer | Tool | Scope |</p>
+<p>|-------|------|-------|</p>
+<p>| <strong>Unit</strong> | `#[test]` in Rust | Pure logic (math, PDA derivation, state transitions) without runtime. |</p>
+<p>| <strong>Integration</strong> | `solana-test-validator` + TypeScript (Mocha/Jest) | Full transaction lifecycle: rent, CPI, account resizing, clock sysvar. |</p>
+<p>| <strong>Fuzzing/Property</strong> | `trident-fuzz` or `proptest` | Invariant checking (e.g., &quot;total supply never exceeds minted&quot;). |</p>
+<p><strong>Practical tip:</strong> Use <strong>Bankrun</strong> (`solana-bankrun`) for deterministic, parallelizable integration tests that don’t require a local validator process. It cuts CI runtime by 60–80% compared to `solana-test-validator`.</p>
+<p>---</p>
+<h2>4. Pre-Audit Checklist: Close the Low-Hanging Fruit</h2>
+<p>Auditors charge premium rates for findings you can catch in 30 minutes. Complete these before signing an engagement letter:</p>
+<p>1.  <strong>Integer Safety:</strong> Replace all `+`/`-`/`*` with `checked_*` or `saturating_*`; use `anchor_lang::prelude::*` safe math traits.</p>
+<p>2.  <strong>Account Validation:</strong> Every `#[account]` struct implements `AccountDeserialize` + `AccountSerialize`; enforce `has_one` / `constraint` checks on cross-program invocations.</p>
+<p>3.  <strong>Signer &amp; Authority Checks:</strong> Verify `Signer` constraints on all mutating instructions; ensure `mint_authority` and `freeze_authority` are set to `None` or a multisig *before* mainnet deploy.</p>
+<p>4.  <strong>Token-2022 Compliance:</strong> If using extensions (confidential transfers, transfer hooks), run `spl-token-2022` CLI simulations against your program ID.</p>
+<p>5.  <strong>Event &amp; Log Hygiene:</strong> Emit typed events (`#[event]`) for all state changes; avoid `msg!` for critical data—indexers rely on events.</p>
+<p>---</p>
+<h2>5. Token Sale &amp; Launch Readiness (The &quot;Go/No-Go&quot; Gate)</h2>
+<p>If your program handles a token sale, vesting, or liquidity bootstrapping, treat this as a distinct workstream. A <strong>Solana token sale checklist</strong> should cover:</p>
+<ul>
+<li>[ ] <strong>Mint Configuration:</strong> Decimals (usually 9), supply cap, freeze authority revoked.</li>
+<li>[ ] <strong>Metadata:</strong> Metaplex Token Metadata standard verified on-chain; URI points to immutable Arweave/IPFS JSON.</li>
+<li>[ ] <strong>Vesting/Escrow Logic:</strong> Cliff + linear release tested against `Clock::get()?` manipulation (warp slot in tests).</li>
+<li>[ ] <strong>Whitelist/Merkle Root:</strong> Root hash committed in program state; proof verification gas-cost profiled.</li>
+<li>[ ] <strong>Emergency Pause:</strong> `set_authority` or dedicated `pause` instruction controlled by multisig (Squads/Tribeca).</li>
+<li>[ ] <strong>Load Test:</strong> Simulate 5k+ concurrent buyers on devnet using `drift-cli` or custom k6 script; confirm CU usage &lt; 200k per tx.</li>
+</ul>
+<p>---</p>
+<h2>Practical 5-Step Starter Checklist</h2>
+<p>1.  <strong>Scaffold:</strong> `anchor init` → modularize `src/` into `instructions/`, `state/`, `errors/`, `events/`.</p>
+<p>2.  <strong>Hardening:</strong> Enable `cargo clippy -D warnings`, `cargo audit`, `cargo fmt</p>
+  <div class="cta">
+    <div><strong>Try the matching utility:</strong><br><span style="color:#94a3b8;font-size:13px">Solana &amp; Web3 Starter Kits &amp; self-contained digital kits</span></div>
+    <a class="cta-btn" href="/#catalog">Open Solana &amp; Web3 Starter Kits →</a>
+  </div>
+  <div class="disc"><strong>Disclaimer:</strong> Educational and planning information only; not financial, investment, tax, or legal advice.</div>
+</div>
+</body>
+</html>
