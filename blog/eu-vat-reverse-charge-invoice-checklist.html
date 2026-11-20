@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EU B2B VAT Reverse-Charge Invoice Checklist for Freelancers &amp; Digital Agencies | B2 Apps Guides</title>
+<meta name="description" content="Essential invoice fields, VIES validation checks, and reverse-charge wording for cross-border EU B2B services.">
+<meta name="keywords" content="EU VAT reverse charge invoice, VIES VAT checker, freelance EU invoicing">
+<link rel="canonical" href="https://b2appsdev-del.github.io/blog/eu-vat-reverse-charge-invoice-checklist.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="EU B2B VAT Reverse-Charge Invoice Checklist for Freelancers &amp; Digital Agencies">
+<meta property="og:description" content="Essential invoice fields, VIES validation checks, and reverse-charge wording for cross-border EU B2B services.">
+<meta property="og:url" content="https://b2appsdev-del.github.io/blog/eu-vat-reverse-charge-invoice-checklist.html">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "EU B2B VAT Reverse-Charge Invoice Checklist for Freelancers & Digital Agencies", "description": "Essential invoice fields, VIES validation checks, and reverse-charge wording for cross-border EU B2B services.", "datePublished": "2026-11-19", "dateModified": "2026-11-19", "author": {"@type": "Organization", "name": "B2 Apps"}, "publisher": {"@type": "Organization", "name": "B2 Apps", "url": "https://b2appsdev-del.github.io"}, "mainEntityOfPage": "https://b2appsdev-del.github.io/blog/eu-vat-reverse-charge-invoice-checklist.html"}</script>
+<style>
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Inter,sans-serif;background:#070b14;color:#e2e8f0;line-height:1.7;margin:0;padding:0}
+  .wrap{max-width:780px;margin:0 auto;padding:28px 20px 64px}
+  a{color:#38bdf8;text-decoration:none} a:hover{text-decoration:underline}
+  .top{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid rgba(148,163,184,.18);padding-bottom:14px;margin-bottom:28px;font-size:14px}
+  h1{font-size:clamp(24px,4vw,34px);line-height:1.2;color:#fff;margin:0 0 12px}
+  h2{font-size:20px;color:#fff;margin:28px 0 10px} h3{font-size:16px;color:#cbd5e1;margin:20px 0 8px}
+  p{color:#cbd5e1;margin:0 0 14px} ul{padding-left:20px;margin:0 0 16px} li{color:#cbd5e1;margin-bottom:6px}
+  .meta{font-size:13px;color:#94a3b8;margin-bottom:24px}
+  .cta{margin:32px 0;padding:18px;border-radius:14px;background:#0f172a;border:1px solid rgba(56,189,248,.35);display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap}
+  .cta-btn{background:linear-gradient(90deg,#0ea5e9,#38bdf8);color:#04101d;font-weight:700;padding:10px 18px;border-radius:10px;text-decoration:none}
+  .disc{margin-top:32px;padding:12px 14px;border-radius:10px;background:rgba(245,158,11,.08);border:1px solid rgba(245,158,11,.25);color:#fde68a;font-size:12px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top"><a href="/">← B2 Apps Store</a><a href="/blog/">All Guides</a></div>
+  <h1>EU B2B VAT Reverse-Charge Invoice Checklist for Freelancers &amp; Digital Agencies</h1>
+  <div class="meta">Published 2026-11-19 · B2 Apps Technical Guides</div>
+  <h2>Key Takeaways</h2>
+<ul>
+<li><strong>Reverse charge shifts VAT liability</strong> from the supplier (you) to the business client in another EU member state.</li>
+<li><strong>Validation is mandatory</strong>: You must verify the client’s VAT number via the <strong>VIES VAT checker</strong> before issuing a zero-VAT invoice.</li>
+<li><strong>Specific invoice wording is legally required</strong> (Article 196/197 EU VAT Directive) to prove the transaction qualifies for the exemption.</li>
+<li><strong>Digital services to non-business clients (B2C)</strong> follow different rules (OSS/IOSS) and are <strong>not</strong> covered by the B2B reverse charge.</li>
+<li><strong>Record-keeping</strong> must link the validated VAT ID, the invoice, and proof of cross-border service delivery for a minimum of 10 years (varies by member state).</li>
+</ul>
+<p>---</p>
+<h2>Understanding the B2B Reverse Charge Mechanism</h2>
+<p>When a freelancer or digital agency in one EU country supplies services to a VAT-registered business in another EU country, the <strong>EU VAT reverse charge invoice</strong> mechanism applies. Instead of charging your local VAT rate, you invoice <strong>net (0% VAT)</strong>. Your client accounts for the VAT in their domestic return as both input and output tax, effectively neutralizing the cash flow impact for them while ensuring the tax is due in the country of consumption.</p>
+<p>This applies strictly to <strong>B2B (Business-to-Business)</strong> transactions. If your client cannot provide a valid VAT identification number, or if the service is B2C (e.g., selling a course to a private individual), the reverse charge does not apply. For <strong>freelance EU invoicing</strong>, distinguishing between B2B and B2C is the single most common compliance error.</p>
+<h2>Prerequisite: Validate via VIES Before You Invoice</h2>
+<p>Never issue a zero-VAT invoice based solely on a number the client emails you. You are legally required to verify the VAT ID in the <strong>VIES VAT checker</strong> (VAT Information Exchange System) operated by the European Commission.</p>
+<p>1.  Go to the official [VIES search tool](https://ec.europa.eu/taxation_customs/vies/).</p>
+<p>2.  Select the Member State (prefix) and enter the number.</p>
+<p>3.  Save the <strong>validation result screenshot or PDF</strong> (showing &quot;Valid&quot; + Company Name/Address match).</p>
+<p>4.  If VIES is down or returns &quot;Invalid,&quot; <strong>do not apply reverse charge</strong>. Charge your local VAT or pause work until resolved.</p>
+<p>*Tip: Automate this via API if you issue high volumes of invoices monthly.*</p>
+<h2>Mandatory Invoice Fields (Article 226/227 EU VAT Directive)</h2>
+<p>A compliant <strong>EU VAT reverse charge invoice</strong> requires more than just a net total. Missing fields invalidate the exemption, leaving you liable for the VAT.</p>
+<p>| Field | Requirement |</p>
+<p>| :--- | :--- |</p>
+<p>| <strong>Your VAT ID</strong> | Prefix + Number (e.g., DE123456789). |</p>
+<p>| <strong>Client VAT ID</strong> | Prefix + Number (validated via VIES). |</p>
+<p>| <strong>Legal Names &amp; Addresses</strong> | Full legal entity names and physical addresses for both parties. |</p>
+<p>| <strong>Invoice Date &amp; Sequential Number</strong> | Unique, sequential numbering per series. |</p>
+<p>| <strong>Service Description</strong> | Specific enough to determine place of supply (e.g., &quot;UI/UX Design Consulting,&quot; not &quot;Design Services&quot;). |</p>
+<p>| <strong>Date of Supply</strong> | When the service was performed/completed (often differs from invoice date). |</p>
+<p>| <strong>Zero VAT Rate Indicator</strong> | Explicit line: &quot;VAT Rate: 0% – Reverse Charge.&quot; |</p>
+<p>| <strong>Legal Reference</strong> | <strong>Mandatory text</strong>: *&quot;Reverse charge: VAT due by the recipient (Art. 196/197 Council Directive 2006/112/EC).&quot;* |</p>
+<p>| <strong>Currency</strong> | Invoice currency + conversion rate used if not EUR (reference ECB rate or national bank rate on date of supply). |</p>
+<h2>Common Pitfalls for Digital Agencies &amp; Freelancers</h2>
+<h3>1. Treating Platforms as the Client</h3>
+<p>If you work via Upwork, Toptal, or Malt, your <strong>contractual client is the platform</strong>, not the end brand. The platform usually acts as the supplier of record. Check the platform’s Terms of Service: they often handle VAT (OSS/IOSS) or require you to invoice them locally. Do not apply reverse charge to the end client unless you have a direct contract.</p>
+<h3>2. &quot;Digital Services&quot; vs. &quot;Consulting&quot;</h3>
+<p>Purely automated digital services (SaaS access, downloadable templates, stock assets) sold B2B *can* use reverse charge. However, if you bundle &quot;consulting + SaaS access,&quot; tax authorities may reclassify the supply. Itemize lines clearly: separate consulting fees (reverse charge) from license fees (check specific rules for electronically supplied services).</p>
+<h3>3. Intra-Community Acquisition of Goods</h3>
+<p>If you ship physical hardware (servers, devices) to an EU client, this is an <strong>Intra-Community Supply of Goods</strong>, not a service. Different rules (Intrastat, movement of goods) apply. The reverse charge for *services* (Article 196) does not cover goods.</p>
+<h3>4. UK Clients Post-Brexit</h3>
+<p>The UK is <strong>not</strong> an EU Member State. Do not use the EU reverse charge mechanism (Article 196) or VIES for UK VAT numbers. UK B2B services generally fall under &quot;place of supply = customer location&quot; (UK VAT 0% if outside scope), but you must verify UK VAT numbers via the <strong>UK GOV.UK checker</strong>, not VIES.</p>
+<p>---</p>
+<h2>Practical 5-Step Compliance Checklist</h2>
+<p>Use this workflow for every new cross-border B2B engagement.</p>
+<p>1.  <strong>Confirm B2B Status</strong></p>
+<ul>
+<li>  [ ] Client confirms they are a taxable person (business).</li>
+<li>  [ ] Client provides full legal name, address, and VAT ID.</li>
+</ul>
+<p>2.</p>
+  <div class="cta">
+    <div><strong>Try the matching utility:</strong><br><span style="color:#94a3b8;font-size:13px">Free EU VAT Invoice Checker &amp; self-contained digital kits</span></div>
+    <a class="cta-btn" href="/eu-vat-invoice-checker/">Open Free EU VAT Invoice Checker →</a>
+  </div>
+  <div class="disc"><strong>Disclaimer:</strong> Educational and planning information only; not financial, investment, tax, or legal advice.</div>
+</div>
+</body>
+</html>

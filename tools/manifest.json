@@ -1,0 +1,32 @@
+[
+  {
+    "slug": "ai-paste-cleaner",
+    "url": "/tools/ai-paste-cleaner.html",
+    "name": "AI Paste Cleaner (ChatGPT, Claude & Gemini)",
+    "short": "Strip markdown symbols, invisible AI characters, and chatbot filler phrases in 1 click."
+  },
+  {
+    "slug": "text-case-converter",
+    "url": "/tools/text-case-converter.html",
+    "name": "Text Case Converter & Line Cleaner",
+    "short": "Convert UPPERCASE, lowercase, Title Case, camelCase, snake_case, and remove duplicate lines."
+  },
+  {
+    "slug": "json-csv-formatter",
+    "url": "/tools/json-csv-formatter.html",
+    "name": "JSON Formatter, Validator & JSON \u2194 CSV Converter",
+    "short": "Format, minify, validate JSON and convert JSON arrays to CSV or CSV to JSON offline."
+  },
+  {
+    "slug": "srt-subtitle-cleaner",
+    "url": "/tools/srt-subtitle-cleaner.html",
+    "name": "SRT / VTT Subtitle Cleaner & Time Shifter",
+    "short": "Extract clean plain-text transcripts from .srt/.vtt files or shift subtitle timing (+/- seconds)."
+  },
+  {
+    "slug": "crypto-fee-profit-calculator",
+    "url": "/tools/crypto-fee-profit-calculator.html",
+    "name": "Crypto Trade Fee, Breakeven & PnL Calculator",
+    "short": "Calculate exact exchange fees, breakeven exit price, net profit/loss, and ROI before trading."
+  }
+]
