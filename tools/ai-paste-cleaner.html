@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Free AI Paste Cleaner — Remove ChatGPT &amp; Claude Formatting Instantly</title>
+<meta name="description" content="Paste text from ChatGPT, Claude, or Gemini and strip markdown asterisks, headings, zero-width characters, and chatbot filler lines for clean emails and docs.">
+<meta name="keywords" content="ai paste cleaner, remove chatgpt formatting, clean claude text, strip markdown for email, remove invisible ai characters">
+<link rel="canonical" href="https://b2appsdev-del.github.io/tools/ai-paste-cleaner.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Free AI Paste Cleaner — Remove ChatGPT &amp; Claude Formatting Instantly">
+<meta property="og:description" content="Paste text from ChatGPT, Claude, or Gemini and strip markdown asterisks, headings, zero-width characters, and chatbot filler lines for clean emails and docs.">
+<meta property="og:url" content="https://b2appsdev-del.github.io/tools/ai-paste-cleaner.html">
+<meta name="google-site-verification" content="-2qF9SsAuYuUXELk1lQEbCE_qJKDjDBRnZIbJindAKk">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-K6LWLRXJM5"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-K6LWLRXJM5");</script>
+<script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebApplication", "name": "AI Paste Cleaner (ChatGPT, Claude & Gemini)", "url": "https://b2appsdev-del.github.io/tools/ai-paste-cleaner.html", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "description": "Paste text from ChatGPT, Claude, or Gemini and strip markdown asterisks, headings, zero-width characters, and chatbot filler lines for clean emails and docs."}, {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What does the AI Paste Cleaner remove?", "acceptedAnswer": {"@type": "Answer", "text": "It strips markdown syntax (bold **, headers ###, bullet symbols, code fences), invisible Unicode zero-width spaces, smart quotes, and common chatbot intro/outro filler lines like 'Great question!' or 'Let me know if you need anything else!'."}}, {"@type": "Question", "name": "Is my pasted text sent to any server?", "acceptedAnswer": {"@type": "Answer", "text": "No. Everything runs 100% locally in your browser with zero server uploads, making it safe for private emails and business drafts."}}, {"@type": "Question", "name": "Does it work with ChatGPT, Claude, and Gemini?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. It handles formatting patterns from ChatGPT, Claude, Gemini, Perplexity, and Notion AI."}}]}]</script>
+<style>
+  :root{--bg:#ffffff;--bg-soft:#f6f7f9;--card:#ffffff;--border:#e6e8ec;--text:#0f172a;--muted:#64748b;--brand:#fa4616;--brand-hover:#e03a0e;--green:#059669}
+  [data-theme="dark"]{--bg:#0b0d12;--bg-soft:#131722;--card:#121620;--border:rgba(255,255,255,.10);--text:#f8fafc;--muted:#94a3b8;--brand:#ff6243;--brand-hover:#ff4b26;--green:#34d399}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,sans-serif;background:var(--bg);color:var(--text);line-height:1.55}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:1060px;margin:0 auto;padding:0 20px}
+  header{border-bottom:1px solid var(--border);background:var(--bg);position:sticky;top:0;z-index:20}
+  .nav{height:62px;display:flex;align-items:center;justify-content:space-between;gap:14px}
+  .brand-mark{width:30px;height:30px;border-radius:9px;background:linear-gradient(135deg,#fa4616,#ff8243);display:grid;place-items:center;color:#fff;font-size:15px;font-weight:900}
+  .nav-links{display:flex;gap:18px;font-size:14px;font-weight:600;color:var(--muted)}
+  .nav-links a:hover{color:var(--text)}
+  .theme-btn{border:1px solid var(--border);background:var(--bg-soft);color:var(--text);padding:6px 12px;border-radius:999px;font-size:12px;font-weight:700;cursor:pointer}
+  main{padding:32px 0 60px}
+  .cat-pill{display:inline-block;font-size:11.5px;font-weight:800;color:var(--brand);background:rgba(250,70,22,.1);padding:4px 11px;border-radius:999px;margin-bottom:10px}
+  h1{font-size:clamp(26px,4vw,38px);font-weight:900;letter-spacing:-.03em;margin-bottom:8px}
+  .lead{color:var(--muted);font-size:15.5px;margin-bottom:22px;max-width:740px}
+  .tool-card{background:var(--card);border:1px solid var(--border);border-radius:18px;padding:20px;box-shadow:0 8px 24px rgba(15,23,42,.05);margin-bottom:28px}
+  .opts{display:flex;flex-wrap:wrap;gap:12px 18px;margin-bottom:14px;font-size:13px;color:var(--muted)}
+  .opts label{display:flex;align-items:center;gap:6px;cursor:pointer}
+  .btn-row{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:14px;align-items:center}
+  .btn-sm{border:1px solid var(--border);background:var(--bg-soft);color:var(--text);padding:7px 12px;border-radius:9px;font-size:12.5px;font-weight:700;cursor:pointer}
+  .btn-sm:hover{border-color:var(--brand)}
+  .btn-sm.primary{background:var(--brand);border-color:var(--brand);color:#fff}
+  .btn-sm.primary:hover{background:var(--brand-hover)}
+  .split{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  @media(max-width:760px){.split{grid-template-columns:1fr}}
+  .pane-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;font-size:12.5px;font-weight:700;color:var(--muted)}
+  textarea{width:100%;min-height:230px;border:1px solid var(--border);border-radius:12px;padding:12px;font-family:ui-monospace,Consolas,monospace;font-size:13.5px;background:var(--bg-soft);color:var(--text);resize:vertical;outline:none}
+  textarea:focus{border-color:var(--brand)}
+  .stats{margin-top:10px;font-size:12.5px;color:var(--muted);font-weight:600}
+  .calc-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px;margin-bottom:16px}
+  .calc-grid label{display:flex;flex-direction:column;gap:5px;font-size:12.5px;font-weight:700;color:var(--muted)}
+  .calc-grid input{padding:9px 11px;border:1px solid var(--border);border-radius:10px;background:var(--bg-soft);color:var(--text);font-size:14px;font-weight:700}
+  .res-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px}
+  .res-box{background:var(--bg-soft);border:1px solid var(--border);border-radius:12px;padding:14px}
+  .res-box span{display:block;font-size:12px;color:var(--muted);margin-bottom:4px}
+  .res-box strong{font-size:20px;font-weight:900}
+  .cta-box{background:linear-gradient(135deg,var(--bg-soft),var(--card));border:1.5px solid var(--border);border-radius:16px;padding:20px;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:14px;margin-bottom:28px}
+  .cta-btns{display:flex;gap:10px;flex-wrap:wrap}
+  .cta-btns a{padding:10px 16px;border-radius:10px;font-size:13px;font-weight:800}
+  .c-main{background:var(--brand);color:#fff}
+  .c-alt{background:var(--bg-soft);border:1px solid var(--border);color:var(--text)}
+  .faq{display:grid;gap:10px;margin-bottom:28px}
+  details{background:var(--bg-soft);border:1px solid var(--border);border-radius:12px;padding:13px 16px}
+  summary{font-weight:800;font-size:14px;cursor:pointer}
+  details p{margin-top:8px;font-size:13.5px;color:var(--muted)}
+  .rel{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:24px}
+  .rel-chip{background:var(--bg-soft);border:1px solid var(--border);padding:7px 12px;border-radius:999px;font-size:12.5px;font-weight:700}
+  .rel-chip:hover{border-color:var(--brand)}
+  footer{border-top:1px solid var(--border);padding:22px 0 40px;font-size:12.5px;color:var(--muted)}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a href="/" aria-label="B2 Home"><span class="brand-mark">B2</span></a>
+    <nav class="nav-links">
+      <a href="/#catalog">Marketplace</a>
+      <a href="/tools/">All Free Tools</a>
+      <a href="/#bundles">Bundles</a>
+      <a href="/blog/">Guides</a>
+    </nav>
+    <button class="theme-btn" id="theme-toggle" type="button">🌙 Dark</button>
+  </div>
+</header>
+<main class="wrap">
+  <span class="cat-pill">FREE ONLINE TOOL · WRITING &amp; AI · 100% BROWSER-LOCAL</span>
+  <h1>AI Paste Cleaner (ChatGPT, Claude &amp; Gemini)</h1>
+  <p class="lead">Paste text from ChatGPT, Claude, or Gemini and strip markdown asterisks, headings, zero-width characters, and chatbot filler lines for clean emails and docs.</p>
+
+  <section class="tool-card">
+    
+<div class="opts">
+  <label><input type="checkbox" id="optMd" checked> Strip Markdown (**, ###, `)</label>
+  <label><input type="checkbox" id="optFiller" checked> Remove AI filler ("Great question!", "Hope this helps!")</label>
+  <label><input type="checkbox" id="optInvis" checked> Remove invisible Unicode / zero-width chars</label>
+  <label><input type="checkbox" id="optQuotes" checked> Normalize smart quotes &amp; dashes</label>
+  <label><input type="checkbox" id="optBlank" checked> Collapse extra blank lines</label>
+</div>
+<div class="split">
+  <div class="pane">
+    <div class="pane-head"><span>Raw AI Output (Paste Here)</span><button class="btn-sm" onclick="loadSample()">Load Sample</button></div>
+    <textarea id="inp" placeholder="Paste your ChatGPT / Claude / Gemini text here..."></textarea>
+  </div>
+  <div class="pane">
+    <div class="pane-head"><span>Clean Text (Ready for Email / Docs)</span><button class="btn-sm primary" onclick="copyOut()">Copy Clean Text</button></div>
+    <textarea id="out" readonly placeholder="Your clean text appears here instantly..."></textarea>
+  </div>
+</div>
+<div class="stats" id="stats">0 words · 0 characters · 0 artifacts removed</div>
+
+  </section>
+
+  <section class="cta-box">
+    <div style="max-width:540px">
+      <div style="font-size:11px;font-weight:800;color:var(--brand);text-transform:uppercase;margin-bottom:4px">Recommended Instant-Download Kit</div>
+      <strong style="font-size:17px;display:block;margin-bottom:4px">Prompt-to-Spec Engineering Playbook &amp; Kit</strong>
+      <span style="font-size:13px;color:var(--muted)">Ship cleaner AI workflows with battle-tested prompt templates, QA checklists, and spec builders. One-time purchase, Card &amp; Crypto accepted.</span>
+    </div>
+    <div class="cta-btns">
+      <a class="c-main" href="https://whop.com/b2appsdev-del-github-io/prompt-to-spec-engineering-playbook-kit" target="_blank" rel="noopener">Get on Whop (Card + Crypto) →</a>
+      <a class="c-alt" href="https://devbloom12.gumroad.com/l/ziafea" target="_blank" rel="noopener">Get on Gumroad (Card) →</a>
+    </div>
+  </section>
+
+  <h2 style="font-size:19px;font-weight:800;margin-bottom:12px">Frequently Asked Questions</h2>
+  <section class="faq"><details><summary>What does the AI Paste Cleaner remove?</summary><p>It strips markdown syntax (bold **, headers ###, bullet symbols, code fences), invisible Unicode zero-width spaces, smart quotes, and common chatbot intro/outro filler lines like &#x27;Great question!&#x27; or &#x27;Let me know if you need anything else!&#x27;.</p></details>
+<details><summary>Is my pasted text sent to any server?</summary><p>No. Everything runs 100% locally in your browser with zero server uploads, making it safe for private emails and business drafts.</p></details>
+<details><summary>Does it work with ChatGPT, Claude, and Gemini?</summary><p>Yes. It handles formatting patterns from ChatGPT, Claude, Gemini, Perplexity, and Notion AI.</p></details></section>
+
+  <h2 style="font-size:16px;font-weight:800;margin-bottom:10px">More Free Tools</h2>
+  <div class="rel"><a class="rel-chip" href="/tools/text-case-converter.html">Text Case Converter &amp; Line Cleaner</a>
+<a class="rel-chip" href="/tools/json-csv-formatter.html">JSON Formatter, Validator &amp; JSON ↔ CSV Converter</a>
+<a class="rel-chip" href="/tools/srt-subtitle-cleaner.html">SRT / VTT Subtitle Cleaner &amp; Time Shifter</a>
+<a class="rel-chip" href="/tools/crypto-fee-profit-calculator.html">Crypto Trade Fee, Breakeven &amp; PnL Calculator</a><a class="rel-chip" href="/">← Browse 62+ Digital Kits</a></div>
+</main>
+<footer class="wrap">
+  <p>100% client-side browser utility · Zero signup · Zero server tracking · Updated 2026-11-20 · Support: b2apps.dev@gmail.com</p>
+</footer>
+<script>
+const tBtn=document.getElementById('theme-toggle');
+tBtn.addEventListener('click',()=>{
+  const d=document.documentElement.getAttribute('data-theme')==='dark'?'light':'dark';
+  document.documentElement.setAttribute('data-theme',d);
+  tBtn.textContent=d==='dark'?'☀️ Light':'🌙 Dark';
+});
+document.addEventListener('click',e=>{
+  const a=e.target.closest('a[href]');
+  if(!a) return;
+  const u=a.href||'';
+  const plat=u.includes('whop.com')?'whop':u.includes('gumroad.com')?'gumroad':u.includes('polar.sh')?'polar':'';
+  if(plat && typeof window.gtag==='function') window.gtag('event','begin_checkout',{platform:plat,tool:'ai-paste-cleaner',link_url:u});
+});
+
+const inp = document.getElementById('inp');
+const out = document.getElementById('out');
+const stats = document.getElementById('stats');
+const FILLER_RE = /^(?:(?:great question|certainly|of course|absolutely|sure)[!.,:]?\s*(?:here(?:'s| is) .*|.*)?$|here(?:'s| is) (?:a |the |your ).*:|i(?:'d| would) be happy to help.*|let me know if (?:you(?:'d| would) like|you need|there(?:'s| is)).*|hope this helps!?.*|feel free to ask.*|if you have any (?:more |other )?questions.*)$/i;
+
+function cleanText() {
+  let s = inp.value || '';
+  const origLen = s.length;
+  let removed = 0;
+
+  if (document.getElementById('optInvis').checked) {
+    const before = s.length;
+    s = s.replace(/[\u200B-\u200D\uFEFF\u00AD\u2060]/g, '').replace(/\u00A0/g, ' ');
+    removed += Math.max(0, before - s.length);
+  }
+  if (document.getElementById('optQuotes').checked) {
+    s = s.replace(/[\u2018\u2019]/g, "'").replace(/[\u201C\u201D]/g, '"').replace(/[\u2013\u2014]/g, '-');
+  }
+  if (document.getElementById('optMd').checked) {
+    const before = s.length;
+    s = s.replace(/```[a-zA-Z0-9_-]*\n?/g, '');
+    s = s.replace(/^#{1,6}\s+/gm, '');
+    s = s.replace(/\*\*(.*?)\*\*/g, '$1').replace(/__(.*?)__/g, '$1');
+    s = s.replace(/(?<!\*)\*(?!\*)([^*\n]+)\*(?!\*)/g, '$1');
+    s = s.replace(/`([^`]+)`/g, '$1');
+    s = s.replace(/^\s*[-*+]\s+/gm, '• ');
+    s = s.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '$1 ($2)');
+    removed += Math.max(0, before - s.length);
+  }
+  if (document.getElementById('optFiller').checked) {
+    const lines = s.split(/\r?\n/);
+    const kept = [];
+    for (const ln of lines) {
+      if (FILLER_RE.test(ln.trim())) { removed += ln.length; continue; }
+      kept.push(ln);
+    }
+    s = kept.join('\n');
+  }
+  if (document.getElementById('optBlank').checked) {
+    s = s.replace(/\n{3,}/g, '\n\n').trim();
+  }
+  out.value = s;
+  const words = s.trim() ? s.trim().split(/\s+/).length : 0;
+  stats.textContent = `${words} words · ${s.length} characters · ${Math.max(0, origLen - s.length)} chars cleaned`;
+}
+function loadSample() {
+  inp.value = "Great question! Here is the summary you requested:\n\n### **Q4 Launch Checklist**\n- **Verify** DNS & `SSL` certificates\n- Send *clean* onboarding email to [all users](https://example.com)\n\nLet me know if you'd like me to adjust the tone!";
+  cleanText();
+}
+function copyOut() {
+  if (!out.value) return;
+  navigator.clipboard.writeText(out.value).then(() => { stats.textContent += ' · Copied!'; });
+}
+inp.addEventListener('input', cleanText);
+document.querySelectorAll('.opts input').forEach(el => el.addEventListener('change', cleanText));
+cleanText();
+
+</script>
+</body>
+</html>

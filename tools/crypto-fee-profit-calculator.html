@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Free Crypto Trade Fee, Breakeven &amp; PnL Calculator</title>
+<meta name="description" content="Estimate maker/taker exchange fees, slippage, exact breakeven sell price, net profit/loss, and ROI for spot crypto positions. Educational tool only.">
+<meta name="keywords" content="crypto fee calculator, crypto breakeven calculator, crypto pnl calculator, exchange fee estimator">
+<link rel="canonical" href="https://b2appsdev-del.github.io/tools/crypto-fee-profit-calculator.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Free Crypto Trade Fee, Breakeven &amp; PnL Calculator">
+<meta property="og:description" content="Estimate maker/taker exchange fees, slippage, exact breakeven sell price, net profit/loss, and ROI for spot crypto positions. Educational tool only.">
+<meta property="og:url" content="https://b2appsdev-del.github.io/tools/crypto-fee-profit-calculator.html">
+<meta name="google-site-verification" content="-2qF9SsAuYuUXELk1lQEbCE_qJKDjDBRnZIbJindAKk">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-K6LWLRXJM5"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-K6LWLRXJM5");</script>
+<script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebApplication", "name": "Crypto Trade Fee, Breakeven & PnL Calculator", "url": "https://b2appsdev-del.github.io/tools/crypto-fee-profit-calculator.html", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "description": "Estimate maker/taker exchange fees, slippage, exact breakeven sell price, net profit/loss, and ROI for spot crypto positions. Educational tool only."}, {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How is the breakeven price calculated?", "acceptedAnswer": {"@type": "Answer", "text": "Breakeven accounts for both your entry fee and exit fee so you know the exact price required to cover total round-trip exchange costs."}}, {"@type": "Question", "name": "Is this financial advice?", "acceptedAnswer": {"@type": "Answer", "text": "No. This calculator is an educational and planning utility only — not financial, tax, or investment advice."}}]}]</script>
+<style>
+  :root{--bg:#ffffff;--bg-soft:#f6f7f9;--card:#ffffff;--border:#e6e8ec;--text:#0f172a;--muted:#64748b;--brand:#fa4616;--brand-hover:#e03a0e;--green:#059669}
+  [data-theme="dark"]{--bg:#0b0d12;--bg-soft:#131722;--card:#121620;--border:rgba(255,255,255,.10);--text:#f8fafc;--muted:#94a3b8;--brand:#ff6243;--brand-hover:#ff4b26;--green:#34d399}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,sans-serif;background:var(--bg);color:var(--text);line-height:1.55}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:1060px;margin:0 auto;padding:0 20px}
+  header{border-bottom:1px solid var(--border);background:var(--bg);position:sticky;top:0;z-index:20}
+  .nav{height:62px;display:flex;align-items:center;justify-content:space-between;gap:14px}
+  .brand-mark{width:30px;height:30px;border-radius:9px;background:linear-gradient(135deg,#fa4616,#ff8243);display:grid;place-items:center;color:#fff;font-size:15px;font-weight:900}
+  .nav-links{display:flex;gap:18px;font-size:14px;font-weight:600;color:var(--muted)}
+  .nav-links a:hover{color:var(--text)}
+  .theme-btn{border:1px solid var(--border);background:var(--bg-soft);color:var(--text);padding:6px 12px;border-radius:999px;font-size:12px;font-weight:700;cursor:pointer}
+  main{padding:32px 0 60px}
+  .cat-pill{display:inline-block;font-size:11.5px;font-weight:800;color:var(--brand);background:rgba(250,70,22,.1);padding:4px 11px;border-radius:999px;margin-bottom:10px}
+  h1{font-size:clamp(26px,4vw,38px);font-weight:900;letter-spacing:-.03em;margin-bottom:8px}
+  .lead{color:var(--muted);font-size:15.5px;margin-bottom:22px;max-width:740px}
+  .tool-card{background:var(--card);border:1px solid var(--border);border-radius:18px;padding:20px;box-shadow:0 8px 24px rgba(15,23,42,.05);margin-bottom:28px}
+  .opts{display:flex;flex-wrap:wrap;gap:12px 18px;margin-bottom:14px;font-size:13px;color:var(--muted)}
+  .opts label{display:flex;align-items:center;gap:6px;cursor:pointer}
+  .btn-row{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:14px;align-items:center}
+  .btn-sm{border:1px solid var(--border);background:var(--bg-soft);color:var(--text);padding:7px 12px;border-radius:9px;font-size:12.5px;font-weight:700;cursor:pointer}
+  .btn-sm:hover{border-color:var(--brand)}
+  .btn-sm.primary{background:var(--brand);border-color:var(--brand);color:#fff}
+  .btn-sm.primary:hover{background:var(--brand-hover)}
+  .split{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  @media(max-width:760px){.split{grid-template-columns:1fr}}
+  .pane-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;font-size:12.5px;font-weight:700;color:var(--muted)}
+  textarea{width:100%;min-height:230px;border:1px solid var(--border);border-radius:12px;padding:12px;font-family:ui-monospace,Consolas,monospace;font-size:13.5px;background:var(--bg-soft);color:var(--text);resize:vertical;outline:none}
+  textarea:focus{border-color:var(--brand)}
+  .stats{margin-top:10px;font-size:12.5px;color:var(--muted);font-weight:600}
+  .calc-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px;margin-bottom:16px}
+  .calc-grid label{display:flex;flex-direction:column;gap:5px;font-size:12.5px;font-weight:700;color:var(--muted)}
+  .calc-grid input{padding:9px 11px;border:1px solid var(--border);border-radius:10px;background:var(--bg-soft);color:var(--text);font-size:14px;font-weight:700}
+  .res-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px}
+  .res-box{background:var(--bg-soft);border:1px solid var(--border);border-radius:12px;padding:14px}
+  .res-box span{display:block;font-size:12px;color:var(--muted);margin-bottom:4px}
+  .res-box strong{font-size:20px;font-weight:900}
+  .cta-box{background:linear-gradient(135deg,var(--bg-soft),var(--card));border:1.5px solid var(--border);border-radius:16px;padding:20px;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:14px;margin-bottom:28px}
+  .cta-btns{display:flex;gap:10px;flex-wrap:wrap}
+  .cta-btns a{padding:10px 16px;border-radius:10px;font-size:13px;font-weight:800}
+  .c-main{background:var(--brand);color:#fff}
+  .c-alt{background:var(--bg-soft);border:1px solid var(--border);color:var(--text)}
+  .faq{display:grid;gap:10px;margin-bottom:28px}
+  details{background:var(--bg-soft);border:1px solid var(--border);border-radius:12px;padding:13px 16px}
+  summary{font-weight:800;font-size:14px;cursor:pointer}
+  details p{margin-top:8px;font-size:13.5px;color:var(--muted)}
+  .rel{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:24px}
+  .rel-chip{background:var(--bg-soft);border:1px solid var(--border);padding:7px 12px;border-radius:999px;font-size:12.5px;font-weight:700}
+  .rel-chip:hover{border-color:var(--brand)}
+  footer{border-top:1px solid var(--border);padding:22px 0 40px;font-size:12.5px;color:var(--muted)}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a href="/" aria-label="B2 Home"><span class="brand-mark">B2</span></a>
+    <nav class="nav-links">
+      <a href="/#catalog">Marketplace</a>
+      <a href="/tools/">All Free Tools</a>
+      <a href="/#bundles">Bundles</a>
+      <a href="/blog/">Guides</a>
+    </nav>
+    <button class="theme-btn" id="theme-toggle" type="button">🌙 Dark</button>
+  </div>
+</header>
+<main class="wrap">
+  <span class="cat-pill">FREE ONLINE TOOL · CRYPTO &amp; FINANCE · 100% BROWSER-LOCAL</span>
+  <h1>Crypto Trade Fee, Breakeven &amp; PnL Calculator</h1>
+  <p class="lead">Estimate maker/taker exchange fees, slippage, exact breakeven sell price, net profit/loss, and ROI for spot crypto positions. Educational tool only.</p>
+
+  <section class="tool-card">
+    
+<div class="calc-grid">
+  <label>Position Size (USD)<input id="amt" type="number" value="1000" step="10"></label>
+  <label>Entry Price ($)<input id="buy" type="number" value="100" step="0.01"></label>
+  <label>Target Exit Price ($)<input id="sell" type="number" value="115" step="0.01"></label>
+  <label>Entry Fee (%)<input id="f1" type="number" value="0.1" step="0.01"></label>
+  <label>Exit Fee (%)<input id="f2" type="number" value="0.1" step="0.01"></label>
+  <label>Est. Slippage (%)<input id="slip" type="number" value="0.05" step="0.01"></label>
+</div>
+<div class="res-grid" id="res"></div>
+<p style="font-size:12px;color:var(--muted);margin-top:12px">Educational &amp; planning tool only; not financial, tax, or investment advice.</p>
+
+  </section>
+
+  <section class="cta-box">
+    <div style="max-width:540px">
+      <div style="font-size:11px;font-weight:800;color:var(--brand);text-transform:uppercase;margin-bottom:4px">Recommended Instant-Download Kit</div>
+      <strong style="font-size:17px;display:block;margin-bottom:4px">Crypto Tax Calculator Spreadsheet + Cost-Basis Pack</strong>
+      <span style="font-size:13px;color:var(--muted)">Offline FIFO/LIFO crypto tax &amp; portfolio tracking spreadsheet for traders and freelancers. One-time purchase, Card &amp; Crypto accepted.</span>
+    </div>
+    <div class="cta-btns">
+      <a class="c-main" href="https://whop.com/b2appsdev-del-github-io/crypto-tax-calculator-spreadsheet/" target="_blank" rel="noopener">Get on Whop (Card + Crypto) →</a>
+      <a class="c-alt" href="https://devbloom12.gumroad.com/l/pimar" target="_blank" rel="noopener">Get on Gumroad (Card) →</a>
+    </div>
+  </section>
+
+  <h2 style="font-size:19px;font-weight:800;margin-bottom:12px">Frequently Asked Questions</h2>
+  <section class="faq"><details><summary>How is the breakeven price calculated?</summary><p>Breakeven accounts for both your entry fee and exit fee so you know the exact price required to cover total round-trip exchange costs.</p></details>
+<details><summary>Is this financial advice?</summary><p>No. This calculator is an educational and planning utility only — not financial, tax, or investment advice.</p></details></section>
+
+  <h2 style="font-size:16px;font-weight:800;margin-bottom:10px">More Free Tools</h2>
+  <div class="rel"><a class="rel-chip" href="/tools/ai-paste-cleaner.html">AI Paste Cleaner (ChatGPT, Claude &amp; Gemini)</a>
+<a class="rel-chip" href="/tools/text-case-converter.html">Text Case Converter &amp; Line Cleaner</a>
+<a class="rel-chip" href="/tools/json-csv-formatter.html">JSON Formatter, Validator &amp; JSON ↔ CSV Converter</a>
+<a class="rel-chip" href="/tools/srt-subtitle-cleaner.html">SRT / VTT Subtitle Cleaner &amp; Time Shifter</a><a class="rel-chip" href="/">← Browse 62+ Digital Kits</a></div>
+</main>
+<footer class="wrap">
+  <p>100% client-side browser utility · Zero signup · Zero server tracking · Updated 2026-11-20 · Support: b2apps.dev@gmail.com</p>
+</footer>
+<script>
+const tBtn=document.getElementById('theme-toggle');
+tBtn.addEventListener('click',()=>{
+  const d=document.documentElement.getAttribute('data-theme')==='dark'?'light':'dark';
+  document.documentElement.setAttribute('data-theme',d);
+  tBtn.textContent=d==='dark'?'☀️ Light':'🌙 Dark';
+});
+document.addEventListener('click',e=>{
+  const a=e.target.closest('a[href]');
+  if(!a) return;
+  const u=a.href||'';
+  const plat=u.includes('whop.com')?'whop':u.includes('gumroad.com')?'gumroad':u.includes('polar.sh')?'polar':'';
+  if(plat && typeof window.gtag==='function') window.gtag('event','begin_checkout',{platform:plat,tool:'crypto-fee-profit-calculator',link_url:u});
+});
+
+function calc() {
+  const amt = Math.max(0, parseFloat(document.getElementById('amt').value) || 0);
+  const buy = Math.max(1e-9, parseFloat(document.getElementById('buy').value) || 1);
+  const sell = Math.max(0, parseFloat(document.getElementById('sell').value) || 0);
+  const f1 = (parseFloat(document.getElementById('f1').value) || 0) / 100;
+  const f2 = (parseFloat(document.getElementById('f2').value) || 0) / 100;
+  const slip = (parseFloat(document.getElementById('slip').value) || 0) / 100;
+  const entryFee = amt * f1;
+  const effBuy = buy * (1 + slip);
+  const qty = (amt - entryFee) / effBuy;
+  const grossExit = qty * sell * (1 - slip);
+  const exitFee = grossExit * f2;
+  const netExit = grossExit - exitFee;
+  const netPnl = netExit - amt;
+  const roi = amt > 0 ? (netPnl / amt) * 100 : 0;
+  const breakeven = effBuy / Math.max(1e-9, (1 - f1) * (1 - f2) * (1 - slip));
+  const col = netPnl >= 0 ? 'var(--green)' : '#ef4444';
+  document.getElementById('res').innerHTML = `
+    <div class="res-box"><span>Net PnL</span><strong style="color:${col}">${netPnl>=0?'+':''}$${netPnl.toFixed(2)} (${roi.toFixed(2)}%)</strong></div>
+    <div class="res-box"><span>Total Fees</span><strong>$${(entryFee+exitFee).toFixed(2)}</strong></div>
+    <div class="res-box"><span>Breakeven Price</span><strong>$${breakeven.toFixed(4)}</strong></div>
+    <div class="res-box"><span>Net Proceeds</span><strong>$${netExit.toFixed(2)}</strong></div>`;
+}
+document.querySelectorAll('.calc-grid input').forEach(el => el.addEventListener('input', calc));
+calc();
+
+</script>
+</body>
+</html>

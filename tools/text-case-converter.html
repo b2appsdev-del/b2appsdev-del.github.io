@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Free Text Case Converter &amp; Duplicate Line Remover</title>
+<meta name="description" content="Instantly fix ALL CAPS text, convert to Title Case, Sentence case, camelCase, snake_case, kebab-case, sort lines alphabetically, or remove duplicates in your browser.">
+<meta name="keywords" content="convert case, text case converter, title case generator, remove duplicate lines, sentence case fixer">
+<link rel="canonical" href="https://b2appsdev-del.github.io/tools/text-case-converter.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Free Text Case Converter &amp; Duplicate Line Remover">
+<meta property="og:description" content="Instantly fix ALL CAPS text, convert to Title Case, Sentence case, camelCase, snake_case, kebab-case, sort lines alphabetically, or remove duplicates in your browser.">
+<meta property="og:url" content="https://b2appsdev-del.github.io/tools/text-case-converter.html">
+<meta name="google-site-verification" content="-2qF9SsAuYuUXELk1lQEbCE_qJKDjDBRnZIbJindAKk">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-K6LWLRXJM5"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-K6LWLRXJM5");</script>
+<script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebApplication", "name": "Text Case Converter & Line Cleaner", "url": "https://b2appsdev-del.github.io/tools/text-case-converter.html", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "description": "Instantly fix ALL CAPS text, convert to Title Case, Sentence case, camelCase, snake_case, kebab-case, sort lines alphabetically, or remove duplicates in your browser."}, {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How do I fix text accidentally typed in ALL CAPS?", "acceptedAnswer": {"@type": "Answer", "text": "Paste your text into the editor and click 'Sentence case' or 'Title Case' — your text is fixed immediately without rewriting."}}, {"@type": "Question", "name": "Can it remove duplicate lines from a list?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Click 'Dedupe Lines' to keep only unique lines, and optionally click 'Sort A-Z' or 'Trim Blank Lines'."}}]}]</script>
+<style>
+  :root{--bg:#ffffff;--bg-soft:#f6f7f9;--card:#ffffff;--border:#e6e8ec;--text:#0f172a;--muted:#64748b;--brand:#fa4616;--brand-hover:#e03a0e;--green:#059669}
+  [data-theme="dark"]{--bg:#0b0d12;--bg-soft:#131722;--card:#121620;--border:rgba(255,255,255,.10);--text:#f8fafc;--muted:#94a3b8;--brand:#ff6243;--brand-hover:#ff4b26;--green:#34d399}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,sans-serif;background:var(--bg);color:var(--text);line-height:1.55}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:1060px;margin:0 auto;padding:0 20px}
+  header{border-bottom:1px solid var(--border);background:var(--bg);position:sticky;top:0;z-index:20}
+  .nav{height:62px;display:flex;align-items:center;justify-content:space-between;gap:14px}
+  .brand-mark{width:30px;height:30px;border-radius:9px;background:linear-gradient(135deg,#fa4616,#ff8243);display:grid;place-items:center;color:#fff;font-size:15px;font-weight:900}
+  .nav-links{display:flex;gap:18px;font-size:14px;font-weight:600;color:var(--muted)}
+  .nav-links a:hover{color:var(--text)}
+  .theme-btn{border:1px solid var(--border);background:var(--bg-soft);color:var(--text);padding:6px 12px;border-radius:999px;font-size:12px;font-weight:700;cursor:pointer}
+  main{padding:32px 0 60px}
+  .cat-pill{display:inline-block;font-size:11.5px;font-weight:800;color:var(--brand);background:rgba(250,70,22,.1);padding:4px 11px;border-radius:999px;margin-bottom:10px}
+  h1{font-size:clamp(26px,4vw,38px);font-weight:900;letter-spacing:-.03em;margin-bottom:8px}
+  .lead{color:var(--muted);font-size:15.5px;margin-bottom:22px;max-width:740px}
+  .tool-card{background:var(--card);border:1px solid var(--border);border-radius:18px;padding:20px;box-shadow:0 8px 24px rgba(15,23,42,.05);margin-bottom:28px}
+  .opts{display:flex;flex-wrap:wrap;gap:12px 18px;margin-bottom:14px;font-size:13px;color:var(--muted)}
+  .opts label{display:flex;align-items:center;gap:6px;cursor:pointer}
+  .btn-row{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:14px;align-items:center}
+  .btn-sm{border:1px solid var(--border);background:var(--bg-soft);color:var(--text);padding:7px 12px;border-radius:9px;font-size:12.5px;font-weight:700;cursor:pointer}
+  .btn-sm:hover{border-color:var(--brand)}
+  .btn-sm.primary{background:var(--brand);border-color:var(--brand);color:#fff}
+  .btn-sm.primary:hover{background:var(--brand-hover)}
+  .split{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  @media(max-width:760px){.split{grid-template-columns:1fr}}
+  .pane-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;font-size:12.5px;font-weight:700;color:var(--muted)}
+  textarea{width:100%;min-height:230px;border:1px solid var(--border);border-radius:12px;padding:12px;font-family:ui-monospace,Consolas,monospace;font-size:13.5px;background:var(--bg-soft);color:var(--text);resize:vertical;outline:none}
+  textarea:focus{border-color:var(--brand)}
+  .stats{margin-top:10px;font-size:12.5px;color:var(--muted);font-weight:600}
+  .calc-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px;margin-bottom:16px}
+  .calc-grid label{display:flex;flex-direction:column;gap:5px;font-size:12.5px;font-weight:700;color:var(--muted)}
+  .calc-grid input{padding:9px 11px;border:1px solid var(--border);border-radius:10px;background:var(--bg-soft);color:var(--text);font-size:14px;font-weight:700}
+  .res-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px}
+  .res-box{background:var(--bg-soft);border:1px solid var(--border);border-radius:12px;padding:14px}
+  .res-box span{display:block;font-size:12px;color:var(--muted);margin-bottom:4px}
+  .res-box strong{font-size:20px;font-weight:900}
+  .cta-box{background:linear-gradient(135deg,var(--bg-soft),var(--card));border:1.5px solid var(--border);border-radius:16px;padding:20px;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:14px;margin-bottom:28px}
+  .cta-btns{display:flex;gap:10px;flex-wrap:wrap}
+  .cta-btns a{padding:10px 16px;border-radius:10px;font-size:13px;font-weight:800}
+  .c-main{background:var(--brand);color:#fff}
+  .c-alt{background:var(--bg-soft);border:1px solid var(--border);color:var(--text)}
+  .faq{display:grid;gap:10px;margin-bottom:28px}
+  details{background:var(--bg-soft);border:1px solid var(--border);border-radius:12px;padding:13px 16px}
+  summary{font-weight:800;font-size:14px;cursor:pointer}
+  details p{margin-top:8px;font-size:13.5px;color:var(--muted)}
+  .rel{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:24px}
+  .rel-chip{background:var(--bg-soft);border:1px solid var(--border);padding:7px 12px;border-radius:999px;font-size:12.5px;font-weight:700}
+  .rel-chip:hover{border-color:var(--brand)}
+  footer{border-top:1px solid var(--border);padding:22px 0 40px;font-size:12.5px;color:var(--muted)}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a href="/" aria-label="B2 Home"><span class="brand-mark">B2</span></a>
+    <nav class="nav-links">
+      <a href="/#catalog">Marketplace</a>
+      <a href="/tools/">All Free Tools</a>
+      <a href="/#bundles">Bundles</a>
+      <a href="/blog/">Guides</a>
+    </nav>
+    <button class="theme-btn" id="theme-toggle" type="button">🌙 Dark</button>
+  </div>
+</header>
+<main class="wrap">
+  <span class="cat-pill">FREE ONLINE TOOL · WRITING &amp; PRODUCTIVITY · 100% BROWSER-LOCAL</span>
+  <h1>Text Case Converter &amp; Line Cleaner</h1>
+  <p class="lead">Instantly fix ALL CAPS text, convert to Title Case, Sentence case, camelCase, snake_case, kebab-case, sort lines alphabetically, or remove duplicates in your browser.</p>
+
+  <section class="tool-card">
+    
+<div class="btn-row">
+  <button class="btn-sm" onclick="tr('sentence')">Sentence case</button>
+  <button class="btn-sm" onclick="tr('lower')">lowercase</button>
+  <button class="btn-sm" onclick="tr('upper')">UPPERCASE</button>
+  <button class="btn-sm" onclick="tr('title')">Title Case</button>
+  <button class="btn-sm" onclick="tr('camel')">camelCase</button>
+  <button class="btn-sm" onclick="tr('snake')">snake_case</button>
+  <button class="btn-sm" onclick="tr('kebab')">kebab-case</button>
+  <button class="btn-sm" onclick="tr('dedupe')">Dedupe Lines</button>
+  <button class="btn-sm" onclick="tr('sort')">Sort A–Z</button>
+  <button class="btn-sm" onclick="tr('trim')">Trim Empty Lines</button>
+  <button class="btn-sm primary" onclick="copyTxt()">Copy Result</button>
+</div>
+<textarea id="box" style="min-height:260px" placeholder="Type or paste your text here..."></textarea>
+<div class="stats" id="stats">0 words · 0 characters · 0 lines</div>
+
+  </section>
+
+  <section class="cta-box">
+    <div style="max-width:540px">
+      <div style="font-size:11px;font-weight:800;color:var(--brand);text-transform:uppercase;margin-bottom:4px">Recommended Instant-Download Kit</div>
+      <strong style="font-size:17px;display:block;margin-bottom:4px">B2B Cold Email &amp; Client Acquisition Swipe Kit</strong>
+      <span style="font-size:13px;color:var(--muted)">Ready-to-send outreach sequences, subject lines, and follow-up templates for founders and freelancers. One-time purchase, Card &amp; Crypto accepted.</span>
+    </div>
+    <div class="cta-btns">
+      <a class="c-main" href="https://whop.com/b2appsdev-del-github-io/b2b-cold-email-client-acquisition-swipe-kit" target="_blank" rel="noopener">Get on Whop (Card + Crypto) →</a>
+      <a class="c-alt" href="https://devbloom12.gumroad.com/l/ziafea" target="_blank" rel="noopener">Get on Gumroad (Card) →</a>
+    </div>
+  </section>
+
+  <h2 style="font-size:19px;font-weight:800;margin-bottom:12px">Frequently Asked Questions</h2>
+  <section class="faq"><details><summary>How do I fix text accidentally typed in ALL CAPS?</summary><p>Paste your text into the editor and click &#x27;Sentence case&#x27; or &#x27;Title Case&#x27; — your text is fixed immediately without rewriting.</p></details>
+<details><summary>Can it remove duplicate lines from a list?</summary><p>Yes. Click &#x27;Dedupe Lines&#x27; to keep only unique lines, and optionally click &#x27;Sort A-Z&#x27; or &#x27;Trim Blank Lines&#x27;.</p></details></section>
+
+  <h2 style="font-size:16px;font-weight:800;margin-bottom:10px">More Free Tools</h2>
+  <div class="rel"><a class="rel-chip" href="/tools/ai-paste-cleaner.html">AI Paste Cleaner (ChatGPT, Claude &amp; Gemini)</a>
+<a class="rel-chip" href="/tools/json-csv-formatter.html">JSON Formatter, Validator &amp; JSON ↔ CSV Converter</a>
+<a class="rel-chip" href="/tools/srt-subtitle-cleaner.html">SRT / VTT Subtitle Cleaner &amp; Time Shifter</a>
+<a class="rel-chip" href="/tools/crypto-fee-profit-calculator.html">Crypto Trade Fee, Breakeven &amp; PnL Calculator</a><a class="rel-chip" href="/">← Browse 62+ Digital Kits</a></div>
+</main>
+<footer class="wrap">
+  <p>100% client-side browser utility · Zero signup · Zero server tracking · Updated 2026-11-20 · Support: b2apps.dev@gmail.com</p>
+</footer>
+<script>
+const tBtn=document.getElementById('theme-toggle');
+tBtn.addEventListener('click',()=>{
+  const d=document.documentElement.getAttribute('data-theme')==='dark'?'light':'dark';
+  document.documentElement.setAttribute('data-theme',d);
+  tBtn.textContent=d==='dark'?'☀️ Light':'🌙 Dark';
+});
+document.addEventListener('click',e=>{
+  const a=e.target.closest('a[href]');
+  if(!a) return;
+  const u=a.href||'';
+  const plat=u.includes('whop.com')?'whop':u.includes('gumroad.com')?'gumroad':u.includes('polar.sh')?'polar':'';
+  if(plat && typeof window.gtag==='function') window.gtag('event','begin_checkout',{platform:plat,tool:'text-case-converter',link_url:u});
+});
+
+const box = document.getElementById('box');
+const stats = document.getElementById('stats');
+function upd() {
+  const s = box.value;
+  const w = s.trim() ? s.trim().split(/\s+/).length : 0;
+  const l = s ? s.split(/\r?\n/).length : 0;
+  stats.textContent = `${w} words · ${s.length} characters · ${l} lines`;
+}
+function tr(mode) {
+  let s = box.value;
+  if (mode === 'lower') s = s.toLowerCase();
+  else if (mode === 'upper') s = s.toUpperCase();
+  else if (mode === 'sentence') s = s.toLowerCase().replace(/(^\s*\w|[.!?]\s+\w)/g, c => c.toUpperCase());
+  else if (mode === 'title') s = s.toLowerCase().replace(/\b\w/g, c => c.toUpperCase());
+  else if (mode === 'camel') s = s.toLowerCase().replace(/[^a-zA-Z0-9]+(.)/g, (_, c) => c.toUpperCase());
+  else if (mode === 'snake') s = s.trim().toLowerCase().replace(/[^a-z0-9]+/g, '_').replace(/^_|_$/g, '');
+  else if (mode === 'kebab') s = s.trim().toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+  else if (mode === 'dedupe') s = [...new Set(s.split(/\r?\n/))].join('\n');
+  else if (mode === 'sort') s = s.split(/\r?\n/).sort((a,b) => a.localeCompare(b)).join('\n');
+  else if (mode === 'trim') s = s.split(/\r?\n/).map(x => x.trim()).filter(Boolean).join('\n');
+  box.value = s;
+  upd();
+}
+function copyTxt() {
+  if (!box.value) return;
+  navigator.clipboard.writeText(box.value).then(() => { stats.textContent += ' · Copied!'; });
+}
+box.addEventListener('input', upd);
+upd();
+
+</script>
+</body>
+</html>
