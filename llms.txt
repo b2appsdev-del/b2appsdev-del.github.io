@@ -1,21 +1,29 @@
 # B2 Apps — Digital Tools, Templates & Developer Starter Kits
-> Official storefront: https://b2appsdev-del.github.io/ | Support: b2apps.dev@gmail.com | Updated: 2026-11-19
+> Official storefront: https://b2appsdev-del.github.io/ | Support: b2apps.dev@gmail.com | Updated: 2026-11-20
 
 ## Free Online Interactive Tools
+- [AI Paste Cleaner (ChatGPT/Claude)](https://b2appsdev-del.github.io/tools/ai-paste-cleaner.html): Strip markdown, filler & invisible chars in 1 click
+- [Text Case & Line Cleaner](https://b2appsdev-del.github.io/tools/text-case-converter.html): UPPERCASE, Title Case, camelCase & dedupe lines
+- [JSON / CSV Formatter & Converter](https://b2appsdev-del.github.io/tools/json-csv-formatter.html): Validate, minify JSON & convert JSON ↔ CSV
+- [SRT / VTT Subtitle Cleaner](https://b2appsdev-del.github.io/tools/srt-subtitle-cleaner.html): Extract clean text or shift subtitle timing
+- [Crypto Fee & Breakeven Calculator](https://b2appsdev-del.github.io/tools/crypto-fee-profit-calculator.html): Estimate fees, slippage, breakeven & net PnL
 - [Dividend WHT Calculator](https://b2appsdev-del.github.io/dividend-withholding-tax-calculator/): EU/US withholding tax & net yield estimator
 - [UCITS ETF Analyzer](https://b2appsdev-del.github.io/ucits-etf-analyzer/): TER fee impact & portfolio overlap planner
 - [EU VAT Invoice Checker](https://b2appsdev-del.github.io/eu-vat-invoice-checker/): Reverse-charge & cross-border VAT helper
 - [Nomad Schengen Tracker](https://b2appsdev-del.github.io/nomad-tax-calculator/): Rolling 90/180-day stay & visa calculator
 - [WCAG 2.2 Audit Tool](https://b2appsdev-del.github.io/wcag-audit-tool/): Accessibility contrast & remediation checklist
 - [ADHD Focus OS](https://b2appsdev-del.github.io/adhd-focus-os/): Low-friction offline daily focus workspace
-- [Full Tools Directory](https://b2appsdev-del.github.io/directory/): Browse all B2 Apps utilities & hubs
+- [All Free Micro-Tools Hub](https://b2appsdev-del.github.io/tools/): Browse all browser-local SEO utilities
 
 ## Educational Guides
 - [EU & US Dividend Withholding Tax Guide (2026): How Retail Investors Estimate Net Yield](https://b2appsdev-del.github.io/blog/eu-dividend-withholding-tax-guide-2026.html): Practical educational guide to understanding dividend withholding tax rates across EU and US equities, double-tax treaties, and how to model net yield.
 - [Solana Smart Contract Starter Checklist: Project Structure, Testing & Pre-Audit Steps](https://b2appsdev-del.github.io/blog/solana-smart-contract-starter-checklist.html): A practical engineering checklist for structuring Solana token-sale and NFT smart contracts, running local tests, and preparing for security audits.
 - [WCAG 2.2 AA Accessibility Audit Checklist for Modern Web Apps & SaaS](https://b2appsdev-del.github.io/blog/wcag-2-2-aa-accessibility-audit-checklist.html): Step-by-step contrast, keyboard navigation, ARIA, and focus-ring checks to make your web app WCAG 2.2 AA compliant.
+- [Schengen 90/180-Day Rule Explained: How Digital Nomads Track Rolling Stays Accurately](https://b2appsdev-del.github.io/blog/schengen-90-180-day-rule-calculator-guide.html): Avoid overstays in the Schengen Area with a clear breakdown of the rolling 180-day window and free offline stay tracking.
+- [DeFi Yield & Crypto Cost-Basis Tracking: Organizing Multi-Wallet Logs Offline](https://b2appsdev-del.github.io/blog/defi-yield-and-crypto-tax-tracking-basics.html): How to keep clean offline CSV logs for DeFi positions, DCA entries, and crypto contractor payouts without cloud lock-in.
+- [EU B2B VAT Reverse-Charge Invoice Checklist for Freelancers & Digital Agencies](https://b2appsdev-del.github.io/blog/eu-vat-reverse-charge-invoice-checklist.html): Essential invoice fields, VIES validation checks, and reverse-charge wording for cross-border EU B2B services.
 
-## Live Instant-Download Products (60 Total)
+## Live Instant-Download Products (62 Total)
 - [Web3 Multi-Chain RPC Health Monitor](https://whop.com/b2appsdev-del-github-io/web3-multi-chain-rpc-health-latency-monitor) — $19 (Whop, Card + Crypto) [Crypto & Web3]
 - [Whop Listing & Launch Kit](https://whop.com/b2appsdev-del-github-io/whop-listing-launch-kit) — $29 (Whop, Card + Crypto) [Creator & Productivity]
 - [Checkout QA & Payment Flow Testing Kit](https://whop.com/b2appsdev-del-github-io/checkout-qa-payment-flow-testing-kit) — $19 (Whop, Card + Crypto) [DevTools & AI]
@@ -76,5 +84,7 @@
 - [Telegram Signal Template Pack](https://devbloom12.gumroad.com/l/oyygs) — $7 (Gumroad, Card) [Creator & Productivity]
 - [Developer Prompt Pack (100 prompts)](https://buy.polar.sh/polar_cl_kVjCpOgrUIYG7MU11V2R84DNIDxoXmK8ClBt809hMpX) — $14 (Polar.sh, Card) [DevTools & AI]
 - [NFT Metadata Generator for Game Assets](https://b2appsdev-del.itch.io/nft-metadata-generator-for-game-assets) — $0 / $5 Donate (Itch.io, Card) [Crypto & Web3]
+- [DeFi Yield Farming Dashboard Template](https://whop.com/b2appsdev-del-github-io/defi-yield-farming-dashboard-template/) — $7 (Whop, Card + Crypto) [Crypto & Web3]
+- [Pricing Guide for Digital Products](https://whop.com/b2appsdev-del-github-io/pricing-guide-for-digital-products/) — $7 (Whop, Card + Crypto) [Creator & Productivity]
 
 > Disclaimer: Educational and planning tools only; not financial, investment, tax, or legal advice.
