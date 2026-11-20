@@ -3,9 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>B2 Apps — Digital Marketplace for Web3, Finance &amp; Developer Kits</title>
+<title>B2 — Digital Marketplace for Web3, Finance &amp; Developer Kits</title>
 <meta name="description" content="Discover 62 instant-download digital products, Solana &amp; DeFi boilerplates, EU finance calculators, and free interactive tools. Card &amp; Crypto checkout.">
 <link rel="canonical" href="https://b2appsdev-del.github.io/">
+
 <meta property="og:type" content="website">
 <meta property="og:title" content="B2 Apps — 62 Self-Contained Digital Kits &amp; Tools">
 <meta property="og:description" content="Instant ZIP downloads. Zero subscriptions. Card &amp; Crypto checkout.">
@@ -167,7 +168,8 @@
 <div class="promo-bar">🔥 Launch Offer: 20% Off Instant Kits on Whop + Starter Bundles from $9 — Card &amp; Crypto Checkout <a href="#bundles">View Bundles →</a></div>
 <header>
   <div class="wrap nav">
-    <nav class="nav-links" style="display:flex">
+    <a class="brand" href="#" aria-label="B2 Home"><span class="logo">B2</span></a>
+    <nav class="nav-links">
       <a href="#catalog">Marketplace</a>
       <a href="#bundles">Bundles &amp; Offers</a>
       <a href="#free-tools">Free Tools</a>
@@ -426,6 +428,20 @@ tBtn.addEventListener("click",()=>{
   const d=document.documentElement.getAttribute("data-theme")==="dark"?"light":"dark";
   document.documentElement.setAttribute("data-theme",d);
   tBtn.textContent=d==="dark"?"☀️ Light":"🌙 Dark";
+});
+document.addEventListener("click",e=>{
+  const a=e.target.closest("a[href]");
+  if(!a) return;
+  const u=a.href||"";
+  let plat="";
+  if(u.includes("whop.com")) plat="whop";
+  else if(u.includes("gumroad.com")) plat="gumroad";
+  else if(u.includes("polar.sh")) plat="polar";
+  else if(u.includes("itch.io")) plat="itch";
+  if(plat){
+    if(typeof window.gtag==="function") window.gtag("event","begin_checkout",{platform:plat,link_url:u});
+    if(window.goatcounter&&typeof window.goatcounter.count==="function") window.goatcounter.count({path:"/checkout/"+plat,title:"Checkout "+plat,event:true});
+  }
 });
 render();
 </script>
