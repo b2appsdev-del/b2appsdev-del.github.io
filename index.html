@@ -77,6 +77,13 @@
   .chip{background:var(--bg-soft);border:1px solid var(--border);color:var(--muted);padding:5px 12px;border-radius:999px;font-size:12px;font-weight:600;cursor:pointer}
   .chip:hover{border-color:var(--brand);color:var(--text)}
 
+  /* Trust & Buyer Protection Strip */
+  .trust-strip{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin:0 0 36px;text-align:left}
+  .trust-box{background:var(--bg-soft);border:1px solid var(--border);border-radius:14px;padding:14px 16px;display:flex;gap:12px;align-items:flex-start}
+  .trust-ico{font-size:20px;line-height:1;margin-top:2px}
+  .trust-box strong{display:block;font-size:13.5px;font-weight:800;color:var(--text);margin-bottom:2px}
+  .trust-box span{font-size:12px;color:var(--muted);line-height:1.4;display:block}
+
   /* Category Tabs Bar */
   .tabs-bar{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px;padding:14px 0 18px;border-bottom:1px solid var(--border);margin-bottom:22px}
   .tabs{display:flex;flex-wrap:wrap;gap:8px}
@@ -174,6 +181,12 @@
       <button class="chip" onclick="quickSearch('WCAG')">Accessibility</button>
       <button class="chip" onclick="quickSearch('Crypto')">Crypto Kits</button>
     </div>
+    <div class="trust-strip" id="trust">
+      <div class="trust-box"><span class="trust-ico">🔒</span><div><strong>Regulated Merchant-of-Record Checkout</strong><span>Payments handled securely by Whop, Gumroad, Polar.sh &amp; itch.io (SSL encrypted). We never see your card or wallet keys.</span></div></div>
+      <div class="trust-box"><span class="trust-ico">⚡</span><div><strong>Instant ZIP Delivery + Receipt</strong><span>Immediate download link right after checkout with full source files, README, and license included.</span></div></div>
+      <div class="trust-box"><span class="trust-ico">🛡️</span><div><strong>14-Day File Integrity Guarantee</strong><span>Corrupted archive or missing listed file? Email b2apps.dev@gmail.com within 14 days for an instant fix or full refund.</span></div></div>
+      <div class="trust-box"><span class="trust-ico">🧪</span><div><strong>Try Free Tools First</strong><span>Test our 7 free interactive web tools right below (no signup, no card) before buying any kit.</span></div></div>
+    </div>
   </section>
 
   <section id="catalog">
@@ -195,7 +208,7 @@
     </div>
     <div class="meta-bar">
       <span id="count-label">Showing 60 products</span>
-      <span>Instant checkout via Whop, Gumroad, Polar.sh &amp; itch.io · Updated 2026-11-19</span>
+      <span>Instant checkout via Whop, Gumroad, Polar.sh &amp; itch.io · Updated 2026-11-20</span>
     </div>
     <div class="grid" id="grid"></div>
   </section>
@@ -217,7 +230,8 @@
 <a class="tool-card" href="/blog/solana-smart-contract-starter-checklist.html"><strong>Solana Smart Contract Starter Checklist: Project Structure, Testing &amp; Pre-Audit Steps</strong><span>A practical engineering checklist for structuring Solana token-sale and NFT smart contracts, running local tes…</span></a>
 <a class="tool-card" href="/blog/wcag-2-2-aa-accessibility-audit-checklist.html"><strong>WCAG 2.2 AA Accessibility Audit Checklist for Modern Web Apps &amp; SaaS</strong><span>Step-by-step contrast, keyboard navigation, ARIA, and focus-ring checks to make your web app WCAG 2.2 AA compl…</span></a>
 <a class="tool-card" href="/blog/schengen-90-180-day-rule-calculator-guide.html"><strong>Schengen 90/180-Day Rule Explained: How Digital Nomads Track Rolling Stays Accurately</strong><span>Avoid overstays in the Schengen Area with a clear breakdown of the rolling 180-day window and free offline sta…</span></a>
-<a class="tool-card" href="/blog/defi-yield-and-crypto-tax-tracking-basics.html"><strong>DeFi Yield &amp; Crypto Cost-Basis Tracking: Organizing Multi-Wallet Logs Offline</strong><span>How to keep clean offline CSV logs for DeFi positions, DCA entries, and crypto contractor payouts without clou…</span></a></div>
+<a class="tool-card" href="/blog/defi-yield-and-crypto-tax-tracking-basics.html"><strong>DeFi Yield &amp; Crypto Cost-Basis Tracking: Organizing Multi-Wallet Logs Offline</strong><span>How to keep clean offline CSV logs for DeFi positions, DCA entries, and crypto contractor payouts without clou…</span></a>
+<a class="tool-card" href="/blog/eu-vat-reverse-charge-invoice-checklist.html"><strong>EU B2B VAT Reverse-Charge Invoice Checklist for Freelancers &amp; Digital Agencies</strong><span>Essential invoice fields, VIES validation checks, and reverse-charge wording for cross-border EU B2B services.…</span></a></div>
   </section>
 
   <section id="faq">
@@ -239,6 +253,7 @@
         <li>✓ Instant self-contained ZIP download (code, templates, README &amp; license)</li>
         <li>✓ One-time payment — zero monthly subscriptions</li>
         <li id="m-pay"></li>
+        <li>🛡️ 14-day corrupted/missing-file fix or refund guarantee (b2apps.dev@gmail.com)</li>
       </ul>
       <a id="m-buy" class="modal-buy" href="#" target="_blank" rel="noopener">Get Instant Access →</a>
       <div style="font-size:11px;color:var(--muted);text-align:center">Educational &amp; planning tool only; not financial, tax, or legal advice.</div>
