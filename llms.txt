@@ -2,18 +2,26 @@
 > Official storefront: https://b2appsdev-del.github.io/ | Support: b2apps.dev@gmail.com | Updated: 2026-11-21
 
 ## Free Online Interactive Tools
+- [B2 Daily Tech, AI & Finance Pulse](https://b2appsdev-del.github.io/pulse/): Live daily news briefing, top trends & developer radar
 - [AI Paste Cleaner (ChatGPT/Claude)](https://b2appsdev-del.github.io/tools/ai-paste-cleaner.html): Strip markdown, filler & invisible chars in 1 click
 - [Text Case & Line Cleaner](https://b2appsdev-del.github.io/tools/text-case-converter.html): UPPERCASE, Title Case, camelCase & dedupe lines
 - [JSON / CSV Formatter & Converter](https://b2appsdev-del.github.io/tools/json-csv-formatter.html): Validate, minify JSON & convert JSON ↔ CSV
 - [SRT / VTT Subtitle Cleaner](https://b2appsdev-del.github.io/tools/srt-subtitle-cleaner.html): Extract clean text or shift subtitle timing
 - [Crypto Fee & Breakeven Calculator](https://b2appsdev-del.github.io/tools/crypto-fee-profit-calculator.html): Estimate fees, slippage, breakeven & net PnL
+- [UTM Link Builder & Tracker Cleaner](https://b2appsdev-del.github.io/tools/utm-link-builder-cleaner.html): Build GA4 UTM URLs or strip utm_*, fbclid & gclid
+- [JSON-LD Schema Markup Generator](https://b2appsdev-del.github.io/tools/json-ld-schema-generator.html): Create FAQ, SoftwareApp & Article rich snippets
+- [Offline JWT Decoder & Base64 Tool](https://b2appsdev-del.github.io/tools/jwt-base64-hash-inspector.html): Inspect JWT tokens & expiration 100% locally
+- [Cron Schedule Builder & Explainer](https://b2appsdev-del.github.io/tools/cron-expression-explainer.html): 5-field Linux/GitHub/Cloudflare cron translator
+- [Freelance Rate & Tax Reserve Calc](https://b2appsdev-del.github.io/tools/freelance-hourly-rate-calculator.html): Calculate billable hourly & day rate after tax
+- [Break-Even ROAS & EU VAT Calc](https://b2appsdev-del.github.io/tools/SaaS-roas-margin-calculator.html): Ecommerce & SaaS net margin + gateway fee math
+- [Live Regex Tester & Cheat Sheet](https://b2appsdev-del.github.io/tools/regex-tester-cheat-sheet.html): Test JS/Python regex with 1-click secret/email presets
 - [Dividend WHT Calculator](https://b2appsdev-del.github.io/dividend-withholding-tax-calculator/): EU/US withholding tax & net yield estimator
 - [UCITS ETF Analyzer](https://b2appsdev-del.github.io/ucits-etf-analyzer/): TER fee impact & portfolio overlap planner
 - [EU VAT Invoice Checker](https://b2appsdev-del.github.io/eu-vat-invoice-checker/): Reverse-charge & cross-border VAT helper
 - [Nomad Schengen Tracker](https://b2appsdev-del.github.io/nomad-tax-calculator/): Rolling 90/180-day stay & visa calculator
 - [WCAG 2.2 Audit Tool](https://b2appsdev-del.github.io/wcag-audit-tool/): Accessibility contrast & remediation checklist
 - [ADHD Focus OS](https://b2appsdev-del.github.io/adhd-focus-os/): Low-friction offline daily focus workspace
-- [All Free Micro-Tools Hub](https://b2appsdev-del.github.io/tools/): Browse all browser-local SEO utilities
+- [All Free Micro-Tools Hub (19 Tools)](https://b2appsdev-del.github.io/tools/): Browse all browser-local SEO utilities
 
 ## Educational Guides
 - [EU & US Dividend Withholding Tax Guide (2026): How Retail Investors Estimate Net Yield](https://b2appsdev-del.github.io/blog/eu-dividend-withholding-tax-guide-2026.html): Practical educational guide to understanding dividend withholding tax rates across EU and US equities, double-tax treaties, and how to model net yield.
@@ -188,6 +196,12 @@
 - [PSD2 & Open Banking Berlin Group AISP/PISP Synthetic Sandbox Generator](https://whop.com/b2appsdev-del-github-io/psd2-open-banking-berlin-group-aisp-pisp-synthetic-sandbox-generator/) — $$39 (Whop, Card + Crypto) [Creator & Productivity]
 - [Parametric 35mm DIN-Rail Raspberry Pi & Mini-PC Mount Kit (OpenSCAD + STL)](https://whop.com/b2appsdev-del-github-io/parametric-35mm-din-rail-raspberry-pi-mini-pc-mount-kit-openscad-stl/) — $$14 (Whop, Card + Crypto) [Creator & Productivity]
 - [ISO 27001:2022 ISMS Annex A Controls & Audit Evidence Obsidian Vault Kit](https://whop.com/b2appsdev-del-github-io/iso-27001-2022-isms-annex-a-controls-audit-evidence-obsidian-vault-kit/) — $$29 (Whop, Card + Crypto) [Creator & Productivity]
+- [Discord Serverless Incident Response, Status Page & On-Call Escalation App (Ed25](https://whop.com/b2appsdev-del-github-io/discord-serverless-incident-response-status-page-on-call-escalation-app-ed25/) — $$24 (Whop, Card + Crypto) [Creator & Productivity]
+- [EU AI Act, DORA & NIS2 Automated Regulatory Intelligence RSS/API Digest Generato](https://whop.com/b2appsdev-del-github-io/eu-ai-act-dora-nis2-automated-regulatory-intelligence-rss-api-digest-generato/) — $$29 (Whop, Card + Crypto) [Creator & Productivity]
+- [GitHub PR SBOM CycloneDX & Copyleft License Compliance Guard (Cloudflare Worker ](https://whop.com/b2appsdev-del-github-io/github-pr-sbom-cyclonedx-copyleft-license-compliance-guard-cloudflare-worker/) — $$29 (Whop, Card + Crypto) [Creator & Productivity]
+- [Telegram Mini App (TMA) Digital Goods Storefront with Native Telegram Stars (XTR](https://whop.com/b2appsdev-del-github-io/telegram-mini-app-tma-digital-goods-storefront-with-native-telegram-stars-xtr/) — $$29 (Whop, Card + Crypto) [Creator & Productivity]
+- [EU TED & UK Contracts Finder Cybersecurity & AI Tender Alert Worker (OCDS + eFor](https://whop.com/b2appsdev-del-github-io/eu-ted-uk-contracts-finder-cybersecurity-ai-tender-alert-worker-ocds-efor/) — $$29 (Whop, Card + Crypto) [Creator & Productivity]
+- [UCITS ETF Portfolio Overlap, True TER & Dividend Withholding Tax Drag Analyzer](https://whop.com/b2appsdev-del-github-io/ucits-etf-portfolio-overlap-true-ter-dividend-withholding-tax-drag-analyzer/) — $$24 (Whop, Card + Crypto) [Finance & Tax]
 - [Metals Premium Calculator](https://devbloom12.gumroad.com/l/metals-premium-calculator) — $9 (Gumroad, Card) [Finance & Tax]
 - [Metals Unit Converter](https://devbloom12.gumroad.com/l/metals-unit-converter) — $9 (Gumroad, Card) [Finance & Tax]
 - [Earnings Season Planner](https://devbloom12.gumroad.com/l/earnings-season-planner) — $12 (Gumroad, Card) [Finance & Tax]
@@ -236,11 +250,5 @@
 - [GDPR RoPA & Data-Mapping Compliance MCP Server](https://github.com/b2appsdev-del/gdpr-ropa-audit-mcp) — MIT + $29 Pro (Glama.ai + GitHub, Card + Crypto) [Creator & Productivity]
 - [EU VAT & VIES B2B Reverse-Charge MCP Server](https://github.com/b2appsdev-del/eu-vat-vies-mcp) — MIT + $29 Pro (Glama.ai + GitHub, Card + Crypto) [Creator & Productivity]
 - [JSON-LD & Technical SEO Audit MCP Server](https://github.com/b2appsdev-del/jsonld-seo-audit-mcp) — MIT + $29 Pro (Glama.ai + GitHub, Card + Crypto) [DevTools & AI]
-- [Discord Serverless Incident Response, Status Page & On-Call Escalation App (Ed25](https://whop.com/b2appsdev-del-github-io/discord-serverless-incident-response-status-page-on-call-escalation-app-ed25/) — $24 (Whop, Card + Crypto) [Creator & Productivity]
-- [EU AI Act, DORA & NIS2 Automated Regulatory Intelligence RSS/API Digest Generato](https://whop.com/b2appsdev-del-github-io/eu-ai-act-dora-nis2-automated-regulatory-intelligence-rss-api-digest-generato/) — $29 (Whop, Card + Crypto) [Creator & Productivity]
-- [GitHub PR SBOM CycloneDX & Copyleft License Compliance Guard (Cloudflare Worker ](https://whop.com/b2appsdev-del-github-io/github-pr-sbom-cyclonedx-copyleft-license-compliance-guard-cloudflare-worker/) — $29 (Whop, Card + Crypto) [Creator & Productivity]
-- [Telegram Mini App (TMA) Digital Goods Storefront with Native Telegram Stars (XTR](https://whop.com/b2appsdev-del-github-io/telegram-mini-app-tma-digital-goods-storefront-with-native-telegram-stars-xtr/) — $29 (Whop, Card + Crypto) [Creator & Productivity]
-- [EU TED & UK Contracts Finder Cybersecurity & AI Tender Alert Worker (OCDS + eFor](https://whop.com/b2appsdev-del-github-io/eu-ted-uk-contracts-finder-cybersecurity-ai-tender-alert-worker-ocds-efor/) — $29 (Whop, Card + Crypto) [Creator & Productivity]
-- [UCITS ETF Portfolio Overlap, True TER & Dividend Withholding Tax Drag Analyzer](https://whop.com/b2appsdev-del-github-io/ucits-etf-portfolio-overlap-true-ter-dividend-withholding-tax-drag-analyzer/) — $24 (Whop, Card + Crypto) [Finance & Tax]
 
 > Disclaimer: Educational and planning tools only; not financial, investment, tax, or legal advice.

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Free UTM Link Builder &amp; URL Tracker Cleaner (GA4 Ready)</title>
+<meta name="description" content="Generate standardized Google Analytics 4 UTM campaign tracking URLs or strip utm_*, fbclid, gclid, and affiliate parameters from any dirty link.">
+<meta name="keywords" content="utm link builder, google analytics 4 utm generator, clean tracking url, strip fbclid gclid, bulk utm builder">
+<link rel="canonical" href="https://b2appsdev-del.github.io/tools/utm-link-builder-cleaner.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Free UTM Link Builder &amp; URL Tracker Cleaner (GA4 Ready)">
+<meta property="og:description" content="Generate standardized Google Analytics 4 UTM campaign tracking URLs or strip utm_*, fbclid, gclid, and affiliate parameters from any dirty link.">
+<meta property="og:url" content="https://b2appsdev-del.github.io/tools/utm-link-builder-cleaner.html">
+<meta name="google-site-verification" content="-2qF9SsAuYuUXELk1lQEbCE_qJKDjDBRnZIbJindAKk">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-K6LWLRXJM5"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-K6LWLRXJM5");</script>
+<script data-goatcounter="https://b2appsdev.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+<script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebApplication", "name": "UTM Campaign Link Builder & Tracking Cleaner", "url": "https://b2appsdev-del.github.io/tools/utm-link-builder-cleaner.html", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "description": "Generate standardized Google Analytics 4 UTM campaign tracking URLs or strip utm_*, fbclid, gclid, and affiliate parameters from any dirty link."}, {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What UTM parameters are required for GA4?", "acceptedAnswer": {"@type": "Answer", "text": "utm_source (e.g. newsletter, youtube) and utm_medium (e.g. email, cpc, social) are essential, followed by utm_campaign for attribution."}}, {"@type": "Question", "name": "How does the URL Cleaner work?", "acceptedAnswer": {"@type": "Answer", "text": "Paste any URL containing utm_*, fbclid, gclid, msclkid, or mc_cid and it removes tracking keys while keeping valid query parameters intact."}}]}]</script>
+<style>
+  :root{--bg:#ffffff;--bg-soft:#f6f7f9;--card:#ffffff;--border:#e6e8ec;--text:#0f172a;--muted:#64748b;--brand:#fa4616;--brand-hover:#e03a0e;--green:#059669}
+  [data-theme="dark"]{--bg:#0b0d12;--bg-soft:#131722;--card:#121620;--border:rgba(255,255,255,.10);--text:#f8fafc;--muted:#94a3b8;--brand:#ff6243;--brand-hover:#ff4b26;--green:#34d399}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,sans-serif;background:var(--bg);color:var(--text);line-height:1.55}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:1060px;margin:0 auto;padding:0 20px}
+  header{border-bottom:1px solid var(--border);background:var(--bg);position:sticky;top:0;z-index:20}
+  .nav{height:62px;display:flex;align-items:center;justify-content:space-between;gap:14px}
+  .brand-mark{width:30px;height:30px;border-radius:9px;background:linear-gradient(135deg,#fa4616,#ff8243);display:grid;place-items:center;color:#fff;font-size:15px;font-weight:900}
+  .nav-links{display:flex;gap:18px;font-size:14px;font-weight:600;color:var(--muted)}
+  .nav-links a:hover{color:var(--text)}
+  .theme-btn{border:1px solid var(--border);background:var(--bg-soft);color:var(--text);padding:6px 12px;border-radius:999px;font-size:12px;font-weight:700;cursor:pointer}
+  main{padding:32px 0 60px}
+  .cat-pill{display:inline-block;font-size:11.5px;font-weight:800;color:var(--brand);background:rgba(250,70,22,.1);padding:4px 11px;border-radius:999px;margin-bottom:10px}
+  h1{font-size:clamp(26px,4vw,38px);font-weight:900;letter-spacing:-.03em;margin-bottom:8px}
+  .lead{color:var(--muted);font-size:15.5px;margin-bottom:22px;max-width:740px}
+  .tool-card{background:var(--card);border:1px solid var(--border);border-radius:18px;padding:20px;box-shadow:0 8px 24px rgba(15,23,42,.05);margin-bottom:28px}
+  .opts{display:flex;flex-wrap:wrap;gap:12px 18px;margin-bottom:14px;font-size:13px;color:var(--muted)}
+  .opts label{display:flex;align-items:center;gap:6px;cursor:pointer}
+  .btn-row{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:14px;align-items:center}
+  .btn-sm{border:1px solid var(--border);background:var(--bg-soft);color:var(--text);padding:7px 12px;border-radius:9px;font-size:12.5px;font-weight:700;cursor:pointer}
+  .btn-sm:hover{border-color:var(--brand)}
+  .btn-sm.primary{background:var(--brand);border-color:var(--brand);color:#fff}
+  .btn-sm.primary:hover{background:var(--brand-hover)}
+  .split{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  @media(max-width:760px){.split{grid-template-columns:1fr}}
+  .pane-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;font-size:12.5px;font-weight:700;color:var(--muted)}
+  textarea{width:100%;min-height:230px;border:1px solid var(--border);border-radius:12px;padding:12px;font-family:ui-monospace,Consolas,monospace;font-size:13.5px;background:var(--bg-soft);color:var(--text);resize:vertical;outline:none}
+  textarea:focus{border-color:var(--brand)}
+  .stats{margin-top:10px;font-size:12.5px;color:var(--muted);font-weight:600}
+  .calc-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px;margin-bottom:16px}
+  .calc-grid label{display:flex;flex-direction:column;gap:5px;font-size:12.5px;font-weight:700;color:var(--muted)}
+  .calc-grid input{padding:9px 11px;border:1px solid var(--border);border-radius:10px;background:var(--bg-soft);color:var(--text);font-size:14px;font-weight:700}
+  .res-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px}
+  .res-box{background:var(--bg-soft);border:1px solid var(--border);border-radius:12px;padding:14px}
+  .res-box span{display:block;font-size:12px;color:var(--muted);margin-bottom:4px}
+  .res-box strong{font-size:20px;font-weight:900}
+  .cta-box{background:linear-gradient(135deg,var(--bg-soft),var(--card));border:1.5px solid var(--border);border-radius:16px;padding:20px;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:14px;margin-bottom:28px}
+  .cta-btns{display:flex;gap:10px;flex-wrap:wrap}
+  .cta-btns a{padding:10px 16px;border-radius:10px;font-size:13px;font-weight:800}
+  .c-main{background:var(--brand);color:#fff}
+  .c-alt{background:var(--bg-soft);border:1px solid var(--border);color:var(--text)}
+  .faq{display:grid;gap:10px;margin-bottom:28px}
+  details{background:var(--bg-soft);border:1px solid var(--border);border-radius:12px;padding:13px 16px}
+  summary{font-weight:800;font-size:14px;cursor:pointer}
+  details p{margin-top:8px;font-size:13.5px;color:var(--muted)}
+  .rel{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:24px}
+  .rel-chip{background:var(--bg-soft);border:1px solid var(--border);padding:7px 12px;border-radius:999px;font-size:12.5px;font-weight:700}
+  .rel-chip:hover{border-color:var(--brand)}
+  footer{border-top:1px solid var(--border);padding:22px 0 40px;font-size:12.5px;color:var(--muted)}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a href="/" aria-label="B2 Home"><span class="brand-mark">B2</span></a>
+    <nav class="nav-links">
+      <a href="/#catalog">Marketplace</a>
+      <a href="/tools/">All Free Tools</a>
+      <a href="/#bundles">Bundles</a>
+      <a href="/blog/">Guides</a>
+    </nav>
+    <button class="theme-btn" id="theme-toggle" type="button">🌙 Dark</button>
+  </div>
+</header>
+<main class="wrap">
+  <span class="cat-pill">FREE ONLINE TOOL · MARKETING &amp; SEO · 100% BROWSER-LOCAL</span>
+  <h1>UTM Campaign Link Builder &amp; Tracking Cleaner</h1>
+  <p class="lead">Generate standardized Google Analytics 4 UTM campaign tracking URLs or strip utm_*, fbclid, gclid, and affiliate parameters from any dirty link.</p>
+
+  <section class="tool-card">
+    
+<div class="calc-grid">
+  <div><label>Target Website URL</label><input type="text" id="uUrl" value="https://b2appsdev-del.github.io/tools/"></div>
+  <div><label>Campaign Source (utm_source)</label><input type="text" id="uSrc" value="youtube"></div>
+  <div><label>Campaign Medium (utm_medium)</label><input type="text" id="uMed" value="video_desc"></div>
+  <div><label>Campaign Name (utm_campaign)</label><input type="text" id="uCmp" value="spring_launch_2026"></div>
+</div>
+<div class="pane" style="margin-bottom:14px">
+  <div class="pane-head"><span>Generated GA4 UTM Link</span><button class="btn-sm primary" onclick="navigator.clipboard.writeText(document.getElementById('uOut').value)">Copy UTM URL</button></div>
+  <input type="text" id="uOut" readonly style="width:100%;padding:10px;border-radius:10px;border:1px solid var(--border);background:var(--bg);color:var(--text);font-family:monospace">
+</div>
+<div class="pane">
+  <div class="pane-head"><span>Or Paste Dirty URL to Strip Trackers (utm_*, fbclid, gclid)</span><button class="btn-sm" onclick="stripDirty()">Clean Dirty URL</button></div>
+  <input type="text" id="uDirty" placeholder="https://example.com/page?utm_source=x&fbclid=123&id=42" style="width:100%;padding:10px;border-radius:10px;border:1px solid var(--border);background:var(--bg);color:var(--text);font-family:monospace">
+</div>
+
+  </section>
+
+  <!-- Monetization Ad & Sponsor Slot (Auto-renders AdSense / Carbon / EthicalAds or Direct Sponsor Banner) -->
+  <aside class="cta-box" style="border-style:dashed;background:var(--bg-soft)" aria-label="Sponsored Partner">
+    <div>
+      <div style="font-size:10px;font-weight:800;color:var(--muted);text-transform:uppercase;letter-spacing:.06em">Sponsored Developer Resource · Ad Slot</div>
+      <strong style="font-size:15px">All-In-One B2 Developer, FinTech &amp; Creator Vault (212+ Toolkits)</strong>
+      <span style="font-size:12.5px;color:var(--muted);display:block">Unlock our full library of automation blueprints, IDE plugins, and financial models — or advertise your developer product here (b2apps.dev@gmail.com).</span>
+    </div>
+    <div class="cta-btns">
+      <a class="c-main" href="https://whop.com/b2appsdev-del-github-io/" target="_blank" rel="noopener">Explore Full Vault →</a>
+    </div>
+  </aside>
+
+  <section class="cta-box">
+    <div style="max-width:540px">
+      <div style="font-size:11px;font-weight:800;color:var(--brand);text-transform:uppercase;margin-bottom:4px">Recommended Instant-Download Kit</div>
+      <strong style="font-size:17px;display:block;margin-bottom:4px">Solopreneur Multi-Channel Launch &amp; Revenue Command Center</strong>
+      <span style="font-size:13px;color:var(--muted)">Track every campaign, UTM link, channel ROI, and conversion funnel in one turnkey workspace. One-time purchase, Card &amp; Crypto accepted.</span>
+    </div>
+    <div class="cta-btns">
+      <a class="c-main" href="https://whop.com/b2appsdev-del-github-io/" target="_blank" rel="noopener">Get on Whop (Card + Crypto) →</a>
+      <a class="c-alt" href="https://devbloom12.gumroad.com/l/khyqi" target="_blank" rel="noopener">Get on Gumroad (Card) →</a>
+    </div>
+  </section>
+
+  <h2 style="font-size:19px;font-weight:800;margin-bottom:12px">Frequently Asked Questions</h2>
+  <section class="faq"><details><summary>What UTM parameters are required for GA4?</summary><p>utm_source (e.g. newsletter, youtube) and utm_medium (e.g. email, cpc, social) are essential, followed by utm_campaign for attribution.</p></details>
+<details><summary>How does the URL Cleaner work?</summary><p>Paste any URL containing utm_*, fbclid, gclid, msclkid, or mc_cid and it removes tracking keys while keeping valid query parameters intact.</p></details></section>
+
+  <h2 style="font-size:16px;font-weight:800;margin-bottom:10px">More Free Tools</h2>
+  <div class="rel"><a class="rel-chip" href="/tools/ai-paste-cleaner.html">AI Paste Cleaner (ChatGPT, Claude &amp; Gemini)</a>
+<a class="rel-chip" href="/tools/text-case-converter.html">Text Case Converter &amp; Line Cleaner</a>
+<a class="rel-chip" href="/tools/json-csv-formatter.html">JSON Formatter, Validator &amp; JSON ↔ CSV Converter</a>
+<a class="rel-chip" href="/tools/srt-subtitle-cleaner.html">SRT / VTT Subtitle Cleaner &amp; Time Shifter</a>
+<a class="rel-chip" href="/tools/crypto-fee-profit-calculator.html">Crypto Trade Fee, Breakeven &amp; PnL Calculator</a>
+<a class="rel-chip" href="/tools/json-ld-schema-generator.html">JSON-LD Structured Data &amp; Rich-Snippet Schema Generator</a>
+<a class="rel-chip" href="/tools/jwt-base64-hash-inspector.html">JWT Token Decoder, Base64 &amp; SHA-256 Hash Inspector</a>
+<a class="rel-chip" href="/tools/cron-expression-explainer.html">Cron Expression Builder &amp; Human-Readable Schedule Explainer</a>
+<a class="rel-chip" href="/tools/freelance-hourly-rate-calculator.html">Freelance Minimum Hourly Rate, Tax Reserve &amp; Day-Rate Calculator</a>
+<a class="rel-chip" href="/tools/SaaS-roas-margin-calculator.html">Ecommerce &amp; SaaS Break-Even ROAS, Net Margin &amp; EU VAT Calculator</a>
+<a class="rel-chip" href="/tools/regex-tester-cheat-sheet.html">Live Regex Tester, Match Highlighter &amp; Developer Pattern Library</a><a class="rel-chip" href="/">← Browse 62+ Digital Kits</a></div>
+</main>
+  <footer class="wrap">
+    <p>100% client-side browser utility · Zero signup · Zero server tracking · Updated 2026-11-21 · Support &amp; Ad Inquiries: b2apps.dev@gmail.com</p>
+    <p style="margin-top:6px;font-size:11.5px">Disclaimer: Educational &amp; technical planning utility only; does not constitute financial, tax, investment, or legal advice.</p>
+  </footer>
+<script>
+const tBtn=document.getElementById('theme-toggle');
+tBtn.addEventListener('click',()=>{
+  const d=document.documentElement.getAttribute('data-theme')==='dark'?'light':'dark';
+  document.documentElement.setAttribute('data-theme',d);
+  tBtn.textContent=d==='dark'?'☀️ Light':'🌙 Dark';
+});
+document.addEventListener('click',e=>{
+  const a=e.target.closest('a[href]');
+  if(!a) return;
+  const u=a.href||'';
+  const plat=u.includes('whop.com')?'whop':u.includes('gumroad.com')?'gumroad':u.includes('polar.sh')?'polar':'';
+  if(plat && typeof window.gtag==='function') window.gtag('event','begin_checkout',{platform:plat,tool:'utm-link-builder-cleaner',link_url:u});
+});
+
+function buildUtm(){
+  try{
+    const u = new URL(document.getElementById('uUrl').value.trim());
+    const s = document.getElementById('uSrc').value.trim();
+    const m = document.getElementById('uMed').value.trim();
+    const c = document.getElementById('uCmp').value.trim();
+    if(s) u.searchParams.set('utm_source', s.toLowerCase().replace(/\s+/g,'_'));
+    if(m) u.searchParams.set('utm_medium', m.toLowerCase().replace(/\s+/g,'_'));
+    if(c) u.searchParams.set('utm_campaign', c.toLowerCase().replace(/\s+/g,'_'));
+    document.getElementById('uOut').value = u.toString();
+  }catch(e){ document.getElementById('uOut').value = 'Enter a valid https:// URL'; }
+}
+function stripDirty(){
+  try{
+    const raw = document.getElementById('uDirty').value.trim();
+    const u = new URL(raw);
+    const kill = [];
+    u.searchParams.forEach((_,k)=>{ if(/^(utm_|fbclid|gclid|msclkid|mc_|yclid|igshid|_ga)/i.test(k)) kill.push(k); });
+    kill.forEach(k=>u.searchParams.delete(k));
+    document.getElementById('uDirty').value = u.toString();
+  }catch(e){}
+}
+['uUrl','uSrc','uMed','uCmp'].forEach(id=>document.getElementById(id).addEventListener('input',buildUtm));
+buildUtm();
+
+</script>
+</body>
+</html>
