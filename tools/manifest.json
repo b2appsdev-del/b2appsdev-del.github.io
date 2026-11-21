@@ -28,5 +28,47 @@
     "url": "/tools/crypto-fee-profit-calculator.html",
     "name": "Crypto Trade Fee, Breakeven & PnL Calculator",
     "short": "Calculate exact exchange fees, breakeven exit price, net profit/loss, and ROI before trading."
+  },
+  {
+    "slug": "utm-link-builder-cleaner",
+    "url": "/tools/utm-link-builder-cleaner.html",
+    "name": "UTM Campaign Link Builder & Tracking Cleaner",
+    "short": "Build clean Google Analytics 4 UTM URLs or strip utm_*, fbclid & gclid parameters in 1 click."
+  },
+  {
+    "slug": "json-ld-schema-generator",
+    "url": "/tools/json-ld-schema-generator.html",
+    "name": "JSON-LD Structured Data & Rich-Snippet Schema Generator",
+    "short": "Generate valid FAQPage, SoftwareApplication, Article & Product JSON-LD for Google & AI Search."
+  },
+  {
+    "slug": "jwt-base64-hash-inspector",
+    "url": "/tools/jwt-base64-hash-inspector.html",
+    "name": "JWT Token Decoder, Base64 & SHA-256 Hash Inspector",
+    "short": "Decode JWT headers/payloads, check token expiration, and encode/decode Base64 100% offline."
+  },
+  {
+    "slug": "cron-expression-explainer",
+    "url": "/tools/cron-expression-explainer.html",
+    "name": "Cron Expression Builder & Human-Readable Schedule Explainer",
+    "short": "Translate 5-field Linux/Cloudflare/GitHub Actions cron schedules into plain English + presets."
+  },
+  {
+    "slug": "freelance-hourly-rate-calculator",
+    "url": "/tools/freelance-hourly-rate-calculator.html",
+    "name": "Freelance Minimum Hourly Rate, Tax Reserve & Day-Rate Calculator",
+    "short": "Calculate your true billable hourly & day rate after taxes, overhead, vacation, and non-billable hours."
+  },
+  {
+    "slug": "SaaS-roas-margin-calculator",
+    "url": "/tools/SaaS-roas-margin-calculator.html",
+    "name": "Ecommerce & SaaS Break-Even ROAS, Net Margin & EU VAT Calculator",
+    "short": "Calculate break-even ROAS, Stripe/Shopify processing fees, and EU VAT impact on gross checkout prices."
+  },
+  {
+    "slug": "regex-tester-cheat-sheet",
+    "url": "/tools/regex-tester-cheat-sheet.html",
+    "name": "Live Regex Tester, Match Highlighter & Developer Pattern Library",
+    "short": "Test JavaScript/Python Regular Expressions in real time with 1-click presets for Email, URL, IPv4, UUID & Secrets."
   }
 ]

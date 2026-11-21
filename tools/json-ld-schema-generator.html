@@ -175,7 +175,7 @@ function genSchema(){
       "priceCurrency": "USD"
     }
   };
-  document.getElementById('sOut').value = '<script type="application/ld+json">\n' + JSON.stringify(obj, null, 2) + '\n<\/script>';
+    document.getElementById('sOut').value = '<scr' + 'ipt type="application/ld+json">\n' + JSON.stringify(obj, null, 2) + '\n<\/scr' + 'ipt>';
 }
 ['sType','sName','sUrl','sPrice'].forEach(id=>document.getElementById(id).addEventListener('input',genSchema));
 genSchema();
