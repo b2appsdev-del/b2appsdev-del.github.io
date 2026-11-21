@@ -23,7 +23,7 @@
 - [DeFi Yield & Crypto Cost-Basis Tracking: Organizing Multi-Wallet Logs Offline](https://b2appsdev-del.github.io/blog/defi-yield-and-crypto-tax-tracking-basics.html): How to keep clean offline CSV logs for DeFi positions, DCA entries, and crypto contractor payouts without cloud lock-in.
 - [EU B2B VAT Reverse-Charge Invoice Checklist for Freelancers & Digital Agencies](https://b2appsdev-del.github.io/blog/eu-vat-reverse-charge-invoice-checklist.html): Essential invoice fields, VIES validation checks, and reverse-charge wording for cross-border EU B2B services.
 
-## Live Instant-Download Products (212 Total)
+## Live Instant-Download Products (218 Total)
 - [Web3 Multi-Chain RPC Health Monitor](https://whop.com/b2appsdev-del-github-io/web3-multi-chain-rpc-health-latency-monitor) — $19 (Whop, Card + Crypto) [Crypto & Web3]
 - [Whop Listing & Launch Kit](https://whop.com/b2appsdev-del-github-io/whop-listing-launch-kit) — $29 (Whop, Card + Crypto) [Creator & Productivity]
 - [Checkout QA & Payment Flow Testing Kit](https://whop.com/b2appsdev-del-github-io/checkout-qa-payment-flow-testing-kit) — $19 (Whop, Card + Crypto) [DevTools & AI]
@@ -222,6 +222,10 @@
 - [Unity Localization CSV & String-Placeholder Validator](https://b2appsdev-del.itch.io/unity-localization-csv-validator) — $15 (Itch.io, Card) [Creator & Productivity]
 - [Unity URP Material Migration & Shader Auditor](https://b2appsdev-del.itch.io/unity-urp-material-migration-auditor) — $15 (Itch.io, Card) [Creator & Productivity]
 - [Modular Sci-Fi Trim Panels — 3D Meshes & PBR Material Pack (OBJ / glTF)](https://b2appsdev-del.itch.io/modular-scifi-trim-panels) — $15 (Itch.io, Card) [Creator & Productivity]
+- [Godot 4.x Save-State Encryption & Checksum Inspector](https://b2appsdev-del.itch.io/godot-save-state-encryption-inspector) — $12 (Itch.io, Card) [Creator & Productivity]
+- [Unity Addressables & AssetBundle Duplicate Size Auditor](https://b2appsdev-del.itch.io/unity-addressables-bundle-size-auditor) — $19 (Itch.io, Card) [Creator & Productivity]
+- [Retro Arcade & Chiptune Procedural 44.1kHz WAV SFX Pack](https://b2appsdev-del.itch.io/retro-arcade-synth-sfx-pack) — $12 (Itch.io, Card) [Creator & Productivity]
+- [Modular Cyberpunk Cargo Crates & Street Barriers 3D OBJ Pack](https://b2appsdev-del.itch.io/modular-cyberpunk-crates-barriers) — $15 (Itch.io, Card) [Creator & Productivity]
 - [EnvGuard — .env Sync & Secret Leak Guard (v1.0.0 Live / v1.0.1 241+)](https://plugins.jetbrains.com/plugin/36135-envguard--env-sync--secret-leak-guard) — Free + $19 Pro (JetBrains Marketplace, Card) [Creator & Productivity]
 - [SchemaFlow SEO — JSON-LD & Meta Auditor](https://www.framer.com/marketplace/plugins/schemaflow-seo/) — Free + $24 Pro (Framer Marketplace, Card + Crypto) [DevTools & AI]
 - [A11yGuard — WCAG 2.1 Contrast & A11y Auditor](https://www.framer.com/marketplace/plugins/a11yguard/) — Free + $24 Pro (Framer Marketplace, Card + Crypto) [DevTools & AI]
@@ -232,9 +236,11 @@
 - [GDPR RoPA & Data-Mapping Compliance MCP Server](https://github.com/b2appsdev-del/gdpr-ropa-audit-mcp) — MIT + $29 Pro (Glama.ai + GitHub, Card + Crypto) [Creator & Productivity]
 - [EU VAT & VIES B2B Reverse-Charge MCP Server](https://github.com/b2appsdev-del/eu-vat-vies-mcp) — MIT + $29 Pro (Glama.ai + GitHub, Card + Crypto) [Creator & Productivity]
 - [JSON-LD & Technical SEO Audit MCP Server](https://github.com/b2appsdev-del/jsonld-seo-audit-mcp) — MIT + $29 Pro (Glama.ai + GitHub, Card + Crypto) [DevTools & AI]
-- [Godot 4.x Save-State Encryption & Checksum Inspector](https://b2appsdev-del.itch.io/godot-save-state-encryption-inspector) — 12.0 (itch, Card) [Creator & Productivity]
-- [Unity Addressables & AssetBundle Duplicate Size Auditor](https://b2appsdev-del.itch.io/unity-addressables-bundle-size-auditor) — 19.0 (itch, Card) [Creator & Productivity]
-- [Retro Arcade & Chiptune Procedural 44.1kHz WAV SFX Pack](https://b2appsdev-del.itch.io/retro-arcade-synth-sfx-pack) — 12.0 (itch, Card) [Creator & Productivity]
-- [Modular Cyberpunk Cargo Crates & Street Barriers 3D OBJ Pack](https://b2appsdev-del.itch.io/modular-cyberpunk-crates-barriers) — 15.0 (itch, Card) [Creator & Productivity]
+- [Discord Serverless Incident Response, Status Page & On-Call Escalation App (Ed25](https://whop.com/b2appsdev-del-github-io/discord-serverless-incident-response-status-page-on-call-escalation-app-ed25/) — $24 (Whop, Card + Crypto) [Creator & Productivity]
+- [EU AI Act, DORA & NIS2 Automated Regulatory Intelligence RSS/API Digest Generato](https://whop.com/b2appsdev-del-github-io/eu-ai-act-dora-nis2-automated-regulatory-intelligence-rss-api-digest-generato/) — $29 (Whop, Card + Crypto) [Creator & Productivity]
+- [GitHub PR SBOM CycloneDX & Copyleft License Compliance Guard (Cloudflare Worker ](https://whop.com/b2appsdev-del-github-io/github-pr-sbom-cyclonedx-copyleft-license-compliance-guard-cloudflare-worker/) — $29 (Whop, Card + Crypto) [Creator & Productivity]
+- [Telegram Mini App (TMA) Digital Goods Storefront with Native Telegram Stars (XTR](https://whop.com/b2appsdev-del-github-io/telegram-mini-app-tma-digital-goods-storefront-with-native-telegram-stars-xtr/) — $29 (Whop, Card + Crypto) [Creator & Productivity]
+- [EU TED & UK Contracts Finder Cybersecurity & AI Tender Alert Worker (OCDS + eFor](https://whop.com/b2appsdev-del-github-io/eu-ted-uk-contracts-finder-cybersecurity-ai-tender-alert-worker-ocds-efor/) — $29 (Whop, Card + Crypto) [Creator & Productivity]
+- [UCITS ETF Portfolio Overlap, True TER & Dividend Withholding Tax Drag Analyzer](https://whop.com/b2appsdev-del-github-io/ucits-etf-portfolio-overlap-true-ter-dividend-withholding-tax-drag-analyzer/) — $24 (Whop, Card + Crypto) [Finance & Tax]
 
 > Disclaimer: Educational and planning tools only; not financial, investment, tax, or legal advice.
