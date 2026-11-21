@@ -1,5 +1,5 @@
 # B2 Apps — Digital Tools, Templates & Developer Starter Kits
-> Official storefront: https://b2appsdev-del.github.io/ | Support: b2apps.dev@gmail.com | Updated: 2026-11-20
+> Official storefront: https://b2appsdev-del.github.io/ | Support: b2apps.dev@gmail.com | Updated: 2026-11-21
 
 ## Free Online Interactive Tools
 - [AI Paste Cleaner (ChatGPT/Claude)](https://b2appsdev-del.github.io/tools/ai-paste-cleaner.html): Strip markdown, filler & invisible chars in 1 click
